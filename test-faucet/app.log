@@ -1,0 +1,2 @@
+[GIN-debug] POST   /apply                    --> main.apply (2 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:3434
