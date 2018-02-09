@@ -39,7 +39,7 @@ func apply(c *gin.Context) {
 	print(string(body))
 	var nonce Nonce
 	json.Unmarshal(body, &nonce)
-	nonce.Data = +1
+	nonce.Data += 1
 	defer resp.Body.Close()
 
 	//build send
@@ -69,7 +69,19 @@ func apply(c *gin.Context) {
 	json.Unmarshal(body, &requestSign.Tx)
 	rsStr, _ := json.Marshal(requestSign)
 	println(string(rsStr))
-	req, err = http.NewRequest("POST", server+"/byteTx", bytes.NewBuffer([]byte(rsStr)))
+	req, err = http.NewRequest("POST", server+"/sign", bytes.NewBuffer([]byte(rsStr)))
+	req.Header.Set("Content-Type", "application/json")
+	client = &http.Client{}
+	resp, err = client.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
+	body, _ = ioutil.ReadAll(resp.Body)
+	println(string(body))
+
+	//send tx
+	req, err = http.NewRequest("POST", server+"/tx", bytes.NewBuffer([]byte(body)))
 	req.Header.Set("Content-Type", "application/json")
 	client = &http.Client{}
 	resp, err = client.Do(req)
@@ -80,7 +92,6 @@ func apply(c *gin.Context) {
 	body, _ = ioutil.ReadAll(resp.Body)
 	println(string(body))
 	println(addr)
-
 }
 
 func main() {
