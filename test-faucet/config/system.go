@@ -7,8 +7,15 @@ import (
 )
 
 type Configuration struct {
-	Postgres   *Postgres `yaml:"postgres"`
-	Server     string    `yaml:"server"`
+	Postgres *Postgres `yaml:"postgres"`
+	Server   string    `yaml:"server"`
+	Total    int       `yaml:"total"`
+	Amount   int       `yaml:"amount"`
+	Denom    string    `yaml:"denom"`
+	Iris     string    `yaml:"iris"`
+	Name     string    `yaml:"name"`
+	Password string    `yaml:"password"`
+	Client   string    `yaml:"client"`
 }
 
 type Postgres struct {
@@ -18,13 +25,6 @@ type Postgres struct {
 	Dbname   string `yaml:"dbname"`
 	Password string `yaml:"password"`
 	Sslmode  string `yaml:"sslmode"`
-}
-
-type Redis struct {
-	Url         string `yaml:"host"`
-	ActcTimeout int    `yaml:"actcTimeout"`
-	RescTimeout int    `yaml:"rescTimeout"`
-	VercTimeOut int    `yaml:"vercTimeOut"`
 }
 
 var Config *Configuration

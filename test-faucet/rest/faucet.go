@@ -8,14 +8,11 @@ import (
 	"encoding/json"
 	"bytes"
 	"github.com/irisnet/testnets/test-faucet/repository"
+	"github.com/irisnet/testnets/test-faucet/config"
 )
 
-var iris = "0D7ACAD5C3F3EE3DBFB972F52D652509437E0044"
-var server = "http://116.62.62.39:8999"
-var amount = 10
-
 type TokenApply struct {
-	Addr string
+	Addr string `binding:"required"`
 }
 
 type Nonce struct {
@@ -25,13 +22,23 @@ type Nonce struct {
 
 func Apply(c *gin.Context) {
 	var tokenApply TokenApply
+	iris := config.Config.Iris
+	server := config.Config.Client
+	amount := config.Config.Amount
+	denom := config.Config.Denom
 	err := c.ShouldBindJSON(&tokenApply)
 	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 	addr := tokenApply.Addr
+	if !check(addr) {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "已达当日上限"})
+		return
+	}
 	resp, err := http.Get(server + "/query/nonce/" + iris)
 	if err != nil {
+		panic(err)
 		return
 	}
 	body, err := ioutil.ReadAll(resp.Body)
@@ -43,13 +50,12 @@ func Apply(c *gin.Context) {
 
 	//build send
 	si := new(types.SendInput)
-	si.Amount = types.Coins{types.Coin{Denom: "iris", Amount: 10}}
+	si.Amount = types.Coins{types.Coin{Denom: denom, Amount: 10}}
 	si.From = &types.Actor{ChainID: "", App: "sigs", Address: iris}
 	si.To = &types.Actor{ChainID: "", App: "sigs", Address: addr}
-	si.Fees = &types.Coin{Denom: "fermion", Amount: 1}
+	si.Fees = &types.Coin{Denom: denom, Amount: 1}
 	si.Sequence = nonce.Data
 	siStr, _ := json.Marshal(si)
-	println(string(siStr))
 	req, err := http.NewRequest("POST", server+"/build/send", bytes.NewBuffer([]byte(siStr)))
 	req.Header.Set("Content-Type", "application/json")
 	client := &http.Client{}
@@ -59,15 +65,13 @@ func Apply(c *gin.Context) {
 	}
 	defer resp.Body.Close()
 	body, _ = ioutil.ReadAll(resp.Body)
-	println(string(body))
 
 	//sign tx
 	requestSign := new(types.RequestSign)
-	requestSign.Name = "iris"
-	requestSign.Password = "1234567890"
+	requestSign.Name = config.Config.Name
+	requestSign.Password = config.Config.Password
 	json.Unmarshal(body, &requestSign.Tx)
 	rsStr, _ := json.Marshal(requestSign)
-	println(string(rsStr))
 	req, err = http.NewRequest("POST", server+"/sign", bytes.NewBuffer([]byte(rsStr)))
 	req.Header.Set("Content-Type", "application/json")
 	client = &http.Client{}
@@ -77,7 +81,6 @@ func Apply(c *gin.Context) {
 	}
 	defer resp.Body.Close()
 	body, _ = ioutil.ReadAll(resp.Body)
-	println(string(body))
 
 	//send tx
 	req, err = http.NewRequest("POST", server+"/tx", bytes.NewBuffer([]byte(body)))
@@ -89,7 +92,6 @@ func Apply(c *gin.Context) {
 	}
 	defer resp.Body.Close()
 	body, _ = ioutil.ReadAll(resp.Body)
-	println(string(body))
 	if err == nil {
 		faucet := &repository.Faucet{
 			Address: addr,
@@ -97,4 +99,16 @@ func Apply(c *gin.Context) {
 		}
 		err = faucet.Create()
 	}
+}
+
+func check(address string) bool {
+	faucets, _ := repository.FindFaucetByAddress(address)
+	var i int
+	for _, faucet := range faucets {
+		i = i + faucet.Amount
+	}
+	if i >= 100 {
+		return false
+	}
+	return true
 }
