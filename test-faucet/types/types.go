@@ -13,19 +13,6 @@ type Coin struct {
 
 type Coins []Coin
 
-type Tx struct {
-	TxInner "json:\"unwrap\""
-}
-
-type TxInner interface {
-	Wrap() Tx
-
-	// ValidateBasic should be a stateless check and just verify that the
-	// tx is properly formated (required strings not blank, signatures exist, etc.)
-	// this can also be run on the client-side for better debugging before posting a tx
-	ValidateBasic() error
-}
-
 type RequestSign struct {
 	Name     string `json:"name,omitempty" validate:"required,min=3,printascii"`
 	Password string `json:"password,omitempty" validate:"required,min=10"`

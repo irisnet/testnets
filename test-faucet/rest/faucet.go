@@ -1,19 +1,18 @@
-package main
+package rest
 
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/irisnet/testnets/test-faucet/types"
-	"os"
-	"io"
-	"log"
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
 	"bytes"
+	"github.com/irisnet/testnets/test-faucet/repository"
 )
 
 var iris = "0D7ACAD5C3F3EE3DBFB972F52D652509437E0044"
 var server = "http://116.62.62.39:8999"
+var amount = 10
 
 type TokenApply struct {
 	Addr string
@@ -24,7 +23,7 @@ type Nonce struct {
 	Data   uint32
 }
 
-func apply(c *gin.Context) {
+func Apply(c *gin.Context) {
 	var tokenApply TokenApply
 	err := c.ShouldBindJSON(&tokenApply)
 	if err != nil {
@@ -91,17 +90,11 @@ func apply(c *gin.Context) {
 	defer resp.Body.Close()
 	body, _ = ioutil.ReadAll(resp.Body)
 	println(string(body))
-	println(addr)
-}
-
-func main() {
-	r := gin.New()
-	//log
-	f, _ := os.Create("app.log")
-	gin.DefaultWriter = io.MultiWriter(f)
-	r.Use(gin.Logger())
-	log.SetOutput(gin.DefaultWriter) // You may need this
-
-	r.POST("/apply", apply)
-	r.Run("0.0.0.0:3434")
+	if err == nil {
+		faucet := &repository.Faucet{
+			Address: addr,
+			Amount:  amount,
+		}
+		err = faucet.Create()
+	}
 }
