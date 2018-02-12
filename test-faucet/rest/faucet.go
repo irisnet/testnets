@@ -36,17 +36,13 @@ func Apply(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "已达当日上限"})
 		return
 	}
-	resp, err := http.Get(server + "/query/nonce/" + iris)
-	if err != nil {
-		panic(err)
+	result := doGet(server + "/query/nonce/" + iris)
+	if result == nil {
 		return
 	}
-	body, err := ioutil.ReadAll(resp.Body)
-	print(string(body))
 	var nonce Nonce
-	json.Unmarshal(body, &nonce)
+	json.Unmarshal(result, &nonce)
 	nonce.Data += 1
-	defer resp.Body.Close()
 
 	//build send
 	si := new(types.SendInput)
@@ -56,42 +52,28 @@ func Apply(c *gin.Context) {
 	si.Fees = &types.Coin{Denom: denom, Amount: 1}
 	si.Sequence = nonce.Data
 	siStr, _ := json.Marshal(si)
-	req, err := http.NewRequest("POST", server+"/build/send", bytes.NewBuffer([]byte(siStr)))
-	req.Header.Set("Content-Type", "application/json")
-	client := &http.Client{}
-	resp, err = client.Do(req)
-	if err != nil {
-		panic(err)
+	result = doPost(server+"/build/send", siStr)
+	if result == nil {
+		return
 	}
-	defer resp.Body.Close()
-	body, _ = ioutil.ReadAll(resp.Body)
 
 	//sign tx
 	requestSign := new(types.RequestSign)
 	requestSign.Name = config.Config.Name
 	requestSign.Password = config.Config.Password
-	json.Unmarshal(body, &requestSign.Tx)
+	json.Unmarshal(result, &requestSign.Tx)
 	rsStr, _ := json.Marshal(requestSign)
-	req, err = http.NewRequest("POST", server+"/sign", bytes.NewBuffer([]byte(rsStr)))
-	req.Header.Set("Content-Type", "application/json")
-	client = &http.Client{}
-	resp, err = client.Do(req)
-	if err != nil {
-		panic(err)
+	result = doPost(server+"/sign", rsStr)
+	if result == nil {
+		return
 	}
-	defer resp.Body.Close()
-	body, _ = ioutil.ReadAll(resp.Body)
 
 	//send tx
-	req, err = http.NewRequest("POST", server+"/tx", bytes.NewBuffer([]byte(body)))
-	req.Header.Set("Content-Type", "application/json")
-	client = &http.Client{}
-	resp, err = client.Do(req)
-	if err != nil {
-		panic(err)
+	result = doPost(server+"/tx", result)
+	if result == nil {
+		return
 	}
-	defer resp.Body.Close()
-	body, _ = ioutil.ReadAll(resp.Body)
+	println(string(result))
 	if err == nil {
 		faucet := &repository.Faucet{
 			Address: addr,
@@ -111,4 +93,29 @@ func check(address string) bool {
 		return false
 	}
 	return true
+}
+
+func doGet(url string) []byte {
+	resp, err := http.Get(url)
+	defer resp.Body.Close()
+	if err != nil {
+		panic(err)
+		return nil
+	}
+	body, err := ioutil.ReadAll(resp.Body)
+	return body
+}
+
+func doPost(url string, data []byte) []byte {
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(data)))
+	req.Header.Set("Content-Type", "application/json")
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	defer resp.Body.Close()
+	if err != nil {
+		panic(err)
+		return nil
+	}
+	body, err := ioutil.ReadAll(resp.Body)
+	return body
 }
