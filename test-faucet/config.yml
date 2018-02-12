@@ -5,11 +5,11 @@ postgres:
   user: postgres
   password: admino0o0oo0
   sslmode: disable
-server: 0.0.0.0:3434
-total: 100
-amount: 10
-denom: fermion
-iris: 0D7ACAD5C3F3EE3DBFB972F52D652509437E0044
-name: iris
-password:
-client: http://116.62.62.39:8999
+server: 0.0.0.0:3434 #server host:port
+total: 100 #daily upper coin limit
+amount: 10 #coin amount
+denom: fermion #coin denom
+iris: 0D7ACAD5C3F3EE3DBFB972F52D652509437E0044 #gaia account address
+name: iris #gaia account name
+password:  #gaia account password
+client: http://116.62.62.39:8999 #gaia client
