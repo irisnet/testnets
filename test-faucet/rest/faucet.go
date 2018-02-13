@@ -9,6 +9,7 @@ import (
 	"bytes"
 	"github.com/irisnet/testnets/test-faucet/repository"
 	"github.com/irisnet/testnets/test-faucet/config"
+	"log"
 )
 
 type TokenApply struct {
@@ -38,6 +39,7 @@ func Apply(c *gin.Context) {
 	}
 	result := doGet(server + "/query/nonce/" + iris)
 	if result == nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
 	var nonce Nonce
@@ -54,6 +56,7 @@ func Apply(c *gin.Context) {
 	siStr, _ := json.Marshal(si)
 	result = doPost(server+"/build/send", siStr)
 	if result == nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
 
@@ -65,12 +68,14 @@ func Apply(c *gin.Context) {
 	rsStr, _ := json.Marshal(requestSign)
 	result = doPost(server+"/sign", rsStr)
 	if result == nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
 
 	//send tx
 	result = doPost(server+"/tx", result)
 	if result == nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
 	println(string(result))
@@ -81,6 +86,7 @@ func Apply(c *gin.Context) {
 		}
 		err = faucet.Create()
 	}
+	c.JSON(http.StatusOK, gin.H{"msg": "申请成功"})
 }
 
 func check(address string) bool {
@@ -99,7 +105,7 @@ func doGet(url string) []byte {
 	resp, err := http.Get(url)
 	defer resp.Body.Close()
 	if err != nil {
-		panic(err)
+		log.Panic(err.Error())
 		return nil
 	}
 	body, err := ioutil.ReadAll(resp.Body)
@@ -113,7 +119,7 @@ func doPost(url string, data []byte) []byte {
 	resp, err := client.Do(req)
 	defer resp.Body.Close()
 	if err != nil {
-		panic(err)
+		log.Panic(err.Error())
 		return nil
 	}
 	body, err := ioutil.ReadAll(resp.Body)
