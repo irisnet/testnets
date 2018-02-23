@@ -26,7 +26,7 @@ func Apply(c *gin.Context) {
 	iris := config.Config.Iris
 	server := config.Config.Client
 	amount := config.Config.Amount
-	denom := config.Config.Denom
+	coin := config.Config.Denom
 	err := c.ShouldBindJSON(&tokenApply)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
@@ -48,10 +48,10 @@ func Apply(c *gin.Context) {
 
 	//build send
 	si := new(types.SendInput)
-	si.Amount = types.Coins{types.Coin{Denom: denom, Amount: 10}}
+	si.Amount = types.Coins{types.Coin{Denom: coin, Amount: int64(amount)}}
 	si.From = &types.Actor{ChainID: "", App: "sigs", Address: iris}
 	si.To = &types.Actor{ChainID: "", App: "sigs", Address: addr}
-	si.Fees = &types.Coin{Denom: denom, Amount: 1}
+	si.Fees = &types.Coin{Denom: coin, Amount: 1}
 	si.Sequence = nonce.Data
 	siStr, _ := json.Marshal(si)
 	result = doPost(server+"/build/send", siStr)
@@ -91,11 +91,11 @@ func Apply(c *gin.Context) {
 
 func check(address string) bool {
 	faucets, _ := repository.FindFaucetByAddress(address)
-	var i int
+	i := config.Config.Amount
 	for _, faucet := range faucets {
 		i = i + faucet.Amount
 	}
-	if i >= 100 {
+	if i >= config.Config.Total {
 		return false
 	}
 	return true
