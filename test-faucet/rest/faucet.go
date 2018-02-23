@@ -14,6 +14,7 @@ import (
 
 type TokenApply struct {
 	Addr string `binding:"required"`
+	Coin string `binding:"required"`
 }
 
 type Nonce struct {
@@ -26,14 +27,18 @@ func Apply(c *gin.Context) {
 	iris := config.Config.Iris
 	server := config.Config.Client
 	amount := config.Config.Amount
-	coin := config.Config.Denom
 	err := c.ShouldBindJSON(&tokenApply)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
+	coin := tokenApply.Coin
+	feeCoin := config.Config.Coin
+	if coin == "" {
+		coin = config.Config.Coin
+	}
 	addr := tokenApply.Addr
-	if !check(addr) {
+	if !check(addr, coin) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "已达当日上限"})
 		return
 	}
@@ -51,7 +56,7 @@ func Apply(c *gin.Context) {
 	si.Amount = types.Coins{types.Coin{Denom: coin, Amount: int64(amount)}}
 	si.From = &types.Actor{ChainID: "", App: "sigs", Address: iris}
 	si.To = &types.Actor{ChainID: "", App: "sigs", Address: addr}
-	si.Fees = &types.Coin{Denom: coin, Amount: 1}
+	si.Fees = &types.Coin{Denom: feeCoin, Amount: 1}
 	si.Sequence = nonce.Data
 	siStr, _ := json.Marshal(si)
 	result = doPost(server+"/build/send", siStr)
@@ -83,14 +88,17 @@ func Apply(c *gin.Context) {
 		faucet := &repository.Faucet{
 			Address: addr,
 			Amount:  amount,
+			Coin:    coin,
 		}
 		err = faucet.Create()
 	}
-	c.JSON(http.StatusOK, gin.H{"msg": "申请成功"})
+	var res map[string]interface{}
+	json.Unmarshal(result, &res)
+	c.JSON(http.StatusOK, gin.H{"msg": "申请成功", "data": res})
 }
 
-func check(address string) bool {
-	faucets, _ := repository.FindFaucetByAddress(address)
+func check(address string, coin string) bool {
+	faucets, _ := repository.FindFaucet(address, coin)
 	i := config.Config.Amount
 	for _, faucet := range faucets {
 		i = i + faucet.Amount

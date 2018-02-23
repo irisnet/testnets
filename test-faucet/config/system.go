@@ -11,7 +11,7 @@ type Configuration struct {
 	Server   string    `yaml:"server"`
 	Total    int       `yaml:"total"`
 	Amount   int       `yaml:"amount"`
-	Denom    string    `yaml:"denom"`
+	Coin    string    `yaml:"coin"`
 	Iris     string    `yaml:"iris"`
 	Name     string    `yaml:"name"`
 	Password string    `yaml:"password"`
