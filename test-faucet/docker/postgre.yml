@@ -2,8 +2,8 @@ version: '2'
 services:
     faucet-postgresql:
         image: postgres:9.6.2
-#        volumes:
-#            - ~/volumes/faucet/postgresql/:/var/lib/postgresql/
+        volumes:
+            - ~/volumes/faucet/postgresql/:/var/lib/postgresql/
         environment:
             - POSTGRES_DB=test-faucet
             - POSTGRES_USER=postgres
