@@ -29,7 +29,7 @@ func Apply(c *gin.Context) {
 	amount := config.Config.Amount
 	err := c.ShouldBindJSON(&tokenApply)
 	if err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		c.JSON(http.StatusOK, gin.H{"error": err.Error()})
 		return
 	}
 	coin := tokenApply.Coin
