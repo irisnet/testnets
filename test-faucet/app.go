@@ -29,5 +29,6 @@ func main() {
 	log.SetOutput(gin.DefaultWriter) // You may need this
 
 	r.POST("/apply", rest.Apply)
+	r.GET("/addr", rest.Addr)
 	r.Run(config.Config.Server)
 }
