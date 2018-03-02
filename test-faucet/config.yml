@@ -6,8 +6,8 @@ postgres:
   password: admino0o0oo0
   sslmode: disable
 server: 0.0.0.0:3434 #server host:port
-total: 70 #daily upper coin limit
-amount: 11 #coin amount
+total: 100 #daily upper coin limit
+amount: 10 #coin amount
 coin: fermion #coin denom
 iris: 0D7ACAD5C3F3EE3DBFB972F52D652509437E0044 #gaia account address
 name: iris #gaia account name
