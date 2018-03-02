@@ -2,3 +2,4 @@ import:
 - package: github.com/gin-gonic/gin
 - package: github.com/jinzhu/gorm
 - package: github.com/lib/pq
+- package: github.com/gin-contrib/cors

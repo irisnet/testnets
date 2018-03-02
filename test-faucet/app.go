@@ -8,6 +8,7 @@ import (
 	"github.com/irisnet/testnets/test-faucet/config"
 	"github.com/irisnet/testnets/test-faucet/rest"
 	"github.com/irisnet/testnets/test-faucet/repository"
+	"github.com/gin-contrib/cors"
 )
 
 func main() {
@@ -30,5 +31,6 @@ func main() {
 
 	r.POST("/apply", rest.Apply)
 	r.GET("/addr", rest.Addr)
+	r.Use(cors.Default())
 	r.Run(config.Config.Server)
 }

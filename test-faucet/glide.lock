@@ -1,6 +1,8 @@
-hash: b54fdf57fa4a7198cd5a2dd41ec2d5cbe78f457bc390604d060c7d8222c63d2c
-updated: 2018-03-02T11:09:53.1390324+08:00
+hash: d7d124a37d3afc3e7cbbfcb86f5ab13adb2641b125831ca02d7b137c41fc2e01
+updated: 2018-03-02T15:05:54.7046343+08:00
 imports:
+- name: github.com/gin-contrib/cors
+  version: df6cfb7ff4a38d694dfebd0868ecb3e956171366
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/gin
