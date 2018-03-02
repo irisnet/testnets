@@ -7,7 +7,7 @@ import (
 )
 
 type Configuration struct {
-	Postgres *Postgres `yaml:"postgres"`
+	Postgres Postgres `yaml:"postgres"`
 	Server   string    `yaml:"server"`
 	Total    int       `yaml:"total"`
 	Amount   int       `yaml:"amount"`

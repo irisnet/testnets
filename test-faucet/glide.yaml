@@ -1,3 +1,4 @@
 import:
 - package: github.com/gin-gonic/gin
 - package: github.com/jinzhu/gorm
+- package: github.com/lib/pq

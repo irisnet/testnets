@@ -1,5 +1,5 @@
-hash: 8e1b6da9d2b9beb99d30d7a291d490d72c846c2717cef865418519bd9e217139
-updated: 2018-02-11T17:36:51.4498628+08:00
+hash: b54fdf57fa4a7198cd5a2dd41ec2d5cbe78f457bc390604d060c7d8222c63d2c
+updated: 2018-03-02T11:09:53.1390324+08:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
@@ -15,10 +15,17 @@ imports:
   - proto
 - name: github.com/jinzhu/gorm
   version: 0a51f6cdc55d1650d9ed3b4c13026cfa9133b01e
+  subpackages:
+  - dialects/postgres
 - name: github.com/jinzhu/inflection
   version: 1c35d901db3da928c72a72d8458480cc9ade058f
 - name: github.com/json-iterator/go
   version: 002b5ae34214fdc0bad508c2ed6f572fa96dfdda
+- name: github.com/lib/pq
+  version: 27ea5d92de30060e7121ddd543fe14e9a327e0cc
+  subpackages:
+  - hstore
+  - oid
 - name: github.com/mattn/go-isatty
   version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/ugorji/go
