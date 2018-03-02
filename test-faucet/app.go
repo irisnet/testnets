@@ -14,7 +14,7 @@ import (
 func main() {
 
 	//init config
-	if err := config.LoadConfiguration("./config.yml"); err != nil {
+	if err := config.LoadConfiguration("./test-faucet/config.yml"); err != nil {
 		log.Print("config error")
 		return
 	}
@@ -29,8 +29,10 @@ func main() {
 	r.Use(gin.Logger())
 	log.SetOutput(gin.DefaultWriter) // You may need this
 
+	r.Use(cors.Default())
 	r.POST("/apply", rest.Apply)
 	r.GET("/addr", rest.Addr)
-	r.Use(cors.Default())
+
+
 	r.Run(config.Config.Server)
 }
