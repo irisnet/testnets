@@ -29,7 +29,7 @@ func Apply(c *gin.Context) {
 	amount := config.Config.Amount
 	err := c.ShouldBindJSON(&tokenApply)
 	if err != nil {
-		c.JSON(http.StatusOK, gin.H{"error": err.Error()})
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 	coin := tokenApply.Coin
@@ -39,7 +39,7 @@ func Apply(c *gin.Context) {
 	}
 	addr := tokenApply.Addr
 	if !check(addr, coin) {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "已达当日上限"})
+		c.JSON(http.StatusOK, gin.H{"error": "已达当日上限"})
 		return
 	}
 	result := doGet(server + "/query/nonce/" + iris)
