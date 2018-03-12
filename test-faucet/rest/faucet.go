@@ -103,7 +103,7 @@ func check(address string, coin string) bool {
 	for _, faucet := range faucets {
 		i = i + faucet.Amount
 	}
-	if i >= config.Config.Total {
+	if i > config.Config.Total {
 		return false
 	}
 	return true
