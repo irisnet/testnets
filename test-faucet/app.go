@@ -14,7 +14,7 @@ import (
 func main() {
 
 	//init config
-	if err := config.LoadConfiguration("./test-faucet/config.yml"); err != nil {
+	if err := config.LoadConfiguration("./config.yml"); err != nil {
 		log.Print("config error")
 		return
 	}
