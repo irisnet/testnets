@@ -33,7 +33,7 @@ func Apply(c *gin.Context) {
 		return
 	}
 	coin := tokenApply.Coin
-	feeCoin := config.Config.Coin
+	//feeCoin := config.Config.Coin
 	if coin == "" {
 		coin = config.Config.Coin
 	}
@@ -56,7 +56,7 @@ func Apply(c *gin.Context) {
 	si.Amount = types.Coins{types.Coin{Denom: coin, Amount: int64(amount)}}
 	si.From = &types.Actor{ChainID: "", App: "sigs", Address: iris}
 	si.To = &types.Actor{ChainID: "", App: "sigs", Address: addr}
-	si.Fees = &types.Coin{Denom: feeCoin, Amount: 1}
+	//si.Fees = &types.Coin{Denom: feeCoin, Amount: 1}
 	si.Sequence = nonce.Data
 	siStr, _ := json.Marshal(si)
 	result = doPost(server+"/build/send", siStr)
@@ -71,6 +71,7 @@ func Apply(c *gin.Context) {
 	requestSign.Password = config.Config.Password
 	json.Unmarshal(result, &requestSign.Tx)
 	rsStr, _ := json.Marshal(requestSign)
+	println(string(rsStr))
 	result = doPost(server+"/sign", rsStr)
 	if result == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
@@ -78,6 +79,7 @@ func Apply(c *gin.Context) {
 	}
 
 	//send tx
+	println(string(result))
 	result = doPost(server+"/tx", result)
 	if result == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
