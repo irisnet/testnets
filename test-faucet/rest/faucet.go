@@ -4,12 +4,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/irisnet/testnets/test-faucet/types"
 	"net/http"
-	"io/ioutil"
 	"encoding/json"
-	"bytes"
 	"github.com/irisnet/testnets/test-faucet/repository"
 	"github.com/irisnet/testnets/test-faucet/config"
-	"log"
 )
 
 type TokenApply struct {
@@ -42,7 +39,7 @@ func Apply(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"error": "已达当日上限"})
 		return
 	}
-	result := doGet(server + "/query/nonce/" + iris)
+	result := DoGet(server + "/query/nonce/" + iris)
 	if result == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
@@ -59,11 +56,12 @@ func Apply(c *gin.Context) {
 	//si.Fees = &types.Coin{Denom: feeCoin, Amount: 1}
 	si.Sequence = nonce.Data
 	siStr, _ := json.Marshal(si)
-	result = doPost(server+"/build/send", siStr)
+	result = DoPost(server+"/build/send", siStr)
 	if result == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
+
 
 	//sign tx
 	requestSign := new(types.RequestSign)
@@ -71,21 +69,18 @@ func Apply(c *gin.Context) {
 	requestSign.Password = config.Config.Password
 	json.Unmarshal(result, &requestSign.Tx)
 	rsStr, _ := json.Marshal(requestSign)
-	println(string(rsStr))
-	result = doPost(server+"/sign", rsStr)
+	result = DoPost(server+"/sign", rsStr)
 	if result == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
 
 	//send tx
-	println(string(result))
-	result = doPost(server+"/tx", result)
+	result = DoPost(server+"/tx", result)
 	if result == nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
 		return
 	}
-	println(string(result))
 	if err == nil {
 		faucet := &repository.Faucet{
 			Address: addr,
@@ -109,29 +104,4 @@ func check(address string, coin string) bool {
 		return false
 	}
 	return true
-}
-
-func doGet(url string) []byte {
-	resp, err := http.Get(url)
-	defer resp.Body.Close()
-	if err != nil {
-		log.Panic(err.Error())
-		return nil
-	}
-	body, err := ioutil.ReadAll(resp.Body)
-	return body
-}
-
-func doPost(url string, data []byte) []byte {
-	req, err := http.NewRequest("POST", url, bytes.NewBuffer([]byte(data)))
-	req.Header.Set("Content-Type", "application/json")
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	defer resp.Body.Close()
-	if err != nil {
-		log.Panic(err.Error())
-		return nil
-	}
-	body, err := ioutil.ReadAll(resp.Body)
-	return body
 }
