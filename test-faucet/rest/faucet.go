@@ -40,12 +40,14 @@ func Apply(c *gin.Context) {
 		return
 	}
 	result := DoGet(server + "/query/nonce/" + iris)
-	if result == nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
-		return
-	}
+	//if result == nil {
+	//	c.JSON(http.StatusInternalServerError, gin.H{"error": http.StatusText(http.StatusInternalServerError)})
+	//	return
+	//}
 	var nonce Nonce
-	json.Unmarshal(result, &nonce)
+	if result!=nil {
+		json.Unmarshal(result, &nonce)
+	}
 	nonce.Data += 1
 
 	//build send
