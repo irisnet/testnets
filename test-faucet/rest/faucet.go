@@ -36,7 +36,7 @@ func Apply(c *gin.Context) {
 	}
 	addr := tokenApply.Addr
 	if !check(addr, coin) {
-		c.JSON(http.StatusOK, gin.H{"error": "已达当日上限"})
+		c.JSON(http.StatusOK, gin.H{"error": "overLimit"})
 		return
 	}
 	result := DoGet(server + "/query/nonce/" + iris)
@@ -93,7 +93,7 @@ func Apply(c *gin.Context) {
 	}
 	var res map[string]interface{}
 	json.Unmarshal(result, &res)
-	c.JSON(http.StatusOK, gin.H{"msg": "申请成功", "data": res})
+	c.JSON(http.StatusOK, gin.H{"msg": "success", "data": res})
 }
 
 func check(address string, coin string) bool {
