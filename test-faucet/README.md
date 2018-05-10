@@ -9,6 +9,20 @@ install PostgreSQL or by docker,
 And initialize database with config/faucet.sql.
 
 Modify config.yml for yourself, then:
+
 ```
-    go run app.go
+    # if window
+    go build -o build/iris-faucet.exe app.go
+    #else 
+    go build -o build/iris-faucet app.go
 ```
+and
+```
+   cp config.yml build/ 
+```
+
+if you will run it in docker,you will
+```
+    docker build -t $name ./
+```
+
