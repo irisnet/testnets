@@ -4,16 +4,21 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/irisnet/testnets/test-faucet/config"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
+	"time"
+	"log"
 )
 
 var DB *gorm.DB
 
-func InitDB() {
-	postgres := config.Config.Postgres
-	db, err := gorm.Open("postgres", "host=" + postgres.Host + " user=" + postgres.User+
-		" dbname="+ postgres.Dbname+ " sslmode="+ postgres.Sslmode+ " password="+ postgres.Password)
+func init() {
+	db, err := initDB()
 	if err != nil {
-		print(err)
+		log.Println("failed to init db,retry after 30s")
+		time.Sleep(30 * time.Second)
+		db, err = initDB()
+		if err != nil {
+			log.Panic(err.Error())
+		}
 	}
 
 	//use singular table by default，else table name will add 's'
@@ -27,3 +32,10 @@ func InitDB() {
 
 	//defer db.Close()
 }
+
+func initDB() (*gorm.DB, error) {
+	postgres := config.Config.Postgres
+	return gorm.Open("postgres", "host=" + postgres.Host + " user=" + postgres.User+
+		" dbname="+ postgres.Dbname+ " sslmode="+ postgres.Sslmode+ " password="+ postgres.Password)
+}
+

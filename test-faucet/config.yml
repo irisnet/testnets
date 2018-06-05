@@ -8,8 +8,8 @@ postgres:
 server: 0.0.0.0:3434 #server host:port
 total: 100 #daily upper coin limit
 amount: 10 #coin amount
-coin: fermion #coin denom
+coin: iris #coin denom
 iris: BDB77F9F53518A9AE1610643A38E2545F5037ECE #gaia account address
-name:  #gaia account name
-password:   #gaia account password
-client: http://localhost:8999 #gaia clientt
+name:  faucet #gaia account name
+password: #gaia account password
+client: http://47.104.155.125:8996 #gaia client

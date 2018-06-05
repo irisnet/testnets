@@ -16,13 +16,10 @@ Modify config.yml for yourself, then:
     #else 
     go build -o build/iris-faucet app.go
 ```
-and
-```
-   cp config.yml build/ 
-```
 
 if you will run it in docker,you will
 ```
-    docker build -t $name ./
+    docker build -t faucet ./
 ```
 
+docker/docker-compose.yml is an example for docker-compose

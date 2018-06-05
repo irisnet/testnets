@@ -1,0 +1,11 @@
+[[constraint]]
+  name = "github.com/gin-gonic/gin"
+  branch = "master"
+
+[[constraint]]
+  name = "github.com/jinzhu/gorm"
+  version = "~1.9.1"
+
+[[constraint]]
+  name = "github.com/gin-contrib/cors"
+  branch = "master"
