@@ -7,7 +7,11 @@
        iris init gen-tx --name=<your_name> --home=<path_to_home>
 ```
    代码示例：
+   ```
        iris init gen-tx --name=alice --home=/Users/user/Documents/bianjie/fuxi/1002
+  ```
+
+  ```
        {
         "app_message": {
           "secret": "similar spread grace kite security age pig easy always prize salon clip exhibit electric art abandon"
@@ -34,7 +38,8 @@
         }
        }
   ```
-   然后你可以发现在$IRISHOME/config目录下生成了一个gentx文件夹。里面存在一个gentx-<node-ID>.json文件。这个文件包含了如下信息：
+然后你可以发现在$IRISHOME/config目录下生成了一个gentx文件夹。里面存在一个gentx-<node-ID>.json文件。这个文件包含了如下信息：
+  
    ```
        {
         "node_id": "3385a8e3895b169eab3024079d987602b4d2b383",
