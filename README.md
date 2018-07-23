@@ -1,2 +1,2 @@
 # testnets
-Config files for connecting to testnets
+Files for connecting to testnets
