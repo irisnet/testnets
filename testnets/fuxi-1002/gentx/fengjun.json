@@ -1,0 +1,20 @@
+{
+  "node_id": "d37abdbbe4cc83d76c99c8bfb97e01503d10c4f5",
+  "ip": "47.74.183.232",
+  "validator": {
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "QdCambntNFO+EC8728sPoKhGK/dYy/YQOKCJAKRZzm0="
+    },
+    "power": 100,
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "fengjun",
+    "address": "61FDB3FB4D624A53526BC160676F70B034262852",
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "QdCambntNFO+EC8728sPoKhGK/dYy/YQOKCJAKRZzm0="
+    }
+  }
+}
