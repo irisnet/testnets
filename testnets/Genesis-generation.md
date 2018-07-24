@@ -2,7 +2,9 @@
 
 
 1. 每个希望成为验证人的参与者确保安装了对应版本的软件：iris v0.2.0
-2. 执行gentx命令，获得一个node-id.json的文件
+
+2. 执行gentx命令，获得一个node-id.json的文件。这个操作将默认生成一个余额为150iris的账户，该账户默认绑定100iris成为一个验证人候选人。
+
 ```
        iris init gen-tx --name=<your_name> --home=<path_to_home>
 ```
@@ -39,7 +41,7 @@
        }
   ```
 然后你可以发现在$IRISHOME/config目录下生成了一个gentx文件夹。里面存在一个gentx-<node-ID>.json文件。这个文件包含了如下信息：
-  
+
    ```
        {
         "node_id": "3385a8e3895b169eab3024079d987602b4d2b383",
@@ -70,6 +72,8 @@
 
    注意⚠️：json文中的IP改成公网IP
 
+   PS:在内侧期间只要通过QQ群共享文件就可以了
+
 4. 在完成提交后，所有人下载所有的gentx.json文件到本地
 
    将配置文件拷贝到默认路径下: `$IRISHOME/config/gentx`
@@ -81,6 +85,10 @@
        iris init --gen-txs -o --chain-id=fuxi-1001 --home=<pat_to_home>
    ```
 
+
+6. 修改默认参数
+
+  在config.toml文件中修改`timeout_commit=5000`,这样可以使默认的出块时间为5s
 
 
 
