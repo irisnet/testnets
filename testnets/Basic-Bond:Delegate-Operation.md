@@ -95,12 +95,79 @@ iriscli stake validator --address-validator=<your_address> --chain-id=<name_of_t
 
 在测试网中，你可以将iris代币委托给验证人，这个验证人也可以是你自己。
 
-命令如下：
+查询所有的验证人信息：
+
 ```
-iriscli stake delegate --amount=10iris --address-delegator=<your_address> --address-validator=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
+iriscli stake validators
+```
+示例输出：
+```
+Validator
+Owner: cosmosaccaddr1v87m876dvf99x5ntc9sxwmmskq6zv2zj06ntu3
+Validator: cosmosvalpub1zcjduc3qg8gf4xdea56980ss9uaahjc05z5yv2lhtr9lvypc5zyspfzeeeksnu9fn7
+Shares: Status Bonded,  Amount: 100/1
+Delegator Shares: 0/1
+Description: {fengjun   }
+Bond Height: 0
+Proposer Reward Pool:
+Commission: 0/1
+Max Commission Rate: 0/1
+Comission Change Rate: 0/1
+Commission Change Today: 0/1
+Previously Bonded Stares: 0/1
+
+Validator
+Owner: cosmosaccaddr10duwk48x25tgpk064u8xsx4dh8trdrmhaqc9ac
+Validator: cosmosvalpub1zcjduc3q00x9t36e7q2gtfax4u9f8ynqy6w2dlepmm7gxvmz2gehplxuvg8qeylwmn
+Shares: Status Bonded,  Amount: 100/1
+Delegator Shares: 0/1
+Description: {yelong  https://bianjie.ai yelong}
+Bond Height: 0
+Proposer Reward Pool:
+Commission: 0/1
+Max Commission Rate: 0/1
+Comission Change Rate: 0/1
+Commission Change Today: 0/1
+Previously Bonded Stares: 0/1
 ```
 
-通过查看账户余额的变化，可以看到余额减少了。
+
+命令如下：
+```
+iriscli stake delegate --amount=10iris --address-delegator=<your_address> --address-validator=<bonded_validator_owner_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
+```
+
+命令举例：
+
+```
+iriscli stake delegate --amount=10iris --address-delegator=cosmosaccaddr12njc8n8e7fn8n2cf38qxdu44yajfch6zydhf2g --address-validator=cosmosaccaddr15pzxwa0ekcj9a2xpngqxazef5lkyhhskmru36f --name=test --chain-id=fuxi-1002
+```
+
+通过以下命令查询验证人信息的变化。
+```
+iriscli stake validator <bonded_validator_owner_address>
+```
+
+命令举例如下，可以看到验证人的绑定数量增加了。
+
+```
+iriscli stake validator cosmosaccaddr1lxeyjlh3u6663keqdqus7sjxkxs05m9nd89gh7
+Validator
+Owner: cosmosaccaddr1lxeyjlh3u6663keqdqus7sjxkxs05m9nd89gh7
+Validator: cosmosvalpub1zcjduc3qglz36dm29dy5ygqjwhdpsx2myl0077ehn5nt3uvnw8pxjy66y9cqfm9myq
+Shares: Status Bonded,  Amount: 110/1
+Delegator Shares: 10/1
+Description: {zhiqiang  https://www.irisnet.org zhiqiang}
+Bond Height: 0
+Proposer Reward Pool:
+Commission: 0/1
+Max Commission Rate: 0/1
+Comission Change Rate: 0/1
+Commission Change Today: 0/1
+Previously Bonded Stares: 0/1
+```
+
+同时通过查看账户余额的变化，可以看到余额减少了。
 
 
 
