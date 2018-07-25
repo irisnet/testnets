@@ -87,8 +87,13 @@
 
 
 6. 修改默认参数
+  
+  官方seed节点：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46656
 
-  在config.toml文件中修改`timeout_commit=5000`,这样可以使默认的出块时间为5s
+  在config.toml文件中：
+  * 修改`timeout_commit=5000`,这样可以使默认的出块时间为5s
+  * 修改`moniker`为一个容易辨别的名字,这样可以方便大家认出你。
+
 
 
 
