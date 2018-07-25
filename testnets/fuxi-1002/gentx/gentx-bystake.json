@@ -1,0 +1,20 @@
+{
+  "node_id": "33edc270c3adf180fa1bf9fea5d2999ff9dc81a0",
+  "ip": "13.58.19.0",
+  "validator": {
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "E1SBFNm23oyAZr8ugokxBGGYr2JCLvDKNAnW6vGXk/4="
+    },
+    "power": 100,
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "bystake",
+    "address": "AF3C6CA0C6D588896269F7044BBF571F2C4E832F",
+    "pub_key": {
+      "type": "AC26791624DE60",
+      "value": "E1SBFNm23oyAZr8ugokxBGGYr2JCLvDKNAnW6vGXk/4="
+    }
+  }
+}
