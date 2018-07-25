@@ -117,3 +117,20 @@ iriscli stake unbond --address-delegator=<your_address> --address-validator=<bon
 ```
 iriscli account <your_address>
 ```
+
+
+### 验证人被处罚后如何处理
+
+若节点不能保证持续在线，则会被罚没一部分抵押的iris。在fuxi-1002中，如果前200块中，某个验证人错过了超过100个投票，那么验证人将被惩罚，即被slash。
+
+这时，如果查询本地状态会发现`power`变为0.
+
+```json
+{"node_info":{"id":"e43f676fd19ad5f1869d9edd2a6800dc48f40335","listen_addr":"172.20.155.233:26656","network":"fuxi-1000","version":"0.21.0","channels":"40202122233038","moniker":"bianjie","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"2A815BA6C6F11991F3BA9B57554617E6646C0D64","latest_app_hash":"38E4313CD4A50513BA0A259D0F86C5845DF9A12C","latest_block_height":"172","latest_block_time":"2018-07-17T14:27:41.023715315Z","catching_up":false},"validator_info":{"address":"F23FF36BD5B90C33CE3A03ED72DBDCF5EC07D6AF","pub_key":{"type":"tendermint/PubKeyEd25519","value":"2JoNf1gavJ1d6XFIumO1Mki5GVMOcg58AioHksU3maE="},"voting_power":"0"}}
+```
+
+通过执行以下命令，恢复验证人的身份。
+
+```
+iriscli stake unrevoke <address> --name=<name>--chain-id=fuxi-1002
+```
