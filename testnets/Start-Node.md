@@ -45,7 +45,7 @@
 ```
 通过执行以下操作确认节点的运行状态：
 ```
-    gaiacli status
+    iriscli status
 ```
 示例输出：
 ```json
