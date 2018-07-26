@@ -95,12 +95,79 @@ iriscli stake validator --address-validator=<your_address> --chain-id=<name_of_t
 
 在测试网中，你可以将iris代币委托给验证人，这个验证人也可以是你自己。
 
-命令如下：
+查询所有的验证人信息：
+
 ```
-iriscli stake delegate --amount=10iris --address-delegator=<your_address> --address-validator=<bonded_validator_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
+iriscli stake validators
+```
+示例输出：
+```
+Validator
+Owner: cosmosaccaddr1v87m876dvf99x5ntc9sxwmmskq6zv2zj06ntu3
+Validator: cosmosvalpub1zcjduc3qg8gf4xdea56980ss9uaahjc05z5yv2lhtr9lvypc5zyspfzeeeksnu9fn7
+Shares: Status Bonded,  Amount: 100/1
+Delegator Shares: 0/1
+Description: {fengjun   }
+Bond Height: 0
+Proposer Reward Pool:
+Commission: 0/1
+Max Commission Rate: 0/1
+Comission Change Rate: 0/1
+Commission Change Today: 0/1
+Previously Bonded Stares: 0/1
+
+Validator
+Owner: cosmosaccaddr10duwk48x25tgpk064u8xsx4dh8trdrmhaqc9ac
+Validator: cosmosvalpub1zcjduc3q00x9t36e7q2gtfax4u9f8ynqy6w2dlepmm7gxvmz2gehplxuvg8qeylwmn
+Shares: Status Bonded,  Amount: 100/1
+Delegator Shares: 0/1
+Description: {yelong  https://bianjie.ai yelong}
+Bond Height: 0
+Proposer Reward Pool:
+Commission: 0/1
+Max Commission Rate: 0/1
+Comission Change Rate: 0/1
+Commission Change Today: 0/1
+Previously Bonded Stares: 0/1
 ```
 
-通过查看账户余额的变化，可以看到余额减少了。
+
+命令如下：
+```
+iriscli stake delegate --amount=10iris --address-delegator=<your_address> --address-validator=<bonded_validator_owner_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
+```
+
+命令举例：
+
+```
+iriscli stake delegate --amount=10iris --address-delegator=cosmosaccaddr12njc8n8e7fn8n2cf38qxdu44yajfch6zydhf2g --address-validator=cosmosaccaddr15pzxwa0ekcj9a2xpngqxazef5lkyhhskmru36f --name=test --chain-id=fuxi-1002
+```
+
+通过以下命令查询验证人信息的变化。
+```
+iriscli stake validator <bonded_validator_owner_address>
+```
+
+命令举例如下，可以看到验证人的绑定数量增加了。
+
+```
+iriscli stake validator cosmosaccaddr1lxeyjlh3u6663keqdqus7sjxkxs05m9nd89gh7
+Validator
+Owner: cosmosaccaddr1lxeyjlh3u6663keqdqus7sjxkxs05m9nd89gh7
+Validator: cosmosvalpub1zcjduc3qglz36dm29dy5ygqjwhdpsx2myl0077ehn5nt3uvnw8pxjy66y9cqfm9myq
+Shares: Status Bonded,  Amount: 110/1
+Delegator Shares: 10/1
+Description: {zhiqiang  https://www.irisnet.org zhiqiang}
+Bond Height: 0
+Proposer Reward Pool:
+Commission: 0/1
+Max Commission Rate: 0/1
+Comission Change Rate: 0/1
+Commission Change Today: 0/1
+Previously Bonded Stares: 0/1
+```
+
+同时通过查看账户余额的变化，可以看到余额减少了。
 
 
 
@@ -116,4 +183,21 @@ iriscli stake unbond --address-delegator=<your_address> --address-validator=<bon
 
 ```
 iriscli account <your_address>
+```
+
+
+### 验证人被处罚后如何处理
+
+若节点不能保证持续在线，则会被罚没一部分抵押的iris。在fuxi-1002中，如果前200块中，某个验证人错过了超过100个投票，那么验证人将被惩罚，即被slash。
+
+这时，如果查询本地状态会发现`power`变为0.
+
+```json
+{"node_info":{"id":"e43f676fd19ad5f1869d9edd2a6800dc48f40335","listen_addr":"172.20.155.233:26656","network":"fuxi-1000","version":"0.21.0","channels":"40202122233038","moniker":"bianjie","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"2A815BA6C6F11991F3BA9B57554617E6646C0D64","latest_app_hash":"38E4313CD4A50513BA0A259D0F86C5845DF9A12C","latest_block_height":"172","latest_block_time":"2018-07-17T14:27:41.023715315Z","catching_up":false},"validator_info":{"address":"F23FF36BD5B90C33CE3A03ED72DBDCF5EC07D6AF","pub_key":{"type":"tendermint/PubKeyEd25519","value":"2JoNf1gavJ1d6XFIumO1Mki5GVMOcg58AioHksU3maE="},"voting_power":"0"}}
+```
+
+通过执行以下命令，恢复验证人的身份。
+
+```
+iriscli stake unrevoke <address> --name=<name>--chain-id=fuxi-1002
 ```

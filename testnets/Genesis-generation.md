@@ -68,7 +68,7 @@
 
    `app_gen_tx`中说明了拥有这个节点的账户信息。这个账户的助记词就是刚刚的secret
 
-3. 将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/master/testnets/fuxi-1002/gentx`目录下：
+3. 将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/testnets/fuxi-1002/gentx`目录下：
 
    注意⚠️：json文中的IP改成公网IP
 
@@ -87,8 +87,13 @@
 
 
 6. 修改默认参数
+  
+  官方seed节点：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46656
 
-  在config.toml文件中修改`timeout_commit=5000`,这样可以使默认的出块时间为5s
+  在config.toml文件中：
+  * 修改`timeout_commit=5000`,这样可以使默认的出块时间为5s
+  * 修改`moniker`为一个容易辨别的名字,这样可以方便大家认出你。
+
 
 
 
