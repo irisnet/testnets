@@ -8,7 +8,7 @@
 iriscli keys add iris 
 ```
 
-请按照提示输入密码，这个命令将创建一个代号为iris的本地账户。示例输出：
+请按照提示输入密码，注意⚠️：密码长度至少为8位。这个命令将创建一个代号为iris的本地账户。示例输出：
 
 ```
 iriscli keys list
@@ -70,16 +70,15 @@ reward spider ethics over news flower crazy ask term solar gesture artwork tonig
 ```
 
     iriscli send --amount=10iris --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
-```   
+```
 
 在完成转账后，通过以下命令可以验证转账是否成功：
 ```
     iriscli account <origin_address>
     iriscli account <destination_address>
-```   
+```
 
 同时，你也可以查询在某一个区块上的账户余额。
 ```
 gaiacli account <your_address> --block=<block_height>
 ```
-
