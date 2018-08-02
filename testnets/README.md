@@ -1,4 +1,4 @@
-# IRIShub 测试网
+# IRISnet测试网
 
 
  * [IRIShub 简介](#IRIShub-简介)
