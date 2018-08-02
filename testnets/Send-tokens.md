@@ -46,7 +46,6 @@ iriscli account cosmosaccaddr1sn6e9c3vj89ss9f9jhtvyg94m922p69ex9asn5
 
 ```
 	iriscli key add alice
-
 ```
 注意⚠️：密码长度至少为8位。
 

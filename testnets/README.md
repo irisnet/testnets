@@ -121,9 +121,12 @@ make get_vendor_deps && make install
 iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下，所以在运行iris前，需要指定一个目录作为$IRISHOME。若不配置目录，则\$IRISHOME默认为：/\$HOME/.iris。
 
 * **初始化**
-执行以下操作，会在$IRISHOME下创建两个文件夹：/config 和 /data。/config终会包含两个重要文件：genesis.json 和config.toml。genesis文件中定义了区块链网络的初始状态，而config.toml指定了iris软件模块的重要组成部分。
+  执行以下操作，
+  ```
+  iris init --home=<iris-home>
+  ```
 
-
+会在$IRISHOME下创建两个文件夹：/config 和 /data。/config终会包含两个重要文件：genesis.json 和config.toml。genesis文件中定义了区块链网络的初始状态，而config.toml指定了iris软件模块的重要组成部分。
 
 * **下载配置文件文件**
 
@@ -140,8 +143,8 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 在config.tmol文件中可以配置以下信息：
 
-- 将moniker字段配置称为自定义的名称，这样便于区分不同的节点
-- seed字段用语设置种子节点，在fuxi-1002中的官方中字节点为：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46657
+1. 将moniker字段配置称为自定义的名称，这样便于区分不同的节点
+2. seed字段用语设置种子节点，在fuxi-1002中的官方种子节点为：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46657
 
 * **启动一个全节点**
 
@@ -159,9 +162,13 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 通过以上命令可以查看状态：
 
-- “syncing":false表示节点与网络保持同步
-- “syncing":true表示节点正在同步区块
-- "latest_block_height" 表示最新的区块高度
+1. “syncing":false表示节点与网络保持同步
+
+2. “syncing":true表示节点正在同步区块
+
+3. "latest_block_height" 表示最新的区块高度
+
+   ​
 
 
 * **重置一个全节点**
@@ -176,11 +183,11 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 若Genesis文件有变动，则需要下载新的文件到$IRISHOME/config目录下。
 
-1. 重置iris
+2.  重置iris
 
-    iris unsafe_reset_all --home=<home>
+iris unsafe_reset_all --home=<home>
 
-1. 重新启动
+3. 重新启动
 
 通过以下命令启动全节点，并将日志输出到文件中：
 
