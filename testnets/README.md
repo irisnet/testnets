@@ -1,12 +1,21 @@
 # IRIShub 测试网
 
+
+ * [IRIShub 简介](#IRIShub-简介)
+  * [如何加入fuxi-1002测试网](#如何加入fuxi-1002测试网)
+    * [安装IRIShub](#安装IRIShub)
+    * [部署一个全节点](#部署一个全节点)
+    * [测试IRISHub相关功能](#测试IRISHub相关功能)
+
 ## IRIShub 简介
 
 IRIS Hub是在Cosmos生态中的区域性枢纽，提供iService服务
 
-## 安装IRIShub
+## 如何加入fuxi-1002测试网
 
-### 服务器配置要求
+### 安装IRIShub
+
+#### 服务器配置要求
 
 
 首先，你需要配置一台服务器。你的验证人节点应该能够一直运行，使用你可能需要在一台数据中心的服务器。任何像AWS、GCP、DigitalOcean中的云服务器都是适合的。
@@ -21,7 +30,7 @@ IRIS Hub是用Go语言编写的。它可以在任何能够编译并运行Go语�
 * 允许的入方向的链接：TCP端口46656和46657
 
 
-### 方法1：下载发行版安装
+#### 方法1：下载发行版安装
 
 进入下载页: https://github.com/irisnet/irishub/releases/
 下载对应版本的可执行文件
@@ -35,9 +44,9 @@ v0.2.0
 $ iriscli version
 v0.2.0
 ```
-### 方法2：源码编译安装
+#### 方法2：源码编译安装
 
-### 安装Go版本 1.10+ 
+#### 安装Go版本 1.10+ 
 
 
 系统要求：
@@ -79,20 +88,20 @@ Ubuntu LTS 16.04
 
 
 
-### 下载源码并安装
+#### 下载源码并安装
 
 
 在完成Go的安装后，通过以下命令下载并安装IRIS hub相关程序.
 
 ```
-    mkdir -p $GOPATH/src/github.com/irisnet
-    cd $GOPATH/src/github.com/irisnet
-    git clone https://github.com/irisnet/irishub
-    cd irishub && git checkout v0.2.0
+mkdir -p $GOPATH/src/github.com/irisnet
+cd $GOPATH/src/github.com/irisnet
+git clone https://github.com/irisnet/irishub
+cd irishub && git checkout v0.2.0
 
-    curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
-    make get_vendor_deps && make install
+make get_vendor_deps && make install
 ```
 
 以上命令将完成 iris 和 iriscli的安装. 若出现对应的版本号则说明安装成功。
@@ -105,3 +114,98 @@ Ubuntu LTS 16.04
     v0.2.0
 ```
 
+### 部署一个全节点
+
+* **配置软件运行的目录**
+
+iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下，所以在运行iris前，需要指定一个目录作为$IRISHOME。若不配置目录，则\$IRISHOME默认为：/\$HOME/.iris。
+
+* **初始化**
+执行以下操作，会在$IRISHOME下创建两个文件夹：/config 和 /data。/config终会包含两个重要文件：genesis.json 和config.toml。genesis文件中定义了区块链网络的初始状态，而config.toml指定了iris软件模块的重要组成部分。
+
+
+
+* **下载配置文件文件**
+
+
+下载这fuxi-1002中用到的配置文件，并替换原有的/$IRISHOME/config目录下的文件：
+
+    cd $IRISHOME/config/
+    rm genesis.json
+    rm config.toml
+    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-1002/config/config.toml
+    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-1002/config/genesis.json
+
+* **修改配置文件**
+
+在config.tmol文件中可以配置以下信息：
+
+- 将moniker字段配置称为自定义的名称，这样便于区分不同的节点
+- seed字段用语设置种子节点，在fuxi-1002中的官方中字节点为：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46657
+
+* **启动一个全节点**
+
+通过以下命令启动全节点，并将日志输出到文件中：
+
+    iris start --home {path_to_your_home} > log文件地址 &
+
+通过执行以下操作确认节点的运行状态：
+
+    iriscli status
+
+示例输出：
+
+    {"node_info":{"id":"3fb472c641078eaaee4a4acbe32841f18967672c","listen_addr":"172.31.0.190:46656","network":"fuxi-1002","version":"0.21.0","channels":"4020212223303800","moniker":"name","other":["amino_version=0.9.9","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:46657"]},"sync_info":{"latest_block_hash":"7B1168B2055B19F811773EEE56BB3C9ECB6F3B37","latest_app_hash":"B8F7F8BF18E3F1829CCDE26897DB905A51AF4372","latest_block_height":12567,"latest_block_time":"2018-07-26T02:43:56.757513477Z","syncing":false},"validator_info":{"address":"CAF80DAEC0F4A7036DD2116B56F89B07F43A133E","pub_key":{"type":"AC26791624DE60","value":"Cl6Yq+gqZZY14QxrguOaZqAswPhluv7bDfcyQx2uSRc="},"voting_power":0}}
+
+通过以上命令可以查看状态：
+
+- “syncing":false表示节点与网络保持同步
+- “syncing":true表示节点正在同步区块
+- "latest_block_height" 表示最新的区块高度
+
+
+* **重置一个全节点**
+
+若需要将一个节点重启，则可以通过以下命令让节点再次通过与网络保持同步。
+
+重置IRIShub节点流程如下：
+
+1. 关闭iris进程
+
+    kill -9 <PID>
+
+若Genesis文件有变动，则需要下载新的文件到$IRISHOME/config目录下。
+
+1. 重置iris
+
+    iris unsafe_reset_all --home=<home>
+
+1. 重新启动
+
+通过以下命令启动全节点，并将日志输出到文件中：
+
+    iris start --home <path_to_your_home> > log文件地址 &
+
+通过执行以下操作确认节点的运行状态：
+
+    iriscli status
+
+示例输出：
+
+```
+{"node_info":{"id":"3fb472c641078eaaee4a4acbe32841f18967672c","listen_addr":"172.31.0.190:46656","network":"fuxi-1002","version":"0.21.0","channels":"4020212223303800","moniker":"name","other":["amino_version=0.9.9","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:46657"]},"sync_info":{"latest_block_hash":"7B1168B2055B19F811773EEE56BB3C9ECB6F3B37","latest_app_hash":"B8F7F8BF18E3F1829CCDE26897DB905A51AF4372","latest_block_height":12567,"latest_block_time":"2018-07-26T02:43:56.757513477Z","syncing":false},"validator_info":{"address":"CAF80DAEC0F4A7036DD2116B56F89B07F43A133E","pub_key":{"type":"AC26791624DE60","value":"Cl6Yq+gqZZY14QxrguOaZqAswPhluv7bDfcyQx2uSRc="},"voting_power":100}}
+```
+
+通过以上命令可以查看状态：
+
+“syncing":false表示节点与网络保持同步
+
+"latest_block_height":表示最新的区块高度
+
+
+### 测试IRISHub相关功能
+
+在接下来你可以执行以下操作测试IRISHub的功能：
+
+* 账户操作：[链接](https://github.com/irisnet/testnets/blob/master/testnets/Send-tokens.md)
+* PoS相关的绑定&委托操作： [链接](https://github.com/irisnet/testnets/blob/master/testnets/Basic-Bond:Delegate-Operation.md)
