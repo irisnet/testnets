@@ -8,7 +8,7 @@ IRISnet is named after Greek goddess **Iris**, said to be the personification of
 
 ### Step 1: Install Iris on Your Server
 
-Please follow this instruction to get **Iris** installed locally.
+Please follow this [instruction](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/install%20iris.md) to get **Iris** installed locally.
 
 
 ### Step 2: Setting Up Your Node
@@ -33,7 +33,7 @@ external_address = "<your-public-IP>"
 
 
 Optional:
-Set `addr_book_strict` to `false` . 
+Set `addr_book_strict` to `false` to make peering more easily. 
 
 ```
 addr_book_strict = false
