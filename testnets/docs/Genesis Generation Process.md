@@ -2,7 +2,7 @@
 
 ## Requirement
 
-You must have install the correct version of **Iris**.
+You must have follow this [guide](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/install%20iris.md) to install the correct version of **Iris**.
 
 ## Step 1: 
 
