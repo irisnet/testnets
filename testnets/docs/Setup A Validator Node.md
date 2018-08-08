@@ -2,9 +2,14 @@
 
 Before setting up your validator node, make sure you've already installed  **Iris** by this [guide](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/install%20iris.md)
 
+## What is a validator
+
+The IRISHub is based on a consensus engine called Tendermint. It relies on a set of validators to secure the network. The role of validators is to run a full-node and participate in consensus by broadcasting votes which contain cryptographic signatures signed by their private key. Validators commit new blocks in the blockchain and receive revenue in exchange for their work. They must also participate in governance by voting on proposals. Validators are weighted according to their total stake.
+
+
 ## Running a Validator Node
 
-Validators are responsible for committing new blocks to the blockchain through voting. A validator's stake is slashed if they become unavailable, double sign a transaction, or don't cast their votes. Please read about [Sentry Node Architecture](https://github.com/cosmos/cosmos-sdk/blob/master/validators/validator-faq.md#how-can-validators-protect-themselves-from-denial-of-service-attacks) to protect your node from DDOS attacks and to ensure high-availability.
+Validators are responsible for committing new blocks to the blockchain through voting. A validator's stake is slashed if they become unavailable, double sign a transaction, or don't cast their votes. Please read about [Sentry Node Architecture](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Setup%20A%20Sentry%20Node.md) to protect your node from DDOS attacks and to ensure high-availability.
 
 ### Create A Validator
 
