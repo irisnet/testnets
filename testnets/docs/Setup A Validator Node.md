@@ -1,6 +1,6 @@
 # Setup A Validator Node
 
-Before setting up your validator node, make sure you've already gone through the [Full Node Setup](https://github.com/cosmos/cosmos-sdk/blob/master/getting-started/full-node.md) guide.
+Before setting up your validator node, make sure you've already installed  **Iris** by this [guide](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/install%20iris.md)
 
 ## Running a Validator Node
 

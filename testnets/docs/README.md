@@ -42,14 +42,16 @@ Your full node has been initialized!
 
 ### Get Configuration Files
 
-Please download the genesis and config files. 
+If you want to be part of the genesis file geneartion process, please follow this [guide](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Genesis%20Generation%20Process.md) to sumbmit a json file. Otherwise, you could always send related transaction to become a validator later. 
+
+After the genesis file generation process is finished, please download the genesis and the default config file. 
 
 ```
 cd $IRISHOME/config/
 rm genesis.json
 rm config.toml
-wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-1002/config/config.toml
-wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-1002/config/genesis.json
+wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/config.toml
+wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-20002/config/genesis.json
 ```
 
 ### Add Seed Nodes
