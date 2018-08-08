@@ -95,4 +95,4 @@ If you miss the genesis file generation process, you can still upgrade your full
 
 ##  Useful Links
 
-* Riot chat: 
+* Riot chat: #irisvalidators:matrix.org
