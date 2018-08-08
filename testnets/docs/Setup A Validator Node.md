@@ -56,10 +56,8 @@ iriscli stake validator \
 Your validator is active if the following command returns anything:
 
 ```
-iriscli advanced tendermint validator-set | grep "$(gaiad tendermint show_validator)"
+iriscli advanced tendermint validator-set | grep "$(iris tendermint show_validator)"
 ```
 
-You should also be able to see your validator on the [Explorer](https://explorecosmos.network/validators). You are looking for the `bech32` encoded `address` in the `~/.iris/config/priv_validator.json` file.
-
-::: warning Note To be in the validator set, you need to have more total voting power than the 100th validator. :::
+You should also be able to see your validator on the [Explorer](https://testnet.irisplorer.io). You are looking for the `bech32` encoded `address` in the `~/.iris/config/priv_validator.json` file.
 
