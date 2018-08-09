@@ -51,12 +51,12 @@ cd $IRISHOME/config/
 rm genesis.json
 rm config.toml
 wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/config.toml
-wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-20002/config/genesis.json
+wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/genesis.json
 ```
 
 ### Add Seed Nodes
 
-Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.gaiad/config/config.toml`. Here are some seed nodes you can use:
+Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$IRISHOME/config/config.toml`. Here are some seed nodes you can use:
 
 ```
 3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46657
@@ -71,7 +71,7 @@ Meanwhile, you could add some known full node as `Persistent Peer`. Your node co
 Start the full node with this command:
 
 ```
-iris start --home=<IRISHOME> > iris.log
+iris start --home=$IRISHOME > iris.log
 ```
 
 Check that everything is running smoothly:
@@ -92,7 +92,7 @@ You now have an active full node. What's the next step?
 
 If you have participated in the genesis file generation process, you should be a validator once you are fully synced. 
 
-If you miss the genesis file generation process, you can still upgrade your full node to become a IRISnet Validator. The top 100 validators have the ability to propose new blocks to the IRIS Hub. Continue onto [the Validator Setup](https://github.com/cosmos/cosmos-sdk/blob/master/docs/validators/validator-setup.md).
+If you miss the genesis file generation process, you can still upgrade your full node to become a IRISnet Validator. The top 100 validators have the ability to propose new blocks to the IRIS Hub. Continue onto [the Validator Setup](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Setup%20A%20Validator%20Node.md).
 
 
 ##  Useful Links
