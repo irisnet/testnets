@@ -99,7 +99,7 @@ Ubuntu LTS 16.04
 mkdir -p $GOPATH/src/github.com/irisnet
 cd $GOPATH/src/github.com/irisnet
 git clone https://github.com/irisnet/irishub
-cd irishub && git checkout v0.3.3
+cd irishub && git checkout v0.3.4
 
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
@@ -110,10 +110,10 @@ make get_vendor_deps && make install
 
 ```
     $ iris version
-    v0.3.3
+    v0.3.4
     
     $ iriscli version
-    v0.3.3
+    v0.3.4
 ```
 
 ### 部署一个全节点
