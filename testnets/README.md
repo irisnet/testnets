@@ -132,9 +132,9 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 * **下载配置文件文件**
 
-如果你想参加到genesis文件的生成流程中，请根据以下[文档]()提交相关文件。
+如果你想参加到genesis文件的生成流程中，请根据以下[文档](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs_CN/Genesis-generation.md)提交相关文件。
 
-下载这fuxi-2000中用到的配置文件，并替换原有的/$IRISHOME/config目录下的文件：
+下载fuxi-2000的配置文件，并替换原有的/$IRISHOME/config目录下的文件：
 
     cd $IRISHOME/config/
     rm genesis.json
@@ -154,7 +154,7 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 通过以下命令启动全节点，并将日志输出到文件中：
 
-    iris start --home {path_to_your_home} > log文件地址 &
+    iris start --home $IRISHOME > log &
 
 通过执行以下操作确认节点的运行状态：
 
@@ -188,7 +188,7 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 2.  重置iris
 
-iris unsafe_reset_all --home=<home>
+iris unsafe_reset_all --home=$IRIShome
 
 3. 重新启动
 
@@ -217,5 +217,5 @@ iris unsafe_reset_all --home=<home>
 
 在接下来你可以执行以下操作测试IRISHub的功能：
 
-* 账户操作：[链接](https://github.com/irisnet/testnets/blob/master/testnets/Send-tokens.md)
-* PoS相关的绑定&委托操作： [链接](https://github.com/irisnet/testnets/blob/master/testnets/Basic-Bond:Delegate-Operation.md)
+* Token Transfer：[Link](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs_CN/转账交易.md)
+* Bond&Delegate： [Link]()
