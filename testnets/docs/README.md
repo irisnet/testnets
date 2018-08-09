@@ -87,6 +87,14 @@ You could see the following
 ```
 When you see `catching_up` is `false`, it means the node is synced with the rest of testnet, otherwise it means it's still syncing.
 
+### Setup a sentry node
+
+A validator is under the risk of being attacked. You could follow this [guide](https://github.com/irisnet/testnets/blob/master/testnets/docs/Setup%20A%20Sentry%20Node.md) to setup a sentry node to protect yourself.
+
+### Deploy IRISHub Monitor
+
+Please follow this [guide](https://github.com/irisnet/testnets/blob/master/testnets/docs/Deploy%20IRISHUB%20monitor.md) to get IRIHub running on your side.
+
 
 ### Upgrade to Validator Node
 
