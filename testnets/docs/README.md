@@ -65,6 +65,8 @@ Your node needs to know how to find peers. You'll need to add healthy seed nodes
 Meanwhile, you could add some known full node as `Persistent Peer`. Your node could connect to `sentry node` as `persistent peers`. 
 
 
+Chang the `external_address` to your public IP.
+
 
 ### Run a Full Node
 

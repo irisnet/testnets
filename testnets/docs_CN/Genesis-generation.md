@@ -1,7 +1,7 @@
 # Genesis文件生成流程
 
 
-1. 每个希望成为验证人的参与者确保安装了对应版本的软件：iris v0.2.0
+1. 每个希望成为验证人的参与者确保安装了对应版本的软件：iris v0.3.3
 
 2. 执行gentx命令，获得一个node-id.json的文件。这个操作将默认生成一个余额为150iris的账户，该账户默认绑定100iris成为一个验证人候选人。
 
@@ -40,7 +40,7 @@
         }
        }
   ```
-然后你可以发现在$IRISHOME/config目录下生成了一个gentx文件夹。里面存在一个gentx-<node-ID>.json文件。这个文件包含了如下信息：
+然后你可以发现在$IRISHOME/config目录下生成了一个gentx文件夹。里面存在一个gentx-node-ID.json文件。这个文件包含了如下信息：
 
    ```
        {
@@ -68,31 +68,9 @@
 
    `app_gen_tx`中说明了拥有这个节点的账户信息。这个账户的助记词就是刚刚的secret
 
-3. 将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/testnets/fuxi-1002/gentx`目录下：
+3. 将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/testnets/fuxi-2000/gentx`目录下：
 
    注意⚠️：json文中的IP改成公网IP
-
-   PS:在内侧期间只要通过QQ群共享文件就可以了
-
-4. 在完成提交后，所有人下载所有的gentx.json文件到本地
-
-   将配置文件拷贝到默认路径下: `$IRISHOME/config/gentx`
-
-5. 执行生成genesis文件的操作
-
-   通过执行以下命令来生成genesis.json 和 config.toml 文件:
-   ```
-       iris init --gen-txs -o --chain-id=fuxi-1001 --home=<pat_to_home>
-   ```
-
-
-6. 修改默认参数
-  
-  官方seed节点：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46656
-
-  在config.toml文件中：
-  * 修改`timeout_commit=5000`,这样可以使默认的出块时间为5s
-  * 修改`moniker`为一个容易辨别的名字,这样可以方便大家认出你。
 
 
 

@@ -2,7 +2,7 @@
 
 
  * [IRIShub 简介](#IRIShub-简介)
-  * [如何加入fuxi-1002测试网](#如何加入fuxi-1002测试网)
+  * [如何加入fuxi-2000测试网](#如何加入fuxi-1002测试网)
     * [安装IRIShub](#安装IRIShub)
     * [部署一个全节点](#部署一个全节点)
     * [测试IRISHub相关功能](#测试IRISHub相关功能)
@@ -11,7 +11,7 @@
 
 IRIS Hub是在Cosmos生态中的区域性枢纽，提供iService服务
 
-## 如何加入fuxi-1002测试网
+## 如何加入fuxi-2000测试网
 
 ### 安装IRIShub
 
@@ -39,10 +39,10 @@ IRIS Hub是用Go语言编写的。它可以在任何能够编译并运行Go语�
 执行以下命令,若出现对应的版本号则说明安装成功。
 ```
 $ iris version
-v0.2.0
+v0.3.3
     
 $ iriscli version
-v0.2.0
+v0.3.3
 ```
 #### 方法2：源码编译安装
 
@@ -76,7 +76,9 @@ Ubuntu LTS 16.04
 ```
     mkdir -p $HOME/go/bin
     echo "export GOPATH=$HOME/go" >> ~/.bash_profile
+    source ~/.bash_profile
     echo "export GOBIN=$GOPATH/bin" >> ~/.bash_profile
+    source ~/.bash_profile
     echo "export PATH=$PATH:$GOBIN" >> ~/.bash_profile
     source ~/.bash_profile
 ```
@@ -97,7 +99,7 @@ Ubuntu LTS 16.04
 mkdir -p $GOPATH/src/github.com/irisnet
 cd $GOPATH/src/github.com/irisnet
 git clone https://github.com/irisnet/irishub
-cd irishub && git checkout v0.2.0
+cd irishub && git checkout v0.3.3
 
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
@@ -108,10 +110,10 @@ make get_vendor_deps && make install
 
 ```
     $ iris version
-    v0.2.0
+    v0.3.3
     
     $ iriscli version
-    v0.2.0
+    v0.3.3
 ```
 
 ### 部署一个全节点
@@ -130,14 +132,15 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 * **下载配置文件文件**
 
+如果你想参加到genesis文件的生成流程中，请根据以下[文档]()提交相关文件。
 
-下载这fuxi-1002中用到的配置文件，并替换原有的/$IRISHOME/config目录下的文件：
+下载这fuxi-2000中用到的配置文件，并替换原有的/$IRISHOME/config目录下的文件：
 
     cd $IRISHOME/config/
     rm genesis.json
     rm config.toml
-    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-1002/config/config.toml
-    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-1002/config/genesis.json
+    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/config.toml
+    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/genesis.json
 
 * **修改配置文件**
 
@@ -145,6 +148,7 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 1. 将moniker字段配置称为自定义的名称，这样便于区分不同的节点
 2. seed字段用语设置种子节点，在fuxi-1002中的官方种子节点为：3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46657
+3. 将`external_address` 改为本地IP
 
 * **启动一个全节点**
 
@@ -169,7 +173,6 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 3. "latest_block_height" 表示最新的区块高度
 
    ​
-
 
 * **重置一个全节点**
 
