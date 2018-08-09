@@ -11,7 +11,7 @@ To get started with the latest testnet, please follow this [guide](https://githu
 
 ## Aug 8, 2018 - New Release
 
-Released v0.3.3 with update for Tendermint v0.22.2 and Cosmos-sdk v0.23.0
+Released v0.3.4 with update for Tendermint v0.22.2 and Cosmos-sdk v0.23.0
 
 ### Jul 19, 2018 - New Release
 
