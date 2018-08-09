@@ -56,7 +56,7 @@ iriscli stake validator \
 Your validator is active if the following command returns anything:
 
 ```
-iriscli advanced tendermint validator-set | grep "$(iris tendermint show_validator)"
+iriscli advanced tendermint validator-set | grep "$( tendermint show_validator)"
 ```
 
 You should also be able to see your validator on the [Explorer](https://testnet.irisplorer.io). You are looking for the `bech32` encoded `address` in the `~/.iris/config/priv_validator.json` file.

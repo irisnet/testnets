@@ -51,12 +51,12 @@ cd $IRISHOME/config/
 rm genesis.json
 rm config.toml
 wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/config.toml
-wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-20002/config/genesis.json
+wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/genesis.json
 ```
 
 ### Add Seed Nodes
 
-Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$HOME/.gaiad/config/config.toml`. Here are some seed nodes you can use:
+Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$IRISHOME/config/config.toml`. Here are some seed nodes you can use:
 
 ```
 3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:46657
@@ -65,13 +65,15 @@ Your node needs to know how to find peers. You'll need to add healthy seed nodes
 Meanwhile, you could add some known full node as `Persistent Peer`. Your node could connect to `sentry node` as `persistent peers`. 
 
 
+Chang the `external_address` to your public IP.
+
 
 ### Run a Full Node
 
 Start the full node with this command:
 
 ```
-iris start --home=<IRISHOME> > iris.log
+iris start --home=$IRISHOME > iris.log
 ```
 
 Check that everything is running smoothly:
@@ -85,6 +87,14 @@ You could see the following
 ```
 When you see `catching_up` is `false`, it means the node is synced with the rest of testnet, otherwise it means it's still syncing.
 
+### Setup a sentry node
+
+A validator is under the risk of being attacked. You could follow this [guide](https://github.com/irisnet/testnets/blob/master/testnets/docs/Setup%20A%20Sentry%20Node.md) to setup a sentry node to protect yourself.
+
+### Deploy IRISHub Monitor
+
+Please follow this [guide](https://github.com/irisnet/testnets/blob/master/testnets/docs/Deploy%20IRISHUB%20monitor.md) to get IRIHub running on your side.
+
 
 ### Upgrade to Validator Node
 
@@ -92,7 +102,7 @@ You now have an active full node. What's the next step?
 
 If you have participated in the genesis file generation process, you should be a validator once you are fully synced. 
 
-If you miss the genesis file generation process, you can still upgrade your full node to become a IRISnet Validator. The top 100 validators have the ability to propose new blocks to the IRIS Hub. Continue onto [the Validator Setup](https://github.com/cosmos/cosmos-sdk/blob/master/docs/validators/validator-setup.md).
+If you miss the genesis file generation process, you can still upgrade your full node to become a IRISnet Validator. The top 100 validators have the ability to propose new blocks to the IRIS Hub. Continue onto [the Validator Setup](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Setup%20A%20Validator%20Node.md).
 
 
 ##  Useful Links

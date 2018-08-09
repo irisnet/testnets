@@ -5,9 +5,13 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 
 ## Getting Started
 
-To get started with the latest testnet, please follow [this](https://github.com/irisnet/testnets/blob/master/testnets/README.md).
+To get started with the latest testnet, please follow this [guide](https://github.com/kidinamoto01/testnets-1/tree/master/testnets/docs).
 
 ## Testnet Status
+
+## Aug 8, 2018 - New Release
+
+Released v0.3.3 with update for Tendermint v0.22.2 and Cosmos-sdk v0.23.0
 
 ### Jul 19, 2018 - New Release
 

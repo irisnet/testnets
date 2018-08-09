@@ -14,14 +14,13 @@
 ```
     iriscli keys list
     NAME: ADDRESS:      PUBKEY:
-    bob cosmosaccaddr1sn6e9c3vj89ss9f9jhtvyg94m922p69ex9asn5 cosmosaccpub1zcjduc3qnswwrzl26dafq26guswr0pyj7yeyq6xt44nul839c5hqquruegestlsjfq
-    tom cosmosaccaddr1nexsact44a7e5uvvlxvvad9j2x596mphse7kd6 cosmosaccpub1zcjduc3q5je66e6gntchys3cf67hr9xv57ry3m8rtdu8clptxejav2t70t0sgnaex0
+    iris	local	faa1689na4jtu0c236h9vhq9w292q3xdjt2tmu4pjv	fap1addwnpepq0h3wad9ps95nwwfh94pnl6y7kafgfd5xu5z2atk8ts6zuqe0zeggm0euh5
 ```
 假设你需要使用bob的账户来绑定成为一个验证人。
 
 查询bob账户的余额
 ```
-    iriscli account cosmosaccaddr1sn6e9c3vj89ss9f9jhtvyg94m922p69ex9asn5
+    iriscli account faa1689na4jtu0c236h9vhq9w292q3xdjt2tmu4pjv
 ```
 
 若账户余额大于0，则可以执行以下操作。
@@ -36,8 +35,8 @@ iris tendermint show_validator --home=<home>
 示例输出：
 
 ```
-iris tendermint show_validator --home=/Users/suyu/Documents/bianjie/fuxi/1000
-cosmosvalpub1zcjduc3qlz3chwnlqz9sn2mv0yhjfxzg38anh0emtc4weuttqhcykj4xphhqtdclw8
+iris tendermint show_validator --home=$IRISHOME
+fvp1zcjduepq5zxh5t0sv6w07qne7jrvpzxqyrkaqe6ww8qp6l4n3g8jzrwcdx5qr8qdx7
 ```
 
 以上的返回值就是节点的公钥
@@ -47,7 +46,7 @@ cosmosvalpub1zcjduc3qlz3chwnlqz9sn2mv0yhjfxzg38anh0emtc4weuttqhcykj4xphhqtdclw8
 执行以下命令：
 
 ```
-iriscli stake create-validator --amount=100iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=fuxi-1002 --name=<name>
+iriscli stake create-validator --amount=100iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=fuxi-2000 --from=<name>
 ```
 
 示例输出：
@@ -80,7 +79,8 @@ iriscli status
 执行以下命令：
 
 ```
-iriscli stake edit-validator --details="To the cosmos !" --website="https://cosmos.network"
+iriscli stake edit-validator --details="details!" --website="https://irisnet.org"  --from=name  --address-validator=<address > --chain-id=fuxi-2000
+
 ```
 
 通过以下命令查看验证人信息：
@@ -88,6 +88,7 @@ iriscli stake edit-validator --details="To the cosmos !" --website="https://cosm
 ```
 iriscli stake validator --address-validator=<your_address> --chain-id=<name_of_the_testnet_chain>
 ```
+
 可以看到信息有所变化。
 
 
@@ -103,32 +104,36 @@ iriscli stake validators
 示例输出：
 ```
 Validator
-Owner: cosmosaccaddr1v87m876dvf99x5ntc9sxwmmskq6zv2zj06ntu3
-Validator: cosmosvalpub1zcjduc3qg8gf4xdea56980ss9uaahjc05z5yv2lhtr9lvypc5zyspfzeeeksnu9fn7
-Shares: Status Bonded,  Amount: 100/1
-Delegator Shares: 0/1
-Description: {fengjun   }
+Owner: faa1kql3yp6yl4pswc9svrh5yrq0kk7ymppdu2f9m0
+Validator: fvp1zcjduepq2nkjmgyu8ccwq8tz5wejph7eh2n00mectch4gtxwf2xwrkdnst5qs7at3l
+Revoked: false
+Status: Bonded
+Tokens: 100.0000000000
+Delegator Shares: 100.0000000000
+Description: {yelong   }
 Bond Height: 0
 Proposer Reward Pool:
 Commission: 0/1
 Max Commission Rate: 0/1
-Comission Change Rate: 0/1
+Commission Change Rate: 0/1
 Commission Change Today: 0/1
-Previously Bonded Stares: 0/1
+Previous Bonded Tokens: 0/1
 
 Validator
-Owner: cosmosaccaddr10duwk48x25tgpk064u8xsx4dh8trdrmhaqc9ac
-Validator: cosmosvalpub1zcjduc3q00x9t36e7q2gtfax4u9f8ynqy6w2dlepmm7gxvmz2gehplxuvg8qeylwmn
-Shares: Status Bonded,  Amount: 100/1
-Delegator Shares: 0/1
-Description: {yelong  https://bianjie.ai yelong}
+Owner: faa1k2atwc52n9mwstexn4rqatsgm59v0pg9qe5zs5
+Validator: fvp1zcjduepqm2f0ganwqsqk6dt3xs2r20mzk9lazzkfqm7kynr4e83grgzk8lcq82cy87
+Revoked: false
+Status: Bonded
+Tokens: 100.0000000000
+Delegator Shares: 100.0000000000
+Description: {silei   }
 Bond Height: 0
 Proposer Reward Pool:
 Commission: 0/1
 Max Commission Rate: 0/1
-Comission Change Rate: 0/1
+Commission Change Rate: 0/1
 Commission Change Today: 0/1
-Previously Bonded Stares: 0/1
+Previous Bonded Tokens: 0/1
 ```
 
 
@@ -151,20 +156,21 @@ iriscli stake validator <bonded_validator_owner_address>
 命令举例如下，可以看到验证人的绑定数量增加了。
 
 ```
-iriscli stake validator cosmosaccaddr1lxeyjlh3u6663keqdqus7sjxkxs05m9nd89gh7
 Validator
-Owner: cosmosaccaddr1lxeyjlh3u6663keqdqus7sjxkxs05m9nd89gh7
-Validator: cosmosvalpub1zcjduc3qglz36dm29dy5ygqjwhdpsx2myl0077ehn5nt3uvnw8pxjy66y9cqfm9myq
-Shares: Status Bonded,  Amount: 110/1
-Delegator Shares: 10/1
-Description: {zhiqiang  https://www.irisnet.org zhiqiang}
+Owner: faa1kql3yp6yl4pswc9svrh5yrq0kk7ymppdu2f9m0
+Validator: fvp1zcjduepq2nkjmgyu8ccwq8tz5wejph7eh2n00mectch4gtxwf2xwrkdnst5qs7at3l
+Revoked: false
+Status: Bonded
+Tokens: 110.0000000000
+Delegator Shares: 110.0000000000
+Description: {yelong   }
 Bond Height: 0
 Proposer Reward Pool:
 Commission: 0/1
 Max Commission Rate: 0/1
-Comission Change Rate: 0/1
+Commission Change Rate: 0/1
 Commission Change Today: 0/1
-Previously Bonded Stares: 0/1
+Previous Bonded Tokens: 0/1
 ```
 
 同时通过查看账户余额的变化，可以看到余额减少了。
@@ -176,7 +182,7 @@ Previously Bonded Stares: 0/1
 通过以下命令可以完成对一个验证人的解绑，解绑的单位为share，share可以是一个小数，例如12.1,也可以使用MAX表示完全解绑。
 
 ```
-iriscli stake unbond --address-delegator=<your_address> --address-validator=<bonded_validator_address> --shares=MAX --name=<key_name> --chain-id=<name_of_testnet_chain>
+iriscli stake unbond --address-delegator=<your_address> --address-validator=<bonded_validator_address> --shares=10 --from=<key_name> --chain-id=<name_of_testnet_chain>
 ```
 
 在解绑完成后，你可以通过查询账户余额的方式验证解绑是否成功。若解绑成功，余额将增加。
@@ -199,5 +205,5 @@ iriscli account <your_address>
 通过执行以下命令，恢复验证人的身份。
 
 ```
-iriscli stake unrevoke <address> --name=<name>--chain-id=fuxi-1002
+iriscli stake unrevoke <address> --name=<name>--chain-id=fuxi-2000
 ```

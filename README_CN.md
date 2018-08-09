@@ -8,6 +8,11 @@
 
 ## 测试网动态
 
+## 2018年8月8日, 发布新版本
+
+IRISHub 发布了最新版本v0.2.0，该版本基于Tendermint v0.22.2 和 Cosmos-sdk v0.23.0
+
+
 ### 2018年7月19日：发布新版本
 
 IRISHub 发布了最新版本v0.2.0，该版本基于Tendermint v0.21.0 和 Cosmos-sdk v0.19.1
