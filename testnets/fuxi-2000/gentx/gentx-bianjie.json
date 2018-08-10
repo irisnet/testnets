@@ -1,20 +1,17 @@
 {
-  "node_id": "a5250a581bda9129af819edf70087f4cce198a03",
+  "node_id": "dd633eef217bbfe87d264f85da47d1b3c083f75c",
   "ip": "118.31.4.59",
   "validator": {
     "pub_key": {
-      "type": "AC26791624DE60",
-      "value": "pCp74jYWMa+nK09MwNV6XyfgSYNBHDm4L8ndyo/te1A="
+      "type": "tendermint/PubKeyEd25519",
+      "value": "f/VWKz3yPAd4kFsdwtelRLsEnCsu9OKMGoP9gW7Gf8A="
     },
-    "power": 100,
+    "power": "100",
     "name": ""
   },
   "app_gen_tx": {
     "name": "bianjie",
-    "address": "D182CFEE2AE5956014FD36F046C07AF1A494D240",
-    "pub_key": {
-      "type": "AC26791624DE60",
-      "value": "pCp74jYWMa+nK09MwNV6XyfgSYNBHDm4L8ndyo/te1A="
-    }
+    "address": "faa1ze87hkku6vgnqp7gqkn528d60ttr06xuudx0k9",
+    "pub_key": "fap1zcjduepq0l64v2ea7g7qw7ystvwu94a9gjasf8pt9m6w9rq6s07czmkx0lqqlhu74q"
   }
 }
