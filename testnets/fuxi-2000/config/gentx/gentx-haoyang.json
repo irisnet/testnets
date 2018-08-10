@@ -1,0 +1,17 @@
+{
+    "node_id": "b0252838754c98b77e95ad8621ee9e47415edbc7",
+    "ip": "47.105.116.4",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "9+1ocVKDygaAcjeUrRH9S5SVjWLr+VNdat+/AwOEoBE="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "haoyang",
+      "address": "faa1qj6jc3um6jywgf6stvw370msnp4l4hucdmu2g0",
+      "pub_key": "fap1zcjduepq7lkksu2js09qdqrjx7226y0afw2ftrtza0u4xht2m7lsxquy5qgs3w20wq"
+    }
+  }
