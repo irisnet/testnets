@@ -1,0 +1,18 @@
+{
+  "node_id": "c714d1b38aa3769d93b42faf4eac8b9dd8c44dd0",
+  "ip": "47.88.59.65",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "VvczpMjxwvY/yH0cATBE0gIS5k0+ed7yMywf+VU5dOI="
+    },
+    "power": "100000",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Yakut",
+    "address": "faa1ucger559cyj0wdqz026sd7q64eq5nq9zr02nfc",
+    "pub_key": "fap1zcjduepq2mmn8fxg78p0v07g05wqzvzy6gpp9ejd8euaau3n9s0lj4fewn3q984l5w"
+  }
+}
+~     
