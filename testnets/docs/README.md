@@ -59,13 +59,13 @@ wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-200
 Your node needs to know how to find peers. You'll need to add healthy seed nodes to `$IRISHOME/config/config.toml`. Here are some seed nodes you can use:
 
 ```
-3fb472c641078eaaee4a4acbe32841f18967672c@35.165.232.141:26656
+c16700520a810b270206d59f0f02ea9abd85a4fe@35.165.232.141:26656
 ```
 
 Meanwhile, you could add some known full node as `Persistent Peer`. Your node could connect to `sentry node` as `persistent peers`. 
 
 
-Chang the `external_address` to your public IP.
+Chang the `external_address` to your `public IP:26656`.
 
 
 ### Run a Full Node

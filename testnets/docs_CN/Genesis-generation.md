@@ -1,12 +1,12 @@
 # Genesis文件生成流程
 
 
-1. 每个希望成为验证人的参与者确保安装了对应版本的软件：iris v0.3.3
+1. 每个希望成为验证人的参与者确保安装了对应版本的软件：iris v0.3.4
 
 2. 执行gentx命令，获得一个node-id.json的文件。这个操作将默认生成一个余额为150iris的账户，该账户默认绑定100iris成为一个验证人候选人。
 
 ```
-       iris init gen-tx --name=<your_name> --home=<path_to_home>
+       iris init gen-tx --name=<your_name> --home=<path_to_home> --ip=Your_public_IP
 ```
    代码示例：
    ```
