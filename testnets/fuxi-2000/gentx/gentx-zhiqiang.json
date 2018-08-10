@@ -1,20 +1,17 @@
 {
-  "node_id": "13debc38ae150ea8b104d9a6459ec086446f3d79",
+  "node_id": "2114e18c5760d087537e2325dd68bc019bcbddb9",
   "ip": "54.176.242.8",
   "validator": {
     "pub_key": {
-      "type": "AC26791624DE60",
-      "value": "+IcpXslfi4BubsU61xd6cfXkSJvht91xyCer5qLteUM="
+      "type": "tendermint/PubKeyEd25519",
+      "value": "x8JrAb+NOE5sBHqE5+DcDV4VgaaArgCWwb6221KOPSM="
     },
-    "power": 100,
+    "power": "100",
     "name": ""
   },
   "app_gen_tx": {
     "name": "zhiqiang",
-    "address": "B49DC3C5295D58517892B804D644B6E80A42A489",
-    "pub_key": {
-      "type": "AC26791624DE60",
-      "value": "+IcpXslfi4BubsU61xd6cfXkSJvht91xyCer5qLteUM="
-    }
+    "address": "faa123vf93txe0ktwyh8p3ad5v53ejp99wds8rctms",
+    "pub_key": "fap1zcjduepqclpxkqdl35uyumqy02zw0cxup40ptqdxszhqp9kph6mdk55w853stsehw5"
   }
 }
