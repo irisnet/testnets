@@ -1,0 +1,17 @@
+{
+  "node_id": "2791cbfe1577c7c624a30a4fba6fbd441e6ef621",
+  "ip": "172.31.163.237",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "BBGrC6kmqwZH5Ca3dUbaynX08RH3CLCCp64WiKyCNBo="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "jiacheng",
+    "address": "faa1rcjct6kmavgxyjvy4gg685xv3ghpd586nttxpg",
+    "pub_key": "fap1zcjduepqqsg6kzafy64sv3lyy6mh23k6ef6lfug37uytpq484ctg3tyzxsdquqqwtw"
+  }
+}

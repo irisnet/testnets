@@ -1,0 +1,207 @@
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+##### main base config options #####
+
+# TCP or UNIX socket address of the ABCI application,
+# or the name of an ABCI application compiled in with the Tendermint binary
+proxy_app = "tcp://127.0.0.1:26658"
+
+# A custom human readable name for this node
+moniker = "fuxi"
+
+# If this node is many blocks behind the tip of the chain, FastSync
+# allows them to catchup quickly by downloading blocks in parallel
+# and verifying their commits
+fast_sync = true
+
+# Database backend: leveldb | memdb
+db_backend = "leveldb"
+
+# Database directory
+db_path = "data"
+
+# Output level for logging, including package level options
+log_level = "main:info,state:info,*:error"
+
+##### additional base config options #####
+
+# Path to the JSON file containing the initial validator set and other meta data
+genesis_file = "config/genesis.json"
+
+# Path to the JSON file containing the private key to use as a validator in the consensus protocol
+priv_validator_file = "config/priv_validator.json"
+
+# Path to the JSON file containing the private key to use for node authentication in the p2p protocol
+node_key_file = "config/node_key.json"
+
+# Mechanism to connect to the ABCI application: socket | grpc
+abci = "socket"
+
+# TCP or UNIX socket address for the profiling server to listen on
+prof_laddr = "localhost:6060"
+
+# If true, query the ABCI app on connecting to a new peer
+# so the app can decide if we should keep the connection or not
+filter_peers = false
+
+##### advanced configuration options #####
+
+##### rpc server configuration options #####
+[rpc]
+
+# TCP or UNIX socket address for the RPC server to listen on
+laddr = "tcp://0.0.0.0:26657"
+
+# TCP or UNIX socket address for the gRPC server to listen on
+# NOTE: This server only supports /broadcast_tx_commit
+grpc_laddr = ""
+
+# Maximum number of simultaneous connections.
+# Does not include RPC (HTTP&WebSocket) connections. See max_open_connections
+# If you want to accept more significant number than the default, make sure
+# you increase your OS limits.
+# 0 - unlimited.
+grpc_max_open_connections = 900
+
+# Activate unsafe RPC commands like /dial_seeds and /unsafe_flush_mempool
+unsafe = false
+
+# Maximum number of simultaneous connections (including WebSocket).
+# Does not include gRPC connections. See grpc_max_open_connections
+# If you want to accept more significant number than the default, make sure
+# you increase your OS limits.
+# 0 - unlimited.
+max_open_connections = 900
+
+##### peer to peer configuration options #####
+[p2p]
+
+# Address to listen for incoming connections
+laddr = "tcp://0.0.0.0:26656"
+
+# Address to advertise to peers for them to dial
+# If empty, will use the same port as the laddr,
+# and will introspect on the listener or use UPnP
+# to figure out the address.
+external_address = ""
+
+# Comma separated list of seed nodes to connect to
+seeds = ""
+
+# Comma separated list of nodes to keep persistent connections to
+persistent_peers = "2114e18c5760d087537e2325dd68bc019bcbddb9@54.176.242.8:26656,21843576cec45d59a31a98b7002e1d06c033164c@115.159.195.214:26656,2791cbfe1577c7c624a30a4fba6fbd441e6ef621@172.31.163.237:26656,35c200a3390eaad9e0a4201ae1896ffe02e3c356@106.15.108.103:26656,40cc387cbd6b59f377f5ef0b0941f92dba8e1531@52.8.50.183:26656,430655e353caeadb0e7d6cf2ff821dc7d8a3aa11@69.30.224.250:26656,7e80f7133fa8e626c4b12ec24d5dcf1ffa5d3010@47.90.98.38:26656,affc14add0f842c8308d228f6fc92a0a3ac10d2a@39.104.16.237:26656,b0252838754c98b77e95ad8621ee9e47415edbc7@47.105.116.4:26656,b75ead7d9491c31614949756835180a67b063507@47.88.54.67:26656,c16700520a810b270206d59f0f02ea9abd85a4fe@35.165.232.141:26656,c714d1b38aa3769d93b42faf4eac8b9dd8c44dd0@47.88.59.65:26656,d0d4d74553d6530dc63e91911cdb28572fcc75a3@172.31.6.227:26656,dd633eef217bbfe87d264f85da47d1b3c083f75c@118.31.4.59:26656,ead1bb2ac4ac06eae8c75986be4a25bf78159429@47.254.32.219:26656,ed2a3644848a3058ca4ea7a14daf915e91e72763@47.91.237.180:26656"
+
+# UPNP port forwarding
+upnp = false
+
+# Path to address book
+addr_book_file = "config/addrbook.json"
+
+# Set true for strict address routability rules
+addr_book_strict = true
+
+# Time to wait before flushing messages out on the connection, in ms
+flush_throttle_timeout = 100
+
+# Maximum number of peers to connect to
+max_num_peers = 50
+
+# Maximum size of a message packet payload, in bytes
+max_packet_msg_payload_size = 1024
+
+# Rate at which packets can be sent, in bytes/second
+send_rate = 5120000
+
+# Rate at which packets can be received, in bytes/second
+recv_rate = 5120000
+
+# Set true to enable the peer-exchange reactor
+pex = true
+
+# Seed mode, in which node constantly crawls the network and looks for
+# peers. If another node asks it for addresses, it responds and disconnects.
+#
+# Does not work if the peer-exchange reactor is disabled.
+seed_mode = false
+
+# Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
+private_peer_ids = ""
+
+##### mempool configuration options #####
+[mempool]
+
+recheck = true
+recheck_empty = true
+broadcast = true
+wal_dir = "data/mempool.wal"
+
+# size of the mempool
+size = 100000
+
+# size of the cache (used to filter transactions we saw earlier)
+cache_size = 100000
+
+##### consensus configuration options #####
+[consensus]
+
+wal_file = "data/cs.wal/wal"
+
+# All timeouts are in milliseconds
+timeout_propose = 3000
+timeout_propose_delta = 500
+timeout_prevote = 1000
+timeout_prevote_delta = 500
+timeout_precommit = 1000
+timeout_precommit_delta = 500
+timeout_commit = 5000
+
+# Make progress as soon as we have all the precommits (as if TimeoutCommit = 0)
+skip_timeout_commit = false
+
+# EmptyBlocks mode and possible interval between empty blocks in seconds
+create_empty_blocks = true
+create_empty_blocks_interval = 0
+
+# Reactor sleep duration parameters are in milliseconds
+peer_gossip_sleep_duration = 100
+peer_query_maj23_sleep_duration = 2000
+
+##### transactions indexer configuration options #####
+[tx_index]
+
+# What indexer to use for transactions
+#
+# Options:
+#   1) "null" (default)
+#   2) "kv" - the simplest possible indexer, backed by key-value storage (defaults to levelDB; see DBBackend).
+indexer = "kv"
+
+# Comma-separated list of tags to index (by default the only tag is tx hash)
+#
+# It's recommended to index only a subset of tags due to possible memory
+# bloat. This is, of course, depends on the indexer's DB and the volume of
+# transactions.
+index_tags = ""
+
+# When set to true, tells indexer to index all tags. Note this may be not
+# desirable (see the comment above). IndexTags has a precedence over
+# IndexAllTags (i.e. when given both, IndexTags will be indexed).
+index_all_tags = false
+
+##### instrumentation configuration options #####
+[instrumentation]
+
+# When true, Prometheus metrics are served under /metrics on
+# PrometheusListenAddr.
+# Check out the documentation for the list of available metrics.
+prometheus = false
+
+# Address to listen for Prometheus collector(s) connections
+prometheus_listen_addr = ":26660"
+
+# Maximum number of simultaneous connections.
+# If you want to accept more significant number than the default, make sure
+# you increase your OS limits.
+# 0 - unlimited.
+max_open_connections = 3

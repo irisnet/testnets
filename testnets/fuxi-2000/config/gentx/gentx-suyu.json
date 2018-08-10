@@ -1,0 +1,17 @@
+{
+  "node_id": "c16700520a810b270206d59f0f02ea9abd85a4fe",
+  "ip": "35.165.232.141",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "OGXyz5niSGhpu5lemAzytTdjAuWXKfDev5PDntpN05U="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "bob",
+    "address": "faa1uj5gfwrklrdzgqjwh0mnayclamkcy3jumg8g06",
+    "pub_key": "fap1zcjduepq8pjl9nueufyxs6dmn90fsr8jk5mkxqh9ju5lph4lj0peakjd6w2sz7d0u5"
+  }
+}
