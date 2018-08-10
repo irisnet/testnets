@@ -1,0 +1,17 @@
+{
+  "node_id": "d0d4d74553d6530dc63e91911cdb28572fcc75a3",
+  "ip": "172.31.6.227",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "TtmD8D4XezdQE0u5V3WqbBY6DOjQBoj/GXmq70V+zQk="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Staking Facilities IRIS Validator",
+    "address": "faa1dj03cfr6kd4hhrd9kvdqs9xhnp5me9lgux32dn",
+    "pub_key": "fap1zcjduepqfmvc8up7zaanw5qnfwu4wad2dstr5r8g6qrg3lce0x4w73t7e5ys35swx5"
+  }
+}
