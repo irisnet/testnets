@@ -19,7 +19,7 @@ There are two ways to get Iris running on your server. First, you could download
 #### Download Binary Directly
 
 Go to the download page: https://github.com/irisnet/irishub/releases/  then get the release v0.3.4 on your computer. 
-`tar -C /usr/local/bin -xzf iris$VERSION.$OS-$ARCH.zip` to `/usr/local/bin/  ` You could verify you have the right version installed by running the following commands: 
+`unzip -C /usr/local/bin  iris$VERSION.$OS-$ARCH.zip` to `/usr/local/bin/  ` You could verify you have the right version installed by running the following commands: 
 
 ```
 $ iris version
