@@ -1,6 +1,6 @@
 # How to use keybase
 
-The --keybase-sig is a 16-digit string that is generated with a keybase.io account. It's a cryptographically secure method of verifying your identity across multiple online networks. The Keybase API allows us to retrieve your Keybase avatar. This is how you can add a logo to your validator profile
+The `keybase ID` is a 16-digit string that is generated with a keybase.io account. It's a cryptographically secure method of verifying your identity across multiple online networks. The Keybase API allows us to retrieve your Keybase avatar. This is how you can add a logo to your validator profile
 
 1. Go to https://keybase.io/
 2. Click `login`，then` Join Keybase` and finish the sign up process
