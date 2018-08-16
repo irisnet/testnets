@@ -1,0 +1,17 @@
+{
+  "node_id": "0af5b3402684cf771013ad571e045aab07e733eb",
+  "ip": "202.182.126.88",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "BzNBZXUx0DTwJO5KITgnQpm6BBHRafjZsT57NxKKzq4="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "onetaocaps",
+    "address": "faa1dulkkjyt5luym9gfkjfsdmafwufd42js9hgp2s",
+    "pub_key": "fap1zcjduepqque5zet4x8grfupyae9zzwp8g2vm5pq3695l3kd38eanwy52e6hqhk8exl"
+  }
+}
