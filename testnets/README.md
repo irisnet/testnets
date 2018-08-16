@@ -221,5 +221,5 @@ iris unsafe_reset_all --home=$IRIShome
 在接下来你可以执行以下操作测试IRISHub的功能：
 
 * Token Transfer：[Link](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs_CN/转账交易.md)
-* Bond&Delegate： [Link](https://github.com/irisnet/testnets/blob/master/testnets/Basic-Bond:Delegate-Operation.md)
+* Bond&Delegate： [Link](https://github.com/irisnet/testnets/blob/master/testnets/docs_CN/Basic-Bond:Delegate-Operation.md)
 * 部署IRISHub Monitor [Link](https://github.com/irisnet/testnets/blob/master/testnets/docs_CN/如何部署monitor.md)
