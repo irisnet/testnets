@@ -1,0 +1,17 @@
+{
+  "node_id": "6b6282e30c3faa2eb31b461e984de9dda95e1b34",
+  "ip": "34.227.24.78",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "lkiI56yW8/nhS/8MDCbGoH9KOXU1H08d6QU+ODs/Qxo="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "inschain-validator",
+    "address": "faa1vkqze4gtvd5cnqecgjqvhx3xukh4wml55730qz",
+    "pub_key": "fap1zcjduepqjeyg3eavjmelnc2tluxqcfkx5pl55wt4x505780fq5lrswelgvdql3tu6j"
+  }
+}
