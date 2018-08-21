@@ -182,7 +182,7 @@ Previous Bonded Tokens: 0/1
 通过以下命令可以完成对一个验证人的解绑，解绑的单位为share，share可以是一个小数，例如12.1,也可以使用MAX表示完全解绑。
 
 ```
-iriscli stake unbond --address-delegator=<your_address> --address-validator=<bonded_validator_address> --shares=10 --from=<key_name> --chain-id=<name_of_testnet_chain>
+iriscli stake unbond begin --address-delegator=<your_address> --address-validator=<bonded_validator_address>  --shares-amount=10 --from=<key_name> --chain-id=<name_of_testnet_chain>
 ```
 
 在解绑完成后，你可以通过查询账户余额的方式验证解绑是否成功。若解绑成功，余额将增加。
@@ -194,7 +194,7 @@ iriscli account <your_address>
 
 ### 验证人被处罚后如何处理
 
-若节点不能保证持续在线，则会被罚没一部分抵押的iris。在fuxi-1002中，如果前200块中，某个验证人错过了超过100个投票，那么验证人将被惩罚，即被slash。
+若节点不能保证持续在线，则会被罚没一部分抵押的iris。在fuxi-2000中，如果前200块中，某个验证人错过了超过100个投票，那么验证人将被惩罚，即被slash。
 
 这时，如果查询本地状态会发现`power`变为0.
 

@@ -1,5 +1,11 @@
 # Testnet Status
 
+## Aug 10, 2018 - Fuxi-2000 Go live
+
+We started the second iteration of public testnet: fuxi-2000.
+
+This testnet now has 20 validators and the average block time is about 5s. 
+
 ## Aug 8, 2018 - New Release
 
 Released v0.3.3 with update for Tendermint v0.22.2 and Cosmos-sdk v0.23.0
