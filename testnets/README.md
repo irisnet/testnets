@@ -211,7 +211,7 @@ iris unsafe_reset_all --home=$IRIShome
 
 通过以上命令可以查看状态：
 
-“syncing":false表示节点与网络保持同步
+“catching_up":false表示节点与网络保持同步
 
 "latest_block_height":表示最新的区块高度
 
