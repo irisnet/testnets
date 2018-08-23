@@ -44,8 +44,9 @@ Input your account address and do the bot authentication. After the authenticati
 
 Execute the following command and you will find that there are some iris tokens in this account.
 ```
-    iriscli account faa1rdnxluhklx4k3s34d9fjg0vaacyfa3ml20ftgm
+    iriscli account faa1rdnxluhklx4k3s34d9fjg0vaacyfa3ml20ftgm --node="tcp://39.104.16.237:26657"
 ```
+⚠️：  --node is the address of a full node in fuxi-2000. You need add this parameter if you haven't ran a full node locally.
 
 An account will be stored in iris network only after there is at least one transaction related to this account in iris network. So, if your account doesn't have any transaction, executing this command will give you an error message.
 
@@ -62,6 +63,7 @@ You can send some coins to your newly created account:
 ```
         iriscli send --amount=10iris --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address>
 ```
+⚠️： You also need --node if you haven't ran a full node locally.
 
 After executing the send command, you can use the following command to check if you send your coins successfully:
 
