@@ -18,7 +18,7 @@ On the sentry node's side, you need to get fully initialized first.
 Then, you should edit its `config.tmol` file, and change `private_peers_id` field：
 
 ```
-private_peers_id="<validator node id>"
+private_peers_ids="<validator node id>"
 ```
 
 `validator node id` is the `node-id` of validator node. 
