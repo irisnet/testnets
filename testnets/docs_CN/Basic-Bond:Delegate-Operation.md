@@ -86,7 +86,7 @@ iriscli stake edit-validator --details="details!" --website="https://irisnet.org
 通过以下命令查看验证人信息：
 
 ```
-iriscli stake validator --address-validator=<your_address> --chain-id=<name_of_the_testnet_chain>
+iriscli stake validator <your_address> --chain-id=<name_of_the_testnet_chain>
 ```
 
 可以看到信息有所变化。
