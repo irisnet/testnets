@@ -1,6 +1,6 @@
 # 如何使用keybase
 
---keybase-sig是一个16位数字符串，使用keybase.io帐户生成。 它是一种加密安全的方法，可以跨多个在线网络验证您的身份。 Keybase API允许我们检索您的Keybase头像。 这是您可以在验证器配置文件中添加徽标的方法
+keybase fingerprint是一个16位数字符串，使用keybase.io帐户生成。 它是一种加密安全的方法，可以跨多个在线网络验证您的身份。 Keybase API允许我们检索您的Keybase头像。 这是您可以在验证器配置文件中添加徽标的方法
 
 1. 在浏览器中打开 https://keybase.io/
 2. 点击右上角的`login`，在弹出的对话框中点击` Join Keybase`。输入邮箱、用户名、密码等信息完成注册
