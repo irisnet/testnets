@@ -27,7 +27,7 @@ IRIS Hub是用Go语言编写的。它可以在任何能够编译并运行Go语�
 * 内存容量：2GB
 * 磁盘空间：40GB
 * 操作系统：Ubuntu 18.04 LTS/16.04 LTS
-* 允许的入方向的链接：TCP端口46656和46657
+* 允许的入方向的链接：TCP端口 26656 和 26657
 
 
 #### 方法1：下载发行版安装
@@ -165,15 +165,15 @@ c16700520a810b270206d59f0f02ea9abd85a4fe@35.165.232.141:26656
 
 示例输出：
 
-    {"node_info":{"id":"3fb472c641078eaaee4a4acbe32841f18967672c","listen_addr":"172.31.0.190:46656","network":"fuxi-1002","version":"0.21.0","channels":"4020212223303800","moniker":"name","other":["amino_version=0.9.9","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:46657"]},"sync_info":{"latest_block_hash":"7B1168B2055B19F811773EEE56BB3C9ECB6F3B37","latest_app_hash":"B8F7F8BF18E3F1829CCDE26897DB905A51AF4372","latest_block_height":12567,"latest_block_time":"2018-07-26T02:43:56.757513477Z","syncing":false},"validator_info":{"address":"CAF80DAEC0F4A7036DD2116B56F89B07F43A133E","pub_key":{"type":"AC26791624DE60","value":"Cl6Yq+gqZZY14QxrguOaZqAswPhluv7bDfcyQx2uSRc="},"voting_power":0}}
+    {"node_info":{"id":"3fb472c641078eaaee4a4acbe32841f18967672c","listen_addr":"172.31.0.190:26656","network":"fuxi-2000","version":"0.22.6","channels":"4020212223303800","moniker":"name","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"7B1168B2055B19F811773EEE56BB3C9ECB6F3B37","latest_app_hash":"B8F7F8BF18E3F1829CCDE26897DB905A51AF4372","latest_block_height":12567,"latest_block_time":"2018-08-25T11:33:13.164432273Z","catching_up":false},"validator_info":{"address":"CAF80DAEC0F4A7036DD2116B56F89B07F43A133E","pub_key":{"type":"AC26791624DE60","value":"Cl6Yq+gqZZY14QxrguOaZqAswPhluv7bDfcyQx2uSRc="},"voting_power":0}}
 
 通过以上命令可以查看状态：
 
-1. “syncing":false表示节点与网络保持同步
+* `"catching_up":false`: 表示节点与网络保持同步
 
-2. “syncing":true表示节点正在同步区块
+* `"catching_up":true`: 表示节点正在同步区块
 
-3. "latest_block_height" 表示最新的区块高度
+* `"latest_block_height"`: 表示最新的区块高度
 
    ​
 
@@ -205,15 +205,15 @@ iris unsafe_reset_all --home=$IRIShome
 
 示例输出：
 
-```
-{"node_info":{"id":"3fb472c641078eaaee4a4acbe32841f18967672c","listen_addr":"172.31.0.190:46656","network":"fuxi-1002","version":"0.21.0","channels":"4020212223303800","moniker":"name","other":["amino_version=0.9.9","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:46657"]},"sync_info":{"latest_block_hash":"7B1168B2055B19F811773EEE56BB3C9ECB6F3B37","latest_app_hash":"B8F7F8BF18E3F1829CCDE26897DB905A51AF4372","latest_block_height":12567,"latest_block_time":"2018-07-26T02:43:56.757513477Z","syncing":false},"validator_info":{"address":"CAF80DAEC0F4A7036DD2116B56F89B07F43A133E","pub_key":{"type":"AC26791624DE60","value":"Cl6Yq+gqZZY14QxrguOaZqAswPhluv7bDfcyQx2uSRc="},"voting_power":100}}
+```json
+{"node_info":{"id":"3fb472c641078eaaee4a4acbe32841f18967672c","listen_addr":"172.31.0.190:26656","network":"fuxi-2000","version":"0.22.6","channels":"4020212223303800","moniker":"name","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"7B1168B2055B19F811773EEE56BB3C9ECB6F3B37","latest_app_hash":"B8F7F8BF18E3F1829CCDE26897DB905A51AF4372","latest_block_height":12567,"latest_block_time":"2018-08-25T11:33:13.164432273Z","catching_up":false},"validator_info":{"address":"CAF80DAEC0F4A7036DD2116B56F89B07F43A133E","pub_key":{"type":"AC26791624DE60","value":"Cl6Yq+gqZZY14QxrguOaZqAswPhluv7bDfcyQx2uSRc="},"voting_power":0}}
 ```
 
 通过以上命令可以查看状态：
 
-“syncing":false表示节点与网络保持同步
+* `"catching_up":false`: 表示节点与网络保持同步
 
-"latest_block_height":表示最新的区块高度
+* `"latest_block_height"`: 表示最新的区块高度
 
 
 ### 测试IRISHub相关功能
