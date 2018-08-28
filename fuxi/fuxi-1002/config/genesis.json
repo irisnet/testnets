@@ -1,0 +1,547 @@
+{
+  "validators": [
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "MHvOGQTGlMQB0ZbDRhqH7Ty6Xbf8kONX9cLhkOHSlDM="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "E1SBFNm23oyAZr8ugokxBGGYr2JCLvDKNAnW6vGXk/4="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "xPMvshYoxbZsKCsTu+88wiWH7hzFq41nwBvdPg+UhBY="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "dCbPqbRTeYYgU9WNBVWJFd/IHygXVHLLozG+SRvl9sk="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "ExUdR1cj/3w0E+f3OR0YQxhe3lbWgITUgX15xzAYHuw="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "3n5JQBBGBrP/BkWRTJlFvGLNwsTYY7d8aTPH1VqEpm4="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "e8xVx1nwFIWnpq8Kk5JgJpym/yHe/IMzYlIzcPzcYg4="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "PIioKayoPNPP1/yIT8SoweWGnFjYvB2eRdUPmV9gqDE="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "R8UdN2orSUIgEnXaGBlbJ97/ezedJrjxk3HCaRNaIXA="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "QdCambntNFO+EC8728sPoKhGK/dYy/YQOKCJAKRZzm0="
+      },
+      "power": 100,
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "mhoa1ymHmxwDpov1fgpqBoXSW+7PyB073I5mBkyX4m4="
+      },
+      "power": 100,
+      "name": ""
+    }
+  ],
+  "app_hash": "",
+  "app_state": {
+    "accounts": [
+      {
+        "address": "46834815791157A845A3FA5912A695D30F56CF4D",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+       {
+        "address": "84F592E22C91CB08152595D6C220B5D954A0E8B9",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 2000000000
+          }
+        ]
+      },
+      {
+        "address": "AF3C6CA0C6D588896269F7044BBF571F2C4E832F",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "9917DC8DC88A35169146DCBBDFA7323C24A0A1F0",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "A0446775F9B6245EA8C19A006E8B29A7EC4BDE16",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "350035632304AEB33B7AE2D5985DCE8169375CC9",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "A0250D2CC8AA9E78B40AC2E494F31E8D491E44D3",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "7B78EB54E6551680D9FAAF0E681AADB9D6368F77",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "2D2C9D19CC3CCC9F5FF07F4ED098A052A04171B8",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "F9B2497EF1E6B5A8DB2068390F4246B1A0FA6CB3",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "61FDB3FB4D624A53526BC160676F70B034262852",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      },
+      {
+        "address": "9D74315555A2DDC6A8A6B3684EFA7EE810241443",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": 50
+          }
+        ]
+      }
+    ],
+    "stake": {
+      "pool": {
+        "loose_unbonded_tokens": 1100,
+        "unbonded_tokens": 0,
+        "unbonding_tokens": 0,
+        "bonded_tokens": 1100,
+        "unbonded_shares": "0",
+        "unbonding_shares": "0",
+        "bonded_shares": "1100",
+        "inflation_last_time": 0,
+        "inflation": "7/100",
+        "date_last_commission_reset": 0,
+        "prev_bonded_shares": "0"
+      },
+      "params": {
+        "inflation_rate_change": "13/100",
+        "inflation_max": "1/5",
+        "inflation_min": "7/100",
+        "goal_bonded": "67/100",
+        "max_validators": 100,
+        "bond_denom": "iris"
+      },
+      "validators": [
+        {
+          "owner": "46834815791157A845A3FA5912A695D30F56CF4D",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "MHvOGQTGlMQB0ZbDRhqH7Ty6Xbf8kONX9cLhkOHSlDM="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "silei",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "AF3C6CA0C6D588896269F7044BBF571F2C4E832F",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "E1SBFNm23oyAZr8ugokxBGGYr2JCLvDKNAnW6vGXk/4="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "bystake",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "9917DC8DC88A35169146DCBBDFA7323C24A0A1F0",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "xPMvshYoxbZsKCsTu+88wiWH7hzFq41nwBvdPg+UhBY="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "haoyang",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "A0446775F9B6245EA8C19A006E8B29A7EC4BDE16",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "dCbPqbRTeYYgU9WNBVWJFd/IHygXVHLLozG+SRvl9sk="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "jiacheng",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "350035632304AEB33B7AE2D5985DCE8169375CC9",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "ExUdR1cj/3w0E+f3OR0YQxhe3lbWgITUgX15xzAYHuw="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "mufan",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "A0250D2CC8AA9E78B40AC2E494F31E8D491E44D3",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "3n5JQBBGBrP/BkWRTJlFvGLNwsTYY7d8aTPH1VqEpm4="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "medishares",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "7B78EB54E6551680D9FAAF0E681AADB9D6368F77",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "e8xVx1nwFIWnpq8Kk5JgJpym/yHe/IMzYlIzcPzcYg4="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "yelong",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "2D2C9D19CC3CCC9F5FF07F4ED098A052A04171B8",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "PIioKayoPNPP1/yIT8SoweWGnFjYvB2eRdUPmV9gqDE="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "hashi",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "F9B2497EF1E6B5A8DB2068390F4246B1A0FA6CB3",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "R8UdN2orSUIgEnXaGBlbJ97/ezedJrjxk3HCaRNaIXA="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "zhiqiang",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "61FDB3FB4D624A53526BC160676F70B034262852",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "QdCambntNFO+EC8728sPoKhGK/dYy/YQOKCJAKRZzm0="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "fengjun",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        },
+        {
+          "owner": "9D74315555A2DDC6A8A6B3684EFA7EE810241443",
+          "pub_key": {
+            "type": "AC26791624DE60",
+            "value": "mhoa1ymHmxwDpov1fgpqBoXSW+7PyB073I5mBkyX4m4="
+          },
+          "revoked": false,
+          "pool_shares": {
+            "status": 2,
+            "amount": "100"
+          },
+          "delegator_shares": "0",
+          "description": {
+            "moniker": "onetao",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_shares": "0"
+        }
+      ],
+      "bonds": null
+    }
+  },
+  "genesis_time": "2018-07-25T14:00:24.231866967+08:00",
+  "chain_id": "fuxi-1002",
+  "consensus_params": {
+    "block_size_params": {
+      "max_bytes": 22020096,
+      "max_txs": 100000,
+      "max_gas": -1
+    },
+    "tx_size_params": {
+      "max_bytes": 10240,
+      "max_gas": -1
+    },
+    "block_gossip_params": {
+      "block_part_size_bytes": 65536
+    },
+    "evidence_params": {
+      "max_age": 100000
+    }
+  }
+}
