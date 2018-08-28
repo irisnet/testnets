@@ -46,7 +46,13 @@ fvp1zcjduepq5zxh5t0sv6w07qne7jrvpzxqyrkaqe6ww8qp6l4n3g8jzrwcdx5qr8qdx7
 执行以下命令：
 
 ```
-iriscli stake create-validator --amount=100iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=fuxi-2000 --from=<name>
+iriscli stake create-validator --amount=100iris --pubkey=<节点公钥pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=fuxi-2000 --from=<name>
+```
+
+示例：
+
+```
+iriscli stake create-validator --amount=100iris --pubkey=fvp1zcjduepq5zxh5t0sv6w07qne7jrvpzxqyrkaqe6ww8qp6l4n3g8jzrwcdx5qr8qdx7 --address-validator=faa1689na4jtu0c236h9vhq9w292q3xdjt2tmu4pjv --moniker=bianjie --chain-id=fuxi-2000 --from=faa1689na4jtu0c236h9vhq9w292q3xdjt2tmu4pjv
 ```
 
 示例输出：
@@ -64,8 +70,8 @@ iriscli status
 
 示例输出：
 
-```
-{"node_info":{"id":"e43f676fd19ad5f1869d9edd2a6800dc48f40335","listen_addr":"172.20.155.233:26656","network":"fuxi-1000","version":"0.21.0","channels":"40202122233038","moniker":"bianjie","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"2A815BA6C6F11991F3BA9B57554617E6646C0D64","latest_app_hash":"38E4313CD4A50513BA0A259D0F86C5845DF9A12C","latest_block_height":"172","latest_block_time":"2018-07-17T14:27:41.023715315Z","catching_up":false},"validator_info":{"address":"F23FF36BD5B90C33CE3A03ED72DBDCF5EC07D6AF","pub_key":{"type":"tendermint/PubKeyEd25519","value":"2JoNf1gavJ1d6XFIumO1Mki5GVMOcg58AioHksU3maE="},"voting_power":"100"}}
+```json
+{"node_info":{"id":"e43f676fd19ad5f1869d9edd2a6800dc48f40335","listen_addr":"172.20.155.233:26656","network":"fuxi-2000","version":"0.22.6","channels":"40202122233038","moniker":"bianjie","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"2A815BA6C6F11991F3BA9B57554617E6646C0D64","latest_app_hash":"38E4313CD4A50513BA0A259D0F86C5845DF9A12C","latest_block_height":"172","latest_block_time":"2018-08-25T11:33:13.164432273Z","catching_up":false},"validator_info":{"address":"F23FF36BD5B90C33CE3A03ED72DBDCF5EC07D6AF","pub_key":{"type":"tendermint/PubKeyEd25519","value":"2JoNf1gavJ1d6XFIumO1Mki5GVMOcg58AioHksU3maE="},"voting_power":"100"}}
 ```
 
 若观察到`voting_power`的权重不为0,则说明绑定成功。
@@ -139,13 +145,13 @@ Previous Bonded Tokens: 0/1
 
 命令如下：
 ```
-iriscli stake delegate --amount=10iris --address-delegator=<your_address> --address-validator=<bonded_validator_owner_address> --name=<key_name> --chain-id=<name_of_testnet_chain>
+iriscli stake delegate --amount=10iris --address-delegator=<your_address> --address-validator=<bonded_validator_owner_address> --from=<key_name> --chain-id=<name_of_testnet_chain>
 ```
 
 命令举例：
 
 ```
-iriscli stake delegate --amount=10iris --address-delegator=cosmosaccaddr12njc8n8e7fn8n2cf38qxdu44yajfch6zydhf2g --address-validator=cosmosaccaddr15pzxwa0ekcj9a2xpngqxazef5lkyhhskmru36f --name=test --chain-id=fuxi-1002
+iriscli stake delegate --amount=10iris --address-delegator=cosmosaccaddr12njc8n8e7fn8n2cf38qxdu44yajfch6zydhf2g --address-validator=cosmosaccaddr15pzxwa0ekcj9a2xpngqxazef5lkyhhskmru36f --from=test --chain-id=fuxi-2000
 ```
 
 通过以下命令查询验证人信息的变化。
@@ -181,9 +187,20 @@ Previous Bonded Tokens: 0/1
 
 通过以下命令可以完成对一个验证人的解绑，解绑的单位为share，share可以是一个小数，例如12.1,也可以使用MAX表示完全解绑。
 
+执行 unbond begin
+
 ```
 iriscli stake unbond begin --address-delegator=<your_address> --address-validator=<bonded_validator_address>  --shares-amount=10 --from=<key_name> --chain-id=<name_of_testnet_chain>
 ```
+⚠️：此时验证人绑定的数量减少
+
+
+执行 unbond complete
+
+```
+iriscli stake unbond complete --address-delegator=<your_address> --address-validator=<bonded_validator_address> --from=<key_name> --chain-id=<name_of_testnet_chain>
+```
+⚠️：此时你的账户余额将增加
 
 在解绑完成后，你可以通过查询账户余额的方式验证解绑是否成功。若解绑成功，余额将增加。
 
@@ -199,11 +216,11 @@ iriscli account <your_address>
 这时，如果查询本地状态会发现`power`变为0.
 
 ```json
-{"node_info":{"id":"e43f676fd19ad5f1869d9edd2a6800dc48f40335","listen_addr":"172.20.155.233:26656","network":"fuxi-1000","version":"0.21.0","channels":"40202122233038","moniker":"bianjie","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"2A815BA6C6F11991F3BA9B57554617E6646C0D64","latest_app_hash":"38E4313CD4A50513BA0A259D0F86C5845DF9A12C","latest_block_height":"172","latest_block_time":"2018-07-17T14:27:41.023715315Z","catching_up":false},"validator_info":{"address":"F23FF36BD5B90C33CE3A03ED72DBDCF5EC07D6AF","pub_key":{"type":"tendermint/PubKeyEd25519","value":"2JoNf1gavJ1d6XFIumO1Mki5GVMOcg58AioHksU3maE="},"voting_power":"0"}}
+{"node_info":{"id":"e43f676fd19ad5f1869d9edd2a6800dc48f40335","listen_addr":"172.20.155.233:26656","network":"fuxi-2000","version":"0.22.6","channels":"40202122233038","moniker":"bianjie","other":["amino_version=0.10.1","p2p_version=0.5.0","consensus_version=v1/0.2.2","rpc_version=0.7.0/3","tx_index=on","rpc_addr=tcp://0.0.0.0:26657"]},"sync_info":{"latest_block_hash":"2A815BA6C6F11991F3BA9B57554617E6646C0D64","latest_app_hash":"38E4313CD4A50513BA0A259D0F86C5845DF9A12C","latest_block_height":"172","latest_block_time":"2018-08-25T11:33:13.164432273Z","catching_up":false},"validator_info":{"address":"F23FF36BD5B90C33CE3A03ED72DBDCF5EC07D6AF","pub_key":{"type":"tendermint/PubKeyEd25519","value":"2JoNf1gavJ1d6XFIumO1Mki5GVMOcg58AioHksU3maE="},"voting_power":"0"}}
 ```
 
 通过执行以下命令，恢复验证人的身份。
 
 ```
-iriscli stake unrevoke <address> --name=<name>--chain-id=fuxi-2000
+iriscli stake unrevoke <address> --from=<name>--chain-id=fuxi-2000
 ```
