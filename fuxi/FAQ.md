@@ -19,3 +19,12 @@ Here is the recommanded configuration of the server.
 * Allow all incoming connections from TCP port 26656 and 26657
 
 
+4. What is a Validator?
+
+IRISHub is built as ABCI of Tendermint core. The nodes of Tendermint reach consensus by gossiping the voting messages with signature. The signatures will be   
+
+
+
+5. Who should be interested in running a validator node?
+
+
