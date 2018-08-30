@@ -21,10 +21,11 @@ Here is the recommanded configuration of the server.
 
 4. What is a Validator?
 
-IRISHub is built as ABCI of Tendermint core. The nodes of Tendermint reach consensus by gossiping the voting messages with signature. The signatures will be   
+
+The IRISHub is based on a consensus engine called Tendermint. It relies on a set of validators to secure the network. The role of validators is to run a full-node and participate in consensus by broadcasting votes which contain cryptographic signatures signed by their private key. Validators commit new blocks in the blockchain and receive revenue in exchange for their work. They must also participate in governance by voting on proposals. Validators are weighted according to their total stake.  
 
 
 
-5. Who should be interested in running a validator node?
+5. How to understand different address formats in IRISnet?
 
 
