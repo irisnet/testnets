@@ -30,7 +30,7 @@ vim start.sh
 --chain-id=<你要监控的网络的ID>
 --node="tcp://localhost:26657"
 修改为
---chain-id=<你要监控的节点监听的rpc端口(默认为26657)>
+--node=<你要监控的节点监听的rpc端口(默认为26657)>
 
 
 4. 启动监控工具
