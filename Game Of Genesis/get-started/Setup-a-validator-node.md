@@ -5,14 +5,14 @@ Before setting up your validator node, make sure you've already installed  **Iri
 
 ## Running a Validator Node
 
-Validators are responsible for committing new blocks to the blockchain through voting. A validator's stake is slashed if they become unavailable, double sign a transaction, or don't cast their votes. Please read about [Sentry Node Architecture](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Setup%20A%20Sentry%20Node.md) to protect your node from DDOS attacks and to ensure high-availability.
+Validators are responsible for committing new blocks to the blockchain through voting. A validator's stake is slashed if they become unavailable, double sign a transaction, or don't cast their votes. Please read about [Sentry Node Architecture]() to protect your node from DDOS attacks and to ensure high-availability.
 
 ### Create A Validator
 
 Your `fvp` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
 
 ```
-iris tendermint show_validator --home=<IRIS-HOME-PATH>
+iris tendermint show_validator --home=<IRIS-HOME>
 ```
 
 Next, craft your `iriscli stake create-validator` command:
@@ -20,7 +20,7 @@ Next, craft your `iriscli stake create-validator` command:
 You can always get some `IRIS`  by using the [Faucet](https://testnet.irisplorer.io/#/faucet). Please don't abuse it. 
 
 ```
-iriscli stake create-validator --amount=100iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=fuxi-2000 --name=<name>
+iriscli stake create-validator --amount=100000000000000000000iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=game-of-genesis --name=<name>
 ```
 
 ### Edit Validator Description
@@ -33,7 +33,7 @@ iriscli stake edit-validator
   --moniker="choose a moniker" \
   --website="https://cosmos.network" \
   --details=""
-  --chain-id=fuxi-2000 \
+  --chain-id=game-of-genesis  \
   --name=<key_name>
 ```
 
@@ -44,7 +44,7 @@ View the validator's information with this command:
 ```
 iriscli stake validator \
   --address-validator=<account_cosmosaccaddr> \
-  --chain-id=fuxi-2000
+  --chain-id=game-of-genesis 
 ```
 
 ### Confirm Your Validator is Running
