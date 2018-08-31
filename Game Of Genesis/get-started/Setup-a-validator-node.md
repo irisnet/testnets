@@ -3,11 +3,9 @@
 Before setting up your validator node, make sure you've already installed  **Iris** by this [guide]()
 
 
-## Running a Validator Node
 
-Validators are responsible for committing new blocks to the blockchain through voting. A validator's stake is slashed if they become unavailable, double sign a transaction, or don't cast their votes. Please read about [Sentry Node Architecture]() to protect your node from DDOS attacks and to ensure high-availability.
 
-### Create A Validator
+## Create A Validator
 
 Your `fvp` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
 
