@@ -2,13 +2,13 @@
 
 ## What is IRISnet
 
-IRISnet is named after Greek goddess **Iris**, said to be the personification of the rainbow and the faithful messenger between heaven and humanity. IRIS network aims to build the foundation which facilitates construction of distributed business applications. IRIS hub will provide iServices, which allow resources such as data service and computing services being invoked across blockchains. To know more about IRISnet, please read this blog.
+IRIS network (a.k.a. IRISnet) is named after Greek goddess **Iris**, said to be the personification of the rainbow and the faithful messenger between heaven and humanity. IRIS network aims to build the foundation which facilitates construction of distributed business applications. IRIS hub will provide iServices, which allow resources such as data service and computing services being invoked across blockchains. To know more about IRISnet, please read this blog.
 
 ## How to Join Fuxi-2000 Testnet
 
 ### Step 1: Install Iris on Your Server
 
-Please follow this [instruction](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/install%20iris.md) to get **Iris** installed locally.
+Please follow this [instruction](https://github.com/irisnet/testnets/blob/master/fuxi/docs/install%20iris.md) to get **Iris** installed locally.
 
 
 ### Step 2: Setting Up Your Node
@@ -42,7 +42,7 @@ Your full node has been initialized!
 
 ### Get Configuration Files
 
-If you want to be part of the genesis file geneartion process, please follow this [guide](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Genesis%20Generation%20Process.md) to sumbmit a json file. Otherwise, you could always send related transaction to become a validator later. 
+If you want to be part of the genesis file geneartion process, please follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/Genesis%20Generation%20Process.md) to sumbmit a json file. Otherwise, you could always send related transaction to become a validator later. 
 
 After the genesis file generation process is finished, please download the genesis and the default config file. 
 
@@ -87,13 +87,10 @@ You could see the following
 ```
 When you see `catching_up` is `false`, it means the node is synced with the rest of testnet, otherwise it means it's still syncing.
 
-### Setup a sentry node
-
-A validator is under the risk of being attacked. You could follow this [guide](https://github.com/irisnet/testnets/blob/master/testnets/docs/Setup%20A%20Sentry%20Node.md) to setup a sentry node to protect yourself.
 
 ### Deploy IRISHub Monitor
 
-Please follow this [guide](https://github.com/irisnet/testnets/blob/master/testnets/docs/Deploy%20IRISHUB%20monitor.md) to get IRIHub running on your side.
+Please follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/Deploy%20IRISHUB%20monitor.md) to get IRIHub running on your side.
 
 
 ### Upgrade to Validator Node
@@ -102,8 +99,11 @@ You now have an active full node. What's the next step?
 
 If you have participated in the genesis file generation process, you should be a validator once you are fully synced. 
 
-If you miss the genesis file generation process, you can still upgrade your full node to become a IRISnet Validator. The top 100 validators have the ability to propose new blocks to the IRIS Hub. Continue onto [the Validator Setup](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs/Setup%20A%20Validator%20Node.md).
+If you miss the genesis file generation process, you can still upgrade your full node to become a IRISnet Validator. The top 100 validators have the ability to propose new blocks to the IRIS Hub. Continue onto [the Validator Setup](https://github.com/irisnet/testnets/blob/master/fuxi/docs/Setup%20A%20Validator%20Node.md).
 
+### Setup a sentry node
+
+A validator is under the risk of being attacked. You could follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/Setup%20A%20Sentry%20Node.md) to setup a sentry node to protect yourself.
 
 ##  Useful Links
 
