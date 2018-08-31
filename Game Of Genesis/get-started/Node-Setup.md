@@ -61,3 +61,9 @@ $ iriscli version
 v0.4.1-GOG
 ```
 
+## Configure Your Node
+
+### Moniker
+
+
+### 
