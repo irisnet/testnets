@@ -10,8 +10,33 @@ You could only get some IRIS token to play the game of genesis after you have fi
 You need to get `iris` and `iriscli` installed first. Then, follow the instructions below to create a new account:
 
 ```
-
+iriscli keys add <NAME_OF_KEY>
 ```
+
+Then, you should print a password of at least 8 characters.
+
+The output will look like the following:
+```
+NAME:	TYPE:	ADDRESS:						PUBKEY:
+tom	local	faa1arlugktm7p64uylcmh6w0g5m09ptvklxm5k69x	fap1addwnpepqvlmtpv7tke2k93vlyfpy2sxup93jfulll6r3jty695dkh09tekrzagazek
+**Important** write this seed phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+
+blast change tumble toddler rival ordinary chicken dirt physical club few language noise oak moment consider enemy claim elephant cruel people adult peanut garden
+```
+
+You could see the address and public key of this account. Please node that account address in IRISnet will start with `faa` and public key of account will start with `fap`.
+
+The seed phrase of this account will also be displayed. You could use these 24-character phrase to recover this account in another server. The recover command is:
+```
+iriscli keys add <NAME_OF_KEY> --recover
+```
+
+Once you have created your own address, please comment this issue with your address and you could receive 1,000iris soon. Each team will receivce once, then you could use these tokens to stake as a validator. The following command is used to check the balance of your account:
+```
+iriscli account <ACCOUNT> --node=http://localhost:36657
+```
+
 
 ## Create A Validator
 
