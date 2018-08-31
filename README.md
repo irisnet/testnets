@@ -5,7 +5,7 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 
 ## Getting Started
 
-To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/testnetstree/master/testnets/docs).
+To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/README.md).
 
 ## Testnet Status
 
