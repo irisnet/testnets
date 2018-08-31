@@ -63,7 +63,12 @@ v0.4.1-GOG
 
 ## Configure Your Node
 
-### Moniker
+### Change Moniker
+
+After installing irishub, you could customize the configuteration of your node. 
+
+### Set Seed Node
+
+## Start Node
 
 
-### 
