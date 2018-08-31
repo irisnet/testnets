@@ -55,10 +55,10 @@ You could verify you have the right version installed by running the following c
 
 ```
 $ iris version
-vGame Of Genesis
+Game Of Genesis
     
 $ iriscli version
-vGame Of Genesis
+Game Of Genesis
 ```
 
 ## Configure Your Node
