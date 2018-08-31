@@ -48,7 +48,7 @@ cd $GOPATH/src/github.com/irisnet
 git clone https://github.com/irisnet/irishub
 cd irishub && git checkout gog/develop
 curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-make get_tools && make get_vendor_deps && make install
+make get_vendor_deps && make install
 ```
 
 You could verify you have the right version installed by running the following commands: 
@@ -61,3 +61,9 @@ $ iriscli version
 v0.4.1-GOG
 ```
 
+## Configure Your Node
+
+### Moniker
+
+
+### 
