@@ -42,5 +42,6 @@ Please read this [doc](https://github.com/irisnet/testnets/blob/master/fuxi/docs
 
 7. How to understand the notion of gas&fee in IRISHub?
 
+This is the tech spec for fee&gas is [here](https://github.com/irisnet/irishub/blob/d1d20826da2112a53c6a0ce45e0263237c549089/docs/modules/fee-token/feeToken.md)
 
 
