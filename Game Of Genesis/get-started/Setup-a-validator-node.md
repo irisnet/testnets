@@ -48,12 +48,11 @@ iris tendermint show_validator --home=<IRIS-HOME>
 
 Next, craft your `iriscli stake create-validator` command:
 
-You can always get some `IRIS`  by using the [Faucet](https://testnet.irisplorer.io/#/faucet). Please don't abuse it. 
 
 ```
-iriscli stake create-validator --amount=100000000000000000000iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=game-of-genesis --name=<name>
+iriscli stake create-validator --amount=<amount>iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=game-of-genesis --name=<key_name> --node=http://localhost:36657
 ```
-
+Please note the **amount** needs to be 
 
 
 ### View Validator Description
