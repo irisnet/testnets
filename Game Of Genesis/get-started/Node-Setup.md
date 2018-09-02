@@ -55,10 +55,10 @@ You could verify you have the right version installed by running the following c
 
 ```
 $ iris version
-v0.4.1-GOG
+vGame-Of-Genesis
     
 $ iriscli version
-v0.4.1-GOG
+vGame-Of-Genesis
 ```
 
 ## Configure Your Node
