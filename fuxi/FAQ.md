@@ -9,6 +9,17 @@ IRIS network is named after the Greek goddess Iris, said to be the personificati
 Cosmos IBC defines a protocol for transferring values from an account on one chain to an account on another chain. The IRIS network designs new semantics to allow cross-chain computation to be invoked by leveraging IBC.The IRIS network could provide the service infrastructure for handing and coordinating on-chain transaction processing with off-chain data processing and business logic execution
 
 
+3. What is IRIS token?
+
+IRIS token is the native toke in IRISnet. It has two main usages:
+
+* Staking token: IRIS token holders could stake or delegate some IRIS to become a validator candidate
+* Fee token: IRIS could be used to pay for network fee and service fee.
+
+iris precision: 10^18
+
+
+
 3. Server Configuration
 
 Here is the recommanded configuration of the server.

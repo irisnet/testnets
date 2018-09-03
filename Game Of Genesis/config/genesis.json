@@ -1,0 +1,257 @@
+{
+  "genesis_time": "2018-08-31T15:24:35.346579989Z",
+  "chain_id": "game-of-genesis",
+  "consensus_params": {
+    "block_size_params": {
+      "max_bytes": "22020096",
+      "max_txs": "10000",
+      "max_gas": "-1"
+    },
+    "tx_size_params": {
+      "max_bytes": "10240",
+      "max_gas": "-1"
+    },
+    "block_gossip_params": {
+      "block_part_size_bytes": "65536"
+    },
+    "evidence_params": {
+      "max_age": "100000"
+    }
+  },
+  "validators": [
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "4MLOb5p74/ureuLk7zkoRm0r4ONZRRuOYIxZNcFy/As="
+      },
+      "power": "1000",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "w6xjZxPPn15OqLhAzCMF9ViSy1Nvug0qhOJjQdNWofo="
+      },
+      "power": "1000",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "+UPN0jbQ0K6gunfbJDjfkuJqnqIKBeidyhRHH0Zaj7k="
+      },
+      "power": "1000",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "K7JP7l8sv7m0VDvJUOGw+d3+DwlEbZ2ZDs8JkqjIjYc="
+      },
+      "power": "1000",
+      "name": ""
+    }
+  ],
+  "app_hash": "",
+  "app_state": {
+    "accounts": [
+      {
+        "address": "faa1ejeyp48840w0cm5awv44gzh8n2kwx9c5vz2j5f",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1cz93c0vslt5qd79vpfwt6qz4gqd8qklm9mx5mh",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1s9qm8m3gzvurtzr28n6kg368332mg3me6s4t2m",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1vwqa5ydr3uellchud4yj25cshxvqgy077sveyp",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1geum38wcdcdkaj88hfuf80r7l7x2etc0jwqtx4",
+        "coins": [
+          {
+            "denom": "iris",
+            "amount": "100000000000000000000000000"
+          }
+        ]
+      }
+    ],
+    "stake": {
+      "pool": {
+        "loose_tokens": "100004400000000000000000000",
+        "bonded_tokens": "0",
+        "inflation_last_time": "0",
+        "inflation": "7/100",
+        "date_last_commission_reset": "0",
+        "prev_bonded_shares": "0"
+      },
+      "params": {
+        "inflation_rate_change": "13/100",
+        "inflation_max": "1/5",
+        "inflation_min": "7/100",
+        "goal_bonded": "67/100",
+        "unbonding_time": "600",
+        "max_validators": 300,
+        "bond_denom": "iris",
+        "denom_precision": 18
+      },
+      "validators": [
+        {
+          "owner": "faa1ejeyp48840w0cm5awv44gzh8n2kwx9c5vz2j5f",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "4MLOb5p74/ureuLk7zkoRm0r4ONZRRuOYIxZNcFy/As="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1000000000000000000000",
+          "delegator_shares": "1000000000000000000000",
+          "token_precision": 18,
+          "description": {
+            "moniker": "bianjie",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1cz93c0vslt5qd79vpfwt6qz4gqd8qklm9mx5mh",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "w6xjZxPPn15OqLhAzCMF9ViSy1Nvug0qhOJjQdNWofo="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1000000000000000000000",
+          "delegator_shares": "1000000000000000000000",
+          "token_precision": 18,
+          "description": {
+            "moniker": "vincent",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1s9qm8m3gzvurtzr28n6kg368332mg3me6s4t2m",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "+UPN0jbQ0K6gunfbJDjfkuJqnqIKBeidyhRHH0Zaj7k="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1000000000000000000000",
+          "delegator_shares": "1000000000000000000000",
+          "token_precision": 18,
+          "description": {
+            "moniker": "yelong",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1vwqa5ydr3uellchud4yj25cshxvqgy077sveyp",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "K7JP7l8sv7m0VDvJUOGw+d3+DwlEbZ2ZDs8JkqjIjYc="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1000000000000000000000",
+          "delegator_shares": "1000000000000000000000",
+          "token_precision": 18,
+          "description": {
+            "moniker": "mufan",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        }
+      ],
+      "bonds": [
+        {
+          "delegator_addr": "faa1ejeyp48840w0cm5awv44gzh8n2kwx9c5vz2j5f",
+          "validator_addr": "faa1ejeyp48840w0cm5awv44gzh8n2kwx9c5vz2j5f",
+          "shares": "1000000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1cz93c0vslt5qd79vpfwt6qz4gqd8qklm9mx5mh",
+          "validator_addr": "faa1cz93c0vslt5qd79vpfwt6qz4gqd8qklm9mx5mh",
+          "shares": "1000000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1s9qm8m3gzvurtzr28n6kg368332mg3me6s4t2m",
+          "validator_addr": "faa1s9qm8m3gzvurtzr28n6kg368332mg3me6s4t2m",
+          "shares": "1000000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1vwqa5ydr3uellchud4yj25cshxvqgy077sveyp",
+          "validator_addr": "faa1vwqa5ydr3uellchud4yj25cshxvqgy077sveyp",
+          "shares": "1000000000000000000000",
+          "height": "0"
+        }
+      ]
+    }
+  }
+}
