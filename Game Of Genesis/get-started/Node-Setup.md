@@ -40,6 +40,7 @@ go version go1.10 linux/amd64
 
 ## Install IRISHub for Hackathon
 
+### Build from source
 After setting up the environment, you could get the correct version of IRISHub installed on your server. Please don't mix the version with which is used for Fuxi testnet.
 
 ```
@@ -60,6 +61,11 @@ Game Of Genesis
 $ iriscli version
 Game Of Genesis
 ```
+
+### Download Directly
+
+You could download directrly from our GitHub repo https://github.com/irisnet/irishub/releases/download/gog/irishub_gog_linux_amd64.zip . 
+
 
 ## Configure Your Node
 
