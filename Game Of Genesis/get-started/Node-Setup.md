@@ -77,12 +77,13 @@ The default $IRISHOME is `~/.iris` , You can edit this name later, in the `~/.ir
 ### Get Configuration Files
 
 Please download the genesis and the default config file.
-
+```
 cd $IRISHOME/config/
 rm genesis.json
 rm config.toml
 wget https://raw.githubusercontent.com/irisnet/testnets/master/Game%20Of%20Genesis/config/genesis.json
 wget https://raw.githubusercontent.com/irisnet/testnets/master/Game%20Of%20Genesis/config/config.toml
+```
 
 ### Change Moniker
 
