@@ -35,12 +35,12 @@ iriscli keys add <NAME_OF_KEY> --recover
 
 Once you have created your own address, please comment this issue with your address and you could receive 1,000iris soon. Each team will receivce once, then you could use these tokens to stake as a validator. The following command is used to check the balance of your account:
 ```
-iriscli account <ACCOUNT> --node=http://localhost:36657
+iriscli account <ACCOUNT> 
 ```
-### claim tokens
+### Claim Tokens
 
 
-Please reply this [issue](https://github.com/irisnet/testnets/issues/69) with the generated address. The team will send you 10000IRIS after verfication.
+Please reply this [issue](https://github.com/irisnet/testnets/issues/69) with the generated address. The team will send you 1000*10^18iris after verfication.
 
 
 ## Create A Validator
@@ -57,20 +57,20 @@ Example output:
 ```
 fvp1zcjduepqv7z2kgussh7ufe8e0prupwcm7l9jcn2fp90yeupaszmqjk73rjxq8yzw85
 ```
-Next, use the output as  `<pubkey>` field for `iriscli stake create-validator` command:
+Next, use the output as `<pubkey>` field for `iriscli stake create-validator` command:
 
 
 ```
-iriscli stake create-validator --amount=<amount>iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=game-of-genesis --name=<key_name> --node=http://localhost:36657
+iriscli stake create-validator --amount=<amount>iris --pubkey=<pubkey> --address-validator=<val_addr> --moniker=<moniker> --chain-id=game-of-genesis --name=<key_name> 
 ```
-Please note the **amount** needs to be the **minimium unit** of IRIS.
+Please note the **amount** needs to be more than 10^18iris.
 
-1 IRIS=10^18iris
+Please you need to specify the name of your validator to **name of your team**. 
 
 In this way, to stake 1IRIS, you need to do:
 
 ```
-iriscli stake create-validator --pubkey=<pubkey> --address-validator=<account> --fee=40000000000000000iris  --gas=2000000 --from=<name> --chain-id=game-of-genesis   --node=tcp://localhost:36657  --amount=1000000000000000000iris
+iriscli stake create-validator --pubkey=<pubkey> --address-validator=<account> --fee=40000000000000000iris  --gas=2000000 --from=<name> --chain-id=game-of-genesis   --amount=1000000000000000000iris
 ```
 Don't forget the `fee` and `gas` field.
 
@@ -79,7 +79,7 @@ Don't forget the `fee` and `gas` field.
 View the validator's information with this command:
 
 ```
-iriscli stake validator  --address-validator=<account>  --chain-id=game-of-genesis --node=tcp://localhost:36657 
+iriscli stake validator  --address-validator=<account>  --chain-id=game-of-genesis  
 ```
 
 The `<account>` is start with config.toml
@@ -89,7 +89,7 @@ The `<account>` is start with config.toml
 Your validator is active if the following command returns anything:
 
 ```
-iriscli status --node=tcp://localhost:36657 
+iriscli status
 ```
 
 You should also be able to see your power is above 0. Also, you should see validator on the [Explorer](https://testnet.irisplorer.io).
@@ -103,5 +103,5 @@ You should put your name of your team in `details`.
 
 ```
 iriscli stake edit-validator  --address-validator=<account> --moniker="choose a moniker"  --website="https://irisnet.org"  --details="team" --chain-id=game-of-genesis 
-  --name=<key_name> --node=tcp://localhost:36657 --fee=40000000000000000iris  --gas=2000000
+  --name=<key_name> --fee=40000000000000000iris  --gas=2000000
 ```
