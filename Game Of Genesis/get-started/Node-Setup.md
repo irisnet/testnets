@@ -89,7 +89,7 @@ You will need to set `36656` port to get connected with other peers and `36657` 
 You could start your node with the following command:
 
 ```
-iris start --home={PATH_TO_HOME}  > gog.log &
+iris start --home={PATH_TO_HOME}  1>gog.log  2>gog.error & 
 ```
 
 ## Check Node Status
