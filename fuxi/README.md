@@ -132,15 +132,15 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 
 * **下载配置文件文件**
 
-如果你想参加到genesis文件的生成流程中，请根据以下[文档](https://github.com/kidinamoto01/testnets-1/blob/master/testnets/docs_CN/Genesis-generation.md)提交相关文件。
+如果你想参加到genesis文件的生成流程中，请根据以下[文档](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/Genesis-generation.md)提交相关文件。
 
 下载fuxi-2000的配置文件，并替换原有的/$IRISHOME/config目录下的文件：
 
     cd $IRISHOME/config/
     rm genesis.json
     rm config.toml
-    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/config.toml
-    wget https://raw.githubusercontent.com/irisnet/testnets/master/testnets/fuxi-2000/config/genesis.json
+    wget https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-2000/config/config.toml
+    wget https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-2000/config/genesis.json
 
 * **修改配置文件**
 
@@ -220,6 +220,6 @@ iris unsafe_reset_all --home=$IRIShome
 
 在接下来你可以执行以下操作测试IRISHub的功能：
 
-* Token Transfer：[Link](https://github.com/irisnet/testnets/blob/master/testnets/docs_CN/转账交易.md)
-* Bond&Delegate： [Link](https://github.com/irisnet/testnets/blob/master/testnets/docs_CN/Basic-Bond:Delegate-Operation.md)
-* 部署IRISHub Monitor [Link](https://github.com/irisnet/testnets/blob/master/testnets/docs_CN/如何部署monitor.md)
+* 通证交易：[Link](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/转账交易.md)
+* 对于权益通证进行绑定和委托的操作： [Link](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/Basic-Bond:Delegate-Operation.md)
+* 部署IRISHub Monitor [Link](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/如何部署monitor.md)
