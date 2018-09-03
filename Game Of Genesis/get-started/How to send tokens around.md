@@ -5,15 +5,15 @@
 You can send some coins to your newly created account:
 
 ```
-        iriscli send --amount=1000000000000000000iris --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address> --fee=400000000000000iris --gas=20000  --node=localhost:36657
+iriscli send --amount=1000000000000000000iris --chain-id=<name_of_testnet_chain> --name=<key_name> --to=<destination_address> --fee=400000000000000iris --gas=20000  
 ```
 ⚠️： You also need --node if you haven't ran a full node locally.
 
 After executing the send command, you can use the following command to check if you send your coins successfully:
 
 ```
-        iriscli account <origin_address>
-        iriscli account <destination_address>
+iriscli account <origin_address>
+iriscli account <destination_address>
 ```
 
 ## Query Balance
@@ -21,7 +21,7 @@ After executing the send command, you can use the following command to check if 
 
 Execute the following command and you will find that there are some iris tokens in this account.
 ```
-    iriscli account faa1rdnxluhklx4k3s34d9fjg0vaacyfa3ml20ftgm --node=localhost:36657
+iriscli account faa1rdnxluhklx4k3s34d9fjg0vaacyfa3ml20ftgm
 ```
 ⚠️：  --node is the address of a full node in game-of-genesis. You need add this parameter if you haven't ran a full node locally.
 
