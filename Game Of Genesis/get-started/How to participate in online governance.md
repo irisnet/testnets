@@ -14,6 +14,7 @@
 * Deposit Period: 1440 blocks
 * Penalty for non-voting validtors: 1%
 * Pass Threshold: 50%
+* NoWithVeto Threshold: 33%
 * Voting Period: 20000 blocks
 
 ## How to submit a proposal?
