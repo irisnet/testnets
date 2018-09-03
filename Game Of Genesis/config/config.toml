@@ -5,7 +5,7 @@
 
 # TCP or UNIX socket address of the ABCI application,
 # or the name of an ABCI application compiled in with the Tendermint binary
-proxy_app = "tcp://127.0.0.1:36658"
+proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
 moniker = "bianjie"
@@ -51,7 +51,7 @@ filter_peers = false
 [rpc]
 
 # TCP or UNIX socket address for the RPC server to listen on
-laddr = "tcp://0.0.0.0:36657"
+laddr = "tcp://0.0.0.0:26657"
 
 # TCP or UNIX socket address for the gRPC server to listen on
 # NOTE: This server only supports /broadcast_tx_commit
@@ -78,7 +78,7 @@ max_open_connections = 900
 [p2p]
 
 # Address to listen for incoming connections
-laddr = "tcp://0.0.0.0:36656"
+laddr = "tcp://0.0.0.0:26656"
 
 # Address to advertise to peers for them to dial
 # If empty, will use the same port as the laddr,
@@ -87,7 +87,7 @@ laddr = "tcp://0.0.0.0:36656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "9849b15b61eea1b9ae51d8d42e2b6260fc949c62@172.31.16.83:36656,217b161adf9824114a4f332c5887010c34783ae2@172.31.3.60:36656"
+seeds = "b976f1c2e4afa4ec7eb80ceacccd09bc3b21df57@120.79.226.163:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
