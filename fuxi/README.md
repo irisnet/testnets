@@ -125,7 +125,7 @@ iris在运行过程中所依赖的配置文件和数据会存放在\$IRISHOME下
 * **初始化**
   执行以下操作，
   ```
-  iris init --home=<iris-home>
+  iris init --home=<iris-home> --name=<your validator's name>
   ```
 
 会在$IRISHOME下创建两个文件夹：/config 和 /data。/config终会包含两个重要文件：genesis.json 和config.toml。genesis文件中定义了区块链网络的初始状态，而config.toml指定了iris软件模块的重要组成部分。
