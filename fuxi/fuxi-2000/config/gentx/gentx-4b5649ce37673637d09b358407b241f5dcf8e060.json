@@ -10,8 +10,8 @@
     "name": ""
   },
   "app_gen_tx": {
-    "name": "CypherCoreValidator",
-    "address": "faa1l63c4gss06y3pp97j0xqf55tmgr45kcx7tuxhr",
+    "name": "Cypher Core",
+    "address": "faa187mhk93snthqfd6fe6uqs5480gpmj4sh57ftp2",
     "pub_key": "fap1zcjduepqdznxcyjchqvmwej8a3semmn5jcthlqhwjxkc9n40v3jqzjr50qxsascp2e"
   }
 }
