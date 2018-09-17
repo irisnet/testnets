@@ -1,5 +1,9 @@
 # Testnet Status
 
+## Sep 6, 2018 - New Release
+
+Released v0.4.0 with update for Tendermint v0.22.6 and cosmos-sdk v0.23.0
+
 ## Aug 10, 2018 - Fuxi-2000 Go live
 
 We started the second iteration of public testnet: fuxi-2000.

@@ -29,9 +29,9 @@ You can edit your validator's public description. This info is to identify your 
 
 ```
 iriscli stake edit-validator
-  --address-validator=<account_cosmosaccaddr>
+  --address-validator=<account>
   --moniker="choose a moniker" \
-  --website="https://cosmos.network" \
+  --website="https://irisnet.org" \
   --details=""
   --chain-id=fuxi-2000 \
   --name=<key_name>
@@ -43,7 +43,7 @@ View the validator's information with this command:
 
 ```
 iriscli stake validator \
-  --address-validator=<account_cosmosaccaddr> \
+  --address-validator=<account> \
   --chain-id=fuxi-2000
 ```
 
