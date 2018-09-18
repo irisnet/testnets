@@ -1,0 +1,17 @@
+{
+  "node_id": "d9712e8d94585a41f6cfd4f9532112427b7a6969",
+  "ip": "47.254.32.219",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "VQD56UAOXSRG1xZjTUrsnQ/bLIiy+DjBZwSLU+MQLb8="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "GO",
+    "address": "faa1hxpkl2we6qkg2demvnjdhvh8tjr9wg5sxezjhp",
+    "pub_key": "fap1zcjduepq25q0n62qpewjg3khze356jhvn58aktygktur3st8qj948ccs9kls79sdlr"
+  }
+}
