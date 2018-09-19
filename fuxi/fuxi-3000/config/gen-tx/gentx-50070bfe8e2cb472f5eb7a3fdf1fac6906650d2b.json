@@ -1,0 +1,17 @@
+{
+  "node_id": "50070bfe8e2cb472f5eb7a3fdf1fac6906650d2b",
+  "ip": "39.106.198.16",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "/eTyJnfY5lRBrlRbdp3THFnL4PhIySH7hLyo6ON+4XQ="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "mahuaibo",
+    "address": "faa1hvzlas9rckucrqls25h3luc08yw3csplyvz9me",
+    "pub_key": "fap1zcjduepqlhj0yfnhmrn9gsdw23dhd8wnr3vuhc8cfryjr7uyhj5w3cm7u96qsyt05t"
+  }
+}
