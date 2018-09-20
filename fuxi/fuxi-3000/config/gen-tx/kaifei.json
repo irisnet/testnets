@@ -1,0 +1,17 @@
+{
+  "node_id": "5c6d0fda970f058cc051763177b730cd41d9942f",
+  "ip": "39.104.16.237",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "xuACZ5CGEAabWblhHZKBxfbn64EwgTVwWzQhTGWcR5o="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "kaifei",
+    "address": "faa1kepndxvjr6gnc8tjcnelp9hqz8jdcs8mvz7m86",
+    "pub_key": "fap1zcjduepqcmsqyeusscgqdx6eh9s3my5pchmw06upxzqn2uzmxss5cevug7dqmyzf44"
+  }
+}
