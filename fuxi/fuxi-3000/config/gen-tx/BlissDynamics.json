@@ -1,0 +1,17 @@
+{
+    "node_id": "958ec629c0420f92116ee9a3d9c374a10b7cbf62",
+    "ip": "35.204.156.170",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "FARH7S8RTLl9jjnW4OYBDrXy7KEliTfjXMMZmkzYs1E="
+      },
+      "power": "700",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "BlissDynamics",
+      "address": "faa1tetdurkelwdrndf8gawjc5mp6f40nckww56gkz",
+      "pub_key": "fap1zcjduepqzszy0mf0z9xtjlvw88twpespp66l9m9pykyn0c6ucvve5nxckdgs9gfa8g"
+    }
+  }
