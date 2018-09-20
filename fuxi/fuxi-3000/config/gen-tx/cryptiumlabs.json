@@ -1,0 +1,17 @@
+  "gen_tx_file": {
+    "node_id": "8532b2b60acdd6a24cf36cb12d3240d73b16a1f7",
+    "ip": "35.242.245.162",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "SLU86DRDwkyVNPZsJEE0PqsmIZIlF3jfDOp0dCdIzp8="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "Cryptium Labs - F61053D3FBD06353",
+      "address": "faa1g8hqqfqhcz9jqe6q68t68jdjujt4levhpcaukf",
+      "pub_key": "fap1zcjduepqfz6ne6p5g0pye9f57ekzgsf5864jvgvjy5th3hcvaf68gf6ge60sytc5us"
+    }
+  }
