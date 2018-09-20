@@ -1,0 +1,17 @@
+{
+  "node_id": "f81d92d02213b8ed5fc3ae5cd3c9f043a75abbec",
+  "ip": "118.31.4.59",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "KAwIv6Pxq9gZqWw7d+/UPPOqeIQALFGkwnHtYNrZR6g="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Bianjie",
+    "address": "faa1zxs23dmh6nrufxk3m4082ekvpr2w80kxjy736x",
+    "pub_key": "fap1zcjduepq9qxq30ar7x4asxdfdsah0m758ne657yyqqk9rfxzw8kkpkkeg75q3dx0cs"
+  }
+}
