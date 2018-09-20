@@ -1,0 +1,16 @@
+{
+    "node_id": "b98cd6de06409252a829bcdda737597334d8d31e",
+    "ip": "18.213.2.115",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "ho48p0AdCisqvla281xWAztk8AwqjT9Q3A8+SkRO48U="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "P2P.ORG",
+      "address": "faa126utgpzjvtw3039sdx8tjz3v426auaypsg50dx",
+      "pub_key": "fap1zcjduepqs68ref6qr59zk24726m0xhzkqvakfuqv92xn75xupuly53zwu0zs9qk0cj"
+}
