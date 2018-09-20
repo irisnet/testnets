@@ -1,0 +1,17 @@
+{
+    "node_id": "65c1fb3d2a9fb485bbd194beac89d298b390eab0",
+    "ip": "136.144.200.169",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "nXsGCEwOsj2ipjUeHwD8tV9Omuwlk2u8HkdMzXs6yGs="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "crytter",
+      "address": "faa1l3c272ufxeeew32jxk7lz0arvqj2z5v0g7p9wj",
+      "pub_key": "fap1zcjduepqn4asvzzvp6ermg4xx50p7q8uk405axhvykfkh0q7gaxv67e6ep4sf9ykgn"
+    }
+  }
