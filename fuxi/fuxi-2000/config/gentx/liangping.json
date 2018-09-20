@@ -1,0 +1,18 @@
+{
+    "node_id": "ed2a3644848a3058ca4ea7a14daf915e91e72763",
+    "ip": "47.91.237.180",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "itktT0fAoTjhfO5RI+d43nJCS54qxA5yZJJWm688CaM="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "liangping",
+      "address": "faa1tv2z8zpm0cnucjk0f2wz4zffmjy4744fe9xfn8",
+      "pub_key": "fap1zcjduepq3tvj6n68czsn3ctuaegj8emcmeeyyju79tzquunyjftfhteupx3sftknpu"
+    }
+}
+

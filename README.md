@@ -5,9 +5,16 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 
 ## Getting Started
 
-To get started with the latest testnet, please follow this [guide](https://github.com/kidinamoto01/testnets-1/tree/master/testnets/docs).
+To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/README.md).
 
 ## Testnet Status
+
+## Aug 10, 2018 - Fuxi-2000 Go live
+
+We started the second iteration of public testnet: fuxi-2000.
+
+This testnet now has 20 validators and the average block time is about 5s. 
+
 
 ## Aug 8, 2018 - New Release
 

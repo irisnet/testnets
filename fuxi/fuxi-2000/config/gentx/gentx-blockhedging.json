@@ -1,0 +1,17 @@
+{
+  "node_id": "430655e353caeadb0e7d6cf2ff821dc7d8a3aa11",
+  "ip": "69.30.224.250",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "FRAJ82q6gGVvg4xMpTc/TtFaclQ7j1NVXLZGFwV3uyw="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "blockhedging",
+    "address": "faa1ayl4y7596k9g8yqdn5xs2805pvf3wt8lkkys28",
+    "pub_key": "fap1zcjduepqz5gqnum2h2qx2mur33x22delfmg45uj58w84x42ukerpwpthhvkqy0e37h"
+  }
+}
