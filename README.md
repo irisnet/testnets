@@ -5,9 +5,22 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 
 ## Getting Started
 
-To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/README.md).
+> Note: we have moved the docs from this repo to docs section of [irishub](https://github.com/irisnet/irishub/tree/master/docs/get-started)
+
+To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md).
 
 ## Testnet Status
+
+## Sep 21, 2018 - Fuxi-3000 Go live
+
+We started the second iteration of public testnet: fuxi-3000.
+
+This testnet now has 28 validators and the average block time is about 5s. 
+
+## Sep 12, 2018 - New Release
+
+Released v0.4.1 with update for Tendermint v0.22.6 and Cosmos-sdk v0.23.0
+
 
 ## Aug 10, 2018 - Fuxi-2000 Go live
 
