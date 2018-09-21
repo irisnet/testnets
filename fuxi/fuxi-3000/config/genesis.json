@@ -1,6 +1,6 @@
 {
   "genesis_time": "2018-09-21T02:50:21.166355914Z",
-  "chain_id": "fuxi-3000",
+  "chain_id": "fuxi-3001",
   "consensus_params": {
     "block_size_params": {
       "max_bytes": "22020096",
