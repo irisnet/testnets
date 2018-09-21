@@ -6,7 +6,7 @@
         "type": "tendermint/PubKeyEd25519",
         "value": "FARH7S8RTLl9jjnW4OYBDrXy7KEliTfjXMMZmkzYs1E="
       },
-      "power": "700",
+      "power": "100",
       "name": ""
     },
     "app_gen_tx": {
