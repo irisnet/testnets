@@ -1,38 +1,30 @@
-# How to Finish A Task In Fuxi Incentivized Testnet?
+# How to Upgrade to Fuxi-3001
 
-## What is IRISnet incentivized testnet ?
+Fuxi-3000 is short lived and validator FDC8E91E2F361F4BFCCEFA80C1ABAD138E5175AE double-sign genesis block triggeres a bug in slashing module. More analysis is here: https://github.com/irisnet/cosmos-sdk/pull/109
+S
+The team released a hot fix that should fix the problem: https://github.com/irisnet/irishub/releases/tag/v0.4.
+Please follow the instructions to reset your node and join Fuxi-3001!
 
-IRIS foundation will offer rewards of IRIS token to early testnet participants. They could get their rewards after IRISHub is launched. IRISnet development team will publish several task for each iteration of Fuxi testnet. Everyone is welcomed, and you have to fill in this [form](http://cn.mikecrm.com/H9aoXak) to complete your sign-up process. 
+1. Reset your node
+```
+iris unsafe_reset_all --home
+rm genesis.json
+rm addrbook.json
+```
 
-You need to use keybase to generate your own [pgp fingerprint](https://github.com/irisnet/testnets/blob/master/fuxi/How%20to%20use%20keybase.md) first. 
+2. Install latest irishub
+```
+cd $GOPATH/src/github.com/irisnet/irishub
+git fetch -a origin
+git checkout v0.4.2
+make get_vendor_deps
+make install
+```
 
-The instructions are the following: 
-
-## Tasks for Fuxi-3000
-
- | No   | Name                                           | Details                                                      | Criteria                                                     | Reward  |
-  | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
-  | 1    | Participate in Genesis file generation process | Submit your gen-tx.json and use `name-pgp-fingerprint` as validator's name | Submit your IP and thr team could check the configutration of your node | 50 iris |
-  | 2    | Setup a Full node                              | set up a full node and use `name-pgp-fingerprint` as `monkier` | Submit your IP and thr team could check the configutration of your node | 50 iris |
-  | 3    | Delegate some **iris** to a validator          | Get some **iris** from faucet and delegate to a validator    | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50 iris |
-  | 4    | Redelegate some **iris** from a validator      | Complete an redelegate transaction                           | Run `redelegate begin` and` redelegat complete` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50 iris |
-  | 5    | Submit a governance proposal                   | Complete an `submit-proposal`transaction                     | Run `submit-proposal` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20 iris |
-  | 6    | Vote a proposal                                | Complete an `vote`transaction                                | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20 iris |
-  | 7    | Deposit to a governance proposal               | Complete an `deposit`transaction                             | Run `deposit` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20 iris |
-
-
-
-### How to submit evidence
-
-You could submit the transaction Hash to prove you have finished the tasks above by replying this issue:
+3.Download genesis file for fuxi-3001
+```
+wget https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-3000/config/genesis.json
 
 ```
-GitHub ID: XXXX
-pgp ID: XXX
-Task 1: Link to your PR
-Task 2: Node URL
-Task 3: Hash
-Task 4: Hash
-...
 
-```
+4. Start 

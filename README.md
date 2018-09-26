@@ -11,11 +11,19 @@ To get started with the latest testnet, please follow this [guide](https://githu
 
 ## Testnet Status
 
-## Sep 21, 2018 - Fuxi-3000 Go live
+## Sep 21, 2018 - Fuxi-3001 Go Live
 
-We started the second iteration of public testnet: fuxi-3000.
+We started the third iteration of public testnet: fuxi-3001.
 
 This testnet now has 28 validators and the average block time is about 5s. 
+
+
+## Sep 12, 2018 - New Release
+
+
+## Sep 21, 2018 - Fuxi-3000 Started
+
+Fuxi-3000 is short lived and validator FDC8E91E2F361F4BFCCEFA80C1ABAD138E5175AE double-sign genesis block triggeres a bug in slashing module. More analysis is here: https://github.com/irisnet/cosmos-sdk/pull/109
 
 ## Sep 12, 2018 - New Release
 
