@@ -27,4 +27,8 @@ wget https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-3000/co
 
 ```
 
-4. Start 
+4. Start
+
+# Fuxi Incentivized Testnet Tasks
+
+Move to [here](https://github.com/irisnet/testnets/blob/master/fuxi/fuxi-3001/README.md) 
