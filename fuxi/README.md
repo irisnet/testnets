@@ -17,4 +17,7 @@ IRIS Hub是在Cosmos生态中的区域性枢纽，提供iService服务
 
 ## 如何完成fuxi-3001测试网的激励任务
 
+
 请参考如下[文档](https://github.com/irisnet/testnets/blob/master/fuxi/fuxi-3001/README.md)学习如何完成测试网激励任务。
+
+

@@ -1,0 +1,17 @@
+{
+  "node_id": "d1453e39d2f5fee7d9b91a008d177b12eda9bd87",
+  "ip": "54.176.242.8",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "x1AGyULlqmH57YAWJZCOa/kQJIFrj9AuUD3bBBv29to="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "zhiqiang",
+    "address": "faa1w4jtrzdwxh25mgtemqcalhsy8p930r0pper4vj",
+    "pub_key": "fap1zcjduepqcagqdj2zuk4xr70dsqtztyywd0u3qfypdw8aqtjs8hdsgxlk7mdqvja5a0"
+  }
+}

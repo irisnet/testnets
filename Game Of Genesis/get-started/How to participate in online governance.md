@@ -14,6 +14,7 @@
 * Deposit Period: 1440 blocks
 * Penalty for non-voting validtors: 1%
 * Pass Threshold: 50%
+* NoWithVeto Threshold: 33%
 * Voting Period: 20000 blocks
 
 ## How to submit a proposal?
@@ -23,7 +24,7 @@ Anyone could submit a governance proposal, but you need to make the deposit for 
 The following command is for submitting a `Text` proposal:
 
 ```
-iriscli gov submit-proposal --title="Text" --description="name of the proposal" --type="Text" --deposit="1000000000000000000000iris" --proposer=<account>  --from=<name>  --chain-id=game-of-genesis --fee=400000000000000iris --gas=20000 --node=http://localhost:36657
+iriscli gov submit-proposal --title="Text" --description="name of the proposal" --type="Text" --deposit="1000000000000000000000iris" --proposer=<account>  --from=<name>  --chain-id=game-of-genesis --fee=400000000000000iris --gas=20000
 ```
 
 The `<account>` for `proposer` field should start with `faa` which corresponds to `<name>`.
@@ -34,7 +35,7 @@ The `<account>` for `proposer` field should start with `faa` which corresponds t
 To add deposit to some proposal, you could execute this command to add `10IRIS` to the proposal's deposit:
 
 ```
-echo 1234567890|iriscli gov deposit --proposalID=1 --depositer=<account> --deposit=1000000000000000000iris   --from=<name>  --chain-id=game-of-genesis  --fee=400000000000000iris --gas=20000  --node=http://localhost:36657 
+echo 1234567890|iriscli gov deposit --proposalID=1 --depositer=<account> --deposit=1000000000000000000iris   --from=<name>  --chain-id=game-of-genesis  --fee=400000000000000iris --gas=20000  
 ```
 
 ## How to vote a proposal?
@@ -49,7 +50,7 @@ You could put one of the choices in the `--option` field.
 
 To vote for a proposal, you need to get the correct `<proposal_id>`.You could execute the following command to vote on proposal with ID = 1:
 ```
-iriscli  vote --from=jerry --voter=<account> --proposalID=1 --option=Yes --chain-id=game-of-genesis   --fee=2000000000000000iris --gas=20000  --node=http://localhost:36657
+iriscli  vote --from=jerry --voter=<account> --proposalID=1 --option=Yes --chain-id=game-of-genesis   --fee=2000000000000000iris --gas=20000  
 ```
 
 ## How to get more information about a proposal?

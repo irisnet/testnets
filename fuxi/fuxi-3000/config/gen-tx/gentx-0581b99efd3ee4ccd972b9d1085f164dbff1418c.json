@@ -1,0 +1,17 @@
+{
+    "node_id": "0581b99efd3ee4ccd972b9d1085f164dbff1418c",
+    "ip": "35.159.53.40",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "cp3j/nDZ8SYrhEz5Dh59fLrYB7b9p5wcUqKw5upNVL8="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "lunemint",
+      "address": "faa167gu2jfax727p7w7spvz0e7u6adqvydmynyqga",
+      "pub_key": "fap1zcjduepqw2w78lnsm8cjv2uyfnusu8na0jadspaklknec8zj52cwd6jd2jls37z8vv"
+    }
+}

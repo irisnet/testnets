@@ -16,7 +16,11 @@ Who would like to win: Familiar with the Tendermint consensus Familiar with Cosm
 
 ## How to Join
 
-Sign up the form: http://cn.mikecrm.com/loO06Op
+For those who have completed the Signup process, please follow this [guide](https://github.com/irisnet/testnets/blob/master/Game%20Of%20Genesis/get-started/Node-Setup.md) to get IRISHub installed on your server.
+
+Then, you could follow this [guide](https://github.com/irisnet/testnets/blob/master/Game%20Of%20Genesis/get-started/Setup-a-validator-node.md) to get some **IRIS** tokens, then upgrade a full node to validator node.
+
+You could verify your validator is running by visiting the Explorer: https://gog.irisplorer.io 
 
 Riot Room https://riot.im/app/#/room/#gameofgenesis:matrix.org
 
