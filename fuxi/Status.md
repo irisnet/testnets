@@ -1,5 +1,11 @@
 # Testnet Status
 
+## Sep 22, 2018 - New Release
+
+Released v0.4.2
+
+BUG FIX: Fix consensus failure due to the double sign evidence be broadcasted before the genesis block
+
 ## Sep 6, 2018 - New Release
 
 Released v0.4.0 with update for Tendermint v0.22.6 and cosmos-sdk v0.23.0
