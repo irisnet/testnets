@@ -1,5 +1,11 @@
 # Testnet Status
 
+## Sep 26, 2018 - Fuxi-3001 Go Live
+
+We started the third iteration of public testnet: fuxi-3001.
+
+This testnet now has 28 validators and the average block time is about 5s. 
+
 ## Sep 22, 2018 - New Release
 
 Released v0.4.2
