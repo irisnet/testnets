@@ -14,7 +14,7 @@ Join as a delegator:
 You don't have to run a validator node to join the testnet. You could simply download a client binary and send transactions. 
 
 2. How to find the tasks?
-For each iteration of testnet, the team will publish some tasks at GitHub repo. For example, you could read about Fuji-3001 tasks here:
+For each iteration of testnet, the team will publish some tasks at GitHub repo. For example, you could read about Fuxi-3001 tasks here:
 https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-3001
 
 3. How to see my scores?

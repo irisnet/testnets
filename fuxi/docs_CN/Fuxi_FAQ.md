@@ -1,25 +1,26 @@
 # Fuxi测试网激励计划常见问题
 
 
-1. 如何加入Fuxi测试网?
-You should join the Riot Room, the team will have announcement about the news of testnet. 
+1.如何加入Fuxi测试网?
+
 你可以加入QQ工作群：834063323。团队将在群里及时通知有关测试网的消息。
-There are two ways for join:
-* Join as a validator:
 
-You could run your IRIShub on your own server. Then you could bond to be a validator node. If you have trouble setting up your own server,
-you could sign up for free trial of the BaaS service from Wancloud or Zig-BaaS. Then you could complete all the tasks. 
+有两种方式加入测试网：
+* 以验证人的身份加入：你可以在自己的服务器上部署一个IRIShub节点。然后将其绑定成为一个验证人节点。如果你暂时没有服务器，你也可以申请免费试用BaaS的服务，我们将提供
+Wancloud和Zig-BaaS的免费试用机会。然后你就可以完成测试网的任务了。
 
-Join as a delegator:
+* 以委托人的身份加入：
+如果你对于部署一个验证人节点感到很困难，你可以只下载一个客户端，然后执行相关的测试网的任务交易。
 
-You don't have to run a validator node to join the testnet. You could simply download a client binary and send transactions. 
 
-2. How to find the tasks?
-For each iteration of testnet, the team will publish some tasks at GitHub repo. For example, you could read about Fuji-3001 tasks here:
-https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-3001
+2.测试网的激励任务在哪里?
 
-3. How to see my scores?
-When the testnet is closed, the team will check the proof of tasks and publish the results on GitHub. For example, you could read about the reward distribution for Fuxi-2000 here: https://github.com/irisnet/testnets/issues/51
+每一个测试网迭代中，团队都会发布相关的测试网激励任务。例如，Fuxi-3001测试网激励任务在下面链接中：https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-3001
 
-4. When could I receive my rewards?
-The rewards will be sent to your account once IRIShub mainnet is live. The way to claim your reward is to sign your IRIShub address with your Keybase account and send it to the team.
+3.怎样能知道我的任务完成情况?
+
+每当决定切换到下一个测试网的时候，团队会检查参与者的任务完成情况。例如，Fuxi-2000测试网任务完成情况在这里：https://github.com/irisnet/testnets/issues/51
+
+4.如果我获得了测试网奖励，何时才能拿到?
+
+测试网的奖励将在主网上线后发放给社区成员。你需要用你的Keybase签名一个irishub的地址，然后将其发送给团队。
