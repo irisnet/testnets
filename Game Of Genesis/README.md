@@ -1,12 +1,13 @@
 # IRISnet Virtual PoS Security Hachathon
 
+> Editor's note: Game of Genesis has been reschedled. Please join the Riot room and the team will publish the news in time
 ## Introduction
 
 The IRIS network will keep generating value when its validators could keep the whole network secure. Hackathons are built for rapid innovation. IRIS&Dorahacks believes hackathons will generate the most impressive solutions for protecting a validator of one Proof-of-Stake blockchain.
 
 ## Schedule Date
 
-2018.9.3~2018.9.23
+
 
 
 ## Who should join
