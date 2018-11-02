@@ -6,6 +6,7 @@ BaaS will be a good test bench for anyone who is interested in IRISnet technolog
 
 ## How to apply? 
 
-Each platform will provide 20 free trial of 2 weeks for eligible testnet applicants. You could send your application with this link： http://di85jpppboxifnnl.mikecrm.com/Xrulpxt
+There are two BaaS provider available for 
+Each platform will provide 10 free trial of 2 weeks for eligible testnet applicants. You could send your application with this link： http://di85jpppboxifnnl.mikecrm.com/Xrulpxt
 
 You need to fufill this form and we will contact you soon. 
