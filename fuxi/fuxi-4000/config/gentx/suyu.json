@@ -1,0 +1,17 @@
+{
+  "node_id": "858142bdcb489dc768416ed345a788fd00af27dc",
+  "ip": "120.79.226.1631",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "M3hFyBTZCa80jaDw425Pe9UncKiikAO8hTprpIEoczE="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "bft",
+    "address": "faa1nwpzlrs35nawthal6vz2rjr4k8xjvn7k8l63st",
+    "pub_key": "fap1zcjduepqxduytjq5myy67dyd5rcwxmj0002jwu9g52gq80y98f46fqfgwvcswg6dlx"
+  }
+}
