@@ -1,8 +1,9 @@
-# Fuxi Incentivized Testnet FAQ
+# Fuxi测试网激励计划常见问题
 
 
-1. How can I participate in Fuxi testnet?
-You should join the Riot Room: https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org, the team will have announcement about the news of testnet. 
+1. 如何加入Fuxi测试网?
+You should join the Riot Room, the team will have announcement about the news of testnet. 
+你可以加入QQ工作群：834063323。团队将在群里及时通知有关测试网的消息。
 There are two ways for join:
 * Join as a validator:
 
