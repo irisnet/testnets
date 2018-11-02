@@ -7,7 +7,7 @@ The IRIS network will keep generating value when its validators could keep the w
 
 ## Schedule Date
 
-
+The start date will be announced soon. 
 
 
 ## Who should join
