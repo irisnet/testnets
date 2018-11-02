@@ -2,10 +2,9 @@
 
 ## BaaS适合哪些人?
 
-BaaS will be a good test bench for anyone who is interested in IRISnet technology. With BaaS, they could familiarize themselves with validating technology before making decisions about renting their own server. In this way, we could see more validator candidates from our community. 
 
+BaaS服务将降低社区成员参与IRIShub测试网的门槛。通过BaaS，他们可以先熟悉区块链技术，然后再决定是否将更做的资源投入到测试网中。BaaS将吸引更多的社区成员加入到测试网中。
 ## 如何申请? 
 
-Each platform will provide 20 free trial of 2 weeks for eligible testnet applicants. You could send your application with this link： http://di85jpppboxifnnl.mikecrm.com/Xrulpxt
-
-You need to fufill this form and we will contact you soon. 
+每个BaaS平台将提供10个名额试用2周。你可以通过填写以下表格报名：http://di85jpppboxifnnl.mikecrm.com/Xrulpxt
+团队将很快通过邮件联系申请人。
