@@ -38,4 +38,4 @@ Task 7: Tx Hash
 ...
 
 ```
-Only the Top 20 participants will receive the rewards. 
+All participants will receive the rewards. 
