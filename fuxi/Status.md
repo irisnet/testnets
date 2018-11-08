@@ -1,5 +1,35 @@
 # Testnet Status
 
+
+## Nov 1, 2018 - New Release
+
+Released v0.6.0
+
+BREAKING CHANGES:
+
+[monitor] Use new executable binary in monitor
+FEATURES:
+
+[record] Add the record module of the data certification on blockchain
+[iservice] Add the feature of iService definition
+[iservice] Use --def-chain-id flag to reference the blockchain defined of the iService
+[cli] Add the example description in the cli help
+[test] Add Cli/LCD/Sim auto-test
+[test] Add cli and lcd test for record module
+[docs] Update the user doc of iservice definition and record
+
+BUG FIXES:
+Fix software upgrade issue caused by tx fee
+Report Panic when building the lcd proof
+Fix bugs in converting validator power to byte array
+Fix panic bug in wrong account number
+Fix some bugs about iservice definition and record
+
+## Oct 18, 2018 - New Release
+
+Released v0.5.0
+
+
 ## Sep 26, 2018 - Fuxi-3001 Go Live
 
 We started the third iteration of public testnet: fuxi-3001.
