@@ -1,0 +1,17 @@
+{
+  "node_id": "d5edd2e4f7cbebbe774266d6e876fd3d4d07cbb7",
+  "ip": "23.105.201.44",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "O9WtAFSA+FYjCR5xsgnAGuv5v6AW7yH87Xd3xXn43q8="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "gavincrypto",
+    "address": "faa1xegdqnjvsz70dhk8h5eadeyclnagwa68yp240j",
+    "pub_key": "fap1zcjduepq80266qz5sru9vgcfrecmyzwqrt4ln0aqzmhjrl8dwamu270cm6hspct9z4"
+  }
+}
