@@ -1,0 +1,17 @@
+{
+  "node_id": "467f2e10b9c04e4fa355949052eb768b9c7181c7",
+  "ip": "47.97.177.52",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "wM8SxluJRtEFhxEaS7hwjiumSg4ihndqQ1FuwWJL2Ks="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "blockgeeks",
+    "address": "faa1ls2xrneffzy7h8evwfldas0u9gaxpayldlspv3",
+    "pub_key": "fap1zcjduepqcr8393jm39rdzpv8zydyhwrs3c46vjswy2r8w6jr29hvzcjtmz4spnytar"
+  }
+}
