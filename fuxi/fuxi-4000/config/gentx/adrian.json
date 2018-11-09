@@ -1,0 +1,17 @@
+{
+  "node_id": "6cc61b40ba809064b54d6cd2be9b973d0b1c5dc9",
+  "ip": "192.168.1.62",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "nvjXjPD9qRif27jb4T5KY9M7LCDaLGI8Qihc7S2a64s="
+    },
+    "power": "100",
+    "name": "Cryptium Labs - adrianbrink,awasunyin,cwgoes"
+  },
+  "app_gen_tx": {
+    "name": "Cryptium Labs - adrianbrink,awasunyin,cwgoes",
+    "address": "faa1dz9n5n6p3u3dzl8uhhs36wt2hcx0gz2s74rhnp",
+    "pub_key": "fap1zcjduepqnmud0r8slk53387mhrd7z0j2v0fnktpqmgkxy0zz9pww6tv6aw9sy06a4x"
+  }
+}
