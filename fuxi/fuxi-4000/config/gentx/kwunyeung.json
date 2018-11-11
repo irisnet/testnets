@@ -1,0 +1,17 @@
+{
+  "node_id": "b52df6b5491e074cefdf83f5948cd022efd6a9e5",
+  "ip": "192.168.86.243",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "R8nrRyLk1pHUwmkFZJOWh8GLBSqKBH47d81eRuHiXsY="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "forbole",
+    "address": "faa1y6m9lmacwyphw7tffyc4yetsjpx55z72mtrlp7",
+    "pub_key": "fap1zcjduepqgly7k3ezuntfr4xzdyzkfyukslqckpf23gz8uwmhe40ydc0ztmrqmllvg7"
+  }
+}
