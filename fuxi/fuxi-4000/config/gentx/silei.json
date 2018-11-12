@@ -1,0 +1,17 @@
+{
+    "node_id": "18d2b7772eb5acaf28eb2b72b31f08516ca82cf0",
+    "ip": "52.8.50.183",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "5vxOkaTHmBtrEq/lkqg+IoQYpakyVYGbWCXNMnOWcjA="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "silei",
+      "address": "faa1yam4xsktxgmdr8cud6vf54xue083n2868r04vy",
+      "pub_key": "fap1zcjduepqum7yaydyc7vpk6cj4lje92p7y2zp3fdfxf2crx6cyhxnyuukwgcqd6ptc6"
+    }
+  }
