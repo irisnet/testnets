@@ -1,0 +1,1331 @@
+{
+  "genesis_time": "2018-11-12T10:23:48.576908Z",
+  "chain_id": "fuxi-4000",
+  "consensus_params": {
+    "block_size_params": {
+      "max_bytes": "22020096",
+      "max_txs": "10000",
+      "max_gas": "-1"
+    },
+    "tx_size_params": {
+      "max_bytes": "10240",
+      "max_gas": "-1"
+    },
+    "block_gossip_params": {
+      "block_part_size_bytes": "65536"
+    },
+    "evidence_params": {
+      "max_age": "100000"
+    }
+  },
+  "validators": [
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "+J6gNmMIaGU1h+BP/cnwP/jb14501YXXzkHBEyGxYrU="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "5vxOkaTHmBtrEq/lkqg+IoQYpakyVYGbWCXNMnOWcjA="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "oZB2RHKhLtTv7apzQZ99m0agU7pwhQXDvNXv5Cl8Wg4="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "89kEPH9LPNBg+OSx75e9L2gNaUF+2MeYBBfBThf34vU="
+      },
+      "power": "100",
+      "name": "90E4A60F4E84E674"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "wM8SxluJRtEFhxEaS7hwjiumSg4ihndqQ1FuwWJL2Ks="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "aKZsEli4GbdmR+xhne50lhd/gu6RrYLOr2RkAUh0eA0="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "XewzdZOdSfD0IppNR5LJnf9hxjfJaV06kLumdI9ZrQQ="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "BiBljvPlxO+SbaCqgD2pfxtJvUAfcjaxGd/2kon2suA="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "ktz/FILQspQ0zzeILIPsS+A7gC+NBH5NBUoZkWNqr1U="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "Apc6IJBA/QUyB7NzhDWv9l5UZZ/bXVX7rFFIU8s2Lcw="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "9TktJdjDU8z/nQaZ0n4l8q7IlhdbjxHe1jEEuh5fsNY="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "uMSVnATNn6f9sW5CMOKS1EUQAEI4XW4c80Y0Re3vlpA="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "J0UK4YJQ+cPYQSNOpE/oGk5HPqO0zuyv+qJ31uN43y8="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "OhzM374FH2Y/7+c9Yad5HRSw21GxAz/1G9QSTBDkEU8="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "LSD8pZ9DcZo6SdkoH3om2chKpb18Sy32kAw+Za2PsHw="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "fgtftqSANs6sz+o44RNdMun+Zosr+c2GgDIhAiOcexI="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "R8nrRyLk1pHUwmkFZJOWh8GLBSqKBH47d81eRuHiXsY="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "ji5XVhqd47HUnr57ivCHTqY7TpXdguGjwYX7MTigIvM="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "F6CS+lXQS/dcutwZTjgytAuRkev42d38OvZ+ZmOmCX4="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "VUlL+yCoeS4zPO6au26kTUtpJH1GgwAB2pTeIe8PKKc="
+      },
+      "power": "5000",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "lEyi1800zoRhidG/iGQ9dDA0l8HTIqHc2MqQLmPNJ0o="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "4/z3T/GcLugKqbCLLb4tSMLgUCCI232/Zqik5VvC4Pc="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "QTVrvSvVzaVxfvFI2/nstg+JTM5sOaQvXC2SF0b/2yM="
+      },
+      "power": "100",
+      "name": "mahuaibo-9B75D5E7320419BB"
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "AYln/8KpVtr35s8myGQ6DqrQjnE3iFR2z0fsLc6ah44="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "l5/rX7TaMZbK6NBFtCyVuOodnk42XuN1FlJrTjyMSos="
+      },
+      "power": "100",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "V5VmShl9hF9pWuez08uB9iq8bND3uyfQaYrs0sePjXo="
+      },
+      "power": "100",
+      "name": ""
+    }
+  ],
+  "app_hash": "",
+  "app_state": {
+    "accounts": [
+      {
+        "address": "faa1p6tr0m8xn7x0x0n0meexkse7lp0yxwwgh597cr",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1yam4xsktxgmdr8cud6vf54xue083n2868r04vy",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1fhftv6tmcy3hs5mrj9ln686rjly2ryydh0u2yv",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1akv76f0jwvammdehe5lm5trqcedumcuzktzmm0",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1ls2xrneffzy7h8evwfldas0u9gaxpayldlspv3",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa187mhk93snthqfd6fe6uqs5480gpmj4sh57ftp2",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa19phqyhh5p62yskt99tf2askxk29je8yxy6pzuh",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1th43h9u3e39zht9zd2jq8h8gxxvngx0h82mhdq",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1k078pl8tnhvntvpwcd8t5vsvc6e9umeleez8ty",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa149ex6tlj233r3zw4dtkvmy9lqzyms0mql2g8m5",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1jh2kzlc9cjplhuvtzj2vcts8s058s5yvm0a3hc",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1u5pyamv8k5xh72p43af9t8mgr3j9ryceqk8nv4",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1sscxmv68qgqsr6ls3dee6jsqehelpf4vy6n65q",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1d893wh34pxqp2rm63dqqxpyfepy5az9uswgf2c",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1gu2sutg6rwjl244tcqj9vtdl40g8caqpu8nr4k",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1prcjldjnw2tau7er06ttwke42qa70nwcx6lhkt",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1y6m9lmacwyphw7tffyc4yetsjpx55z72mtrlp7",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1yp04367nun7przyuwzqlpzts22vmzkd6j8v2n4",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa10ly0z6mcc8s020ncsxx5ssyc59hmwvtcgsps7t",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1lpkx38ftygzm5l2wntt58yzwe5g4wtv2kmjw6l",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "10000000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa13p8hkgrw72ed6mumu53sxtgps930ulp2up2llz",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1v4usza0k86uqs9djv6l264fceg9j8klxl47kd2",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1rsrlny52pvc4lyj3jut0k8t0jxedp7yxs4dj2m",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1uey6ly8y9xzdmevst9kmdrc6zvtndaqxhcycq5",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1u6mhz22ctc8t0j5fermakctl4n5tcsq53dh4xd",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+      {
+        "address": "faa1p27arqjnlajcp7y3fjgh8jgs2x2l07hhnmype2",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        ]
+      },
+	  {
+        "address": "faa14d59j363uha3xxk2xqqhav8xaztym2rkdjdf8v",
+        "coins": [
+          {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000000000"
+          }
+        ]
+      }
+    ],
+    "stake": {
+      "pool": {
+        "loose_tokens": "100225000000000000000000000",
+        "bonded_tokens": "0",
+        "inflation_last_time": "1970-01-01T00:00:00Z",
+        "inflation": "7/100",
+        "date_last_commission_reset": "0",
+        "prev_bonded_shares": "0"
+      },
+      "params": {
+        "inflation_rate_change": "13/100",
+        "inflation_max": "1/5",
+        "inflation_min": "7/100",
+        "goal_bonded": "67/100",
+        "unbonding_time": "600000000000",
+        "max_validators": 100,
+        "bond_denom": "iris-atto"
+      },
+      "validators": [
+        {
+          "owner": "faa1p6tr0m8xn7x0x0n0meexkse7lp0yxwwgh597cr",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "+J6gNmMIaGU1h+BP/cnwP/jb14501YXXzkHBEyGxYrU="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "afu",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1yam4xsktxgmdr8cud6vf54xue083n2868r04vy",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "5vxOkaTHmBtrEq/lkqg+IoQYpakyVYGbWCXNMnOWcjA="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "silei",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1fhftv6tmcy3hs5mrj9ln686rjly2ryydh0u2yv",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "oZB2RHKhLtTv7apzQZ99m0agU7pwhQXDvNXv5Cl8Wg4="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "8btc",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1akv76f0jwvammdehe5lm5trqcedumcuzktzmm0",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "89kEPH9LPNBg+OSx75e9L2gNaUF+2MeYBBfBThf34vU="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "wancloud",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1ls2xrneffzy7h8evwfldas0u9gaxpayldlspv3",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "wM8SxluJRtEFhxEaS7hwjiumSg4ihndqQ1FuwWJL2Ks="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "blockgeeks",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa187mhk93snthqfd6fe6uqs5480gpmj4sh57ftp2",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "aKZsEli4GbdmR+xhne50lhd/gu6RrYLOr2RkAUh0eA0="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "Cypher Core-5CCA4F526B9F85DA",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa19phqyhh5p62yskt99tf2askxk29je8yxy6pzuh",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "XewzdZOdSfD0IppNR5LJnf9hxjfJaV06kLumdI9ZrQQ="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "kaifei",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1th43h9u3e39zht9zd2jq8h8gxxvngx0h82mhdq",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "BiBljvPlxO+SbaCqgD2pfxtJvUAfcjaxGd/2kon2suA="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "Bianjie",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1k078pl8tnhvntvpwcd8t5vsvc6e9umeleez8ty",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "ktz/FILQspQ0zzeILIPsS+A7gC+NBH5NBUoZkWNqr1U="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "Ourea4000",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa149ex6tlj233r3zw4dtkvmy9lqzyms0mql2g8m5",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "Apc6IJBA/QUyB7NzhDWv9l5UZZ/bXVX7rFFIU8s2Lcw="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "Certus One - 3CDE464E307C0C304F48214DCB0F38C5C213D585",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1jh2kzlc9cjplhuvtzj2vcts8s058s5yvm0a3hc",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "9TktJdjDU8z/nQaZ0n4l8q7IlhdbjxHe1jEEuh5fsNY="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "P.Validator",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1u5pyamv8k5xh72p43af9t8mgr3j9ryceqk8nv4",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "uMSVnATNn6f9sW5CMOKS1EUQAEI4XW4c80Y0Re3vlpA="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "figment-60C1D5AF5EE3F736",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1sscxmv68qgqsr6ls3dee6jsqehelpf4vy6n65q",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "J0UK4YJQ+cPYQSNOpE/oGk5HPqO0zuyv+qJ31uN43y8="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "x4",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1d893wh34pxqp2rm63dqqxpyfepy5az9uswgf2c",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "OhzM374FH2Y/7+c9Yad5HRSw21GxAz/1G9QSTBDkEU8="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "kreios",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1gu2sutg6rwjl244tcqj9vtdl40g8caqpu8nr4k",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "LSD8pZ9DcZo6SdkoH3om2chKpb18Sy32kAw+Za2PsHw="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "vincent",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1prcjldjnw2tau7er06ttwke42qa70nwcx6lhkt",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "fgtftqSANs6sz+o44RNdMun+Zosr+c2GgDIhAiOcexI="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "melea-trust-4BE49EABAA41B8BF",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1y6m9lmacwyphw7tffyc4yetsjpx55z72mtrlp7",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "R8nrRyLk1pHUwmkFZJOWh8GLBSqKBH47d81eRuHiXsY="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "kwunyeung-3B84437810397048",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1yp04367nun7przyuwzqlpzts22vmzkd6j8v2n4",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "ji5XVhqd47HUnr57ivCHTqY7TpXdguGjwYX7MTigIvM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "P2P.ORG.2",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa10ly0z6mcc8s020ncsxx5ssyc59hmwvtcgsps7t",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "F6CS+lXQS/dcutwZTjgytAuRkev42d38OvZ+ZmOmCX4="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "zhiqiang",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1lpkx38ftygzm5l2wntt58yzwe5g4wtv2kmjw6l",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "VUlL+yCoeS4zPO6au26kTUtpJH1GgwAB2pTeIe8PKKc="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "5000000000000000000000",
+          "delegator_shares": "5000000000000000000000",
+          "description": {
+            "moniker": "haoyang",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa13p8hkgrw72ed6mumu53sxtgps930ulp2up2llz",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "lEyi1800zoRhidG/iGQ9dDA0l8HTIqHc2MqQLmPNJ0o="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "huobi_validator",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1v4usza0k86uqs9djv6l264fceg9j8klxl47kd2",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "4/z3T/GcLugKqbCLLb4tSMLgUCCI232/Zqik5VvC4Pc="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "zsh-fuxi",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1rsrlny52pvc4lyj3jut0k8t0jxedp7yxs4dj2m",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "QTVrvSvVzaVxfvFI2/nstg+JTM5sOaQvXC2SF0b/2yM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "mahuaibo",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1uey6ly8y9xzdmevst9kmdrc6zvtndaqxhcycq5",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "AYln/8KpVtr35s8myGQ6DqrQjnE3iFR2z0fsLc6ah44="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "louis",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1u6mhz22ctc8t0j5fermakctl4n5tcsq53dh4xd",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "l5/rX7TaMZbK6NBFtCyVuOodnk42XuN1FlJrTjyMSos="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "suyu",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        },
+        {
+          "owner": "faa1p27arqjnlajcp7y3fjgh8jgs2x2l07hhnmype2",
+          "pub_key": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "V5VmShl9hF9pWuez08uB9iq8bND3uyfQaYrs0sePjXo="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "100000000000000000000",
+          "delegator_shares": "100000000000000000000",
+          "description": {
+            "moniker": "dingyizhen",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "bond_height": "0",
+          "bond_intra_tx_counter": 0,
+          "proposer_reward_pool": [],
+          "commission": "0",
+          "commission_max": "0",
+          "commission_change_rate": "0",
+          "commission_change_today": "0",
+          "prev_bonded_tokens": "0"
+        }
+      ],
+      "bonds": [
+        {
+          "delegator_addr": "faa1p6tr0m8xn7x0x0n0meexkse7lp0yxwwgh597cr",
+          "validator_addr": "faa1p6tr0m8xn7x0x0n0meexkse7lp0yxwwgh597cr",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1yam4xsktxgmdr8cud6vf54xue083n2868r04vy",
+          "validator_addr": "faa1yam4xsktxgmdr8cud6vf54xue083n2868r04vy",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1fhftv6tmcy3hs5mrj9ln686rjly2ryydh0u2yv",
+          "validator_addr": "faa1fhftv6tmcy3hs5mrj9ln686rjly2ryydh0u2yv",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1akv76f0jwvammdehe5lm5trqcedumcuzktzmm0",
+          "validator_addr": "faa1akv76f0jwvammdehe5lm5trqcedumcuzktzmm0",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1ls2xrneffzy7h8evwfldas0u9gaxpayldlspv3",
+          "validator_addr": "faa1ls2xrneffzy7h8evwfldas0u9gaxpayldlspv3",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa187mhk93snthqfd6fe6uqs5480gpmj4sh57ftp2",
+          "validator_addr": "faa187mhk93snthqfd6fe6uqs5480gpmj4sh57ftp2",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa19phqyhh5p62yskt99tf2askxk29je8yxy6pzuh",
+          "validator_addr": "faa19phqyhh5p62yskt99tf2askxk29je8yxy6pzuh",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1th43h9u3e39zht9zd2jq8h8gxxvngx0h82mhdq",
+          "validator_addr": "faa1th43h9u3e39zht9zd2jq8h8gxxvngx0h82mhdq",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1k078pl8tnhvntvpwcd8t5vsvc6e9umeleez8ty",
+          "validator_addr": "faa1k078pl8tnhvntvpwcd8t5vsvc6e9umeleez8ty",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa149ex6tlj233r3zw4dtkvmy9lqzyms0mql2g8m5",
+          "validator_addr": "faa149ex6tlj233r3zw4dtkvmy9lqzyms0mql2g8m5",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1jh2kzlc9cjplhuvtzj2vcts8s058s5yvm0a3hc",
+          "validator_addr": "faa1jh2kzlc9cjplhuvtzj2vcts8s058s5yvm0a3hc",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1u5pyamv8k5xh72p43af9t8mgr3j9ryceqk8nv4",
+          "validator_addr": "faa1u5pyamv8k5xh72p43af9t8mgr3j9ryceqk8nv4",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1sscxmv68qgqsr6ls3dee6jsqehelpf4vy6n65q",
+          "validator_addr": "faa1sscxmv68qgqsr6ls3dee6jsqehelpf4vy6n65q",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1d893wh34pxqp2rm63dqqxpyfepy5az9uswgf2c",
+          "validator_addr": "faa1d893wh34pxqp2rm63dqqxpyfepy5az9uswgf2c",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1gu2sutg6rwjl244tcqj9vtdl40g8caqpu8nr4k",
+          "validator_addr": "faa1gu2sutg6rwjl244tcqj9vtdl40g8caqpu8nr4k",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1prcjldjnw2tau7er06ttwke42qa70nwcx6lhkt",
+          "validator_addr": "faa1prcjldjnw2tau7er06ttwke42qa70nwcx6lhkt",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1y6m9lmacwyphw7tffyc4yetsjpx55z72mtrlp7",
+          "validator_addr": "faa1y6m9lmacwyphw7tffyc4yetsjpx55z72mtrlp7",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1yp04367nun7przyuwzqlpzts22vmzkd6j8v2n4",
+          "validator_addr": "faa1yp04367nun7przyuwzqlpzts22vmzkd6j8v2n4",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa10ly0z6mcc8s020ncsxx5ssyc59hmwvtcgsps7t",
+          "validator_addr": "faa10ly0z6mcc8s020ncsxx5ssyc59hmwvtcgsps7t",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1lpkx38ftygzm5l2wntt58yzwe5g4wtv2kmjw6l",
+          "validator_addr": "faa1lpkx38ftygzm5l2wntt58yzwe5g4wtv2kmjw6l",
+          "shares": "5000000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa13p8hkgrw72ed6mumu53sxtgps930ulp2up2llz",
+          "validator_addr": "faa13p8hkgrw72ed6mumu53sxtgps930ulp2up2llz",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1v4usza0k86uqs9djv6l264fceg9j8klxl47kd2",
+          "validator_addr": "faa1v4usza0k86uqs9djv6l264fceg9j8klxl47kd2",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1rsrlny52pvc4lyj3jut0k8t0jxedp7yxs4dj2m",
+          "validator_addr": "faa1rsrlny52pvc4lyj3jut0k8t0jxedp7yxs4dj2m",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1uey6ly8y9xzdmevst9kmdrc6zvtndaqxhcycq5",
+          "validator_addr": "faa1uey6ly8y9xzdmevst9kmdrc6zvtndaqxhcycq5",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1u6mhz22ctc8t0j5fermakctl4n5tcsq53dh4xd",
+          "validator_addr": "faa1u6mhz22ctc8t0j5fermakctl4n5tcsq53dh4xd",
+          "shares": "100000000000000000000",
+          "height": "0"
+        },
+        {
+          "delegator_addr": "faa1p27arqjnlajcp7y3fjgh8jgs2x2l07hhnmype2",
+          "validator_addr": "faa1p27arqjnlajcp7y3fjgh8jgs2x2l07hhnmype2",
+          "shares": "100000000000000000000",
+          "height": "0"
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposalID": "1",
+      "deposit_period": {
+        "min_deposit": [
+          {
+            "denom": "iris-atto",
+            "amount": "50000000000000000000"
+          }
+        ],
+        "max_deposit_period": "20000"
+      },
+      "voting_period": {
+        "voting_period": "20000"
+      },
+      "tallying_procedure": {
+        "threshold": "1/2",
+        "veto": "1/3",
+        "governance_penalty": "1/100"
+      }
+    },
+    "upgrade": {
+      "switch_period": "57600"
+    }
+  }
+}
