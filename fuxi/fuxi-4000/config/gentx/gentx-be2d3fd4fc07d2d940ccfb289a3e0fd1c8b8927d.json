@@ -1,0 +1,17 @@
+{
+  "node_id": "be2d3fd4fc07d2d940ccfb289a3e0fd1c8b8927d",
+  "ip": "18.217.120.117",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "ji5XVhqd47HUnr57ivCHTqY7TpXdguGjwYX7MTigIvM="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "P2P.ORG.2",
+    "address": "faa1yp04367nun7przyuwzqlpzts22vmzkd6j8v2n4",
+    "pub_key": "fap1zcjduepq3ch9w4s6nh3mr4y7heac4uy8f6nrkn54mkpwrg7pshanzw9qytesu0a3w9"
+  }
+}
