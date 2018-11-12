@@ -1,0 +1,17 @@
+{
+  "node_id": "089784ef45315799a1a6316bd61777c081ca635c",
+  "ip": "47.244.28.51",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "+J6gNmMIaGU1h+BP/cnwP/jb14501YXXzkHBEyGxYrU="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "afu",
+    "address": "faa1p6tr0m8xn7x0x0n0meexkse7lp0yxwwgh597cr",
+    "pub_key": "fap1zcjduepqlz02qdnrpp5x2dv8up8lmj0s8ludh4uwwn2ct47wg8q3xgd3v26sppflck"
+  }
+}
