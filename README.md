@@ -11,6 +11,14 @@ To get started with the latest testnet, please follow this [guide](https://githu
 
 ## Testnet Status
 
+## Nov 12, 2018 - Fuxi-4000 Go Live
+
+We bootstraped the latest testnet in a centralized manner. Now, fuxi-4000 has 28 validators and the average block time is about 5s.
+
+
+## Nov 1, 2018 - New Release
+Released v0.6.0
+
 ## Sep 21, 2018 - Fuxi-3001 Go Live
 
 We started the third iteration of public testnet: fuxi-3001.
