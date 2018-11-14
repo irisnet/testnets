@@ -1,0 +1,17 @@
+{
+  "node_id": "39f7e7872a88d437a8de5191fb1d2dadfc201888",
+  "ip": "106.75.226.122",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "k1VOO0tVpGwD6GJsHX+Ng0ygDm4STtYx8OwqwWELMGY="
+    },
+    "power": "100",
+    "name": "jbhucker-1A13D1B5CCC1EC3A338F868248EF8EA77648B24E"
+  },
+  "app_gen_tx": {
+    "name": "Hashgard",
+    "address": "faa1we679jtljs4v6hd50vn0xpqplxd76h846d6vh2",
+    "pub_key": "fap1zcjduepqjd25uw6t2kjxcqlgvfkp6ludsdx2qrnwzf8dvv0sas4vzcgtxpnqkv3cvj"
+  }
+}
