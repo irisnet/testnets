@@ -1,0 +1,17 @@
+{
+  "node_id": "2ae1545dbc3ce606c71dbcbab07a485a312fe81d",
+  "ip": "172.17.0.2",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "Dz/HABgrHkHYDCA9M2fUXvGxg+yiVc9u7YD8NamNJ3g="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Hashgard_docker_01",
+    "address": "faa1khewq26y0rgrjhw0kp9a70jy2r5szxcxwa2lz8",
+    "pub_key": "fap1zcjduepqpuluwqqc9v0yrkqvyq7nxe75tmcmrqlv5f2u7mhdsr7rt2vdyauqf78mky"
+  }
+}
