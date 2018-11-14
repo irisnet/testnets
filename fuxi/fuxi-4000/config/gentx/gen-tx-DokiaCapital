@@ -1,0 +1,18 @@
+{
+    "node_id": "3f716f1a6bcdc8d518bf8727dc187d7bc18fc948",
+    "ip": "23.97.225.209",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "tVDxKKyD+OwG10EmV3RHOoNZPFKgL3HX2EiHB3O788s="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "DokiaCapital",
+      "address": "faa1v9xscuusptgxufxpetjnudk3l0yd7cyryh8kfn",
+      "pub_key": "fap1zcjduepqk4g0z29vs0uwcpkhgyn9waz882p4j0zj5qhhr47cfzrswuam709ss4yk9a"
+    }
+  }
+}
