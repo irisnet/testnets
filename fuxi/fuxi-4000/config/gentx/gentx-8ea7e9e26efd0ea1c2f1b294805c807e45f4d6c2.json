@@ -1,0 +1,17 @@
+{
+  "node_id": "8ea7e9e26efd0ea1c2f1b294805c807e45f4d6c2",
+  "ip": "10.0.13.6",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "mO5DCiARjFDaK6+OrCiTU4W5yuqnCU7RK3+9B7LZs70="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "luckybean",
+    "address": "faa1awul69d8vqsxeyzvsmquxdkdjlf25v5jdj08g2",
+    "pub_key": "fap1zcjduepqnrhyxz3qzxx9pk3t4782c2yn2wzmnjh25uy5a5ft077s0vkekw7s6t0eat"
+  }
+}
