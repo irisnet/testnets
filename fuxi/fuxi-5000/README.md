@@ -8,7 +8,7 @@ You need to use keybase to generate your own [pgp fingerprint](https://github.co
 
 The instructions are the following: 
 
-## Tasks for Fuxi-4000
+## Tasks for Fuxi-5000
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
@@ -16,14 +16,14 @@ The instructions are the following:
 | 2    | Setup a Full node                              | set up a full node and use `name-pgp-fingerprint` as `monkier` | Submit your IP and the team could visit the port of your node | 100    |
 | 3    | Delegate some **iris** to a validator          | Get some **iris** from faucet and delegate to a validator    | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
 | 4    | Redelegate some **iris** from a validator      | Complete an redelegate transaction                           | Run `redelegate begin` and `redelegat complete` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
-| 5    | Participate in Software upgrade process        | Participate in software-upgraden vote&Upgrade your sofware to version v0.6.1 | follow this guide to upgrade your node                       | 200    |
+| 5    | Participate in Software upgrade process        | Participate in software-upgraden vote&Upgrade your sofware to new version  | follow this guide to upgrade your node                       | 200    |
 | 6    | Vote a proposal                                | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
 | 7    | Deposit to a governance proposal               | Complete an `deposit `transaction                            | Run `deposit` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
 
 
 ### How to submit evidence
 
-You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/irisnet/testnets/issues/129):
+You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/irisnet/testnets/issues/174):
 
 ```
 GitHub ID: XXXX
