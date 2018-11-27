@@ -10,15 +10,15 @@ The instructions are the following:
 
 ## Tasks for Fuxi-5000
 
-| No   | Name                                           | Details                                                      | Criteria                                                     | Points |
-| ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 1    | Participate in Genesis file generation process | Submit your gen-tx.json and use `name-pgp-fingerprint` as validator's name | Submit url of your PR                                        | 100    |
-| 2    | Setup a Full node                              | set up a full node and use `name-pgp-fingerprint` as `monkier` | Submit your IP and the team could visit the port of your node | 100    |
-| 3    | Delegate some **iris** to a validator          | Get some **iris** from faucet and delegate to a validator    | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
-| 4    | Redelegate some **iris** from a validator      | Complete an redelegate transaction                           | Run `redelegate begin` and `redelegat complete` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
-| 5    | Participate in Software upgrade process        | Participate in software-upgraden vote&Upgrade your sofware to new version  | follow this guide to upgrade your node                       | 200    |
-| 6    | Vote a proposal                                | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
-| 7    | Deposit to a governance proposal               | Complete an `deposit `transaction                            | Run `deposit` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
+| No   | Name                                            | Details                                                      | Criteria                                                     | Points |
+| ---- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 1    | Participate in Genesis file generation process  | Submit your gen-tx.json and use `name-pgp-fingerprint` as validator's name | Submit url of your PR                                        | 100    |
+| 2    | Setup a Full node                               | set up a full node and use `name-pgp-fingerprint` as `monkier` | Submit your IP and the team could visit the port of your node | 100    |
+| 3    | Delegate some **iris** to a validator           | Get some **iris** from faucet and delegate to a validator    | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
+| 4    | Use `service` module to create an IRIS service  | Create a new Service                                         | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/service/#available-commands) to learn how to use `Service` module | 50     |
+| 5    | Use `record` module to store some data on-chain | submit a `record submit  `transaction                        | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/record/#description) to learn how to use `Record` module | 100    |
+| 6    | Vote a proposal                                 | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
+| 7    | Participate in  chain reboot                    | Fuxi-5000 is expected stop at height 200K and start under new chain-id 5000 | Download the new genesis file and start a new chain          | 200    |
 
 
 ### How to submit evidence
@@ -32,10 +32,9 @@ Task 1: Link to your PR
 Task 2: Node URL
 Task 3: Tx Hash
 Task 4: Tx Hash
-Task 5: Proof that you stay as a validator in newer version
+Task 5: Tx Hash
 Task 6: Tx Hash
-Task 7: Tx Hash
-...
+Task 7: URL from the explorer that you are still a validator in the Fuxi-5001
 
 ```
 Only top 40 participants will receive the rewards. 
