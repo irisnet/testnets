@@ -14,7 +14,6 @@
 | 4    | 使用`service` 模块来创建一个 IRIS service | 提交一笔new Service交易                                   | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/service/#available-commands) to learn how to use `Service` module | 50     |
 | 5    | 使用 `record` 模块在链上存储一部分数据 | 提交一笔 `record submit交易                      | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/record/#description) to learn how to use `Record` module | 100    |
 | 6        | 对某个提案投票                                     | 完成vote交易                                                 | 完成vote操作，在交易的memo中注明 name-pgpid，便于团队确认任务完成情况 | 20       |
-| 7    | 参与到fuxi测试网重启中       | Fuxi-5000 将在20万块时停止，然后使用新版本的irishub重新启动 | 下载新的genesis文件和新版本的irishub，重新启动 | 200    |
 
 
 
@@ -31,7 +30,6 @@ Task 3: Tx Hash
 Task 4: Tx Hash
 Task 5: Tx Hash
 Task 6: Tx Hash
-Task 7: 浏览器中验证人节点连接
 ...
 
 ```

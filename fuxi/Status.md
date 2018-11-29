@@ -1,5 +1,11 @@
 # Testnet Status
 
+## Nov 27, 2018 - New Release
+
+Released v0.7.0
+
+https://github.com/irisnet/irishub/releases/tag/v0.7.0
+
 
 ## Nov 12, 2018 - Fuxi-4000 Go Live
 
