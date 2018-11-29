@@ -34,7 +34,7 @@ iris init --home={path_to_your_home} --chain-id={your_chain_id}
 
 执行gentx交易，并使用刚才创建的验证人账户对交易进行签名
 ```bash
-iris gentx --name={account_name} --home={path_to_your_home} --IP
+iris gentx --name={account_name} --home={path_to_your_home} --ip={your_public_ip}
 ```
 
 注意⚠️：IP需填写公网IP
