@@ -1,0 +1,5 @@
+{"type":"auth/StdTx","value":{"msg":[{"type":"cosmos-sdk/MsgCreateValidator","value":{"Description":{"moniker":"Ourea","identity":"","website":"","details":""},"Commission":{"rate":"0.1000000000","max_rat
+e":"0.2000000000","max_change_rate":"0.0100000000"},"delegator_address":"faa1jl0hqeh56lhqmvd8j3583sdt4exq4ze86ksxmc","validator_address":"fva1jl0hqeh56lhqmvd8j3583sdt4exq4ze8086fxl","pubkey":{"type":"tend
+ermint/PubKeyEd25519","value":"ktz/FILQspQ0zzeILIPsS+A7gC+NBH5NBUoZkWNqr1U="},"delegation":{"denom":"iris-atto","amount":"100000000000000000000"}}}],"fee":{"amount":null,"gas":"200000"},"signatures":[{"pu
+b_key":{"type":"tendermint/PubKeySecp256k1","value":"AgfXeZ72o9ZdcMfEkiZP9lQns0MBg9s6NLsmUAUjCP93"},"signature":"kDVef5Hx89HeRpjUKzg/1tzF/a7zq6tHWBHpLcYhhD4epxHlpPIJT4YDVlryJd3m1PejZclsj+zWZZejuti1VQ==","
+account_number":"0","sequence":"0"}],"memo":"7daa38aa204fd11cdf3d29423986623684e1a58e@13.231.104.192:26656"}}
