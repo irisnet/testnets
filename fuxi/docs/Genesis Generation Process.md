@@ -45,7 +45,7 @@ This commond will generate the transaction in the directory：{path_to_your_home
 
 ## Step 4: Sumbit your gentx.json
 
-Submit your gentx-node-ID.json to `https://github.com/irisnet/testnets/tree/master/testnets/fuxi-5000/config/gentx` by createing a pull request.
+Submit your gentx-node-ID.json to `https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-5000/config/gentx` by createing a pull request.
 
 After the team has collected all the gen-tx transactions, we will publish the genesis file.
 
