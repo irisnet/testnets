@@ -18,8 +18,6 @@ The instructions are the following:
 | 4    | Use `service` module to create an IRIS service  | Create a new Service                                         | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/service/#available-commands) to learn how to use `Service` module | 50     |
 | 5    | Use `record` module to store some data on-chain | submit a `record submit  `transaction                        | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/record/#description) to learn how to use `Record` module | 100    |
 | 6    | Vote a proposal                                 | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
-| 7    | Participate in  chain reboot                    | Fuxi-5000 is expected stop at height 200K and start under new chain-id 5000 | Download the new genesis file and start a new chain          | 200    |
-
 
 ### How to submit evidence
 
@@ -34,7 +32,6 @@ Task 3: Tx Hash
 Task 4: Tx Hash
 Task 5: Tx Hash
 Task 6: Tx Hash
-Task 7: URL from the explorer that you are still a validator in the Fuxi-5001
 
 ```
 Only top 40 participants will receive the rewards. 

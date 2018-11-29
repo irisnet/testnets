@@ -37,10 +37,11 @@ Create the `CreateValidator` transaction and sign the transaction by the validat
 ## Step 3: Execute `gentx` command
 
 ```bash
-iris gentx --name={account_name} --home={path_to_your_home}
+iris gentx --name={account_name} --home={path_to_your_home} --ip
 ```
 This commond will generate the transaction in the directory：{path_to_your_home}/config/gentx
 
+> IP is your public IP
 
 ## Step 4: Sumbit your gentx.json
 
