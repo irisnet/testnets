@@ -43,7 +43,7 @@ iris gentx --name={account_name} --home={path_to_your_home} --IP
 
 ## Step 4: 提交gentx文件
 
-将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/testnets/fuxi-5000/gentx`目录下：
+将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/testnets/fuxi-5000/config/gentx`目录下：
 
 
 
