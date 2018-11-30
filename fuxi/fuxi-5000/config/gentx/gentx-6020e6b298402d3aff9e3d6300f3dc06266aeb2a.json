@@ -1,0 +1,17 @@
+{
+  "node_id": "6020e6b298402d3aff9e3d6300f3dc06266aeb2a",
+  "ip": "18.136.179.209",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "yb4ZMksAqbDEHuQheBXaNgHIoP1qTXTpKqvV136HTJ8="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Wetez-tx",
+    "address": "faa10jc8pzn7gvps8kwslnm0et2sxcackphsa42hyl",
+    "pub_key": "fap1zcjduepqexlpjvjtqz5mp3q7usshs9w6xcqu3g8adfxhf6f2402awl58fj0srfjnc0"
+  }
+}
