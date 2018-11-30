@@ -95,7 +95,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "c16700520a810b270206d59f0f02ea9abd85a4fe@ts-1.bianjie.ai:26656,a12cfb2f535210ea12731f94a76b691832056156@ts-2.bianjie.ai:26656"
+seeds = "2e472c3167ab14ef4b541485595fe037d9e388ea@ts-1.bianjie.ai:26656,3f990359523e6ed92043db469c2231cad9f31653@ts-2.bianjie.ai:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = "1f2b5c7290d60891b1df8cec50d1570823b8e0fd@104.198.127.16:26656,43ffa1dd686cbdf0dc28d38dd6b2cc021e9e9900@35.240.175.204:26656,5d1bb5599db16e93c5421c91d31e3e411c14179b@10.140.0.3:26656,855545ababa5ae7916c89adfb7838846539730e9@52.8.50.183:26656,c90ac524284877ee8670b26dd3295a52d117c19e@35.189.50.37:26656"
