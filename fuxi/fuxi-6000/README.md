@@ -30,7 +30,6 @@ Task 2: Node URL
 Task 3: Tx Hash
 Task 4: Tx Hash
 Task 5: Tx Hash
-Task 6: Tx Hash
 
 ```
 Only top 40 participants will receive the rewards. 
