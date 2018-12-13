@@ -7,7 +7,8 @@ You must have follow this [guide](https://www.irisnet.org/docs/get-started/Insta
 ## Step 1: Create your own account
 
 
-First you need to create a account as the corresponding validator operator for yourself.
+First you need to create a account as the corresponding validator operator for yourself if you don't have one
+or you forgot its password.
 
 ```bash
 iriscli keys add {account_name}
@@ -26,26 +27,31 @@ witness exotic fantasy gaze brass zebra adapt guess drip quote space payment far
 
 Initialize the configuration files such as genesis.json and config.toml
 ```bash
-iris init --home={path_to_your_home} --chain-id=fuxi-5000
+iris init --home={path_to_your_home} --chain-id=fuxi-6000 --moniker=your-name
 ```
 
 This command will create the corresponding files in the home directory.
 
-Create the `CreateValidator` transaction and sign the transaction by the validator operator account you just created
 
 
 ## Step 3: Execute `gentx` command
 
 ```bash
-iris gentx --name={account_name} --home={path_to_your_home} --ip
+iris gentx --name={account_name} --home={path_to_your_home} --ip=your--ip
 ```
 This commond will generate the transaction in the directory：{path_to_your_home}/config/gentx
+Create the `CreateValidator` transaction and sign the transaction by the validator operator account you just created
+The default commission data is:
+*	delegation amount:           100iris
+*	commission rate:             0.1
+*	commission max rate:         0.2
+*	commission max change rate:  0.01
 
-> IP is your public IP
+> IP is your public IP, dont use internal IP
 
 ## Step 4: Sumbit your gentx.json
 
-Submit your gentx-node-ID.json to `https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-5000/config/gentx` by createing a pull request.
+Submit your gentx-node-ID.json to `https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-6000/config/gentx` by createing a pull request.
 
 After the team has collected all the gen-tx transactions, we will publish the genesis file.
 
