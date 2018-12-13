@@ -8,7 +8,7 @@
 ## Step 1: 创建账户  
 
 
-首先需要为自己创建对应的验证人账户
+首先如果你没有现成的账户，或者忘记了原油账户的密码，那么你就需要为自己创建对应的验证人账户：
 ```bash
 iriscli keys add {account_name}
 ```
@@ -26,7 +26,7 @@ witness exotic fantasy gaze brass zebra adapt guess drip quote space payment far
 
 初始化genesis.json和config.toml等配置文件
 ```bash
-iris init --home={path_to_your_home} --chain-id={your_chain_id}
+iris init --home={path_to_your_home} --chain-id=fuxi-6000 --moniker=your-name
 ```
 该命令会在home目录下创建相应文件
 
@@ -34,8 +34,16 @@ iris init --home={path_to_your_home} --chain-id={your_chain_id}
 
 执行gentx交易，并使用刚才创建的验证人账户对交易进行签名
 ```bash
-iris gentx --name={account_name} --home={path_to_your_home} --IP
+iris gentx --name={operator_account_name} --home={path_to_your_home} --ip=your--ip
 ```
+这个命令将把交易的结果存储在如下目录：{path_to_your_home}/config/gentx
+gentx包含一个签名后的 `CreateValidator` 交易，这个交易将为验证人设置如下默认参数： 
+*	delegation amount:           100iris
+*	commission rate:             0.1
+*	commission max rate:         0.2
+*	commission max change rate:  0.01
+
+> IP is your public IP, dont use internal IP
 
 注意⚠️：IP需填写公网IP
 
@@ -43,7 +51,7 @@ iris gentx --name={account_name} --home={path_to_your_home} --IP
 
 ## Step 4: 提交gentx文件
 
-将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-5000/config/gentx`目录下：
+将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-6000/config/gentx`目录下：
 
 
 
