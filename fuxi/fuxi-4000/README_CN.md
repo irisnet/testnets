@@ -28,7 +28,7 @@ Task 1: Link to your PR
 Task 2: Node URL
 Task 3: Tx Hash
 Task 4: Tx Hash
-Task 5: Proof that you stay as a validator in newer version
+Task 5: Submit-switch Tx Hash
 Task 6: Tx Hash
 Task 7: Tx Hash
 ...

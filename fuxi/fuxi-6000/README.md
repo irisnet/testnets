@@ -8,20 +8,19 @@ You need to use keybase to generate your own [pgp fingerprint](https://github.co
 
 The instructions are the following: 
 
-## Tasks for Fuxi-5000
+## Tasks for Fuxi-6000
 
 | No   | Name                                            | Details                                                      | Criteria                                                     | Points |
 | ---- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
 | 1    | Participate in Genesis file generation process  | Submit your gen-tx.json and use `name-pgp-fingerprint` as validator's name | Submit url of your PR                                        | 100    |
 | 2    | Setup a Full node                               | set up a full node and use `name-pgp-fingerprint` as `monkier` | Submit your IP and the team could visit the port of your node | 100    |
 | 3    | Delegate some **iris** to a validator           | Get some **iris** from faucet and delegate to a validator    | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
-| 4    | Use `service` module to create an IRIS service  | Create a new Service                                         | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/service/#available-commands) to learn how to use `Service` module | 50     |
+| 4    | Use `service` module to create and bind an IRIS service  | Create a new Service  then bind it                                       | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/service/#available-commands) to learn how to use `Service` module | 50     |
 | 5    | Use `record` module to store some data on-chain | submit a `record submit  `transaction                        | Submit tx hash.  Refer to this [doc](https://www.irisnet.org/docs/cli-client/record/#description) to learn how to use `Record` module | 100    |
-| 6    | Vote a proposal                                 | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 20     |
 
 ### How to submit evidence
 
-You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/irisnet/testnets/issues/174):
+You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/irisnet/testnets/issues/209):
 
 ```
 GitHub ID: XXXX
@@ -31,7 +30,6 @@ Task 2: Node URL
 Task 3: Tx Hash
 Task 4: Tx Hash
 Task 5: Tx Hash
-Task 6: Tx Hash
 
 ```
 Only top 40 participants will receive the rewards. 

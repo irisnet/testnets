@@ -1,17 +1,17 @@
 {
-  "node_id": "858142bdcb489dc768416ed345a788fd00af27dc",
-  "ip": "120.79.226.1631",
+  "node_id": "e810c5db6699a2856ac3b991901ce1a51717228c",
+  "ip": "120.79.226.163",
   "validator": {
     "pub_key": {
       "type": "tendermint/PubKeyEd25519",
-      "value": "M3hFyBTZCa80jaDw425Pe9UncKiikAO8hTprpIEoczE="
+      "value": "l5/rX7TaMZbK6NBFtCyVuOodnk42XuN1FlJrTjyMSos="
     },
-    "power": "100",
+    "power": "1000",
     "name": ""
   },
   "app_gen_tx": {
-    "name": "bft",
-    "address": "faa1nwpzlrs35nawthal6vz2rjr4k8xjvn7k8l63st",
-    "pub_key": "fap1zcjduepqxduytjq5myy67dyd5rcwxmj0002jwu9g52gq80y98f46fqfgwvcswg6dlx"
+    "name": "suyu",
+    "address": "faa1u6mhz22ctc8t0j5fermakctl4n5tcsq53dh4xd",
+    "pub_key": "fap1zcjduepqj707kha5mgcedjhg6pzmgty4hr4pm8jwxe0wxagk2f45u0yvf29swyalry"
   }
 }

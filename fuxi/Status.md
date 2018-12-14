@@ -1,9 +1,15 @@
 # Testnet Status
 
+## Nov 27, 2018 - New Release
+
+Released v0.7.0
+
+https://github.com/irisnet/irishub/releases/tag/v0.7.0
+
 
 ## Nov 12, 2018 - Fuxi-4000 Go Live
 
-We bootstraped the latest testnet in. centralized manner. Now, fuxi-4000 has 28 validators and the average block time is about 5s.
+We bootstraped the latest testnet in a centralized manner. Now, fuxi-4000 has 28 validators and the average block time is about 5s.
 
 ## Nov 1, 2018 - New Release
 
