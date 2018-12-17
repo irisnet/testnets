@@ -1,0 +1,17 @@
+{
+  "node_id": "640808f6c6cd4a530103922317b58f57970b92df",
+  "ip": "5.83.162.94",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "NjUBxxEgnWFznaFdirOcZVRr9EUm1ZOgy0Z/6YMB5ok="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Certus One - 3CDE464E307C0C304F48214DCB0F38C5C213D585",
+    "address": "faa1yy52rxh6n7sk4p8am2r72lk5wsg7psygesvzt8",
+    "pub_key": "fap1zcjduepqxc6sr3c3yzwkzuua59wc4vuuv42xhaz9ym2e8gxtgel7nqcpu6yseswvnt"
+  }
+}

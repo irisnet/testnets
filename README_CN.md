@@ -4,9 +4,48 @@
 
 ## 入门指南
 
-请根据以下[文档](https://github.com/irisnet/testnets/blob/master/testnets/README.md)。学习如何加入到测试网中。
+> 注意：有关如何加入测试网的文档已经迁移到如下[目录](https://github.com/irisnet/irishub/tree/master/docs/get-started)
+
+请根据以下[文档](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md)。学习如何加入到测试网中。
 
 ## 测试网动态
+
+## 2018年11月27日，发布新版本
+
+IRISHub 发布了最新版本v0.7.0
+
+## 2018年11月12日，Fuxi-4000 测试网上线
+
+Fuxi-4000是第四个面向社区的公测测试网络。
+
+## 2018年11月1日，发布新版本
+
+IRISHub 发布了最新版本v0.6.0
+
+## 2018年9月25日，Fuxi-3001 测试网上线
+
+Fuxi-3001是第三个面向社区的公测测试网络。
+
+目前，测试网上有28个验证人节点，平均出块时间为5s. 
+
+## 2018年9月22日, 发布新版本
+
+IRISHub 发布了最新版本v0.4.2，该版本修复了fuxi-3000中暴露出的Bug
+
+## 2018年9月21日，Fuxi-3000 测试网上线
+
+Fuxi-3000在启动过程中遭遇了consensus failure,团队紧急发布了修复版本 v0.4.2。
+
+
+## 2018年9月12日, 发布新版本
+
+IRISHub 发布了最新版本v0.4.1，该版本基于Tendermint v0.22.6 和 Cosmos-sdk v0.23.0
+
+## 2018年8月10日，Fuxi-2000 测试网上线
+
+Fuxi-2000是第二个面向社区的公测测试网络。
+
+目前，测试网上有20个验证人节点，平均出块时间为5s. 
 
 ## 2018年8月8日, 发布新版本
 

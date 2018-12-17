@@ -1,0 +1,17 @@
+{
+  "node_id": "7daa38aa204fd11cdf3d29423986623684e1a58e",
+  "ip": "13.231.104.192",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "ktz/FILQspQ0zzeILIPsS+A7gC+NBH5NBUoZkWNqr1U="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Ourea4000",
+    "address": "faa1k078pl8tnhvntvpwcd8t5vsvc6e9umeleez8ty",
+    "pub_key": "fap1zcjduepqjtw079yz6zefgdx0x7yzeqlvf0srhqp035z8ung9fgvezcm24a2sv2t9fm"
+  }
+}

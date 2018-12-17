@@ -1,0 +1,17 @@
+{
+  "node_id": "dfc69231c64fae50f9fcd2386a3c9f8d027cf1f8",
+  "ip": "35.211.204.235",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "4/z3T/GcLugKqbCLLb4tSMLgUCCI232/Zqik5VvC4Pc="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "zsh-fuxi",
+    "address": "faa1v4usza0k86uqs9djv6l264fceg9j8klxl47kd2",
+    "pub_key": "fap1zcjduepqu070wnl3nshwsz4fkz9jm03dfrpwq5pq3rdhm0mx4zjw2k7zurms4vu58d"
+  }
+}

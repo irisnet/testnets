@@ -5,9 +5,48 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 
 ## Getting Started
 
-To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/testnets/blob/master/fuxi/docs/README.md).
+> Note: we have moved the docs from this repo to docs section of [irishub](https://github.com/irisnet/irishub/tree/master/docs/get-started)
+
+To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md).
 
 ## Testnet Status
+
+## Nov 30, 2018 - Fuxi-5000 Go Live
+
+We bootstraped the latest testnet in a centralized manner. Now, fuxi-5000 has 25 validators and the average block time is about 6s.
+
+## Nov 27, 2018 - New Release
+
+Released v0.7.0
+
+https://github.com/irisnet/irishub/releases/tag/v0.7.0
+
+## Nov 12, 2018 - Fuxi-4000 Go Live
+
+We bootstraped the latest testnet in a centralized manner. Now, fuxi-4000 has 28 validators and the average block time is about 5s.
+
+
+## Nov 1, 2018 - New Release
+Released v0.6.0
+
+## Sep 21, 2018 - Fuxi-3001 Go Live
+
+We started the third iteration of public testnet: fuxi-3001.
+
+This testnet now has 28 validators and the average block time is about 5s. 
+
+
+## Sep 12, 2018 - New Release
+
+
+## Sep 21, 2018 - Fuxi-3000 Started
+
+Fuxi-3000 is short lived and validator FDC8E91E2F361F4BFCCEFA80C1ABAD138E5175AE double-sign genesis block triggeres a bug in slashing module. More analysis is here: https://github.com/irisnet/cosmos-sdk/pull/109
+
+## Sep 12, 2018 - New Release
+
+Released v0.4.1 with update for Tendermint v0.22.6 and Cosmos-sdk v0.23.0
+
 
 ## Aug 10, 2018 - Fuxi-2000 Go live
 

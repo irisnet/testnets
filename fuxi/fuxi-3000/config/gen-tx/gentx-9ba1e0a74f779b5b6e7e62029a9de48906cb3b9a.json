@@ -1,0 +1,17 @@
+{
+  "node_id": "9ba1e0a74f779b5b6e7e62029a9de48906cb3b9a",
+  "ip": "123.207.75.151",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "ICik6yEmXl+/8ipfU5s+tJG9KxDzaMEb/09xhHia/5s="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "Dayu",
+    "address": "faa1kwrhpnmxsfhrl6tv5ttp0x8vq00fzks0uu9r65",
+    "pub_key": "fap1zcjduepqyq52f6epye09l0lj9f048xe7kjgm62cs7d5vzxllfaccg7y6l7dsjc8cv4"
+  }
+}

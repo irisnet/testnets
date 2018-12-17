@@ -1,0 +1,17 @@
+{
+  "node_id": "16d40aad0444c350a86e4b91e8072e6ec693fe41",
+  "ip": "47.90.98.38",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "UpGddMDII3JZ6DYoXBU3wn+vDhbulp3P47ybWEL0qAQ="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "wancloud",
+    "address": "faa1dmm543e4m0qsr660mg80qckp396nv28tnrhm83",
+    "pub_key": "fap1zcjduepq22ge6axqeq3hyk0gxc59c9fhcfl67rska6tfmnlrhjd4ssh54qzqkcv24e"
+  }
+}

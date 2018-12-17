@@ -1,0 +1,17 @@
+{
+  "node_id": "0d67ea44bf8cb8b87b0b48a8a352045689abfe6d",
+  "ip": "66.42.107.152",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "JG1CNoWiD7PhjmHqNrbnand1zD+EDWyMrq2FrLBglgQ="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "chenatu-7F5CB42406F1B4A6",
+    "address": "faa1tztxlufq97s94edwnpcg3jmamfs0yqtnd9t32p",
+    "pub_key": "fap1zcjduepqy3k5yd595g8m8cvwv84rddh8dfmhtnplssxker9w4kz6evrqjczql06jwa"
+  }
+}

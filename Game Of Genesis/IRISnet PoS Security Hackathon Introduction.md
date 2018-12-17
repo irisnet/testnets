@@ -12,33 +12,28 @@ The IRIS network will keep generating value when its validators could keep the w
 
 ### Schedule:
 
-1. **Online workshop**
 
-- Date: 2018–8–25
-- Subject: Proof-of-Stake Security Model
-- Speaker: Suyu, Blockchain Researcher of Bianjie.AI
+1. Online AMA
 
-**2. Online AMA**
-
-- Date:2018–8–27
+- Date:TBD
 - Speaker: all the nentors
 - PoS Security Hackathon
 
-**2. PoS Security Hackathon**
+2. **PoS Security Hackathon**
 
-Date: 2018.9.3~2018.9.23
+Date: TBD
 
-- Phase 1：2018.9.3~2018.9.9
+- Phase 1：
 
 Build a validator node.
 
-- Phase 2：2018.9.10~2018.9.16
+- Phase 2：
 
 Participants could be attacked and also they need to fulfill some tasks.
 
-- Phase 3：2018.9.17~2018.9.23
+- Phase 3：
 
-Allow hackers to attack each other.
+Upgrade IRIShub node.
 
 ### **Who should join：**
 
@@ -63,7 +58,7 @@ The final winners will be rewarded iris tokens equivalent of dollars they deserv
 
 **Team：**
 
-3–6 people 
+1-3 people 
 
 **How to participate：**
 
