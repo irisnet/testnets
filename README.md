@@ -11,6 +11,12 @@ To get started with the latest testnet, please follow this [guide](https://githu
 
 ## Testnet Status
 
+## Dec 7, 2018 - New Release
+
+Released v0.8.0
+
+https://github.com/irisnet/irishub/releases/tag/v0.8.0
+
 ## Nov 30, 2018 - Fuxi-5000 Go Live
 
 We bootstraped the latest testnet in a centralized manner. Now, fuxi-5000 has 25 validators and the average block time is about 6s.
