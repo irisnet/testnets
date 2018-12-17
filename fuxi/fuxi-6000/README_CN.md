@@ -18,7 +18,7 @@
 
 ### 如何提交完成证明
 
-请在以下 [issue](https://github.com/irisnet/testnets/issues/209)下提交完成证明，格式如下：
+请在以下 [issue](https://github.com/irisnet/testnets/issues/211)下提交完成证明，格式如下：
 
 ```
 GitHub ID: XXXX
