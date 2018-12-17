@@ -1,1 +1,49 @@
-{"type":"auth/StdTx","value":{"msg":[{"type":"cosmos-sdk/MsgCreateValidator","value":{"Description":{"moniker":"fuxi","identity":"","website":"","details":""},"Commission":{"rate":"0.1000000000","max_rate":"0.2000000000","max_change_rate":"0.0100000000"},"delegator_address":"faa1khscru582yjyzac30gfn30ycdh9hnhkndh4amx","validator_address":"fva1khscru582yjyzac30gfn30ycdh9hnhkncxljxp","pubkey":{"type":"tendermint/PubKeyEd25519","value":"9/wQwlLoZazQhgETcDQSwOJNZhbZxEQmeeLYGXmgwHg="},"delegation":{"denom":"iris-atto","amount":"1000000000000000000000"}}}],"fee":{"amount":null,"gas":"200000"},"signatures":[{"pub_key":{"type":"tendermint/PubKeySecp256k1","value":"AutULsQsKToYIcgYTIKHW6u4IR0By+5k2WMi5xxQCdO2"},"signature":"krlvjuYpdLGfDDEPaFrVBy7gbhqvdIfEIaJdu7g8GApB1HrlbKOmDKaaXIh8hr6S2UV9g5Hbbrb6dYYIAUsB5Q==","account_number":"0","sequence":"0"}],"memo":"33af5c5501a5d8b60b7299bebef58056019ed71e@35.194.202.44:26656"}}
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "Description": {
+            "moniker": "fuxi",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "Commission": {
+            "rate": "0.1000000000",
+            "max_rate": "0.2000000000",
+            "max_change_rate": "0.0100000000"
+          },
+          "delegator_address": "faa1khscru582yjyzac30gfn30ycdh9hnhkndh4amx",
+          "validator_address": "fva1khscru582yjyzac30gfn30ycdh9hnhkncxljxp",
+          "pubkey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "9/wQwlLoZazQhgETcDQSwOJNZhbZxEQmeeLYGXmgwHg="
+          },
+          "delegation": {
+            "denom": "iris-atto",
+            "amount": "1000000000000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AutULsQsKToYIcgYTIKHW6u4IR0By+5k2WMi5xxQCdO2"
+        },
+        "signature": "krlvjuYpdLGfDDEPaFrVBy7gbhqvdIfEIaJdu7g8GApB1HrlbKOmDKaaXIh8hr6S2UV9g5Hbbrb6dYYIAUsB5Q==",
+        "account_number": "0",
+        "sequence": "0"
+      }
+    ],
+    "memo": "33af5c5501a5d8b60b7299bebef58056019ed71e@35.194.202.44:26656"
+  }
+}
