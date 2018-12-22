@@ -6,7 +6,7 @@ Before setting up your validator node, make sure you've already installed  **Iri
 ## Get IRIS Token
 
 ### create account
-You could only get some IRIS token to play the game of genesis after you have finished the reginsteration process. 
+You could only get some IRIS token to play the game of genesis after you have finished the registration process.
 
 You need to get `iris` and `iriscli` installed first. Then, follow the instructions below to create a new account:
 
@@ -33,14 +33,14 @@ The seed phrase of this account will also be displayed. You could use these 24-c
 iriscli keys add <NAME_OF_KEY> --recover
 ```
 
-Once you have created your own address, please comment this issue with your address and you could receive 1,000iris soon. Each team will receivce once, then you could use these tokens to stake as a validator. The following command is used to check the balance of your account:
+Once you have created your own address, please comment this issue with your address and you could receive 1,000iris soon. Each team will receive once, then you could use these tokens to stake as a validator. The following command is used to check the balance of your account:
 ```
-iriscli account <ACCOUNT> 
+iriscli bank account <ACCOUNT> 
 ```
 ### Claim Tokens
 
 
-Please reply this [issue](https://github.com/irisnet/testnets/issues/69) with the generated address. The team will send you 1000*10^18iris after verfication.
+Please reply this [issue](https://github.com/irisnet/testnets/issues/69) with the generated address. The team will send you 1000*10^18iris after verification.
 
 
 ## Create A Validator
@@ -51,7 +51,7 @@ You need to get the public key of your node before upgrade your node to a valida
 You can find your validator pubkey by running:
 
 ```
-iris tendermint show_validator --home=<IRIS-HOME>
+iris tendermint show-validator --home=<IRIS-HOME>
 ```
 Example output:
 ```
@@ -70,7 +70,9 @@ Please you need to specify the name of your validator to **name of your team**.
 In this way, to stake 1IRIS, you need to do:
 
 ```
-iriscli stake create-validator --pubkey=<pubkey> --address-validator=<account> --fee=40000000000000000iris  --gas=2000000 --from=<name> --chain-id=game-of-genesis   --amount=1000000000000000000iris
+iriscli stake create-validator --chain-id=<chain-id> --from=<key name> --fee=0.004iris \
+    --pubkey=<validator public key> --amount=10iris --moniker=<validator name> \
+    --commission-max-change-rate=0.1 --commission-max-rate=0.5 --commission-rate=0.1
 ```
 Don't forget the `fee` and `gas` field.
 
@@ -79,7 +81,7 @@ Don't forget the `fee` and `gas` field.
 View the validator's information with this command:
 
 ```
-iriscli stake validator  --address-validator=<account>  --chain-id=game-of-genesis  
+iriscli stake validator <account> --chain-id=game-of-genesis
 ```
 
 The `<account>` is start with config.toml
@@ -102,6 +104,7 @@ You can edit your validator's public description. This info is to identify your 
 You should put your name of your team in `details`. 
 
 ```
-iriscli stake edit-validator  --address-validator=<account> --moniker="choose a moniker"  --website="https://irisnet.org"  --details="team" --chain-id=game-of-genesis 
-  --name=<key_name> --fee=40000000000000000iris  --gas=2000000
+iriscli stake edit-validator --from=<key> --chain-id=game-of-genesis \
+    --moniker="choose a moniker" --identity=<uport_or_keybase_fingerprint> \
+    --website="https://irisnet.org" --details="team"
 ```
