@@ -8,7 +8,7 @@ You need to use keybase to generate your own [pgp fingerprint](https://github.co
 
 The instructions are the following: 
 
-## Tasks for Fuxi-6000
+## Tasks for Fuxi-7000
 
 | No   | Name                                            | Details                                                      | Criteria                                                     | Points |
 | ---- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
