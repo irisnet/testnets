@@ -16,7 +16,7 @@ The instructions are the following:
 | 2    | Setup a Full node                               | set up a full node and use `name-pgp-fingerprint` as `monkier` | Submit your IP and the team could visit the port of your node | 100    |
 | 3    | Delegate some **iris** to a validator           | Get some **iris** from faucet and delegate to a validator    | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
 | 4    | Vote for `software upgrade` proposal                                | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction. Refer to this [doc](https://www.irisnet.org/docs/cli-client/gov/vote.html) to learn how to vote  | 50     |
-| 5    | Participate in Software upgrade process. You need to Upgrade your sofware to version v0.9.1 once the specific software upgrade proposal is passed in the future. | Participate in software-upgrade process | follow this [guide](https://www.irisnet.org/docs/features/upgrade.html#interaction-process) to upgrade your node  | 200    |
+| 5    | Participate in Software upgrade process. You need to Upgrade your sofware to version v0.9.1 once the specific software upgrade proposal is passed in the future. | Participate in software-upgrade  | follow this [guide](https://www.irisnet.org/docs/features/upgrade.html#interaction-process) to upgrade your node  | 200    |
 
 
 ### How to submit evidence
