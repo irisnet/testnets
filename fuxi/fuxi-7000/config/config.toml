@@ -114,10 +114,11 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "seeds = "afb247319e00ddd48ef95983812a50eaf9b381df@ts-2.bianjie.ai:26656,d1f2bbc6634c7f7041ede42d8f4b990a99681baa@ts-1.bianjie.ai:26656"
+"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "01c935a0169aa04884ab7bd466f131e447f77d4f@45.77.222.158:26656,16c1cbc5ef5ce54c29775cc8a97ccb8377dc6963@47.90.98.38:26656,2c551e4a0908df041c6e434d5d916ea225f81066@13.58.19.0:26656,2e0e8258cf30f5feda64606068f161e657995629@35.189.50.37:26656,52651f0db4b8fd58f08c5e598e11b614e471ed79@47.101.160.78:26656,7fbb13d1f0996d7635dcd944ad6f16f161eac8cc@35.194.202.44:26656,da8a9df60558a4f82bacf3bfff668fa4192e448c@47.254.32.219:26656,e11868c5d375a706d9396d4c6ab838441bcfdf9c@52.8.50.183:26656,f5c33ea4b8c514dea6de44cec7a99ea229621cf9@144.202.39.158:26656"
+persistent_peers = ""
 
 # UPNP port forwarding
 upnp = false
