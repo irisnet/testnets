@@ -1,0 +1,49 @@
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "Description": {
+            "moniker": "haoyang",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "Commission": {
+            "rate": "0.1000000000",
+            "max_rate": "0.2000000000",
+            "max_change_rate": "0.0100000000"
+          },
+          "delegator_address": "faa1z4uqlqrsjmsvszjadeknw0vpwejhrjprjl8q0n",
+          "validator_address": "fva1z4uqlqrsjmsvszjadeknw0vpwejhrjpr8wd0j5",
+          "pubkey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "XHmKSqHUrys1/WhGv+EpC83j1/POqW2RFRph6m3N9XE="
+          },
+          "delegation": {
+            "denom": "iris-atto",
+            "amount": "1000000000000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A0vNbmvS7WRA4sn5jp2cFGsN70DWWanbGobNLkStykkG"
+        },
+        "signature": "x/aKqf6IngH0VEQMFPNBJUGZ7fwwukDXkPtf0fvDv68hjlV2oSgR/kE1aDLbPm90JYSLM9GhYvRz7XfZqhejiQ==",
+        "account_number": "0",
+        "sequence": "0"
+      }
+    ],
+    "memo": "7fbb13d1f0996d7635dcd944ad6f16f161eac8cc@35.194.202.44:26656"
+  }
+}
