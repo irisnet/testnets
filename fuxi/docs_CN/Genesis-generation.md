@@ -2,7 +2,7 @@
 
 ## 前提条件
 
-每个希望成为验证人的参与者确保按照以下[流程](https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html#如何加入fuxi测试网)安装了对应版本的软件：**iris**
+每个希望成为验证人的参与者确保按照以下[流程](https://github.com/irisnet/irishub/blob/release0.9/docs/zh/get-started/Install-the-Software.md)安装了对应版本的软件：**iris**
 
 
 ## Step 1: 创建账户  
@@ -26,7 +26,7 @@ witness exotic fantasy gaze brass zebra adapt guess drip quote space payment far
 
 初始化genesis.json和config.toml等配置文件
 ```bash
-iris init --home={path_to_your_home} --chain-id=fuxi-6000 --moniker=your-name
+iris init --home={path_to_your_home} --chain-id=fuxi-7000 --moniker=key-name
 ```
 该命令会在home目录下创建相应文件
 
@@ -34,7 +34,7 @@ iris init --home={path_to_your_home} --chain-id=fuxi-6000 --moniker=your-name
 
 执行gentx交易，并使用刚才创建的验证人账户对交易进行签名
 ```bash
-iris gentx --name={operator_account_name} --home={path_to_your_home} --ip=your--ip
+iris gentx --name={operator_key_name} --home={path_to_your_home} --ip=node-ip
 ```
 这个命令将把交易的结果存储在如下目录：{path_to_your_home}/config/gentx
 gentx包含一个签名后的 `CreateValidator` 交易，这个交易将为验证人设置如下默认参数： 
@@ -51,7 +51,7 @@ gentx包含一个签名后的 `CreateValidator` 交易，这个交易将为验�
 
 ## Step 4: 提交gentx文件
 
-将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-6000/config/gentx`目录下：
+将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-7000/config/gentx`目录下：
 
 
 

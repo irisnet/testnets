@@ -1,0 +1,49 @@
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "Description": {
+            "moniker": "afu",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "Commission": {
+            "rate": "0.1000000000",
+            "max_rate": "0.2000000000",
+            "max_change_rate": "0.0100000000"
+          },
+          "delegator_address": "faa1wvzq6cqkjgcefnh24c8nw3csgfvjwrd4eu67wx",
+          "validator_address": "fva1wvzq6cqkjgcefnh24c8nw3csgfvjwrd4vds3np",
+          "pubkey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "q3kNA0JsXZs1CyH8CyCCTcnE6i+hU6edQ2se2DtYvl8="
+          },
+          "delegation": {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AuJuqi8yLz16tj9Bm15P2Wef1iVQ7M2cfUuTsSIvpNqi"
+        },
+        "signature": "RPaJyEzFHmPOept74H6yCahXyG+ZxDD89Qy5ZzIWeFFPk5kwP5G5tygQpmMIBulHoH9HG5/M/e6Ef/zIcDn/4g==",
+        "account_number": "0",
+        "sequence": "0"
+      }
+    ],
+    "memo": "1aeb3be156fcfe0dd3322da20257f929d781e928@47.244.28.51:26656"
+  }
+}
