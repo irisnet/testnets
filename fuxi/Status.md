@@ -2,7 +2,8 @@
 
 ## Jan. 9, Fuxi-7000 Testnet Halted
 Fuxi-7000 on-chain upgrade process is halted due to Tendermint bug.The team is doing internal QA process and is about to release a new version: v0.10.0. 
-## Jan. 5  New version
+
+## Jan. 5  New Release
 Irishub v0.9.1 is released and this leads to consensus failure, team quickly released a patch: v0.9.1-patch0
 
 ## Jan. 4, 2019 Software Upgarade Proposal is passed
