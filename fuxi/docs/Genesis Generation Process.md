@@ -2,7 +2,7 @@
 
 ## Requirement
 
-You must have follow this [guide](https://github.com/irisnet/irishub/blob/release0.9/docs/get-started/Install-the-Software.md) to install the correct version of **Iris**.
+You must have follow this [guide](https://github.com/irisnet/irishub/blob/release0.10/docs/get-started/Install-the-Software.md) to install the correct version of **Iris**.
 
 ## Step 1: Create your own account
 
@@ -27,7 +27,7 @@ witness exotic fantasy gaze brass zebra adapt guess drip quote space payment far
 
 Initialize the configuration files such as genesis.json and config.toml
 ```bash
-iris init --home={path_to_your_home} --chain-id=fuxi-7000 --moniker=key-name
+iris init --home={path_to_your_home} --chain-id=fuxi-8000 --moniker=key-name
 ```
 
 This command will create the corresponding files in the home directory.
@@ -50,7 +50,7 @@ The default commission data is:
 
 ## Step 4: Sumbit your gentx.json
 
-Submit your gentx-node-ID.json to `https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-7000/config/gentx` by createing a pull request.
+Submit your gentx-node-ID.json to `https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-8000/config/gentx` by createing a pull request.
 
 After the team has collected all the gen-tx transactions, we will publish the genesis file.
 
