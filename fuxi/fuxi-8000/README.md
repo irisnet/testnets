@@ -34,6 +34,7 @@ Then, we go to **phase two** of this testnet. In this phase, a runtime software 
 | 4    | When running v0.10.1, withdraw some **iris** from reward pool | After you become a validator, you could withdraw your rewards by `iriscli distribution withdraw-rewards` | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
 
 If software upgrade is passed, then we will enter **phase three** of testnet. We will test the software upgrade workflow to recover from consensus failure (Class III). In v0.10.1, there is a easter egg. The team will trigger a consensus failure deliberately. This bug will cause the network to halt and you need to switch to v0.10.1-patch1 to come back live. You are supposed to finish the following tasks in phase three:
+
 | No   | Name                                                         | Details                                                      | Criteria                                                     | Points |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
 | 1    | Switch to `v0.10.1-patch1`                                   | Install the new version of iris and start with flag `--replay-last-block` | Submit your IP and the team could visit the port of your node | 200    |
