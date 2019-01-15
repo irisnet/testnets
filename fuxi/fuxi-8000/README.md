@@ -25,6 +25,7 @@ In  **first phase**, we bootstrap the network with iris version 0.10.0 in a dece
 | 4    | Withdraw some **iris** from reward pool        | After you become a validator, you could withdraw your rewards by `iriscli distribution withdraw-rewards` | Run this send transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction | 50     |
 
 Then, we go to **phase two** of this testnet. In this phase, a runtime software upgrade (class II) to version v0.10.1 is planed. This upgrade will be fully backward compatible. Read more here. You are supposed to finish the following tasks in phase two :
+
 | No   | Name                                                         | Details                                                      | Criteria                                                     | Points |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
 | 1    | Vote for `software upgrade` proposal in Phase One            | Complete an `vote `transaction                               | Run `vote` transaction with your `name-pgpid` as memo. Submit your transaction hash and the team could verify the details of transaction. Refer to this [doc](https://www.irisnet.org/docs/cli-client/gov/vote.html) to learn how to vote | 50     |
