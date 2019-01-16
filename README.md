@@ -10,6 +10,9 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md).
 
 ## Testnet Status
+## Jan. 16  New version
+Irishub v0.10.0 is released 
+
 ## Jan. 9, Fuxi-7000 Testnet Halted
 Fuxi-7000 on-chain upgrade process is halted due to Tendermint bug.The team is doing internal QA process and is about to release a new version: v0.10.0. 
 ## Jan. 5  New version
