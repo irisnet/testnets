@@ -1,6 +1,6 @@
 ### 如何加入IRISnet测试网 : Fuxi-8000
 
-1月16日，IRIShub开发团队发布了最新版本：v0.10.0。 这个版本中对Tendermint依赖也升级到 v0.27.3。以下是该版本的**重大改动**：
+1月16日，IRIShub开发团队发布了最新版本：[v0.10.0](https://github.com/irisnet/irishub/releases/tag/v0.10.0)。 这个版本中对Tendermint依赖也升级到 v0.27.3。以下是该版本的**重大改动**：
 
 - 在解除绑定的同时也取回所有的佣金
 - 通过地址作为验证人的index
@@ -53,8 +53,8 @@
 
 > 完整文档在[这里](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/Genesis-generation.md)
 
-- 如果你参与了Fuxi-6000测试网，请不要继续使用同一个home目录，无需停止已有**iris**进程
-- 参考以下教程安装 **IRIShub v0.10.0**
+- 如果你参与了Fuxi-7000测试网，请不要继续使用同一个home目录，无需停止已有**iris**进程
+- 参考以下[教程](https://github.com/irisnet/irishub/blob/master/docs/get-started/Install-the-Software.md)安装 **IRIShub v0.10.0**
 - 你可以使用已有的账户作为验证人Operator对应的账户，也可以创建新的账户：
 
 ```
@@ -97,7 +97,7 @@ iris gentx --name={key_name} --home={path_to_your_home} --ip={node-public-ip}
 
 通过提交PR将gentx文件提交到以下目录：[https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-8000/config/gentx](https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-7000/config/gentx)
 
-**Deadline: 1/16 at 8:00 UTC**
+**Deadline: 1/16 at 18:00 UTC**
 
 ### 测试网激励任务
 
