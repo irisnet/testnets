@@ -1,0 +1,49 @@
+{
+  "type": "irishub/bank/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "irishub/stake/MsgCreateValidator",
+        "value": {
+          "Description": {
+            "moniker": "haoyang",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "Commission": {
+            "rate": "0.1000000000",
+            "max_rate": "0.2000000000",
+            "max_change_rate": "0.0100000000"
+          },
+          "delegator_address": "faa1cuhal6j06n028s0sgdgxnrfl9d4gj7dstlp8zt",
+          "validator_address": "fva1cuhal6j06n028s0sgdgxnrfl9d4gj7ds7wtglv",
+          "pubkey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "XUeXEF+sSIsyJaTXyjNTubzkNVdHBzSR6c4jdNFPQVU="
+          },
+          "delegation": {
+            "denom": "iris-atto",
+            "amount": "100000000000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AvrTKEYRfGoombsNJrSFxax68Jgc6EyG2bgnGo5PNDC/"
+        },
+        "signature": "uO7ani0KfmWjsLM/LQUvgpo6U2sBRR0sBntfQ+JhENpn4yPAY1c5BTtCh/0jURp4CeTyEtdB/KIvnkEEqDxMLg==",
+        "account_number": "0",
+        "sequence": "0"
+      }
+    ],
+    "memo": "e3707d0d9df44f47cd2e91b596e74abe4a1557bf@35.194.202.44:26656"
+  }
+}
