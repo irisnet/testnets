@@ -24,7 +24,7 @@
           },
           "delegation": {
             "denom": "iris-atto",
-            "amount": "100000000000000000000"
+            "amount": "1000000000000000000000"
           }
         }
       }
@@ -39,7 +39,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "AvrTKEYRfGoombsNJrSFxax68Jgc6EyG2bgnGo5PNDC/"
         },
-        "signature": "uO7ani0KfmWjsLM/LQUvgpo6U2sBRR0sBntfQ+JhENpn4yPAY1c5BTtCh/0jURp4CeTyEtdB/KIvnkEEqDxMLg==",
+        "signature": "etrHZ26uB/6Jd9rbndtt+8sq2Bywe/pI2NNdVXLT0+RkhGjcZIfXRJWgqnzGOKrKk9aFXahuxmNrmlCwYi5mBA==",
         "account_number": "0",
         "sequence": "0"
       }
