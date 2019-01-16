@@ -10,6 +10,33 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md).
 
 ## Testnet Status
+## Jan. 9, Fuxi-7000 Testnet Halted
+Fuxi-7000 on-chain upgrade process is halted due to Tendermint bug.The team is doing internal QA process and is about to release a new version: v0.10.0. 
+## Jan. 5  New version
+Irishub v0.9.1 is released and this leads to consensus failure, team quickly released a patch: v0.9.1-patch0
+
+## Jan. 4, 2019 Software Upgarade Proposal is passed
+A software upgrade proposal is submitted by dev team and passed.
+
+## Dec 29, 2018 - Fuxi-7000 Go Live
+
+We bootstraped the latest testnet with 12 genesis validators. Now, fuxi-7000 has 25 validators and the average block time is about 5s.
+
+## Dec. 27, 2018 - New Release
+
+Released v0.9.0
+
+https://github.com/irisnet/irishub/releases/tag/v0.9.0
+
+## Dec 17, 2018 - Fuxi-6000 Go Live
+
+We bootstraped the latest testnet with 10 genesis validators. Now, fuxi-6000 has 20 validators and the average block time is about 5s.
+
+## Dec 7, 2018 - New Release
+
+Released v0.8.0
+
+https://github.com/irisnet/irishub/releases/tag/v0.8.0
 
 ## Nov 30, 2018 - Fuxi-5000 Go Live
 
