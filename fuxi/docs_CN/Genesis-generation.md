@@ -2,7 +2,7 @@
 
 ## 前提条件
 
-每个希望成为验证人的参与者确保按照以下[流程](https://github.com/irisnet/irishub/blob/release0.10/docs/zh/get-started/Install-the-Software.md)安装了对应版本的软件：**iris**
+每个希望成为验证人的参与者确保按照以下[流程](https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/Install-the-Software.md)安装了对应版本的软件：**iris**
 
 
 ## Step 1: 创建账户  
