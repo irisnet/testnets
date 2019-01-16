@@ -47,11 +47,11 @@
 
 想要了解更多有关链上治理的，请阅读以下[文章](https://www.irisnet.org/docs/features/governance.html)。
 
-![img](https://cdn-images-1.medium.com/max/800/1*FqrVw8a_4UP4S2y39dc1og.png)Fuxi-8000升级流程
+![img](https://cdn-images-1.medium.com/max/1600/1*_FcyYLdkVVQjRSubxTu0vg.png)Fuxi-8000升级流程
 
 ### 参与到测试网Genesis文件生成中
 
-> 完成文档在[这里](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/Genesis-generation.md)
+> 完整文档在[这里](https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/Genesis-generation.md)
 
 - 如果你参与了Fuxi-6000测试网，请不要继续使用同一个home目录，无需停止已有**iris**进程
 - 参考以下教程安装 **IRIShub v0.10.0**
