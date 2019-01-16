@@ -6,7 +6,7 @@
         "type": "irishub/stake/MsgCreateValidator",
         "value": {
           "Description": {
-            "moniker": "clawmvp.xyz",
+            "moniker": "clawmvp",
             "identity": "",
             "website": "",
             "details": ""
@@ -39,7 +39,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "AgJoUWFbCR+ck+6eJWvbryI1JnUGougyw7QM5vd+6+Ne"
         },
-        "signature": "hyqbQjBuk5qtHZBWUxjtwXNl87fzTOcdfOSGU5BkDbV5+ZK3j511C/BrToZsB8cI+G4xb1DBpm+dPOWCQ4CaqQ==",
+        "signature": "03VgLw3cJZ9gJDxIcapJRKyHJHjdf9j085vqOFnIh6wnmAtsv9Avnv0/LO4Zh4tyI+pEX55MAvi7YaMXaiT5dA==",
         "account_number": "0",
         "sequence": "0"
       }
