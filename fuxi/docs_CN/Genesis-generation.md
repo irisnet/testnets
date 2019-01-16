@@ -2,13 +2,13 @@
 
 ## 前提条件
 
-每个希望成为验证人的参与者确保按照以下[流程](https://github.com/irisnet/irishub/blob/release0.9/docs/zh/get-started/Install-the-Software.md)安装了对应版本的软件：**iris**
+每个希望成为验证人的参与者确保按照以下[流程](https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/Install-the-Software.md)安装了对应版本的软件：**iris**
 
 
 ## Step 1: 创建账户  
 
 
-首先如果你没有现成的账户，或者忘记了原油账户的密码，那么你就需要为自己创建对应的验证人账户：
+首先如果你没有现成的账户，或者忘记了原有账户的密码，那么你就需要为自己创建对应的验证人账户：
 ```bash
 iriscli keys add {account_name}
 ```
@@ -26,7 +26,7 @@ witness exotic fantasy gaze brass zebra adapt guess drip quote space payment far
 
 初始化genesis.json和config.toml等配置文件
 ```bash
-iris init --home={path_to_your_home} --chain-id=fuxi-7000 --moniker=key-name
+iris init --home={path_to_your_home} --chain-id=fuxi-8000 --moniker=key-name
 ```
 该命令会在home目录下创建相应文件
 
@@ -51,7 +51,7 @@ gentx包含一个签名后的 `CreateValidator` 交易，这个交易将为验�
 
 ## Step 4: 提交gentx文件
 
-将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-7000/config/gentx`目录下：
+将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-8000/config/gentx`目录下：
 
 
 

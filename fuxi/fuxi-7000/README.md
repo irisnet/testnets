@@ -21,7 +21,7 @@ The instructions are the following:
 
 ### How to submit evidence
 
-You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/irisnet/testnets/issues/211):
+You could submit the transaction Hash to prove you have finished the tasks above by replying this [issue](https://github.com/irisnet/testnets/issues/234):
 
 ```
 GitHub ID: XXXX
