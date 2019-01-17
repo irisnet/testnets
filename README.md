@@ -10,6 +10,10 @@ This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You
 To get started with the latest testnet, please follow this [guide](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md).
 
 ## Testnet Status
+
+## Jan 17, 2019 - Fuxi-7000 Go Live
+
+We bootstraped the latest testnet with 21 genesis validators. Now, fuxi-8000 has 21 validators and the average block time is about 5s.
 ## Jan. 16  New version
 Irishub v0.10.0 is released 
 
