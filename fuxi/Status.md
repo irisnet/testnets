@@ -1,4 +1,9 @@
 # Testnet Status
+## Jan 17, 2019 - Fuxi-7000 Go Live
+
+We bootstraped the latest testnet with 21 genesis validators. Now, fuxi-8000 has 21 validators and the average block time is about 5s.
+## Jan. 16  New version
+Irishub v0.10.0 is released 
 
 ## Jan. 9, Fuxi-7000 Testnet Halted
 Fuxi-7000 on-chain upgrade process is halted due to Tendermint bug.The team is doing internal QA process and is about to release a new version: v0.10.0. 
