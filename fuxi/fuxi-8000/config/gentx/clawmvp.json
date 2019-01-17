@@ -1,0 +1,49 @@
+{
+  "type": "irishub/bank/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "irishub/stake/MsgCreateValidator",
+        "value": {
+          "Description": {
+            "moniker": "clawmvp",
+            "identity": "",
+            "website": "",
+            "details": ""
+          },
+          "Commission": {
+            "rate": "0.1000000000",
+            "max_rate": "1.0000000000",
+            "max_change_rate": "0.0100000000"
+          },
+          "delegator_address": "faa1nzgvvfam8n4lskkcqmhes07td6wkum9cyhqptu",
+          "validator_address": "fva1nzgvvfam8n4lskkcqmhes07td6wkum9c3x2wkm",
+          "pubkey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "zmlT/mCrrmE0/wMRkzqKfelZ4mLJ8Ye6uyBY1T8gayE="
+          },
+          "delegation": {
+            "denom": "iris-atto",
+            "amount": "1000000000000000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AgJoUWFbCR+ck+6eJWvbryI1JnUGougyw7QM5vd+6+Ne"
+        },
+        "signature": "dhX4t354/8NogBQGY1gMf33nn8Grw/5eumLOTfHNWGMxylHzGANvk15YsZYbyx5usRAEQ3oNCGGS/vFIsfG5yQ==",
+        "account_number": "0",
+        "sequence": "0"
+      }
+    ],
+    "memo": "f2b43c17c2c469dda98eb81cf9e70fd49986f423@185.36.252.239:26656"
+  }
+}
