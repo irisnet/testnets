@@ -1,5 +1,5 @@
 # Testnet Status
-## Jan 17, 2019 - Fuxi-7000 Go Live
+## Jan 17, 2019 - Fuxi-8000 Go Live
 
 We bootstraped the latest testnet with 21 genesis validators. Now, fuxi-8000 has 21 validators and the average block time is about 5s.
 ## Jan. 16  New version
