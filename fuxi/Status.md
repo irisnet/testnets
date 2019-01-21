@@ -1,4 +1,10 @@
 # Testnet Status
+## Jan. 20, 2019 Sucessfulw Smooth Software Upgarade 
+**iris** version for tsetnet switch from v0.10.0 to v0.10.2
+
+## Jan. 19, 2019 Software Upgarade Proposal is passed
+A smooth software upgrade proposal is submitted by dev team and passed: https://testnet.irisplorer.io/#/ProposalsDetail/1
+
 ## Jan 17, 2019 - Fuxi-8000 Go Live
 
 We bootstraped the latest testnet with 21 genesis validators. Now, fuxi-8000 has 21 validators and the average block time is about 5s.
