@@ -114,7 +114,8 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "d1f2bbc6634c7f7041ede42d8f4b990a99681baa@ts-1.bianjie.ai:26656"
+seeds = "d1f2bbc6634c7f7041ede42d8f4b990a99681baa@ts-1.irisnet.org:26656,afb247319e00ddd48ef95983812a50eaf9b381df@ts-2.irisnet.org:26656
+"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
