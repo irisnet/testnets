@@ -47,7 +47,7 @@ Md5sum should be: `3d140361770cd4f18618f1629eead49e`
         "slash-fraction-downtime": "0.0050000000"
       }
 ```
-*  Add `tx_size` param in `service`
+*  Add ` tx_size_limit` param in `service`
 ```
 "tx_size_limit": "4000"
 ```
