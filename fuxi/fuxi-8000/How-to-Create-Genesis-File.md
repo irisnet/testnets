@@ -52,6 +52,7 @@ Md5sum should be: `3d140361770cd4f18618f1629eead49e`
 ```
 Md5sum for new genesis file is: 
 3d140361770cd4f18618f1629eead49e
+Example output is [here](https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-8000/config/genesis.json)
 3. Start with new genesis file and iris version v0.11.0 
 ```
 iris version
