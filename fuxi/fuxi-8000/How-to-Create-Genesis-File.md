@@ -2,13 +2,13 @@
 
 1. Backup your `irishome`
 2. Export Snapshot of height #157491 from the halted network
-  Using iris `v0.10.2-patch`, run the following command:
+  Using iris `0.10.2-patch-c92d1680-1`, run the following command:
 ```
-iris export  --home= --for-zero-height
+iris export  --home= --for-zero-height --height=157491
 ```
-This command should export a new genesis file in your current path.
+This command should will generate a new genesis file `genesis.json` in your current path.
 Md5sum should be: `3d140361770cd4f18618f1629eead49e`
-
+ 
 3. Modify fileds in genesis.json
 * Add `tx_size` param in `auth`
 ```json
