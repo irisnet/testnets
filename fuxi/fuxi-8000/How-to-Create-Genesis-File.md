@@ -49,7 +49,15 @@ Md5sum should be: `3d140361770cd4f18618f1629eead49e`
 ```
 *  Add ` tx_size_limit` param in `service`
 ```
-"tx_size_limit": "4000"
+"params": {
+        "arbitration_time_limit": "432000000000000",
+        "complaint_retrospect": "1296000000000000",
+        "max_request_timeout": "100",
+        "min_deposit_multiple": "1000",
+        "service_fee_tax": "0.0100000000",
+        "slash_fraction": "0.0010000000",
+        "tx_size_limit": "4000"
+      }
 ```
 Md5sum for new genesis file is: 
 6f13af716dad55bb102f953804989ab8
