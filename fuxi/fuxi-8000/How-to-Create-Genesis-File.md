@@ -64,7 +64,7 @@ Md5sum for new genesis file is:
 
 Example output genesis is [here](https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-8000/config/new-genesis.json)
 
-4. Start with new genesis file and iris version v0.11.0 
+# How to Restart
 * Verify `iris` version
 ```
 iris version
