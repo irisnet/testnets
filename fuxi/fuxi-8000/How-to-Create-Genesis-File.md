@@ -52,9 +52,9 @@ Md5sum should be: `3d140361770cd4f18618f1629eead49e`
 "tx_size_limit": "4000"
 ```
 Md5sum for new genesis file is: 
-3d140361770cd4f18618f1629eead49e
+6f13af716dad55bb102f953804989ab8
 
-Example output genesis is [here](https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-8000/config/genesis.json)
+Example output genesis is [here](https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-8000/config/new-genesis.json)
 
 4. Start with new genesis file and iris version v0.11.0 
 * Verify `iris` version
