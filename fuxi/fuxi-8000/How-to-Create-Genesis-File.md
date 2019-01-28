@@ -6,7 +6,7 @@
 ```
 iris export  --home= --for-zero-height --height=157491
 ```
-This command should will generate a new genesis file `genesis.json` in your current path.
+This command will generate a new genesis file `genesis.json` in your current path.
 Md5sum should be: `3d140361770cd4f18618f1629eead49e`
  
 3. Modify fileds in genesis.json
