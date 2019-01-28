@@ -59,6 +59,7 @@ Example output is [here](https://raw.githubusercontent.com/irisnet/testnets/mast
 ```
 iris version
 0.11.0-ae1e491-0
+```
 
 * Clear previous data
 ```
