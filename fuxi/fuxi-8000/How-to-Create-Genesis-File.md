@@ -8,7 +8,8 @@ iris export  --home= --for-zero-height
 ```
 This command should export a new genesis file in your current path.
 Md5sum should be: `3d140361770cd4f18618f1629eead49e`
-2. Modify fileds in genesis.json
+
+3. Modify fileds in genesis.json
 * Add `tx_size` param in `auth`
 ```json
 "params": {
@@ -55,7 +56,7 @@ Md5sum for new genesis file is:
 
 Example output genesis is [here](https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-8000/config/genesis.json)
 
-3. Start with new genesis file and iris version v0.11.0 
+4. Start with new genesis file and iris version v0.11.0 
 * Verify `iris version`
 ```
 iris version
