@@ -75,7 +75,10 @@ iris version
 ```
 iris unsafe-reset-all --home
 ```
+* Replace existing genesis file with the [new one](https://raw.githubusercontent.com/irisnet/testnets/master/fuxi/fuxi-8000/config/new-genesis.json)
+
 * Start iris
+
 ```
 iris start --home
 ```
