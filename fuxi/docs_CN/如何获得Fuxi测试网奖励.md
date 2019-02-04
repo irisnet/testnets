@@ -1,6 +1,8 @@
 # 如何获得Fuxi测试网奖励
-##重要信息：
+##重要信息
+
 1 point = 100 IRIS
+
 作为一个公有区块链网络，IRISnet网络的价值需要一组可靠的验证人来维护。Fuxi测试网的目的在于让验证人模拟主网上线后的真是情况，为将来完成好验证人的工作做好准备。
 Fuxi-8000是IRISnet Betanet上线前的最后一个测试网，团队在该测试网中测试了复杂的升级计划，也设计了更多的任务 ：list:https://github.com/irisnet/testnets/blob/master/fuxi/fuxi-8000/README.md.
 验证人社区也积极参与了测试网的工作，此次提交任务完成的人数也创历史新高： https://github.com/irisnet/testnets/issues/252 .
