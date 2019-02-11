@@ -1,4 +1,15 @@
 # Testnet Status
+
+## Jan 29, Load test
+
+THe network tps was about 200 at peak.
+
+## Jan 25,Restrt Upgrade was tested 
+A system-halt proposal was passed and the chain stopped. All the states snapshot were exported as genesis file and the chain restart with new version v0.11.0.
+
+## Jan 21,Patch Upgrade was tested 
+A consensus failure was triggered in v0.10.2 and the nodes need to switch to v0.10.2-patch to recover from consensus failure
+
 ## Jan. 20, 2019 Sucessfulw Smooth Software Upgarade 
 **iris** version for tsetnet switch from v0.10.0 to v0.10.2
 
