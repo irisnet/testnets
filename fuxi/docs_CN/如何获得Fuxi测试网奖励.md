@@ -1,6 +1,7 @@
 # 如何获得Fuxi测试网奖励
 
 ## 重要信息
+**目前暂停提交，请等到v.12.0发布**
 
 **1 point = 100 IRIS** 
 
@@ -24,40 +25,15 @@ https://github.com/irisnet/testnets/blob/master/fuxi/%E5%A6%82%E4%BD%95%E4%BD%BF
 
 3. 生成IRIShub账户地址：
 
-安装IRIShub v0.11.0:https://www.irisnet.org/docs/get-started/Install-the-Software.html
+~~安装IRIShub v0.11.0:https://www.irisnet.org/docs/get-started/Install-the-Software.html
 生成你的账户: https://www.irisnet.org/docs/cli-client/keys/add.html
 使用keybase命令行工具https://keybase.io/docs/command_line，
-对该地址签名。
-
-例如如果你的地址是: `faa1mmsm487rqkgktl2qgrjad0z3yaf9n8t5pkp33m`,需要执行以下操作
+对该地址签名。例如如果你的地址是: `faa1mmsm487rqkgktl2qgrjad0z3yaf9n8t5pkp33m`,需要执行以下操作
 ```
 keybase pgp sign -m "faa1mmsm487rqkgktl2qgrjad0z3yaf9n8t5pkp33m"
 ```
 示例返回信息：
-```
------BEGIN PGP MESSAGE-----
-Comment: https://keybase.io/download
-Version: Keybase Go 2.13.2 (darwin)
-
-xA0DAAoBWvRaB3sS1AYBy+F0AOIAAAAA5WZhYTF5Y2xzY3NrZHRxdTlyZ3VmZ3dz
-Mjkzd3hwM25q43Nlc3h0cGxx4XhkAMLBXAQAAQoAEAUCXFZSdQkQWvRaB3sS1AYA
-AJEnEAAnZ+rwu7i47fixTwvsDcWnatn6sCf2JFPgj10x0JPIZh/FOqkVaNsV4EMJ
-iToLZBi4Db/6RzUIenfPIc7NUlgit0aOxM2Ay7NVtrQqICoR1bs0ThIExmiwJhp5
-2DpUwoJ9UeXfRJaSDgb7Q3OfwWyagQKg0defHlIPUbOoB1GwqoCHKAUO4CrCbMNP
-cErPi6mjoS3xMSobCcNf8du2GcA++7FMKcPc/nWLKI81fb39iT1k3aoRrtQ5SKPt
-92sM5SE9xlmR6Cfz61/7GniSU6r+o0WycM0tQUGLM3X+3kL1XkpfUOH7IVuzrExE
-EUVWADUqBZk7lXsJCCK9aY+xoiBHdUuLfD3P5qBOlRAdPZpmrQRHEcqk5zPYwzbK
-774iUhB+HSRuP90EN0wsCWBiI0I1Ml9X7B77i7Xg4lkFfbNKX6nSO+2e5L99velO
-63DQZchny3aJeOW59YnB10MCf4mwXdaT+MFv9lGpjQC8Qs8KIzQvGfDJZ4o6VGk2
-ffyRNZtcOAulPTvk92WnxibbO9IlcOBkCyzlCIEmg6hlgTpkEHdmmlHZjQCmPpaY
-V20uKeyXdsPuD0IPafyDtqbof1WqcY4mHEXRhIN1E02+Lz9UKla2Od8OCxAeSMxM
-nPZZPKjwnwFwB36qzArNFp0/yjPJe2LgkKyD4Mhnl8RBjKy0Jw==
-=Sdlx
------END PGP MESSAGE-----
-```
-
 4. 将返回信息填写到以下表格中
 
 https://goo.gl/forms/j8jP6Gc6zDVXMYkE3
-
-5. 在团队公布genesis文件后确认账户余额是否与奖励一致。公布的日期大约在2月13日。
+~~5. 在团队公布genesis文件后确认账户余额是否与奖励一致。公布的日期大约在2月13日。
