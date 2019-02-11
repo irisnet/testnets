@@ -5,7 +5,8 @@
 Ratio between testnet reward point and tokens are:
 
 > **1 point = 100 IRIS**
-> Please wait for release v0.12.0 for submitting your reply
+
+> **Please wait for release v0.12.0 for submitting your reply**
 
 The IRIS network will keep generating value when its validators could keep the whole network secure. With incentivized testnet, IRIS foundation wish to discover qualified validators and give them opportunities to earn IRIS tokens. Fuxi-8000 is the last testnet before betanet. In this testnet, the team introduced an extented task list:[https://github.com/irisnet/testnets/blob/master/fuxi/fuxi-8000/README.md](https://github.com/irisnet/testnets/blob/master/fuxi/fuxi-8000/README.md).
 
