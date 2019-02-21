@@ -1,4 +1,6 @@
 # Testnet Status
+## Feb. 4 Fuxi testnet comes online
+The goal for Fuxi testnet is to provide a stable and free enviroment for testing applications, services and client tools development.  So valdiators no need to join the Fuxi testnet
 
 ## Feb. 11  New Release
 Irishub v0.12.0 is released 
