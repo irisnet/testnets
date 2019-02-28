@@ -11,7 +11,13 @@ To get started with the latest testnet, please follow this [guide](https://githu
 
 ## Testnet Status
 
-## Jan 17, 2019 - Fuxi-7000 Go Live
+## Fuxi  Testnet go to next phase
+The Fuxi testnet is used to provide a stable test environment for developers such as third-party wallets, browsers and other applications. Learn how to join [here](https://github.com/irisnet/irishub/blob/master/docs/get-started/Join-the-Testnet.md)
+
+## Feb. 16  New version
+IRIS hub v0.12.0 is released 
+
+## Jan 17, 2019 - Fuxi-8000 Go Live
 
 We bootstraped the latest testnet with 21 genesis validators. Now, fuxi-8000 has 21 validators and the average block time is about 5s.
 ## Jan. 16  New version
