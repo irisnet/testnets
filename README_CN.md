@@ -97,7 +97,6 @@ Fuxi-1002是一个面向社区的公测测试网络。
 
 * 源码：https://github.com/irisnet/irishub
 * 浏览器：http://testnet.irisplorer.io 
-* 水龙头：http://testnet.irisplorer.io/#/faucet
 * 文档：https://github.com/irisnet/testnets/tree/master/testnets
 
 
