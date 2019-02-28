@@ -6,11 +6,11 @@
 
 > 注意：有关如何加入测试网的文档已经迁移到如下[目录](https://github.com/irisnet/irishub/tree/master/docs/get-started)
 
-请根据以下[文档](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md)。学习如何加入到测试网中。
+请根据以下[文档](https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md)。
 
 ## 测试网动态
 ### 测试网进入新阶段：Fuxi
-伏羲测试网（chain-id = fuxi）将运行跟主网一致的软件版本，为开发者社区（钱包、浏览器、Service Providers/Consumers）提供一个稳定的测试环境。
+伏羲测试网（chain-id = fuxi）将运行跟主网一致的软件版本，为开发者社区（钱包、浏览器、Service Providers/Consumers）提供一个稳定的测试环境。学习如何加入到测试网中:https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html。
 
 ### 2019年1月17日，Fuxi-8000 测试网上线
 
