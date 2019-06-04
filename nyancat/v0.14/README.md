@@ -8,4 +8,4 @@ As the initial version for Nyancat Testnet, v0.14.1 is already running smoothly 
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 1    | Setup a Validator Node                         | Set up a full node and use `name-pgp-fingerprint` as `monkier`, then upgrade the full node to a validator | Submit your IP and the team could visit the port of your node | 100    |
+| 1    | Setup a Validator Node                         | Set up a full node and use `name-pgp-fingerprint` as `monkier`, then upgrade the full node to a validator | Submit your IP and the team could visit the port of your node | xxx    |
