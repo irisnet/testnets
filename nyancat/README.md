@@ -2,7 +2,7 @@
 
 ## What is IRISnet Nyancat Testnet
 
-Most IRISnet validators may know the Fuxi Testnet is an early incentivized testnet for validators and developers to get involved in. After the mainnet launched, Fuxi Testnet is acted as a stable application testnet which has the same version as the mainnet, so that application groups could develop their apps on irishub without running any node or lcd instances. But we do need a testnet for validators to test the new version decentralized before it can be relased. That is what Nyancat Testnet meaning, and of course, paying always pays off :)
+Most IRISnet validators may know the Fuxi Testnet is an early incentivized testnet for validators and developers to get involved in. After the mainnet launched, Fuxi Testnet is acted as a stable application testnet which has the same version as the mainnet, so that application groups could develop their apps on irishub without running any node or lcd instances. But we do need a testnet for validators to test the new version decentralized before it can be relased. That is what Nyancat Testnet meaning, and of course, paying always pays off :) please fill in this [form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to complete your sign-up process.
 
 ## How to join Nyancat Testnet
 
