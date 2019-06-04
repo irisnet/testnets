@@ -93,9 +93,9 @@
         ],
         "critical_voting_period": "86400000000000",
         "critical_max_num": "1",
-        "critical_threshold": "0.857",
+        "critical_threshold": "0.8570000000",
         "critical_veto": "0.3340000000",
-        "critical_participation": "0.857",
+        "critical_participation": "0.8750000000",
         "critical_penalty": "0.0",
         "important_deposit_period": "86400000000000",
         "important_min_deposit": [
@@ -142,15 +142,15 @@
     },
     "slashing": {
       "params": {
-        "max_evidence_age": "86400000000000",
-        "signed_blocks_window": "2000",
+        "max_evidence_age": "51840",
+        "signed_blocks_window": "34560",
         "min_signed_per_window": "0.5000000000",
-        "double_sign_jail_duration": "600000000000",
-        "downtime_jail_duration": "600000000000",
-        "censorship_jail_duration": "600000000000",
+        "double_sign_jail_duration": "3600000000000",
+        "downtime_jail_duration": "3600000000000",
+        "censorship_jail_duration": "3600000000000",
         "slash_fraction_double_sign": "0.0100000000",
-        "slash_fraction_downtime": "0.0000000000",
-        "slash_fraction_censorship": "0.0000000000"
+        "slash_fraction_downtime": "0.0",
+        "slash_fraction_censorship": "0.0"
       },
       "signing_infos": {},
       "missed_blocks": {},
