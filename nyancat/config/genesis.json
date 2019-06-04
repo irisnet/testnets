@@ -170,18 +170,30 @@
     "guardian": {
       "profilers": [
         {
-          "description": "genesis",
+          "description": "Genesis Profiler 1",
           "type": "Genesis",
-          "address": "faa108w3x8",
-          "added_by": "faa108w3x8"
+          "address": "faa1058s5ys6r99j0n4nw5jlhwjgsgrau8aguddn8k",
+          "added_by": "faa1058s5ys6r99j0n4nw5jlhwjgsgrau8aguddn8k"
+        },
+        {
+          "description": "Genesis Profiler 2",
+          "type": "Genesis",
+          "address": "faa1kz2kghcc6ph3h93wvueyfeycdvmwmxm866sa3e",
+          "added_by": "faa1kz2kghcc6ph3h93wvueyfeycdvmwmxm866sa3e"
         }
       ],
       "trustees": [
         {
-          "description": "genesis",
+          "description": "Genesis Trustee 1",
           "type": "Genesis",
-          "address": "faa108w3x8",
-          "added_by": "faa108w3x8"
+          "address": "faa1dexz4hlerqhpvgxdg4wdnf5l8sdw26nr36fw5c",
+          "added_by": "faa1dexz4hlerqhpvgxdg4wdnf5l8sdw26nr36fw5c"
+        },
+        {
+          "description": "Genesis Trustee 2",
+          "type": "Genesis",
+          "address": "faa1dn8zkwnxqn028ay6j9veqtlcc0622j67hvalpc",
+          "added_by": "faa1dn8zkwnxqn028ay6j9veqtlcc0622j67hvalpc"
         }
       ]
     },
