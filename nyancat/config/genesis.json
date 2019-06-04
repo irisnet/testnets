@@ -1,0 +1,240 @@
+{
+  "genesis_time": "2019-06-04T03:19:19.48290918Z",
+  "chain_id": "nyancat",
+  "consensus_params": {
+    "block_size": {
+      "max_bytes": "2000000",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "accounts": [
+      {
+        "address": "faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5",
+        "coins": [
+          "1000000000000000000000000000iris-atto"
+        ],
+        "sequence_number": "0",
+        "account_number": "0"
+      }
+    ],
+    "auth": {
+      "collected_fee": null,
+      "data": {
+        "native_fee_denom": "iris-atto"
+      },
+      "params": {
+        "gas_price_threshold": "20000000000000",
+        "tx_size": "1000"
+      }
+    },
+    "stake": {
+      "pool": {
+        "bonded_tokens": "0.0000000000"
+      },
+      "params": {
+        "unbonding_time": "3600000000000",
+        "max_validators": 100
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "bonds": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "mint": {
+      "minter": {
+        "last_update": "1970-01-01T00:00:00Z",
+        "mint_denom": "iris-atto",
+        "inflation_basement": "2000000000000000000000000000"
+      },
+      "params": {
+        "inflation": "0.0400000000"
+      }
+    },
+    "distr": {
+      "params": {
+        "community_tax": "0.0200000000",
+        "base_proposer_reward": "0.0100000000",
+        "bonus_proposer_reward": "0.0400000000"
+      },
+      "fee_pool": {
+        "val_accum": {
+          "update_height": "0",
+          "accum": "0.0000000000"
+        },
+        "val_pool": null,
+        "community_pool": null
+      },
+      "validator_dist_infos": null,
+      "delegator_dist_infos": null,
+      "delegator_withdraw_infos": null,
+      "previous_proposer": "fca135svst"
+    },
+    "gov": {
+      "params": {
+        "critical_deposit_period": "86400000000000",
+        "critical_min_deposit": [
+          {
+            "denom": "iris",
+            "amount": "100"
+          }
+        ],
+        "critical_voting_period": "86400000000000",
+        "critical_max_num": "1",
+        "critical_threshold": "0.8340000000",
+        "critical_veto": "0.3340000000",
+        "critical_participation": "0.8572000000",
+        "critical_penalty": "0.0009000000",
+        "important_deposit_period": "86400000000000",
+        "important_min_deposit": [
+          {
+            "denom": "iris",
+            "amount": "100"
+          }
+        ],
+        "important_voting_period": "86400000000000",
+        "important_max_num": "2",
+        "important_threshold": "0.8000000000",
+        "important_veto": "0.3340000000",
+        "important_participation": "0.8340000000",
+        "important_penalty": "0.0007000000",
+        "normal_deposit_period": "86400000000000",
+        "normal_min_deposit": [
+          {
+            "denom": "iris",
+            "amount": "50"
+          }
+        ],
+        "normal_voting_period": "86400000000000",
+        "normal_max_num": "1",
+        "normal_threshold": "0.6670000000",
+        "normal_veto": "0.3340000000",
+        "normal_participation": "0.7500000000",
+        "normal_penalty": "0.0005000000",
+        "system_halt_period": "20000"
+      }
+    },
+    "upgrade": {
+      "GenesisVersion": {
+        "UpgradeInfo": {
+          "ProposalID": "0",
+          "Protocol": {
+            "version": "0",
+            "software": "https://github.com/irisnet/irishub/releases/tag/v0.14.1",
+            "height": "1",
+            "threshold": "0.9000000000"
+          }
+        },
+        "Success": true
+      }
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "86400000000000",
+        "signed_blocks_window": "2000",
+        "min_signed_per_window": "0.5000000000",
+        "double_sign_jail_duration": "600000000000",
+        "downtime_jail_duration": "600000000000",
+        "censorship_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.0100000000",
+        "slash_fraction_downtime": "0.0000000000",
+        "slash_fraction_censorship": "0.0000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {},
+      "slashing_periods": null
+    },
+    "service": {
+      "params": {
+        "max_request_timeout": "100",
+        "min_deposit_multiple": "1000",
+        "service_fee_tax": "0.0100000000",
+        "slash_fraction": "0.0010000000",
+        "complaint_retrospect": "1296000000000000",
+        "arbitration_time_limit": "432000000000000",
+        "tx_size_limit": "4000"
+      }
+    },
+    "guardian": {
+      "profilers": [
+        {
+          "description": "genesis",
+          "type": "Genesis",
+          "address": "faa108w3x8",
+          "added_by": "faa108w3x8"
+        }
+      ],
+      "trustees": [
+        {
+          "description": "genesis",
+          "type": "Genesis",
+          "address": "faa108w3x8",
+          "added_by": "faa108w3x8"
+        }
+      ]
+    },
+    "gentxs": [
+      {
+        "type": "irishub/bank/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "irishub/stake/MsgCreateValidator",
+              "value": {
+                "Description": {
+                  "moniker": "Bianjie",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "Commission": {
+                  "rate": "0.1000000000",
+                  "max_rate": "1.0000000000",
+                  "max_change_rate": "1.0000000000"
+                },
+                "delegator_address": "faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5",
+                "validator_address": "fva1svannhv2zaxefq83m7treg078udfk37lea63kn",
+                "pubkey": {
+                  "type": "tendermint/PubKeyEd25519",
+                  "value": "CAnk4eNDg0r4ZBsw1XgQRwuPHgGtXgYfbKVUR+R+8r8="
+                },
+                "delegation": {
+                  "denom": "iris-atto",
+                  "amount": "100000000000000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "50000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A0D8FPGA6B3ss3jK6+ebdrnlPfJRaWBfLitwn5v3X6CQ"
+              },
+              "signature": "qmvsswxOcvIcPZ6hV6Jv3yBxEVjMZNcfQwgZLlcK0X90UVTNGZNnBmhIfQ5E3ZpnHlsk/iLjui350OSyeFD0Xw==",
+              "account_number": "0",
+              "sequence": "0"
+            }
+          ],
+          "memo": "c87675bcaeb72a1f93dbf7d74f7b425690a994e3@172.17.0.2:26656"
+        }
+      }
+    ]
+  }
+}
