@@ -33,7 +33,7 @@
         "native_fee_denom": "iris-atto"
       },
       "params": {
-        "gas_price_threshold": "20000000000000",
+        "gas_price_threshold": "6000000000000",
         "tx_size": "1000"
       }
     },
@@ -93,10 +93,10 @@
         ],
         "critical_voting_period": "86400000000000",
         "critical_max_num": "1",
-        "critical_threshold": "0.8340000000",
+        "critical_threshold": "0.857",
         "critical_veto": "0.3340000000",
-        "critical_participation": "0.8572000000",
-        "critical_penalty": "0.0009000000",
+        "critical_participation": "0.857",
+        "critical_penalty": "0.0",
         "important_deposit_period": "86400000000000",
         "important_min_deposit": [
           {
@@ -109,7 +109,7 @@
         "important_threshold": "0.8000000000",
         "important_veto": "0.3340000000",
         "important_participation": "0.8340000000",
-        "important_penalty": "0.0007000000",
+        "important_penalty": "0.0",
         "normal_deposit_period": "86400000000000",
         "normal_min_deposit": [
           {
@@ -122,7 +122,7 @@
         "normal_threshold": "0.6670000000",
         "normal_veto": "0.3340000000",
         "normal_participation": "0.7500000000",
-        "normal_penalty": "0.0005000000",
+        "normal_penalty": "0.0",
         "system_halt_period": "20000"
       }
     },
