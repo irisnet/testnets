@@ -25,3 +25,11 @@ Persistent Peers:
 ```bash
 c87675bcaeb72a1f93dbf7d74f7b425690a994e3@34.80.202.172:26656
 ```
+
+## Faucet
+
+Unfortunately we do not have a public faucet for nyancat, but you are welcome to ask for the money in our community
+
+## Explorer
+
+<https://nyancat.bigdipper.live/>
