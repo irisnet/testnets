@@ -28,7 +28,7 @@ c87675bcaeb72a1f93dbf7d74f7b425690a994e3@34.80.202.172:26656
 
 ## Faucet
 
-Unfortunately we do not have a public faucet for nyancat, however you are welcome to ask for the test tokens in our validator communities: Riot English community at ?? QQ ?? 
+Unfortunately we do not have a public faucet for nyancat, however you are welcome to ask for the test tokens in our validator communities: [Riot English community](https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org?via=matrix.org&via=t2bot.io) [QQ Chinese community](https://jq.qq.com/?_wv=1027&k=5BeP3tJ)
 
 ## Explorer
 
