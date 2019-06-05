@@ -11,3 +11,17 @@ Just like to join [IRIS Hub Mainnet](https://www.irisnet.org/docs/get-started/Jo
 - [version](./v0.14/README.md) may be different
 - remember to [compile for testnet](https://www.irisnet.org/docs/software/How-to-install-irishub.html#compile-source-code)
 - use the [config file](./config) for nyancat testnet
+
+## Peers
+
+Seeds:
+
+```bash
+174e6f483d925c3b5b70e2ced098916a8cf8fe4b@35.234.10.84:26656
+```
+
+Persistent Peers:
+
+```bash
+c87675bcaeb72a1f93dbf7d74f7b425690a994e3@34.80.202.172:26656
+```
