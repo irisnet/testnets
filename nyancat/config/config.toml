@@ -114,10 +114,10 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "174e6f483d925c3b5b70e2ced098916a8cf8fe4b@35.234.10.84:26656"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = ""
+persistent_peers = "c87675bcaeb72a1f93dbf7d74f7b425690a994e3@34.80.202.172:26656"
 
 # UPNP port forwarding
 upnp = false

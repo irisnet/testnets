@@ -4,8 +4,8 @@
 
 ## Tasks
 
-As the initial version for Nyancat Testnet, v0.14.1 is already running smoothly on mainnet, so we do not have many tasks todo here, we only need a testnet for newbies and get ready for coming tasks in v0.15.
+As the initial version for Nyancat Testnet, v0.14.1 is already running smoothly on mainnet, so we do not have many tasks todo here, we only need a testnet for new validators and get ready for upcoming tasks in v0.15.
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 1    | Setup a Validator Node                         | Set up a full node and use `name-pgp-fingerprint` as `monkier`, then upgrade the full node to a validator | Submit your IP and the team could visit the port of your node | xxx    |
+| 1    | Setup a Validator Node                         | Set up a full node and use `name-pgp-fingerprint` as `monkier`, then upgrade the full node to a validator | Submit your IP and the team could visit the port of your node | N/A    |
