@@ -4,7 +4,7 @@
 
 ## Tasks
 
-As the initial version for Nyancat Testnet, v0.14.1 is already running smoothly on mainnet, so we do not have many tasks todo here, we only need a testnet for newbies and get ready for coming tasks in v0.15.
+As the initial version for Nyancat Testnet, v0.14.1 is already running smoothly on mainnet, so we do not have many tasks todo here, we only need a testnet for new comers and get ready for upcoming tasks in v0.15.
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
