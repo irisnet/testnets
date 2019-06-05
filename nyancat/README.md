@@ -2,7 +2,7 @@
 
 ## What is IRISnet Nyancat Testnet
 
-Most IRISnet validators may know the Fuxi Testnet before mainnet was an early incentivized testnet for validators and developers to get involved in. Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance. However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet's focus. To encourage validators' paricipation,  please fill in this [form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to complete your sign-up process.
+Most IRISnet validators may know the Fuxi Testnet before mainnet was an early incentivized testnet for validators and developers to get involved in. Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance. However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet's focus. Please don't forget fill in this [form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to complete your sign-up process, and we will give rewards from time to time to our diligent validators who participate in Nyancat and contribute to the IRIShub improvements.
 
 ## How to join Nyancat Testnet
 
@@ -28,7 +28,7 @@ c87675bcaeb72a1f93dbf7d74f7b425690a994e3@34.80.202.172:26656
 
 ## Faucet
 
-Unfortunately we do not have a public faucet for nyancat, but you are welcome to ask for the money in our community
+Unfortunately we do not have a public faucet for nyancat, however you are welcome to ask for the test tokens in our validator communities: Riot English community at ?? QQ ?? 
 
 ## Explorer
 
