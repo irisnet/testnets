@@ -32,4 +32,6 @@ Unfortunately we do not have a public faucet for nyancat, however you are welcom
 
 ## Explorer
 
+<https://nyancat.irisplorer.io>
+
 <https://nyancat.bigdipper.live/>
