@@ -2,47 +2,41 @@
 
 ## 最新版本: [v0.14.2](https://github.com/irisnet/irishub/releases/tag/v0.14.2)
 
-## 任务列表
+## v0.14.2
 
-### v0.14.2
+我们在 Nyancat 测试网 `v0.14.1` 版本发现了一个 Bug：对于链上的 Proposal，我们需要质押一定的金额才能进入投票阶段，`genesis.json` 中 `Gov` 配置相关的 `min_deposit` 没有在系统中做`iris`单位转换，导致 Nyancat 测试网发起提议所需要的质押金额为 100 `iris`，而系统中其实并不存在 `iris` 这个 Token，只有 `iris-atto`，我们在 UI 层所看到的 `iris` 其实是通过公式转换得来的：1 iris = 10^18 iris-atto。也就是说我们只能质押`iris-atto`，而系统却只认系统中并不存在的 `iris`，导致质押金额永远无法满足要求，最终提议失败。
 
-我们在 Nyancat 测试网发现了一个小 Bug：`genesis.json` 中 `Gov` 配置相关的 `min_deposit` 没有在系统中做`iris`单位转换，导致 Nyancat 测试网发起提议所需要的抵押金额非常低（配置为 100 iris，而系统则初始化为 100 iris-atto，详见：[genesis.json 第90行](../config/genesis.json#L90)）。不过这个问题在主网是不存在的，因为主网版本的二进制文件在启动时对 genesis 参数都有严格的校验，测试网版本为了方便测试，所以关闭了校验，从而导致这个问题没有被及时发现。于是我们做了如下优化：
+### Bug 详情
 
-- 修复 genesis 对 `iris` 单位的转换
-- 开启测试网版本二进制文件对 genesis 参数的校验
+[Testnet Genesis 参数校验](https://github.com/irisnet/irishub/blob/v0.14.1/modules/gov/params.go#L362)
+
+[Nyancat Genesis 配置](../config/genesis.json#L90)
+
+从上面的代码中我们可以看到，对于`测试网`版本的软件，为了方便测试，在加载 Genesis 配置时跳过了验证，同时，也没有对 `Gov` 配置相关的 `min_deposit` 单位进行转换，从而触发了这个Bug。不过这个问题在主网是不存在的，因为主网版本的软件在启动时对 genesis 参数进行了严格的校验。
+
+于是我们做了如下优化：
+
+- 开启测试网版本软件对 genesis 参数的校验
+- Genesis 中只接受 `iris-atto` 作为 `denom`（account balance 除外）
 
 感谢这个 Bug 的出现，我们可以在 v0.15 发布前做一些家庭作业了！
 
-我们都知道 IRIS Hub 具有完备的链上[升级](https://www.irisnet.org/docs/zh/features/upgrade.html)和[治理](https://www.irisnet.org/docs/zh/features/governance.html)功能，不过出于安全考量，链上治理无法治理自己，所以对 `Gov` 参数的修改，只能通过 `Class 4` 升级来完成。
+我们都知道 IRIS Hub 具有完备的链上[升级](https://www.irisnet.org/docs/zh/features/upgrade.html)和[治理](https://www.irisnet.org/docs/zh/features/governance.html)功能，不过出于安全考量，链上治理无法治理自己，所以对 `Gov` 参数的修改，只能通过 `Class 4` 升级来完成。并且由于 Bug 刚好出现在链上治理模块，我们甚至无法通过 `SystemHalt Proposal` 使我们的 Nyancat 优雅的停止，所以对于这次升级，我们只能采用传统方式进行升级。
 
-这次升级分为如下几个阶段：
+首先，我们需要确定一个具体的区块高度，用来导出当前区块链的最终状态，当区块到达目标高度时，验证人即可按如下步骤操作：
 
-#### 投票阶段
-
-由 [Profiler](./README_CN.md "唯一有权限发起Critical级别提议的账户，定义在 genesis.json 中") 发起 `SystemHalt` 提议，指定在未来的某一高度停止出块，验证人参与对该提议的投票
-
-#### 投票阶段任务
-
-| No   | Name                                           | Details                                                      | Criteria                                                     | Points |
-| ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 1    | 对 `SystemHalt` 提议进行投票 | 使用你的Validator Operator账户对 `SystemHalt` 提议进行投票，强烈建议投出赞成票，以便接下来的任务的顺利执行  | 完成投票交易,并将 `<name>-<pgpid>` 作为 memo，[参考文档](https://www.irisnet.org/docs/zh/cli-client/gov/vote.html)      | 5    |
-
-#### 升级阶段
-
-当 `SystemHalt` 提议通过并到达指定高度后，Nyancat 测试网将会自动进入 Halt 状态无法继续出块，即升级阶段开始。
-
-升级步骤：
-
-1. 停止运行中的节点，导出节点状态
+1. 停止运行中的节点，导出指定高度的区块链状态
 
     ```bash
-    iris export --for-zero-height --height 0 --output-file nyancat_export.json
+    iris export --for-zero-height --height <待定> --output-file nyancat_export.json
     ```
 
-2. 修改新的网络的启动时间（待定）
+2. 修改新的网络的参数及启动时间（待定）
+
+    你需要安装 [jq](https://stedolan.github.io/jq/) 来执行以下命令，[[在线测试](https://jqplay.org/s/9QSR4xq_TX)]
 
     ```bash
-    sed -i 's/"genesis_time": "2019-06-04T03:19:19.48290918Z"/"genesis_time": "待定"/g' nyancat_export.json | jq -S -c -M '' > new_genesis.json
+    jq -S -c -M '.genesis_time="待定" |.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
     ```
 
     校验 `new_genesis.json` 的 SHA256
@@ -86,13 +80,13 @@
     iris start --home=<your_home>
     ```
 
-#### 升级阶段任务
+### 升级任务
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 2    | 升级节点版本至 v0.14.2 | 按如上步骤完成升级  | 在新的 Nyancat 网络中前10个区块高度内存在有效 Pre Commit 的验证人节点将会获得奖励| 20    |
+| 2    | 升级节点版本至 v0.14.2 | 按如上步骤完成升级  | 在新的 Nyancat 网络中前50个区块高度内，存在有效 Pre Commit 的验证人节点将会获得奖励| 200    |
 
-### v0.14.1
+## v0.14.1
 
 作为 Nyancat 测试网的初始版本，v0.14.1 已经稳定的运行于 IRIS Hub 主网，所以我们没有很多任务需要完成，我们只需要为新进验证人们启动一个测试网，用于熟悉验证人相关的各种操作，避免在主网上面犯错，同时为即将在 v0.15 版本发布的测试网任务做好准备。
 
