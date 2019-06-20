@@ -1,6 +1,6 @@
 # Nyancat 测试网 V0.14
 
-## 最新版本: [v0.14.1](https://github.com/irisnet/irishub/releases/tag/v0.14.1) [[更新日志](https://github.com/irisnet/irishub/blob/master/CHANGELOG.md#0141)]
+## 最新版本: [v0.14.2](https://github.com/irisnet/irishub/releases/tag/v0.14.2)
 
 ## 任务列表
 
