@@ -19,6 +19,8 @@
 - 开启测试网版本软件对 genesis 参数的校验
 - Genesis 中只接受 `iris-atto` 作为 `denom`（account balance 除外）
 
+### 升级任务
+
 感谢这个 Bug 的出现，我们可以在 v0.15 发布前做一些家庭作业了！
 
 我们都知道 IRIS Hub 具有完备的链上[升级](https://www.irisnet.org/docs/zh/features/upgrade.html)和[治理](https://www.irisnet.org/docs/zh/features/governance.html)功能，不过出于安全考量，链上治理无法治理自己，所以对 `Gov` 参数的修改，只能通过 `Class 4` 升级来完成。并且由于 Bug 刚好出现在链上治理模块，我们甚至无法通过 `SystemHalt Proposal` 使我们的 Nyancat 优雅的停止，所以对于这次升级，我们只能采用传统方式进行升级。
@@ -79,8 +81,6 @@
     ```bash
     iris start --home=<your_home>
     ```
-
-### 升级任务
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
