@@ -86,6 +86,8 @@ First, we need to determine a specific block height to derive the final state of
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
 |  2   | Upgrade Node Version to v0.14.2 | Complete the upgrade as above | In the first 50 block heights of the new Nyancat network, the validator nodes with a valid Pre Commit will receive the reward | 200 |
 
+**Note**: The point redeem proportion will be announced at the end of the testnet activity
+
 ## v0.14.1
 
 As the initial version for Nyancat Testnet, v0.14.1 is already running smoothly on mainnet, so we do not have many tasks todo here, we only need a testnet for new validators and get ready for upcoming tasks in v0.15.
