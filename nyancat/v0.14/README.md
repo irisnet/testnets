@@ -29,62 +29,62 @@ First, we need to determine a specific block height to derive the final state of
 
 1. Stop the running node and export the blockchain status of the specified height.
 
-    ```bash
-    iris export --for-zero-height --height <pending> --output-file nyancat_export.json
-    ```
+    ```bash
+    iris export --for-zero-height --height <pending> --output-file nyancat_export.json
+    ```
 
 2. Modify the parameters and start time of the new network (to be determined)
 
-    You need to install [jq](https://stedolan.github.io/jq/) to execute the following command, [[online test](https://jqplay.org/s/9QSR4xq_TX)]
+    You need to install [jq](https://stedolan.github.io/jq/) to execute the following command, [[online test](https://jqplay.org/s/9QSR4xq_TX)]
 
-    ```bash
-    jq -S -c -M '.genesis_time="pending" |.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount" : "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", " Amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
-    ```
+    ```bash
+    jq -S -c -M '.genesis_time="pending" |.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount" : "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", " Amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
+    ```
 
-    Verify SHA256 of `new_genesis.json`
+    Verify SHA256 of `new_genesis.json`
 
-    ```bash
-    sha256sum new_genesis.json
-    xxx (to be determined)
+    ```bash
+    sha256sum new_genesis.json
+    xxx (to be determined)
     ```
 
 3. Overwrite the original `genesis.json` with `new_genesis.json`
 
-    ```bash
-    cp new_genesis.json <your_home>/config/genesis.json
-    ```
+    ```bash
+    cp new_genesis.json <your_home>/config/genesis.json
+    ```
 
 4. Install the new version
 
-    ```bash
-    git clone https://github.com/irisnet/irishub
-    cd irishub && git checkout v0.14.2
-    source scripts/setTestEnv.sh
-    make get_tools && make install
-    ```
+    ```bash
+    git clone https://github.com/irisnet/irishub
+    cd irishub && git checkout v0.14.2
+    source scripts/setTestEnv.sh
+    make get_tools && make install
+    ```
 
-    Verify version information
+    Verify version information
 
-    ```bash
-    iris version
-    0.14.2-1241d9d-0
-    ```
+    ```bash
+    iris version
+    0.14.2-1241d9d-0
+    ```
 
 5. Reset the original Nyancat testnet
 
-    ```bash
-    iris unsafe-reset-all --home=<your_home>
-    ```
+    ```bash
+    iris unsafe-reset-all --home=<your_home>
+    ```
 
 6. Start the node
 
-    ```bash
-    iris start --home=<your_home>
-    ```
+    ```bash
+    iris start --home=<your_home>
+    ```
 
 | No | Name | Details | Criteria | Points |
-| ---- | -------------------------------------------- -- | ----------------------------------------------- ------------- | ------------------------------------ ------------------------ | ------ |
-2 | Upgrade Node Version to v0.14.2 | Complete the upgrade as above | In the first 50 block heights of the new Nyancat network, the validator nodes with a valid Pre Commit will receive the reward | 200 |
+| ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+|  2   | Upgrade Node Version to v0.14.2 | Complete the upgrade as above | In the first 50 block heights of the new Nyancat network, the validator nodes with a valid Pre Commit will receive the reward | 200 |
 
 ## v0.14.1
 
