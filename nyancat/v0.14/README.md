@@ -4,7 +4,7 @@
 
 ## v0.14.2
 
-We found a bug in the Nyancat testnet `v0.14.1` version: for Proposals, we need to deposit a certain amount to enter the voting phase, the unit of `min_deposit` of `Gov` configuration in the `genesis.json` file is not converted in the system, which causes the Nyancat testnet to initiate the proposal with the required amount of 100 `iris`, and the system does not actually have the `iris` token, only `iris-atto`. At the UI layer, the `iris` we saw is actually converted by the formula: 1 iris = 10^18 iris-atto. In other words, we can only deposit `iris-atto`, but the system only recognizes the `iris` that does not exist in the system, so that the amount of the quality deposit can never meet the requirements, and final the proposal fails.
+This new version is to address a bug in the Nyancat testnet `v0.14.1` version: for Proposals, certain amount of deposits are needed for entering the voting phase, however in the old version the unit of `min_deposit` of `Gov` configuration in the `genesis.json` file is not converted correctly in the system. So now the Nyancat testnet initiates the proposal with the required amount of 100 `iris`, however the system does not actually have the `iris` token but only `iris-atto`. At the UI layer, the `iris` we saw is actually converted by the formula: 1 iris = 10^18 iris-atto. 
 
 ### Bug Details
 
