@@ -1,10 +1,10 @@
 # Nyancat Testnet V0.14
 
-## Latest version: [v0.14.2](https://github.com/irisnet/irishub/releases/tag/v0.14.2)
+## Latest version: [v0.14.3](https://github.com/irisnet/irishub/releases/tag/v0.14.3)
 
-## v0.14.2
+## v0.14.3
 
-This new version is to address a bug in the Nyancat testnet `v0.14.1` version: for Proposals, certain amount of deposits are needed for entering the voting phase, however in the old version the unit of `min_deposit` of `Gov` configuration in the `genesis.json` file is not converted correctly in the system. So now the Nyancat testnet initiates the proposal with the required amount of 100 `iris`, however the system does not actually have the `iris` token but only `iris-atto`. At the UI layer, the `iris` we saw is actually converted by the formula: 1 iris = 10^18 iris-atto. 
+This new version is to address a bug in the Nyancat testnet `v0.14.1` version: for Proposals, certain amount of deposits are needed for entering the voting phase, however in the old version the unit of `min_deposit` of `Gov` configuration in the `genesis.json` file is not converted correctly in the system. So now the Nyancat testnet initiates the proposal with the required amount of 100 `iris`, however the system does not actually have the `iris` token but only `iris-atto`. At the UI layer, the `iris` we saw is actually converted by the formula: 1 iris = 10^18 iris-atto.
 
 ### Bug Details
 
@@ -12,7 +12,7 @@ This new version is to address a bug in the Nyancat testnet `v0.14.1` version: f
 
 [Nyancat Genesis Configuration](../config/genesis.json#L90)
 
-From the above code we can see that for the `testnet` version of the software, for the convenience of testing, the verification was skipped when loading the Genesis configuration, and the `min_deposit` unit associated with the `Gov` configuration was not converted. , which triggered this bug. However, this problem does not exist in the mainnet, because the software of the mainnet version strictly checks the genesis parameters at startup.
+From the above code we can see that for the `testnet` version of the software, the verification was skipped when loading the Genesis configuration, and the `min_deposit` unit associated with the `Gov` configuration was not converted, which triggered this bug. However, this problem does not exist in the mainnet, because the software of the mainnet version strictly checks the genesis parameters at startup.
 
 So we made the following optimizations:
 

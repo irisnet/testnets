@@ -1,8 +1,8 @@
 # Nyancat 测试网 V0.14
 
-## 最新版本: [v0.14.2](https://github.com/irisnet/irishub/releases/tag/v0.14.2)
+## 最新版本: [v0.14.2](https://github.com/irisnet/irishub/releases/tag/v0.14.3)
 
-## v0.14.2
+## v0.14.3
 
 我们在 Nyancat 测试网 `v0.14.1` 版本发现了一个 Bug：对于链上的 Proposal，我们需要质押一定的金额才能进入投票阶段，`genesis.json` 中 `Gov` 配置相关的 `min_deposit` 没有在系统中做`iris`单位转换，导致 Nyancat 测试网发起提议所需要的质押金额为 100 `iris`，而系统中其实并不存在 `iris` 这个 Token，只有 `iris-atto`，我们在 UI 层所看到的 `iris` 其实是通过公式转换得来的：1 iris = 10^18 iris-atto。也就是说我们只能质押`iris-atto`，而系统却只认系统中并不存在的 `iris`，导致质押金额永远无法满足要求，最终提议失败。
 
