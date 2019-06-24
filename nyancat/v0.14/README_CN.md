@@ -42,7 +42,7 @@
     你需要安装 [jq](https://stedolan.github.io/jq/) 来执行以下命令，[[在线测试](https://jqplay.org/s/9QSR4xq_TX)]
 
     ```bash
-    jq -S -c -M '.genesis_time="待定" |.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
+    jq -S -c -M '.genesis_time="待定"|.chain_id="nyancat-2"|.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
     ```
 
     校验 `new_genesis.json` 的 SHA256
