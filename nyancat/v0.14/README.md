@@ -71,7 +71,7 @@ Specifically for the Nyancat testnet, we will carry out the fork in the followin
 
     ```bash
     iris version
-    0.14.3-9084de2e-0
+    0.14.3-c9616441-0
     ```
 
 7. Reset the original Nyancat testnet
