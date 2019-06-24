@@ -31,25 +31,25 @@ Specifically for the Nyancat testnet, we will carry out the fork in the followin
 
 2. We'll take `Bianjie` offline to stop the Nyancat network, announcement will be made before we do this
 
-3. Export the blockchain state at the specified height (TBD).
+3. Export the blockchain state at the specified height: `287373`
 
     ```bash
-    iris export --for-zero-height --height <TBD> --output-file nyancat_export.json
+    iris export --for-zero-height --height 287373 --output-file nyancat_export.json
     ```
 
-4. Modify the governance parameters and `genesis_time` (TBD)
+4. Modify the governance parameters and `genesis_time`
 
     You need to install [jq](https://stedolan.github.io/jq/) to execute the following command, [[online test](https://jqplay.org/s/jTO8nHeCGb)]
 
     ```bash
-    jq -S -c -M '.genesis_time="TBD"|.chain_id="nyancat-2"|.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
+    jq -S -c -M '.genesis_time="2019-06-26T13:00:00.000000000Z"|.chain_id="nyancat-2"|.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
     ```
 
     Verify SHA256 of `new_genesis.json`
 
     ```bash
     sha256sum new_genesis.json
-    xxx (TBD)
+    0ad7da96167c22ba7acb505bbfdb6a83de1e87cf6be2f7013e6cfb766a0e9953  new_genesis.json
     ```
 
 5. Overwrite the original `genesis.json` with `new_genesis.json`

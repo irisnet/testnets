@@ -31,25 +31,25 @@
 
 2. 我们将把“Bianjie”节点下线以停止 Nyancat 网络，我们会在这之前做出公告
 
-3. 导出指定高度（待定）的区块链状态
+3. 导出高度为 `287373` 的区块链状态
 
     ```bash
-    iris export --for-zero-height --height <待定> --output-file nyancat_export.json
+    iris export --for-zero-height --height 287373 --output-file nyancat_export.json
     ```
 
-4. 修改新的网络的参数及启动时间（待定）
+4. 修改新的网络的参数及启动时间
 
     你需要安装 [jq](https://stedolan.github.io/jq/) 来执行以下命令，[[在线测试](https://jqplay.org/s/jTO8nHeCGb)]
 
     ```bash
-    jq -S -c -M '.genesis_time="待定"|.chain_id="nyancat-2"|.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
+    jq -S -c -M '.genesis_time="2019-06-26T13:00:00.000000000Z"|.chain_id="nyancat-2"|.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
     ```
 
     校验 `new_genesis.json` 的 SHA256
 
     ```bash
     sha256sum new_genesis.json
-    xxx(待定)
+    0ad7da96167c22ba7acb505bbfdb6a83de1e87cf6be2f7013e6cfb766a0e9953  new_genesis.json
     ```
 
 5. 使用 `new_genesis.json` 覆盖原 `genesis.json`
