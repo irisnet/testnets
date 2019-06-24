@@ -23,8 +23,7 @@ To fix this problem, we made the following improvement in `v0.14.3`:
 
 Thanks to this bug, we can do some homework before v0.15 is released!
 
-As we all know, IRIS Hub comes with a comprehensive on-chain [software upgrade](https://www.irisnet.org/docs/features/upgrade.html) and [governance](https://www.irisnet.org/docs/features/governance.html) mechanism; however, for security reasons, we have purposefully chosen not to allow the governance itself to be governed.  So, to update the incorrectly set governance parameters, 
-we have to go through a hard fork.
+As we all know, IRIS Hub comes with a comprehensive on-chain [software upgrade](https://www.irisnet.org/docs/features/upgrade.html) and [governance](https://www.irisnet.org/docs/features/governance.html) mechanism; however, for security reasons, we have purposefully chosen not to allow the [governance](https://www.irisnet.org/docs/features/governance.html) itself to be governed.  So, to update the incorrectly set governance parameters, we have to go through a hard fork.
 
 Specifically for the Nyancat testnet, we will carry out the fork in the following steps:
 
