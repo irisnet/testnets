@@ -1,21 +1,23 @@
 # IRISnet Testnet
 
+> Note: If you are running a node on fuxi-8000 testnet, please stop it.  
+
 ## Intro of IRIShub 
 
 IRIShub is a regional hub with a built-in Service Infrastructure in Cosmos network.
 
 
-## How to join Fuxi-7000 testnet
+## How to join Fuxi testnet
 
-Please follow this [doc](https://www.irisnet.org/docs/get-started/)
+[TBD]
 
-## How to finish tasks for Fuxi-7000 incentivized testnet
 
-Please follow this [doc](https://github.com/irisnet/testnets/blob/master/fuxi/fuxi-7000/README.md) to finish the tasks
+## Fuxi incentivized testnet summary
 
-## Status for Fuxi-6000 incentivized testnet tasks
+In summary, 57820 points are given to testnet participants, which equals about 6 million iris tokens. The ratio is: 1 point = 100 IRIS. Average reward is 1100 points per participant. We see 51 participants in Fuxi incentivized testnet program.
 
-Read about how many points you may win[here](https://github.com/irisnet/testnets/issues/231)。
+https://github.com/irisnet/testnets/issues/290
+
 
 ## Join community
 
