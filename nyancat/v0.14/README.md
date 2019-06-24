@@ -39,7 +39,7 @@ Specifically for the Nyancat testnet, we will carry out the fork in the followin
 
 4. Modify the governance parameters and `genesis_time` (TBD)
 
-    You need to install [jq](https://stedolan.github.io/jq/) to execute the following command, [[online test](https://jqplay.org/s/9QSR4xq_TX)]
+    You need to install [jq](https://stedolan.github.io/jq/) to execute the following command, [[online test](https://jqplay.org/s/jTO8nHeCGb)]
 
     ```bash
     jq -S -c -M '.genesis_time="TBD"|.chain_id="nyancat-2"|.app_state.gov.params = (.app_state.gov.params | .critical_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.important_min_deposit[0] = {"denom": "iris-atto", "amount": "100000000000000000000"}|.normal_min_deposit[0] = {"denom": "iris-atto", "amount": "50000000000000000000"})' nyancat_export.json > new_genesis.json
