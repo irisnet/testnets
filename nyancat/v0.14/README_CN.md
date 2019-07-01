@@ -10,9 +10,9 @@
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 3    | 参与链上参数治理 | `Bianjie` 将会发起一个修改 `Slashing` 参数的提议，请大家对该提议进行投票  | 以 `nyancat-2` 链上对[提议1](https://nyancat.irisplorer.io/#/ProposalsDetail/1)的有效投票为准| 50    |
+| 3    | 参与链上参数治理 | 我们将会发起一个修改 `Slashing` 参数的提议，请大家对该提议进行投票  | 以 `nyancat-2` 链上对[提议1](https://nyancat.irisplorer.io/#/ProposalsDetail/1)的有效投票为准| 50    |
 
-这次参数修改的提议将会是主网参数修改的演练，大家可以通过本次演练了解投票的的基本流程，以及参数修改生效后对验证人节点的影响。对于参数修改有不同的意见，也欢迎在论坛中发表：<https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
+这次参数修改的提议将会是即将到来的主网参数修改的演练，大家可以通过本次演练了解投票的的基本流程，以及参数修改生效后对验证人节点的影响。对于参数修改有不同的意见，也欢迎在论坛中发表：<https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
 
 投票参考文档：<https://www.irisnet.org/docs/cli-client/gov/vote.html>
 

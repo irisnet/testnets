@@ -10,9 +10,9 @@
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 3 | Participate in on-chain parameter governance | `Bianjie` will submit a proposal to modify the `Slashing` parameters, please vote on the proposal | Valid votes on [Proposal 1](https://nyancat.irisplorer.io/#/ProposalsDetail/1) of `nyancat-2` | 50 |
+| 3 | Participate in on-chain parameter governance | We will submit a proposal to modify the `Slashing` parameters, please vote on the proposal | Valid votes on [Proposal 1](https://nyancat.irisplorer.io/#/ProposalsDetail/1) of `nyancat-2` | 50 |
 
-This Parameter Change Proposal is a rehearsal of the mainnet. By this walkthrough you may understand the basic flow of voting and the effects on the validator nodes after the slashing parameter change takes effect. Different opinions and comments are welcome in the forum: <https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
+This Parameter Change Proposal is a rehearsal of what's coming on the mainnet. By going through this exercise you will understand the basic flow of voting and the effects on the validator nodes after the slashing parameter change takes effect. Different opinions and comments are welcome in the forum: <https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
 
 Voting Document：<https://www.irisnet.org/docs/cli-client/gov/vote.html>
 
