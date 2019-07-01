@@ -2,7 +2,25 @@
 
 ## Latest version: [v0.14.3](https://github.com/irisnet/irishub/releases/tag/v0.14.3)
 
+**Note**: The point-to-`iris` conversion rate will be announced at the end of this incentivized testnet campaign.
+
 ## v0.14.3
+
+### Voting Task
+
+| No   | Name                                           | Details                                                      | Criteria                                                     | Points |
+| ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 3 | Participate in on-chain parameter governance | We will submit a proposal to modify the `Slashing` parameters, please vote on the proposal | Valid votes on [Proposal 1](https://nyancat.irisplorer.io/#/ProposalsDetail/1) of `nyancat-2` | 50 |
+
+This Parameter Change Proposal is a rehearsal of what's coming on the mainnet. By going through this exercise you will understand the basic flow of voting and the effects on the validator nodes after the slashing parameter change takes effect. Different opinions and comments are welcome in the forum: <https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
+
+Voting Document：<https://www.irisnet.org/docs/cli-client/gov/vote.html>
+
+### ~~Upgrade Task (Completed)~~
+
+| No | Name | Details | Criteria | Points |
+| ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+|  2   | Upgrade to v0.14.3 | (see above) | In the first 100 blocks of the new Nyancat network, validators with a valid precommit will receive the reward | 200 |
 
 This new version is to address a weakness in `v0.14.1` which, when coinciding with governance parameter setting errors, leads to governance procedures unusable in testnets.
 We found this problem when trying to go through a governance procedure in Nyancat.
@@ -85,12 +103,6 @@ Specifically for the Nyancat testnet, we will carry out the fork in the followin
     ```bash
     iris start --home=<your_home>
     ```
-
-| No | Name | Details | Criteria | Points |
-| ---- | ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-|  2   | Upgrade to v0.14.3 | (see above) | In the first 100 blocks of the new Nyancat network, validators with a valid precommit will receive the reward | 200 |
-
-**Note**: The point-to-`iris` conversion rate will be announced at the end of this incentivized testnet campaign.
 
 ## v0.14.1
 
