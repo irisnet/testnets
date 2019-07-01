@@ -14,6 +14,8 @@
 
 这次参数修改的提议将会是主网参数修改的演练，大家可以通过本次演练了解投票的的基本流程，以及参数修改生效后对验证人节点的影响。对于参数修改有不同的意见，也欢迎在论坛中发表：<https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
 
+投票参考文档：<https://www.irisnet.org/docs/cli-client/gov/vote.html>
+
 ### ~~升级任务（已结束）~~
 
 | No   | Name                                           | Details                                                      | Criteria                                                     | Points |

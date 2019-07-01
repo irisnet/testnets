@@ -14,6 +14,8 @@
 
 This Parameter Change Proposal is a rehearsal of the mainnet. By this walkthrough you may understand the basic flow of voting and the effects on the validator nodes after the slashing parameter change takes effect. Different opinions and comments are welcome in the forum: <https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127>
 
+Voting Document：<https://www.irisnet.org/docs/cli-client/gov/vote.html>
+
 ### ~~Upgrade Task (Completed)~~
 
 | No | Name | Details | Criteria | Points |
