@@ -17,11 +17,11 @@ Since `v0.15.0-rc0` is not a stable version, we will launch a new testnet `nyanc
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 1 | Create a Native Token | Create a Native token using your own validator's `Operator` account and transfer any amount to the public account 1: faa1jpuzrxtu346pae9szdk9thumaxxew740w8w3an | Match the owner of the tokens recieved by the public account | 50 |
-2 | Create a Gateway Token | Create a gateway using your own validator's `Operator` account, then refer to Task 1, create a gateway token, and transfer any amount to the public account 2: faa1jmm8fa63ncsphk29e5wj6jy56tea9zz2y202mn | Match the owner of the tokens recieved by the public account | 50 |
-| 3 | Mint Tokens | Use your own validator's `Operator` account to mint any of your own issued tokens, and specify the account to accept the minted tokens is the public account 3: faa1cnm7zenktxuhksxx3vj3e78cux98rrh28y4tcd | Match the owner of the tokens recieved by the public account | 50 |
-| 4 | Burn Tokens | Use your own validator's `Operator` account to burn any amount of tokens that are issued by yourself | Match the sender address of the valid Burn transaction | 50 |
-| 5 | Transfer Ownership of a token | Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0 | Match the original owner of the tokens recieved by the public account | 50 |
+| 1 | Create a Native Token | Create a Native token using your own validator's `Operator` account and transfer any amount to the public account 1: faa1jpuzrxtu346pae9szdk9thumaxxew740w8w3an | Match the owner of the tokens recieved by the public account | 20 |
+2 | Create a Gateway Token | Create a gateway using your own validator's `Operator` account, then refer to Task 1, create a gateway token, and transfer any amount to the public account 2: faa1jmm8fa63ncsphk29e5wj6jy56tea9zz2y202mn | Match the owner of the tokens recieved by the public account | 30 |
+| 3 | Mint Tokens | Use your own validator's `Operator` account to mint any of your own issued tokens, and specify the account to accept the minted tokens is the public account 3: faa1cnm7zenktxuhksxx3vj3e78cux98rrh28y4tcd | Match the owner of the tokens recieved by the public account | 10 |
+| 4 | Burn Tokens | Use your own validator's `Operator` account to burn any amount of tokens that are issued by yourself | Match the sender address of the valid Burn transaction | 10 |
+| 5 | Transfer Ownership of a token | Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0 | Match the original owner of the tokens recieved by the public account | 10 |
 
 ### Upgrade Tasks (pre-announcement)
 
