@@ -25,7 +25,8 @@ Since `v0.15.0-rc0` is not a stable version, we will launch a new testnet `nyanc
 
 ### Upgrade Tasks (pre-announcement)
 
+#### Steps [TODO]
+
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 6 | Restart v0.14.3 | Restart v0.14.3 with the new exported genesis.json from `nyancat-2` and participate in the upgrade proposal | Valid Votes for the upgrade proposal in the new network | 50 |
-| 7 | Upgrade to v0.15.0 | After the upgrade proposal is passed, upgrade your own node to v0.15.0 and wait for the block to reach the specified height to automatically trigger the version switch. | Validators with a valid Pre Commit in the first 300 blocks after the version switch | 200 |
+| 6 | Upgrade to v0.15.0 | Rehearse the mainnet upgrade from v0.14.1 to v0.15.0 | Validators with a valid Pre Commit in the first 300 blocks after the version switch | 200 |
