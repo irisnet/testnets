@@ -12,10 +12,9 @@
 
 In the `v0.15` version, we introduced a new module: [Asset Management](https://github.com/irisnet/irishub/blob/develop/docs/features/asset.md). IRISHub allows individuals and companies to create and distribute their own tokens for any scenario they can imagine.
 
-Since `v0.15.0-rc1` is not a stable version, we will launch a new testnet `nyancat-3` to test and perform tasks, during which we may upgrade one or more times until the final `v0.15.0` is released. 
+Since `v0.15.0-rc1` is not a stable version, we will launch a new testnet `nyancat-3` to test and perform tasks, during which we may upgrade one or more times until the final `v0.15.0` is released.
 
 The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this will be the first attempt among BPoS blockchains to perform on-chain software upgrade without stopping the network!  So after `v0.15.0` is released, we will propose a new testnet upgrade task, restart `v0.14.3` and upgrade to `v0.15.0` through on-chain governance, and rehearse the entire process of upgrading the mainnet.
-
 
 ### Tasks
 
