@@ -1,0 +1,25 @@
+
+1.- Create a Native token using your own validator's Operator account and transfer any amount to the public account 1: faa1jpuzrxtu346pae9szdk9thumaxxew740w8w3an
+
+= CE98E483E7AFDAE1D792F3F71935180DC2C1D80F229FCC0035DC21070E4F7F4C
+= 7610CB2F242196CD70FE084433E5B7DEF8D99E17A3FF56221324FB49687B4FA6
+
+2.- Create a gateway using your own validator's Operator account, then refer to Task 1, create a gateway token, and transfer any amount to the public account 2: faa1jmm8fa63ncsphk29e5wj6jy56tea9zz2y202mn
+
+= 1B87037D4E5324723AFFCA2A4EC45DDDDB219AB28E87407C3B677BB59BFA3A3B
+= 442E4B40C1D04DB26DB199AC32410090250FDA647A744FB6AF6AC014E925C462
+= 3ACE33CA1C0D23F034A4CD3317443BA564B1E2531AD23D2BD14F4C2543F73C24
+
+3.- Use your own validator's Operator account to mint any of your own issued tokens, and specify the account to accept the minted tokens is the public account 3: faa1cnm7zenktxuhksxx3vj3e78cux98rrh28y4tcd
+
+= C143B4A578568534ADD4BCE979BDB18CD6F5DFEA0724D6EE995FAA3C7CE965E9
+
+4.- Use your own validator's Operator account to burn any amount of tokens that are issued by yourself
+
+= 1F05B5703FBAF1DC9161ADC3CD75580DDA3521C62E0B909E154D424B783B2F4B
+
+5.- Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0
+
+= 66BB5EAE927B12AA7A3F292236E746DB4310AB1CAA5078F892C23E93EB5F3BAA
+
+cheers
