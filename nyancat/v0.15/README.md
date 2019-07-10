@@ -1,6 +1,6 @@
 # Nyancat Testnet V0.15
 
-## Latest version: v0.15.0-rc0
+## Latest version: [v0.15.0-rc1](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc1)
 
 **Note**:
 
@@ -8,10 +8,10 @@
 
 - For every task, only the top 40 validators who completes can get rewards (the upgrade task is based on the voting list of the upgrade proposal, if a valid voter doesn't complete upgrade in time, the reward will be extended to the next completed validator)
 
-## v0.15.0-rc0
+## v0.15.0-rc1
 
 In the `v0.15` version, we introduced a new module: [Asset Management](https://github.com/irisnet/irishub/blob/develop/docs/features/asset.md). IRISHub allows individuals and companies to create and distribute their own tokens for any scenario they can imagine.
-Since `v0.15.0-rc0` is not a stable version, we will launch a new testnet `nyancat-3` to test and perform tasks, during which we may upgrade one or more times until the final `v0.15.0` is released. The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this will become the first time in the history of POS network without hard forks to achieve non-compatibility upgrade! So after `v0.15.0` is released, we will propose a new testnet upgrade task, restart `v0.14.3` and upgrade to `v0.15.0` through On-Chain Governance, simulate the entire process of upgrading on the mainnet.
+Since `v0.15.0-rc1` is not a stable version, we will launch a new testnet `nyancat-3` to test and perform tasks, during which we may upgrade one or more times until the final `v0.15.0` is released. The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this will become the first time in the history of POS network without hard forks to achieve non-compatibility upgrade! So after `v0.15.0` is released, we will propose a new testnet upgrade task, restart `v0.14.3` and upgrade to `v0.15.0` through On-Chain Governance, simulate the entire process of upgrading on the mainnet.
 
 ### Tasks
 

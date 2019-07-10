@@ -8,7 +8,7 @@ Most IRISnet validators may know the Fuxi Testnet before mainnet was an early in
 
 Just like to join [IRIS Hub Mainnet](https://www.irisnet.org/docs/get-started/Join-the-Mainnet.html#how-to-join-irishub-mainnet), the only differences:
 
-- [version](./v0.14/README.md) may be different
+- [version](./v0.15/README.md) may be different
 - remember to [compile for testnet](https://www.irisnet.org/docs/software/How-to-install-irishub.html#compile-source-code)
 - use the [config file](./config) for nyancat testnet
 

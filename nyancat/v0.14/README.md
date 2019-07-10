@@ -1,7 +1,5 @@
 # Nyancat Testnet V0.14
 
-## Latest version: [v0.14.3](https://github.com/irisnet/irishub/releases/tag/v0.14.3)
-
 **Note**: The point-to-`iris` conversion rate will be announced at the end of this incentivized testnet campaign.
 
 ## v0.14.3

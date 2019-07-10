@@ -1,7 +1,5 @@
 # Nyancat 测试网 V0.14
 
-## 最新版本: [v0.14.3](https://github.com/irisnet/irishub/releases/tag/v0.14.3)
-
 **注**：积分兑换比例会在测试网活动结束时公布
 
 ## v0.14.3
