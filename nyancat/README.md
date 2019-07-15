@@ -36,4 +36,4 @@ Unfortunately we do not have a public faucet for nyancat, however you are welcom
 
 <https://nyancat.bigdipper.live/>
 
-<https://hubble.figment.network/iris/chains/nyancat2>
+<https://hubble.figment.network/iris/chains/nyancat3>
