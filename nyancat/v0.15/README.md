@@ -20,7 +20,7 @@ The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this wil
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 6 | Multisig account test| [Operation steps](#Multisig-account-test) | Received by public account, signed with multisig account, successful transfer transaction | 10 |
+| 6 | Multisig account test| [Operation Steps](#Multisig-account-test) | Received by public account, signed with multisig account, successful transfer transaction | 10 |
 | 7 | Keystore test | [Operation Steps](#Keystore-test) | Determine the task completion by importing the Keystore submitted to GitHub | 10 |
 
 Steps:
