@@ -16,7 +16,34 @@ Since `v0.15.0-rc1` is not a stable version, we will launch a new testnet `nyanc
 
 The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this will be the first attempt among BPoS blockchains to perform on-chain software upgrade without stopping the network!  So after `v0.15.0` is released, we will propose a new testnet upgrade task, restart `v0.14.3` and upgrade to `v0.15.0` through on-chain governance, and rehearse the entire process of upgrading the mainnet.
 
-### Tasks
+### Keys New Features Tasks
+
+| No   | Name             | Details                                                      | Criteria                                                     | Points |
+| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 6 | Multisig account test| [Operation steps](#Multisig-account-test) | Received by public account, signed with multisig account, successful transfer transaction | 10 |
+| 7 | Keystore test | [Operation Steps](#Keystore-test) | Determine the task completion by importing the Keystore submitted to GitHub | 10 |
+
+Steps:
+
+#### Multisig account test
+
+[documentation](https://stage.irisnet.org/docs/cli-client/keys/add.html#create-multisig-account)
+
+- Create a multisig account
+- Transfer some `iris` to the multisig account.
+- Use the multisig account to transfer any amount of `iris` to the public account and memo your PGP-ID: faa1dhwf97xsdjy8xdrxqac5f6zvl2f664dsujmrl5
+
+#### Keystore test
+
+[documentation](https://stage.irisnet.org/docs/cli-client/keys/export.html#example)
+
+- Create a new local account
+- Download [Public Test Keystore](task-7/public-keystore.json) and import(password: 1234567890)
+- Transfer 10 'iris` to your local account(created by the first step) using the public test account imported in the previous step and memo your PGP-ID(If the balance of public test account is insufficient, please transfer some yourself :)
+- Export your local account(created by the first step) to the file `<Your PGP-ID>.json` with password: 1234567890
+- Create a Pull Request and submit the `<Your PGP-ID>.json` to GitHub: <https://github.com/irisnet/testnets/tree/master/nyancat/v0.15/task-7/>
+
+### ~~Asset Management Tasks (Completed)~~
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
@@ -25,6 +52,7 @@ The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this wil
 | 3 | Mint Tokens | Use your own validator's `Operator` account to mint any of your own issued tokens, and specify the account to accept the minted tokens is the public account 3: faa1cnm7zenktxuhksxx3vj3e78cux98rrh28y4tcd | Match the owner of the tokens recieved by the public account | 10 |
 | 4 | Burn Tokens | Use your own validator's `Operator` account to burn any amount of tokens that are issued by yourself | Match the sender address of the valid Burn transaction | 10 |
 | 5 | Transfer Ownership of a token | Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0 | Match the original owner of the tokens recieved by the public account | 10 |
+| 6 | Transfer Ownership of a token | Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0 | Match the original owner of the tokens recieved by the public account | 10 |
 
 ### Upgrade Tasks (pre-announcement)
 
@@ -32,4 +60,4 @@ The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this wil
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| 6 | Upgrade to v0.15.0 | Rehearse the mainnet upgrade from v0.14.1 to v0.15.0 | Validators with a valid Pre Commit in the first 300 blocks after the version switch | 200 |
+| * | Upgrade to v0.15.0 | Rehearse the mainnet upgrade from v0.14.* to v0.15.0 | Validators with a valid Pre Commit in the first 300 blocks after the version switch | 200 |
