@@ -1,76 +1,58 @@
 # Genesis文件生成流程
 
+## 前提条件
 
-1. 每个希望成为验证人的参与者确保安装了对应版本的软件：iris v0.3.4
+每个希望成为验证人的参与者确保按照以下[流程](https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/Install-the-Software.md)安装了对应版本的软件：**iris**
 
-2. 执行gentx命令，获得一个node-id.json的文件。这个操作将默认生成一个余额为150iris的账户，该账户默认绑定100iris成为一个验证人候选人。
 
+## Step 1: 创建账户  
+
+
+首先如果你没有现成的账户，或者忘记了原有账户的密码，那么你就需要为自己创建对应的验证人账户：
+```bash
+iriscli keys add {account_name}
 ```
-       iris init gen-tx --name=<your_name> --home=<path_to_home> --ip=Your_public_IP
+得到账户信息，包括账户地址、公钥地址、助记词
 ```
-   代码示例：
-   ```
-       iris init gen-tx --name=alice --home=/Users/user/Documents/bianjie/fuxi/1002
-  ```
+NAME: TYPE: ADDRESS:            PUBKEY:
+account_name  local faa13t6jugwm5uu3h835s5d4zggkklz6rpns59keju  fap1addwnpepqdne60eyssj2plrsusd8049cs5hhhl5alcxv2xu0xmzlhphy9lyd5kpsyzu
+**Important** write this seed phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
 
-  ```
-       {
-        "app_message": {
-          "secret": "similar spread grace kite security age pig easy always prize salon clip exhibit electric art abandon"
-        },
-        "gen_tx_file": {
-          "node_id": "3385a8e3895b169eab3024079d987602b4d2b383",
-          "ip": "192.168.1.7",
-          "validator": {
-            "pub_key": {
-              "type": "AC26791624DE60",
-              "value": "RDxXckkpTc35q9xlLNXjzUAov6xMkGJlwtWg2IqAkD8="
-            },
-            "power": 100,
-            "name": ""
-          },
-          "app_gen_tx": {
-            "name": "alice",
-            "address": "8D3B5761BC2B9048E2A7745B14E62D51C82E0B7C",
-            "pub_key": {
-              "type": "AC26791624DE60",
-              "value": "RDxXckkpTc35q9xlLNXjzUAov6xMkGJlwtWg2IqAkD8="
-            }
-          }
-        }
-       }
-  ```
-然后你可以发现在$IRISHOME/config目录下生成了一个gentx文件夹。里面存在一个gentx-node-ID.json文件。这个文件包含了如下信息：
+witness exotic fantasy gaze brass zebra adapt guess drip quote space payment farm argue pear actress garage smile hawk bid bag screen wonder person
+```
 
-   ```
-       {
-        "node_id": "3385a8e3895b169eab3024079d987602b4d2b383",
-        "ip": "192.168.1.7",
-        "validator": {
-          "pub_key": {
-            "type": "AC26791624DE60",
-            "value": "RDxXckkpTc35q9xlLNXjzUAov6xMkGJlwtWg2IqAkD8="
-          },
-          "power": 100,
-          "name": ""
-        },
-        "app_gen_tx": {
-          "name": "alice",
-          "address": "8D3B5761BC2B9048E2A7745B14E62D51C82E0B7C",
-          "pub_key": {
-            "type": "AC26791624DE60",
-            "value": "RDxXckkpTc35q9xlLNXjzUAov6xMkGJlwtWg2IqAkD8="
-          }
-        }
-       }
-  ```
-   validator字段对应了home/config下的节点信息
+## Step 2: 初始化节点 
 
-   `app_gen_tx`中说明了拥有这个节点的账户信息。这个账户的助记词就是刚刚的secret
+初始化genesis.json和config.toml等配置文件
+```bash
+iris init --home={path_to_your_home} --chain-id=fuxi-8000 --moniker=key-name
+```
+该命令会在home目录下创建相应文件
 
-3. 将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/testnets/fuxi-2000/gentx`目录下：
+## Step 3: 执行gentx交易
 
-   注意⚠️：json文中的IP改成公网IP
+执行gentx交易，并使用刚才创建的验证人账户对交易进行签名
+```bash
+iris gentx --name={operator_key_name} --home={path_to_your_home} --ip=node-ip
+```
+这个命令将把交易的结果存储在如下目录：{path_to_your_home}/config/gentx
+gentx包含一个签名后的 `CreateValidator` 交易，这个交易将为验证人设置如下默认参数： 
+*	delegation amount:           100iris
+*	commission rate:             0.1
+*	commission max rate:         0.2
+*	commission max change rate:  0.01
+
+> IP is your public IP, dont use internal IP
+
+注意⚠️：IP需填写公网IP
+
+生成好的交易数据存放在目录：{path_to_your_home}/config/gentx
+
+## Step 4: 提交gentx文件
+
+将上述提到的json文件以提交Pull Request的形式上传到`https://github.com/irisnet/testnets/tree/master/fuxi/fuxi-8000/config/gentx`目录下：
+
 
 
 

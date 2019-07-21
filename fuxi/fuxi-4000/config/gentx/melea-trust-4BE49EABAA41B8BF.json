@@ -1,0 +1,18 @@
+{
+    "node_id": "b118f03fb528d3014c25a9e32d44ebd524ef84f7",
+    "ip": "51.68.229.61",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "fgtftqSANs6sz+o44RNdMun+Zosr+c2GgDIhAiOcexI="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "melea-trust-4BE49EABAA41B8BF",
+      "address": "faa1prcjldjnw2tau7er06ttwke42qa70nwcx6lhkt",
+      "pub_key": "fap1zcjduepq0c94ld4ysqmvatx0aguwzy6axt5lue5t90uump5qxgssyguu0vfq6y2sdf"
+    }
+  
+}

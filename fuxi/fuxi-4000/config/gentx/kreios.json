@@ -1,0 +1,17 @@
+{
+  "node_id": "a747f6b4b3e10fc3bad722fa8e11812a2eec2b62",
+  "ip": "85.214.236.98",
+  "validator": {
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "OhzM374FH2Y/7+c9Yad5HRSw21GxAz/1G9QSTBDkEU8="
+    },
+    "power": "100",
+    "name": ""
+  },
+  "app_gen_tx": {
+    "name": "kreios",
+    "address": "faa1d893wh34pxqp2rm63dqqxpyfepy5az9uswgf2c",
+    "pub_key": "fap1zcjduepq8gwveha7q50kv0l0uu7krfmer52tpk63kypnlagm6sfycy8yz98sa4h2hl"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "node_id": "f59817210fffdbb49d6e5446c5ac507b280651bf",
+    "ip": "180.172.188.1",
+    "validator": {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "V5VmShl9hF9pWuez08uB9iq8bND3uyfQaYrs0sePjXo="
+      },
+      "power": "100",
+      "name": ""
+    },
+    "app_gen_tx": {
+      "name": "dingyizhen",
+      "address": "faa1p27arqjnlajcp7y3fjgh8jgs2x2l07hhnmype2",
+      "pub_key": "fap1zcjduepq272kvjse0kz97626u7ea8jup7c4tcmxs77aj05rf3tkd93u034aq9lcuej"
+    }
+}
