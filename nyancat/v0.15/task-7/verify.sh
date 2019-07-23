@@ -8,8 +8,8 @@ echo "Parsing... DO NOT QUIT"
 
 for f in *.json
 do 
-    PGP="$(cut -d'.' -f1 <<<"$f")" # get PGP_ID from file name
-    address=$(echo "1234567890" | iriscli keys add $PGP --recover --keystore $f --home /tmp/.iriscli | awk '{print $3}' | cut -d':' -f2) # import the keystore and get the address
+    pgp="$(cut -d'.' -f1 <<<"$f")" # get PGP_ID from file name
+    address=$(echo "1234567890" | iriscli keys add $pgp --recover --keystore $f --home /tmp/.iriscli | awk '{print $3}' | cut -d':' -f2) # import the keystore and get the address
     if [ $? -eq 0 ] # if success
     then 
         # select tx by recipient
