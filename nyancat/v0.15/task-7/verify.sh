@@ -2,7 +2,7 @@
 
 rm -rf /tmp/.iriscli # reset
 # get txs by sender from lcd
-TXS=$(curl http://34.80.154.59:1317/txs?action=send&sender=faa1282eufkw9qgm55symgqqg38nremslvggpylkht | jq 'map(select(.result.Code == 0))')
+TXS=$(curl -N 'http://34.80.154.59:1317/txs?action=send&sender=faa1282eufkw9qgm55symgqqg38nremslvggpylkht' | jq 'map(select(.result.Code == 0))')
 
 echo "Parsing... DO NOT QUIT"
 

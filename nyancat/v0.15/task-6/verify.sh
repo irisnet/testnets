@@ -1,6 +1,6 @@
 #!/bin/bash
 # select txs from lcd where recipient = `public_account` and pub_key.type = "tendermint/PubKeyMultisigThreshold" order by timestamp asc
-TXS=$(curl http://34.80.154.59:1317/txs?action=send&recipient=faa1dhwf97xsdjy8xdrxqac5f6zvl2f664dsujmrl5 | jq 'sort_by(.timestamp) | map(select(.result.Code == 0)) | map(select(.tx.value.signatures[].pub_key.type == "tendermint/PubKeyMultisigThreshold"))')
+TXS=$(curl -N 'http://34.80.154.59:1317/txs?action=send&recipient=faa1dhwf97xsdjy8xdrxqac5f6zvl2f664dsujmrl5' | jq 'sort_by(.timestamp) | map(select(.result.Code == 0)) | map(select(.tx.value.signatures[].pub_key.type == "tendermint/PubKeyMultisigThreshold"))')
 
 echo "Parsing... DO NOT QUIT"
 
