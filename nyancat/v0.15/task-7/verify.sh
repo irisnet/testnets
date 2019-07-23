@@ -24,6 +24,6 @@ do
     fi
     RESULT+=","$res
 done
+
 RESULT=$(echo $RESULT | sed 's/,//') # remove the 1st ","
-echo $RESULT
 echo $(jq 'sort_by(.timestamp)' <<< "[$RESULT]") | jq . # sort by timestamp
