@@ -59,4 +59,4 @@ Steps:
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| * | Upgrade to v0.15.0 | Rehearse the mainnet upgrade from v0.14.* to v0.15.0 | Validators with a valid Pre Commit in the first 300 blocks after the version switch | 200 |
+| * | Upgrade to v0.15.0-rc* | Rehearse the mainnet upgrade from v0.14.* to v0.15.0-rc* | Validators who voted for the `SoftwareUpgrade` proposal, and had a valid Precommit in the first 300 blocks after the version switch | 100 |
