@@ -8,6 +8,26 @@
 
 - For every task, only the top 40 validators who completes can get rewards (the upgrade task is based on the voting list of the upgrade proposal, if a valid voter doesn't complete upgrade in time, the reward will be extended to the next completed validator)
 
+## v0.15.0-rc3
+
+### Upgrade Tasks
+
+#### Steps
+
+Ref: <https://github.com/irisnet/betanet/blob/master/upgrade/v0.15.0.md>
+
+1. `nyancat-4` startup time: 2019-07-30 01:30:00 (UTC) ~ 2019-07-30 13:30:00 (UTC)
+
+2. Upgrade proposal time: 2019-08-01 13:00:00 (UTC), if you are not a validator in `nyancat-4`, please create one before the upgrade proposal, so as not to affect the acquisition of upgrade task points.
+
+3. Version switching time: 2019-08-05 13:00:00 (UTC)
+
+For every task, only the top 40 validators who completes can get rewards (the upgrade task is based on the voting list of the upgrade proposal, if a valid voter doesn't complete upgrade in time, the reward will be extended to the next completed validator)
+
+| No   | Name             | Details                                                      | Criteria                                                     | Points |
+| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 8 | Upgrade to v0.15.0-rc3 | Rehearse the mainnet upgrade from v0.14.* to v0.15.0 | Validators who voted for the `SoftwareUpgrade` proposal, and had a valid Precommit in the first 300 blocks after the version switch | 200 |
+
 ## v0.15.0-rc1
 
 In the `v0.15` version, we introduced a new module: [Asset Management](https://github.com/irisnet/irishub/blob/develop/docs/features/asset.md). IRISHub allows individuals and companies to create and distribute their own tokens for any scenario they can imagine.
@@ -52,11 +72,3 @@ Steps:
 | 3 | Mint Tokens | Use your own validator's `Operator` account to mint any of your own issued tokens, and specify the account to accept the minted tokens is the public account 3: faa1cnm7zenktxuhksxx3vj3e78cux98rrh28y4tcd | Match the owner of the tokens recieved by the public account | 10 |
 | 4 | Burn Tokens | Use your own validator's `Operator` account to burn any amount of tokens that are issued by yourself | Match the sender address of the valid Burn transaction | 10 |
 | 5 | Transfer Ownership of a token | Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0 | Match the original owner of the tokens recieved by the public account | 10 |
-
-### Upgrade Tasks (pre-announcement)
-
-#### Steps [TODO]
-
-| No   | Name             | Details                                                      | Criteria                                                     | Points |
-| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| * | Upgrade to v0.15.0-rc* | Rehearse the mainnet upgrade from v0.14.* to v0.15.0-rc* | Validators who voted for the `SoftwareUpgrade` proposal, and had a valid Precommit in the first 300 blocks after the version switch | 100 |
