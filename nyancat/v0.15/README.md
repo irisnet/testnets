@@ -1,6 +1,6 @@
 # Nyancat Testnet V0.15
 
-## Latest version: [v0.15.0-rc1](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc1)
+## Latest version: [v0.15.0-rc3](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc3)
 
 **Note**:
 

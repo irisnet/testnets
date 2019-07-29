@@ -1,6 +1,6 @@
 # Nyancat 测试网 V0.15
 
-## 最新版本: [v0.15.0-rc1](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc1)
+## 最新版本: [v0.15.0-rc3](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc3)
 
 **注**：
 
