@@ -16,11 +16,11 @@
 
 Ref: <https://github.com/irisnet/betanet/blob/master/upgrade/v0.15.0.md>
 
-1. `nyancat-4` startup time: `<TBD>`
+1. `nyancat-4` startup time: `2019-08-05 10:00:00 (UTC) ~ 2019-08-06 01:00:00 (UTC)`
 
-2. Upgrade proposal time: `<TBD>`, if you are not a validator in `nyancat-4`, please create one before the upgrade proposal, so as not to affect the acquisition of upgrade task points.
+2. Upgrade proposal time: `2019-08-07 13:00:00 (UTC)`, we'll have 24 hours to vote. If you are not a validator in `nyancat-4`, please create one before the upgrade proposal, so as not to affect the acquisition of upgrade task points.
 
-3. Version switching time: `<TBD>`
+3. Version switching time: `2019-08-09 13:00:00 (UTC)`, which means we'll have 24 hours to upgrade our nodes to the new version after the upgrade proposal passed.
 
 For every task, only the top 40 validators who completes can get rewards (the upgrade task is based on the voting list of the upgrade proposal, if a valid voter doesn't complete upgrade in time, the reward will be extended to the next completed validator)
 
