@@ -36,7 +36,7 @@ Since `v0.15.0-rc1` is not a stable version, we will launch a new testnet `nyanc
 
 The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this will be the first attempt among BPoS blockchains to perform on-chain software upgrade without stopping the network!  So after `v0.15.0` is released, we will propose a new testnet upgrade task, restart `v0.14.3` and upgrade to `v0.15.0` through on-chain governance, and rehearse the entire process of upgrading the mainnet.
 
-### Keys New Features Tasks
+### ~~Keys New Features Tasks (Completed)~~
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
