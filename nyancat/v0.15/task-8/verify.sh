@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Parsing... DO NOT QUIT"
+
 declare -A hash_height_map
 declare -A hash_fva_map
 declare -A fva_vote_map
