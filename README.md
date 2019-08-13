@@ -1,5 +1,5 @@
 
-# IRISnet Testnets222
+# IRISnet Testnets
 
 This repo contains the instructions to join IRISnet testnets, Codename:Fuxi. You could also find the genesis and configuration files for the various Fuxi testnets. The status of testnet will be regularly updated here, too. 
 
