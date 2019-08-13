@@ -34,6 +34,6 @@ You need to save the above signed content in `[github-user-name]-[keybase finger
 
 For example: `irisnetvalidator-6763B2C7947A9363.txt`
 
-Then use the Github account you submitted on the [Nyancat Testnet Registration Form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to `Pull Request` the signature file to [sig-files](https://github.com/irisnet/betanet/tree/master/nyancat-reward-claims/sig-files).
+Then use the Github account you submitted on the [Nyancat Testnet Registration Form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to `Pull Request` the signature file to [sig-files](https://github.com/irisnet/testnets/tree/master/nyancat/reward-claims/sig-files).
 
 Once the team receives your PR, it is deemed that you have completed the confirmation of the points and rewards of the Nyancat Testnet, and will send you the Mainnet reward soon.

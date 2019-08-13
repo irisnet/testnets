@@ -34,6 +34,6 @@ Nyancat 积分汇总: <https://github.com/irisnet/testnets/issues/353>
 
 例如：`irisnetvalidator-6763B2C7947A9363.txt`
 
-然后使用您在 Nyancat 测试网报名表单中提交的 Github 账号，以`Pull Request`的方式，提交该签名文件到[sig-files](https://github.com/irisnet/betanet/tree/master/nyancat-reward-claims/sig-files)文件夹下.
+然后使用您在 Nyancat 测试网报名表单中提交的 Github 账号，以`Pull Request`的方式，提交该签名文件到[sig-files](https://github.com/irisnet/testnets/tree/master/nyancat/reward-claims/sig-files)文件夹下.
 
 团队收到您的 PR 后，视为您已对 Nyancat 测试网的积分和奖励完成了确认，并将尽快给您发放主网奖励。
