@@ -23,21 +23,25 @@ do
     done
 done
 
-for row in $(curl -s 'https://nyancat.irisplorer.io/api/stake/validators?page=1&size=100&type=""&origin=browser' | jq '.Data[] | .proposer_addr+":"+.operator_address' | sed 's/"//g'); do
+curl -s 'https://nyancat.irisplorer.io/api/stake/validators?page=1&size=100&type=""&origin=browser' | jq '.Data[] | .proposer_addr+":"+.operator_address' | sed 's/"//g' > nyancat-task-temp
+while read row; do
     # echo $row
     hash=$(echo $row | cut -d':' -f1)
     fva=$(echo $row | cut -d':' -f2)
     hash_fva_map[$hash]=$fva
-done
+done < nyancat-task-temp
 
-for row in $(curl -s 'https://nyancat.irisplorer.io/api/gov/proposals/1/voter_txs?page=1&size=100' | jq '.items[] | .voter+":"+.moniker+":"+.option' | sed 's/"//g'); do
+curl -s 'https://nyancat.irisplorer.io/api/gov/proposals/1/voter_txs?page=1&size=100' | jq '.items[] | .voter+":"+.moniker+":"+.option' | sed 's/"//g' > nyancat-task-temp
+while read row; do
     # echo $row
     fva=$(echo $row | cut -d':' -f1)
     moniker=$(echo $row | cut -d':' -f2)
     vote=$(echo $row | cut -d':' -f3)
     fva_vote_map[$fva]=$vote
     fva_moniker_map[$fva]=$moniker
-done
+    echo $fva,$moniker,$vote
+done < nyancat-task-temp
+rm -f nyancat-task-temp
 
 for key in ${!hash_height_map[@]} 
 do
