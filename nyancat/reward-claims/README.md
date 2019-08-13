@@ -25,7 +25,7 @@ Choose one of the following two signature methods:
 - Or sign with the [Keybase Command Line Tool](https://keybase.io/docs/command_line)
 
     ```bash
-    Keybase pgp sign -m "Your IRISHub Mainnet Address"
+    keybase pgp sign -m "Your IRISHub Mainnet Address"
     ```
 
 ### Submitting
