@@ -1,12 +1,32 @@
 # Nyancat Testnet V0.15
 
-## Latest version: [v0.15.0-rc1](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc1)
+## Latest version: [v0.15.0-rc3](https://github.com/irisnet/irishub/releases/tag/v0.15.0-rc3)
 
 **Note**:
 
 - The point-to-`iris` conversion rate will be announced at the end of this incentivized testnet campaign.
 
 - For every task, only the top 40 validators who completes can get rewards (the upgrade task is based on the voting list of the upgrade proposal, if a valid voter doesn't complete upgrade in time, the reward will be extended to the next completed validator)
+
+## v0.15.0-rc3
+
+### Upgrade Tasks
+
+#### Steps
+
+Ref: <https://github.com/irisnet/betanet/blob/master/upgrade/v0.15.0.md>
+
+1. `nyancat-4` startup time: `2019-08-05 10:00:00 (UTC) ~ 2019-08-06 01:00:00 (UTC)`
+
+2. Upgrade proposal time: `2019-08-07 13:00:00 (UTC)`, we'll have 24 hours to vote. If you are not a validator in `nyancat-4`, please create one before the upgrade proposal, so as not to affect the acquisition of upgrade task points.
+
+3. Version switching time: `2019-08-09 13:00:00 (UTC)`, which means we'll have 24 hours to upgrade our nodes to the new version after the upgrade proposal passed.
+
+For every task, only the top 40 validators who completes can get rewards (the upgrade task is based on the voting list of the upgrade proposal, if a valid voter doesn't complete upgrade in time, the reward will be extended to the next completed validator)
+
+| No   | Name             | Details                                                      | Criteria                                                     | Points |
+| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
+| 8 | Upgrade to v0.15.0-rc3 | Rehearse the mainnet upgrade from v0.14.* to v0.15.0 | Validators who voted for the `SoftwareUpgrade` proposal, and had a valid Precommit in the first 300 blocks after the version switch | 200 |
 
 ## v0.15.0-rc1
 
@@ -16,7 +36,7 @@ Since `v0.15.0-rc1` is not a stable version, we will launch a new testnet `nyanc
 
 The upgrade of mainnet from `0.14` to `v0.15` is a major event, because this will be the first attempt among BPoS blockchains to perform on-chain software upgrade without stopping the network!  So after `v0.15.0` is released, we will propose a new testnet upgrade task, restart `v0.14.3` and upgrade to `v0.15.0` through on-chain governance, and rehearse the entire process of upgrading the mainnet.
 
-### Keys New Features Tasks
+### ~~Keys New Features Tasks (Completed)~~
 
 | No   | Name             | Details                                                      | Criteria                                                     | Points |
 | ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
@@ -52,11 +72,3 @@ Steps:
 | 3 | Mint Tokens | Use your own validator's `Operator` account to mint any of your own issued tokens, and specify the account to accept the minted tokens is the public account 3: faa1cnm7zenktxuhksxx3vj3e78cux98rrh28y4tcd | Match the owner of the tokens recieved by the public account | 10 |
 | 4 | Burn Tokens | Use your own validator's `Operator` account to burn any amount of tokens that are issued by yourself | Match the sender address of the valid Burn transaction | 10 |
 | 5 | Transfer Ownership of a token | Transfer ownership of any tokens issued by yourself to the public account 4: faa14sk203d2akh96gdlhveglw5emfpf0h8xqls3l0 | Match the original owner of the tokens recieved by the public account | 10 |
-
-### Upgrade Tasks (pre-announcement)
-
-#### Steps [TODO]
-
-| No   | Name             | Details                                                      | Criteria                                                     | Points |
-| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |
-| * | Upgrade to v0.15.0 | Rehearse the mainnet upgrade from v0.14.* to v0.15.0 | Validators with a valid Pre Commit in the first 300 blocks after the version switch | 200 |
