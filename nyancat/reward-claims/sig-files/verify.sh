@@ -4,7 +4,10 @@
 
 for f in *.txt
 do 
-	echo "Verifing "$f" ..."
-	cat $f | keybase pgp verify
+	echo "----------------------------------------------------------"
+	echo "Verifying "$f" ..."
+	keybase pgp verify -i $f
+	echo "Wallet Address:"
+	keybase pgp decrypt -i $f
 	echo "----------------------------------------------------------"
 done
