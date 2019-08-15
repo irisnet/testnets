@@ -2,7 +2,11 @@
 
 ## What is IRISnet Nyancat Testnet
 
-Most IRISnet validators may know the Fuxi Testnet before mainnet was an early incentivized testnet for validators and developers to get involved in. Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance. However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet's focus. Please don't forget fill in this [form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to complete your sign-up process, and we will give rewards from time to time to our diligent validators who participate in Nyancat and contribute to the IRIShub improvements.
+Most IRISnet validators may know the Fuxi Testnet before mainnet was an early incentivized testnet for validators and developers to get involved in. Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance. However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet's focus. Please don't forget fill in this [form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to complete your sign-up process, and remember to set your validator moniker to `<your-name>-<pgp-id>`, identity to `<pgp-id>`. Then we will give rewards from time to time to our diligent validators who participate in Nyancat and contribute to the IRIShub improvements.
+
+## How to claim Nyancat Testnet rewards
+
+Please refer to [reward-claims](./reward-claims/README.md)
 
 ## How to join Nyancat Testnet
 
