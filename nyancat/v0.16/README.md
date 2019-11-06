@@ -16,9 +16,9 @@ As what we did on the testnets for v0.15, we will first test the new introduced 
 
 ### Coin Swap Tasks
 
-Coinswap relies on dynamic data to calculate exchange rates in real time, making it difficult to initiate transactions using the command line. So the coinswap module only has the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/). We have a demo web tool to help you understand and complete the tasks: [Coinswap Demo](https://coinswap.nyancat.irisnet.org/).
+Coinswap relies on dynamic data to calculate exchange rates in real time, making it difficult to initiate transactions using the command line. So the coinswap module only has the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/#/CoinSwap). We have a demo web tool to help you understand and complete the tasks: [Coinswap Demo](https://coinswap.nyancat.irisnet.org/).
 
-If you have a Ledger hardware, it will be easy to do the tasks with the web tool. Otherwise you can only use the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/) to generate unsigned transactions and [sign them offline](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-sign), then [broadcast](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-broadcast).
+If you have a Ledger hardware, it will be easy to do the tasks with the web tool. Otherwise you can only use the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/#/CoinSwap) to generate unsigned transactions and [sign them offline](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-sign), then [broadcast](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-broadcast).
 
 Read more about [IRISHub Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html)
 
