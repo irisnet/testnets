@@ -1,6 +1,6 @@
 # Nyancat Testnet V0.16
 
-To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisnet.org/docs/features/htlc.html) and [Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html) modules in v0.16, so that investors can transfer their tokens across chains and trade them decentralized.
+To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisnet.org/docs/features/htlc.html) and [Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html) modules in v0.16, so that users can swap tokens between different blockchains and trade them in a decentralized manner.
 
 ## Latest version: [v0.16.0-rc0](https://github.com/irisnet/irishub/releases/tag/v0.16.0-rc0)
 
@@ -12,7 +12,7 @@ To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisne
 
 ## v0.16.0-rc0
 
-As what we did on the testnets for v0.15, we will first test the new introduced functions of v0.16 on a new testnet `nyancat-5`, if everything works fine, then test the upgrade on `nyancat-6`.
+Just as we did on the testnets for v0.15, we'll first test drive the new features of v0.16 on a new testnet `nyancat-5`, if everything works fine, we then go through the on-chain upgrade process on `nyancat-6`.
 
 ### Coin Swap Tasks
 
