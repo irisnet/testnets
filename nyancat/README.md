@@ -6,14 +6,16 @@ Most IRISnet validators may know the Fuxi Testnet before mainnet was an early in
 
 ## How to claim Nyancat Testnet rewards
 
-Please refer to [reward-claims](./reward-claims/README.md)
+~~Please refer to [reward-claims](./reward-claims/README.md)~~
+
+Since v0.16, we will use the [HTLC](./v0.16/README.md#htlc-tasks) to claim testnet rewards.
 
 ## How to join Nyancat Testnet
 
-Just like to join [IRIS Hub Mainnet](https://www.irisnet.org/docs/get-started/Join-the-Mainnet.html#how-to-join-irishub-mainnet), the only differences:
+Just like to join [IRIS Hub Mainnet](https://stage.irisnet.org/docs/get-started/mainnet.html), the only differences:
 
-- [version](./v0.15/README.md) may be different
-- remember to [compile for testnet](https://www.irisnet.org/docs/software/How-to-install-irishub.html#compile-source-code)
+- [version](./v0.16/README.md) may be different
+- remember to [compile for testnet](https://stage.irisnet.org/docs/get-started/testnet.html#install)
 - use the [config file](./config) for nyancat testnet
 
 ## Peers

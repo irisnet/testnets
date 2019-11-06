@@ -16,9 +16,9 @@ As what we did on the testnets for v0.15, we will first test the new introduced 
 
 ### Coin Swap Tasks
 
-Coinswap relies on dynamic data to calculate exchange rates in real time, making it difficult to initiate transactions using the command line. So the coinswap module only has the [Restful API](#TODO). We have a demo web tool to help you understand and complete the tasks: [TODO](#TODO).
+Coinswap relies on dynamic data to calculate exchange rates in real time, making it difficult to initiate transactions using the command line. So the coinswap module only has the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/). We have a demo web tool to help you understand and complete the tasks: [Coinswap Demo](https://coinswap.nyancat.irisnet.org/).
 
-If you have a Ledger hardware, it will be easy to do the tasks with the web tool. Otherwise you can only use the [Restful API](#TODO) to generate unsigned transactions and [sign them offline](https://stage.irisnet.org/docs/cli-client/tx.html#flags), then [broadcast](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-broadcast).
+If you have a Ledger hardware, it will be easy to do the tasks with the web tool. Otherwise you can only use the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/) to generate unsigned transactions and [sign them offline](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-sign), then [broadcast](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-broadcast).
 
 Read more about [IRISHub Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html)
 
@@ -26,10 +26,10 @@ Read more about [IRISHub Coin Swap](https://stage.irisnet.org/docs/features/coin
 
 | NO. | Name             | Details                                  | Points |
 | --- | ---------------- | ---------------------------------------- | ------ |
-| 1   | Add Liquidity    | Deposit liquidity to the reserve pool    | 10     |
-| 2   | Remove Liquidity | Withdraw liquidity from the reserve pool | 10     |
-| 3   | IRIS-Token Swap  | Buy or sell some BTC by IRIS             | 10     |
-| 4   | Token-Token Swap | Buy or sell some ETH by BTC              | 10     |
+| 1   | Add Liquidity    | Deposit liquidity to the reserve pool    | 20     |
+| 2   | Remove Liquidity | Withdraw liquidity from the reserve pool | 20     |
+| 3   | IRIS-Token Swap  | Buy or sell some BTC with/for IRIS       | 20     |
+| 4   | Token-Token Swap | Buy or sell some ETH with/for BTC        | 20     |
 
 ### Snapshot Tasks
 
@@ -42,20 +42,26 @@ From v0.16, some of the IRISHub nodes (such as validators, sentries, seeds) will
 
 Read more about [IRISHub Snapshot](https://stage.irisnet.org/docs/daemon/snapshot.html)
 
+**Note:** Please provide your rpc address (:26657) to our team, so we can verify the task completion.
+
+| NO. | Name                 | Details                                            | Points |
+| --- | -------------------- | -------------------------------------------------- | ------ |
+| 5   | Prune your node data | Drop the historical data and start with a snapshot | 30     |
+
 ### HTLC Tasks
 
 [HTLC](https://stage.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
 
 | NO. | Name                | Details                                 | Points |
 | --- | ------------------- | --------------------------------------- | ------ |
-| *   | Get testnet rewards | Get testnet rewards on Mainnet via HTLC | 20     |
+| \*  | Get testnet rewards | Get testnet rewards on Mainnet via HTLC | 30     |
 
 This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
 
 **Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
 
 - Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
-- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifing: `--to="TBD"`
+- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifing: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
 - Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
 - Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
 - [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
