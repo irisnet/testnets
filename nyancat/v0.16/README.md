@@ -42,7 +42,7 @@ From v0.16, some of the IRISHub nodes (such as validators, sentries, seeds) will
 
 Read more about [IRISHub Snapshot](https://stage.irisnet.org/docs/daemon/snapshot.html)
 
-**Note:** Please provide your rpc address (:26657) to our team, so we can verify the task completion.
+**Note:** Please comment your PGP-ID: RPC-Address (:26657) [HERE](https://github.com/irisnet/testnets/issues/406), so we can verify the task completion.
 
 | NO. | Name                 | Details                                            | Points |
 | --- | -------------------- | -------------------------------------------------- | ------ |
