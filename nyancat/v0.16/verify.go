@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"sort"
 	"strconv"
 )
 
@@ -19,6 +20,8 @@ const (
 	task4TP2 = "btc-eth"
 )
 
+
+
 type validator struct {				//用来将validator的pgp和ownkey进行匹配
 	moniker string
 	ownKey  string
@@ -26,10 +29,19 @@ type validator struct {				//用来将validator的pgp和ownkey进行匹配
 }
 
 type taskDetail struct {			//每次任务查询后返回的原始结果
+	moniker   string
+	pgpID 	  string
 	hash      string
 	sender    string
 	height    string
 	timestamp string
+}
+
+type taskDetails []taskDetail						//实现sort接口，利用原生golang sort库
+func (td taskDetails) Len() int {return len(td)}
+func (td taskDetails) Swap(i,j int){td[i],td[j] = td[j],td[i]}
+func (td taskDetails) Less(i,j int)bool{
+	return td[i].timestamp < td[j].timestamp
 }
 
 type taskStat struct {			//某个验证人四个任务是否完成
@@ -88,8 +100,8 @@ func init() {
 }
 
 //task1 task2的任务检查，输入url，返回为各个交易所需要的一些信息。
-func verifyTask12(url string) []taskDetail {
-	taskDetails := []taskDetail{}
+func verifyTask12(url string) taskDetails {
+	taskDetails := taskDetails{}
 	data, err := fetch(url)
 	if err != nil {
 		panic(err)
@@ -99,8 +111,23 @@ func verifyTask12(url string) []taskDetail {
 	if err != nil {
 		panic(err)
 	}
-	txs := m["txs"].([]interface{})
-
+	txs := []interface{}{}
+	totalPages,_ := strconv.Atoi(m["page_total"].(string))
+	size,_ := strconv.Atoi(m["size"].(string))
+	for i := 1; i <= totalPages;i++{
+		url := fmt.Sprintf("%s&search_request_page=%d&search_request_size=%d",url,i,size)
+		data, err := fetch(url)
+		if err != nil {
+			panic(err)
+		}
+		m := make(map[string]interface{})
+		err = json.Unmarshal(data, &m)
+		if err != nil {
+			panic(err)
+		}
+		tx := m["txs"].([]interface{})
+		txs = append(txs, tx...)
+	}
 	for _, tx := range txs {
 		code := tx.(map[string]interface{})["result"].(map[string]interface{})["Code"].(float64)
 		if code != 0 {
@@ -109,7 +136,6 @@ func verifyTask12(url string) []taskDetail {
 		hash := tx.(map[string]interface{})["hash"].(string)
 		height := tx.(map[string]interface{})["height"].(string)
 		timestamp := tx.(map[string]interface{})["timestamp"].(string)
-
 		tags := tx.(map[string]interface{})["result"].(map[string]interface{})["Tags"].([]interface{})
 		tagsMap := make(map[string]string)
 		for _, tag := range tags {				//将tags解析保存到缓存中，去除json文件格式中的属性名
@@ -124,6 +150,10 @@ func verifyTask12(url string) []taskDetail {
 				sender:    sender,
 				timestamp: timestamp,				//获取交易的sender
 			}
+			if validator,ok := validatorSet[sender];ok{
+				detail.moniker = validator.moniker
+				detail.pgpID = validator.pgp
+			}
 			//fmt.Println(detail)
 			taskDetails = append(taskDetails, detail)
 		}
@@ -133,8 +163,8 @@ func verifyTask12(url string) []taskDetail {
 
 
 //task3 task4 任务检查，输入url以及token-pairs名，由于可能存在btc-eth,或者eth-btc均可，返回完成任务交易的相关情况
-func verifyTask34(url, tokenPairs1, tokenPairs2 string) []taskDetail {
-	taskDetails := []taskDetail{}
+func verifyTask34(url, tokenPairs1, tokenPairs2 string) taskDetails {
+	taskDetails := taskDetails{}
 	data, err := fetch(url)
 	if err != nil {
 		panic(err)
@@ -144,7 +174,23 @@ func verifyTask34(url, tokenPairs1, tokenPairs2 string) []taskDetail {
 	if err != nil {
 		panic(err)
 	}
-	txs := m["txs"].([]interface{})
+	size,_  := strconv.Atoi(m["size"].(string))
+	totalPages,_ := strconv.Atoi(m["page_total"].(string))
+	txs := []interface{}{}
+	for i := 1; i <= totalPages;i++{					//分页load，将所有信息拉取下来
+		url := fmt.Sprintf("%s&search_request_page=%d&search_request_size=%d",url,i,size)
+		data, err := fetch(url)
+		if err != nil {
+			panic(err)
+		}
+		m := make(map[string]interface{})
+		err = json.Unmarshal(data, &m)
+		if err != nil {
+			panic(err)
+		}
+		tx := m["txs"].([]interface{})
+		txs = append(txs, tx...)
+	}
 	for _, tx := range txs {
 		code := tx.(map[string]interface{})["result"].(map[string]interface{})["Code"].(float64)
 		if code != 0 {		//只记录成功的交易
@@ -170,6 +216,10 @@ func verifyTask34(url, tokenPairs1, tokenPairs2 string) []taskDetail {
 					sender:    sender,
 					timestamp: timestamp,
 				}
+				if validator,ok := validatorSet[sender];ok{
+					detail.moniker = validator.moniker
+					detail.pgpID = validator.pgp
+				}
 				taskDetails = append(taskDetails, detail)
 			}
 		}
@@ -177,112 +227,36 @@ func verifyTask34(url, tokenPairs1, tokenPairs2 string) []taskDetail {
 	return taskDetails
 }
 
-
-
 func main() {
-
 	task1Details := verifyTask12(task1URL)
-	fmt.Printf("task1完成人数统计：%d \n", len(task1Details))
 	task2Details := verifyTask12(task2URL)
-	fmt.Printf("task2完成人数统计：%d \n", len(task2Details))
 	task3Details := verifyTask34(task3URL, task3TP1, task3TP2)
-	fmt.Printf("task3完成人数统计：%d \n", len(task3Details))
 	task4Details := verifyTask34(task4URL, task4TP1, task4TP2)
+	sort.Sort(task1Details)
+	fmt.Printf("task1完成人数统计：%d \n", len(task1Details))
+	for i,v := range task1Details{
+		fmt.Printf("【task1】%d: %+v\n",i,v)
+	}
+
+	sort.Sort(task2Details)
+	fmt.Printf("task2完成人数统计：%d \n", len(task2Details))
+	for i,v := range task2Details{
+		fmt.Printf("【task2】%d: %+v\n",i,v)
+	}
+
+	sort.Sort(task3Details)
+	fmt.Printf("task3完成人数统计：%d \n", len(task3Details))
+	for i,v := range task3Details{
+		fmt.Printf("【task3】%d: %+v\n",i,v)
+	}
+
+	sort.Sort(task4Details)
 	fmt.Printf("task4完成人数统计：%d \n", len(task4Details))
-
-	senderMatchPGP(1, task1Details)
-	senderMatchPGP(2, task2Details)
-	senderMatchPGP(3, task3Details)
-	senderMatchPGP(4, task4Details)
-
-	fmt.Printf("从验证人人数统计：%d 人完成任务情况：\n", len(taskTotal))
-	for k, v := range taskTotal {
-		fmt.Printf("%s %+v \n\n", k, v)
-	}
-
-	fmt.Printf("未从验证人中找到人数统计：%d 人完成任务\n", len(notValidatorSender))
-	for k, v := range notValidatorSender {
-		fmt.Printf("%s %+v \n\n", k, v)
-	}
-
-	for k,v := range repeatTxMap {
-		fmt.Printf("sender:%s 重复交易次数：%d\n",k,len(v))
+	for i,v := range task4Details{
+		fmt.Printf("【task4】%d: %+v\n",i,v)
 	}
 
 }
-
-//将交易sender和PGP进行匹配
-//如果能匹配上，则pgp：{true,true,false,true} ,其中分别代表task1，2，3，4是否完成
-//如果匹配不上，则sender：{true,true,false,true}
-func senderMatchPGP(taskID int, taskdetails []taskDetail) {
-	repeatsender := []string{}
-	for _, taskdetail := range taskdetails {    		//遍历每次任务结果
-		ts := taskStat{}
-		if validator, ok := validatorSet[taskdetail.sender]; ok {     //能够在validator集合中找到sender
-			pgp := validator.pgp
-			if _, ok := taskTotal[pgp]; ok {             //task2，3，4统计的时候需要用到task1中已经构建好的map
-				repeatsender = append(repeatsender, taskdetail.sender)
-				ts = taskTotal[pgp]
-			}
-			switch taskID {
-			case 1:
-				if !ts.task1 {
-					ts.task1 = true
-				} else {
-					key := "TASK" + strconv.Itoa(taskID) + ":" + taskdetail.sender				//说明此sender已经发送过交易，本次交易重复了
-					repeatTxArr := repeatTxMap[key]
-					repeatTxArr = append(repeatTxArr, taskdetail)
-					repeatTxMap[key] = repeatTxArr
-				}
-
-			case 2:
-				if !ts.task2 {
-					ts.task2 = true
-				} else {
-					key := "TASK" + strconv.Itoa(taskID) + ":" + taskdetail.sender
-					repeatTxArr := repeatTxMap[key]
-					repeatTxArr = append(repeatTxArr, taskdetail)
-					repeatTxMap[key] = repeatTxArr
-				}
-			case 3:
-				if !ts.task3 {
-					ts.task3 = true
-				} else {
-					key := "TASK" + strconv.Itoa(taskID) + ":" + taskdetail.sender
-					repeatTxArr := repeatTxMap[key]
-					repeatTxArr = append(repeatTxArr, taskdetail)
-					repeatTxMap[key] = repeatTxArr
-				}
-			case 4:
-				if !ts.task4 {
-					ts.task4 = true
-				} else {
-					key := "TASK" + strconv.Itoa(taskID) + ":" + taskdetail.sender
-					repeatTxArr := repeatTxMap[key]
-					repeatTxArr = append(repeatTxArr, taskdetail)
-					repeatTxMap[key] = repeatTxArr
-				}
-			}
-			taskTotal[pgp] = ts
-		} else {
-			if _, ok := notValidatorSender[taskdetail.sender]; ok {
-				ts = notValidatorSender[taskdetail.sender]
-			}
-			switch taskID {
-			case 1:
-				ts.task1 = true
-			case 2:
-				ts.task2 = true
-			case 3:
-				ts.task3 = true
-			case 4:
-				ts.task4 = true
-			}
-			notValidatorSender[taskdetail.sender] = ts			//不再验证人中的找不到pgp，就用sender作为key
-		}
-	}
-}
-
 
 //拉取网络资源
 func fetch(url string) ([]byte, error) {
