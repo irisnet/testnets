@@ -133,6 +133,7 @@ func verifyTask12(url string) taskDetails {
 		if code != 0 {
 			continue				//只记录成功的交易
 		}
+
 		hash := tx.(map[string]interface{})["hash"].(string)
 		height := tx.(map[string]interface{})["height"].(string)
 		timestamp := tx.(map[string]interface{})["timestamp"].(string)
@@ -233,32 +234,55 @@ func main() {
 	task3Details := verifyTask34(task3URL, task3TP1, task3TP2)
 	task4Details := verifyTask34(task4URL, task4TP1, task4TP2)
 	sort.Sort(task1Details)
-	fmt.Printf("task1完成人数统计：%d \n", len(task1Details))
-	for i,v := range task1Details{
+	removeRepeat(task1Details)
+	uniSortTask1Details := removeRepeat(task1Details)
+	fmt.Printf("task1完成人数统计：%d \n", len(uniSortTask1Details))
+	for i,v := range uniSortTask1Details{
 		fmt.Printf("【task1】%d: %+v\n",i,v)
 	}
 
 	sort.Sort(task2Details)
-	fmt.Printf("task2完成人数统计：%d \n", len(task2Details))
-	for i,v := range task2Details{
+	removeRepeat(task2Details)
+	uniSortTask2Details := removeRepeat(task2Details)
+	fmt.Println()
+	fmt.Printf("task2完成人数统计：%d \n", len(uniSortTask2Details))
+	for i,v := range uniSortTask2Details{
 		fmt.Printf("【task2】%d: %+v\n",i,v)
 	}
 
 	sort.Sort(task3Details)
-	fmt.Printf("task3完成人数统计：%d \n", len(task3Details))
-	for i,v := range task3Details{
+	removeRepeat(task3Details)
+	uniSortTask3Details := removeRepeat(task3Details)
+	fmt.Println()
+	fmt.Printf("task3完成人数统计：%d \n", len(uniSortTask3Details))
+	for i,v := range uniSortTask3Details{
 		fmt.Printf("【task3】%d: %+v\n",i,v)
 	}
 
 	sort.Sort(task4Details)
-	fmt.Printf("task4完成人数统计：%d \n", len(task4Details))
-	for i,v := range task4Details{
+	removeRepeat(task4Details)
+	uniSortTask4Details := removeRepeat(task4Details)
+	fmt.Println()
+	fmt.Printf("task4完成人数统计：%d \n", len(uniSortTask4Details))
+	for i,v := range uniSortTask4Details{
 		fmt.Printf("【task4】%d: %+v\n",i,v)
 	}
-
 }
 
-//拉取网络资源
+func removeRepeat(details taskDetails)taskDetails{
+	m := make(map[string]string)
+	uniTaskDetails := taskDetails{}
+	for _,detail := range details {
+		if _,ok := m[detail.sender]; !ok{
+			uniTaskDetails = append(uniTaskDetails, detail)
+			m[detail.sender]="exit"
+		}
+	}
+	return uniTaskDetails
+}
+
+
+//拉去网络资源
 func fetch(url string) ([]byte, error) {
 	client := http.Client{}
 	request, err := http.NewRequest("GET", url, nil)
