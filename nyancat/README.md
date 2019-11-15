@@ -8,7 +8,7 @@ Most IRISnet validators may know the Fuxi Testnet before mainnet was an early in
 
 ~~Please refer to [reward-claims](./reward-claims/README.md)~~
 
-Starting from v0.16, participants will be asked to claim their testnet rewards through [atomic swaps](./v0.16/README.md#htlc-tasks) 
+Starting from v0.16, participants will be asked to claim their testnet rewards through [atomic swaps](./v0.16/README.md#htlc-tasks)
 
 ## How to join Nyancat Testnet
 
