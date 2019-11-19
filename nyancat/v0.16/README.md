@@ -78,7 +78,7 @@ Read more about [IRISHub Snapshot](https://stage.irisnet.org/docs/daemon/snapsho
 
 | NO. | Name                | Details                                 | Points |
 | --- | ------------------- | --------------------------------------- | ------ |
-| \*  | Get testnet rewards | Get testnet rewards on Mainnet via HTLC | 30     |
+| \*  | Claim testnet rewards | Claim testnet rewards on Mainnet via HTLC | 30     |
 
 This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
 
