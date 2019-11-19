@@ -18,9 +18,9 @@ To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisne
 
 1. Join `nyancat-6` and set up your validator before the `Upgrade Proposal`.
 
-2. Upgrade Proposal: `2019-11-18 13:00:00 (UTC)`, we'll have 24 hours to vote. If you are not a validator in `nyancat-6`, please create one before the upgrade proposal, so as not to affect the acquisition of upgrade task points.
+2. Upgrade Proposal: `2019-11-19 13:00:00 (UTC)`, we'll have 24 hours to vote. If you are not a validator in `nyancat-6`, please create one before the upgrade proposal, so as not to affect the acquisition of upgrade task points.
 
-3. Version Switching: `2019-11-20 13:00:00 (UTC)`, which means we'll have 24 hours to upgrade our nodes to the new version after the upgrade proposal passed.
+3. Version Switching: `2019-11-21 05:00:00 (UTC)`, which means we'll have 16 hours to upgrade our nodes to the new version after the upgrade proposal passed.
 
 You can refer to the [Mainnet Upgrade Preview](https://github.com/irisnet/mainnet/blob/master/upgrade/v0.16.0.md) for detailed upgrade process.
 
