@@ -34,6 +34,24 @@ You can refer to the [Mainnet Upgrade Preview](https://github.com/irisnet/mainne
 | --- | ---------------------- | ----------------------------------------------------- | ------ |
 | 6   | Upgrade to v0.16.0-rc1 | Rehearse the mainnet upgrade from v0.15.\* to v0.16.0 | 60     |
 
+### HTLC Tasks
+
+[HTLC](https://stage.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
+
+| NO. | Name                | Details                                 | Points |
+| --- | ------------------- | --------------------------------------- | ------ |
+| \*  | Claim testnet rewards | Claim testnet rewards on Mainnet via HTLC | 30     |
+
+This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
+
+**Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
+
+- Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
+- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifing: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
+- Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
+- Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
+- [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
+
 ## ~~v0.16.0-rc0~~ Done
 
 Just as we did on the testnets for v0.15, we'll first test drive the new features of v0.16 on a new testnet `nyancat-5`, if everything works fine, we then go through the on-chain upgrade process on `nyancat-6`.
@@ -71,21 +89,3 @@ Read more about [IRISHub Snapshot](https://stage.irisnet.org/docs/daemon/snapsho
 | NO. | Name                 | Details                                            | Points |
 | --- | -------------------- | -------------------------------------------------- | ------ |
 | 5   | Prune your node data | Drop the historical data and start with a snapshot | 30     |
-
-### HTLC Tasks
-
-[HTLC](https://stage.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
-
-| NO. | Name                | Details                                 | Points |
-| --- | ------------------- | --------------------------------------- | ------ |
-| \*  | Claim testnet rewards | Claim testnet rewards on Mainnet via HTLC | 30     |
-
-This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
-
-**Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
-
-- Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
-- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifing: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
-- Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
-- Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
-- [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
