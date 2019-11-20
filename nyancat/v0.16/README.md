@@ -47,7 +47,7 @@ This is a special task, it can only be done **AFTER** the Mainnet upgrade. You w
 **Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
 
 - Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
-- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifing: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
+- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifying: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
 - Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
 - Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
 - [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
