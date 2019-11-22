@@ -63,12 +63,12 @@ while read row; do
         if [ $index -lt 40 ]; then
             index=$[$index + 1]
             fva_vote_map[$fva]=$vote
-            echo -e $index"\t"$fva"\t"$timestamp"\t"$moniker"\t"${testnet_identity_map[$fva]}
+            echo -e $index"\t"$fva"\t"$timestamp"\t"${testnet_identity_map[$fva]}"\t"$moniker
         ### validator of mainnet beyond top 40 is passed.
         elif [ -n "${testnet_identity_map[$fva]}" ] && [ "${mainnet_identity_map[${testnet_identity_map[$fva]}]}" == "ok" ]; then
             index=$[$index + 1]
             fva_vote_map[$fva]=$vote
-            echo -e $index"\t"$fva"\t"$timestamp"\t"$moniker"\t"${testnet_identity_map[$fva]}"\t"ok
+            echo -e $index"\t"$fva"\t"$timestamp"\t"${testnet_identity_map[$fva]}"\t"$moniker"\t"ok
         fi
     fi
     # echo $fva,$moniker,$vote
