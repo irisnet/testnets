@@ -2,7 +2,7 @@
 
 To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisnet.org/docs/features/htlc.html) and [Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html) modules in v0.16, so that users can swap tokens between different blockchains and trade them in a decentralized manner.
 
-## Latest version: [v0.16.0-rc1](https://github.com/irisnet/irishub/releases/tag/v0.16.0-rc1)
+## Latest version: [v0.16.0](https://github.com/irisnet/irishub/releases/tag/v0.16.0)
 
 **Note**:
 
@@ -10,9 +10,29 @@ To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisne
 
 - For every task, only the top 40 completed validators can get rewards (the upgrade task is based on the voting order of the upgrade proposal, if a valid voter doesn't complete the upgrade in time, the reward will be extended to the next completed validator)
 
+## v0.16.0
+
+### HTLC Tasks
+
+[HTLC](https://stage.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
+
+| NO. | Name                | Details                                 | Points |
+| --- | ------------------- | --------------------------------------- | ------ |
+| 7   | Claim testnet rewards | Claim testnet rewards on Mainnet via HTLC | 30     |
+
+This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
+
+**Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
+
+- Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
+- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifying: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
+- Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
+- Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
+- [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
+
 ## v0.16.0-rc1
 
-### Upgrade Tasks
+### ~~Upgrade Tasks~~ Done
 
 #### Steps
 
@@ -33,24 +53,6 @@ You can refer to the [Mainnet Upgrade Preview](https://github.com/irisnet/mainne
 | No  | Name                   | Details                                               | Points |
 | --- | ---------------------- | ----------------------------------------------------- | ------ |
 | 6   | Upgrade to v0.16.0-rc1 | Rehearse the mainnet upgrade from v0.15.\* to v0.16.0 | 60     |
-
-### HTLC Tasks
-
-[HTLC](https://stage.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
-
-| NO. | Name                | Details                                 | Points |
-| --- | ------------------- | --------------------------------------- | ------ |
-| \*  | Claim testnet rewards | Claim testnet rewards on Mainnet via HTLC | 30     |
-
-This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
-
-**Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
-
-- Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
-- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifying: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
-- Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
-- Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
-- [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
 
 ## ~~v0.16.0-rc0~~ Done
 
