@@ -1,6 +1,6 @@
 # Nyancat Testnet V0.16
 
-To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisnet.org/docs/features/htlc.html) and [Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html) modules in v0.16, so that users can swap tokens between different blockchains and trade them in a decentralized manner.
+To support `DeFi` functionalities, we introduced the [HTLC](https://www.irisnet.org/docs/features/htlc.html) and [Coin Swap](https://www.irisnet.org/docs/features/coinswap.html) modules in v0.16, so that users can swap tokens between different blockchains and trade them in a decentralized manner.
 
 ## Latest version: [v0.16.0](https://github.com/irisnet/irishub/releases/tag/v0.16.0)
 
@@ -14,7 +14,7 @@ To support `DeFi` functionalities, we introduced the [HTLC](https://stage.irisne
 
 ### HTLC Tasks
 
-[HTLC](https://stage.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
+[HTLC](https://www.irisnet.org/docs/features/htlc.html) is mostly used in cross-chain atomic swaps. This task is gonna be very interesting:
 
 | NO. | Name                | Details                                 | Points |
 | --- | ------------------- | --------------------------------------- | ------ |
@@ -24,11 +24,12 @@ This is a special task, it can only be done **AFTER** the Mainnet upgrade. You w
 
 **Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
 
-- Contact @Yelong in the community, make sure he is online (His time zone is UTC+8), send him your `irishub` address for receiving the rewards
-- You [Create an HTLC](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifying: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
+- [Submit your signature](./reward-claims/README.md#submit-signature)
+- Contact @Yelong in the community, make sure he is online (His time zone is UTC+8)
+- You [Create an HTLC](https://www.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-create) on `nyancat-6`, specifying: `--to="faa1svannhv2zaxefq83m7treg078udfk37lvvs7t5"`
 - Send @Yelong your HTLC tx hash, wait for him to create another HTLC on `irishub` with your hash-lock
-- Confirm your rewards and [Claim](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
-- [Check status](https://stage.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
+- Confirm your rewards and [Claim](https://www.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
+- [Check status](https://www.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
 
 ## v0.16.0-rc1
 
@@ -62,9 +63,9 @@ Just as we did on the testnets for v0.15, we'll first test drive the new feature
 
 Coinswap relies on dynamic data to calculate exchange rates in real time, making it difficult to initiate transactions using the command line. So the coinswap module only has the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/#/CoinSwap). We have a demo web tool to help you understand and complete the tasks: [Coinswap Demo](https://coinswap.nyancat.irisnet.org/).
 
-If you have a Ledger hardware, it will be easy to do the tasks with the web tool. Otherwise you can only use the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/#/CoinSwap) to generate unsigned transactions and [sign them offline](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-sign), then [broadcast](https://stage.irisnet.org/docs/cli-client/tx.html#iriscli-tx-broadcast).
+If you have a Ledger hardware, it will be easy to do the tasks with the web tool. Otherwise you can only use the [Restful API](https://lcd.nyancat.irisnet.org/swagger-ui/#/CoinSwap) to generate unsigned transactions and [sign them offline](https://www.irisnet.org/docs/cli-client/tx.html#iriscli-tx-sign), then [broadcast](https://www.irisnet.org/docs/cli-client/tx.html#iriscli-tx-broadcast).
 
-Read more about [IRISHub Coin Swap](https://stage.irisnet.org/docs/features/coinswap.html)
+Read more about [IRISHub Coin Swap](https://www.irisnet.org/docs/features/coinswap.html)
 
 **Note:** Please use your testnet validator's operator account (which account you used to create the validator) to sign the transactions, so that we can verify the task completion.
 
@@ -84,7 +85,7 @@ From v0.16, some of the IRISHub nodes (such as validators, sentries, seeds) will
 - You can choose to drop the data of a node which before a certain block height to free up disk space.
 - You can quickly start up a new node without syncing all historical data.
 
-Read more about [IRISHub Snapshot](https://stage.irisnet.org/docs/daemon/snapshot.html)
+Read more about [IRISHub Snapshot](https://www.irisnet.org/docs/daemon/snapshot.html)
 
 **Note:** Please comment your PGP-ID: RPC-Address (:26657) [HERE](https://github.com/irisnet/testnets/issues/406), so we can verify the task completion.
 
