@@ -2,13 +2,15 @@
 
 ## 兑换比例
 
-1 point = 待定 IRIS
+1 point = 70 IRIS
 
 ## 积分确认
 
-Nyancat 积分汇总: <https://github.com/irisnet/testnets/issues/406>
+我们假设您已完成[HTLC任务](../README.md#htlc-tasks)，因此以下表格中默认为所有参与者加了30分。 **但是[HTLC任务](../README.md#htlc-tasks)是可选的，您可以决定不执行此任务，然后我们可以直接向您发放其他任务（不包含HTLC）的奖励。**
 
-*如果您对此有所疑问，请和我们的工作人员联系，或者在该 Issue 中进行评论*
+Nyancat 积分汇总: <https://docs.google.com/spreadsheets/d/1a1xvoytSt9zagGecReS9goa7obU302Q0xs97AwCGdCE/edit?usp=sharing>
+
+*如果您对此有所疑问，请和我们的工作人员联系*
 
 ## 提交签名
 

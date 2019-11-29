@@ -20,9 +20,12 @@ To support `DeFi` functionalities, we introduced the [HTLC](https://www.irisnet.
 | --- | ------------------- | --------------------------------------- | ------ |
 | 7   | Claim testnet rewards | Claim testnet rewards on Mainnet via HTLC | 30     |
 
-This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
+**Note:**
 
-**Note:** Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
+- Please use your testnet validator's operator account (which account you used to create the testnet validator) to sign the testnet transactions, so that we can verify the task completion.
+- This task is optional for claiming the rewards, you can decide not to do this task, then we can send you the OTHER TASK REWARDS(except HTLC) directly([your signature is required](./reward-claims/README.md#submit-signature))
+
+This is a special task, it can only be done **AFTER** the Mainnet upgrade. You will need to do as the following steps:
 
 - [Submit your signature](./reward-claims/README.md#submit-signature)
 - Contact @Yelong in the community, make sure he is online (His time zone is UTC+8)
@@ -31,7 +34,7 @@ This is a special task, it can only be done **AFTER** the Mainnet upgrade. You w
 - Confirm your rewards and [Claim](https://www.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-claim) on `irishub`
 - [Check status](https://www.irisnet.org/docs/cli-client/htlc.html#iriscli-htlc-query-htlc)
 
-## v0.16.0-rc1
+## ~~v0.16.0-rc1~~ Done
 
 ### ~~Upgrade Tasks~~ Done
 

@@ -2,13 +2,15 @@
 
 ## point-to-iris conversion rate
 
-1 point = TBD IRIS
+1 point = 70 IRIS
 
 ## Credit Confirmation
 
-Nyancat Points Summary: <https://github.com/irisnet/testnets/issues/406>
+We just assume that you have done the [HTLC Task](../README.md#htlc-tasks), so the following sheet has default added 30 points to all of the participants. **But the [HTLC Task](../README.md#htlc-tasks) is optional for claiming the rewards, you can decide not to do this task, then we can send you the OTHER TASK REWARDS(except HTLC) directly.**
 
-*If you have any questions about this, please contact our staff or comment in the Issue*
+Nyancat Testnet Points Summary: <https://docs.google.com/spreadsheets/d/1a1xvoytSt9zagGecReS9goa7obU302Q0xs97AwCGdCE/edit?usp=sharing>
+
+*If you have any questions, please contact our staff*
 
 ## Submit Signature
 
