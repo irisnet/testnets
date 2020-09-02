@@ -1,0 +1,403 @@
+{
+  "genesis_time": "2020-09-01T14:04:33.065291507Z",
+  "chain_id": "bifrost-0",
+  "initial_height": "1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_num": 50,
+      "proof_trial_period": "50000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "iaa1058s5ys6r99j0n4nw5jlhwjgsgrau8agyztt8t",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "iaa1kz2kghcc6ph3h93wvueyfeycdvmwmxm8z4k93y",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "iaa1dexz4hlerqhpvgxdg4wdnf5l8sdw26nrf40k59",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "iaa1dn8zkwnxqn028ay6j9veqtlcc0622j670rm8p9",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "iaa1dn8zkwnxqn028ay6j9veqtlcc0622j670rm8p9",
+          "coins": [
+            {
+              "denom": "ubif",
+              "amount": "100000000000"
+            }
+          ]
+        },
+        {
+          "address": "iaa1dexz4hlerqhpvgxdg4wdnf5l8sdw26nrf40k59",
+          "coins": [
+            {
+              "denom": "ubif",
+              "amount": "100000000000"
+            }
+          ]
+        },
+        {
+          "address": "iaa1058s5ys6r99j0n4nw5jlhwjgsgrau8agyztt8t",
+          "coins": [
+            {
+              "denom": "ubif",
+              "amount": "100000000000"
+            }
+          ]
+        },
+        {
+          "address": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf",
+          "coins": [
+            {
+              "denom": "ubif",
+              "amount": "1000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "iaa1kz2kghcc6ph3h93wvueyfeycdvmwmxm8z4k93y",
+          "coins": [
+            {
+              "denom": "ubif",
+              "amount": "100000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [],
+      "denom_metadata": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "coinswap": {
+      "params": {
+        "fee": "0.003000000000000000",
+        "standard_denom": "ubif"
+      }
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "ubif",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "IRISnet-Bianjie",
+                  "identity": "DB667A6F239969F5",
+                  "website": "https://irisnet.org/",
+                  "security_contact": "",
+                  "details": "Interchain Service Hub for NextGen Distributed Applications."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf",
+                "validator_address": "iva1svannhv2zaxefq83m7treg078udfk37lpjufkw",
+                "pubkey": "icp1zcjduepqkqp56ph6nmumk8xzux0dhcr9ag7yy0td62k5xdumh0wsffln5slqx0k6k0",
+                "value": {
+                  "denom": "ubif",
+                  "amount": "100000000000"
+                }
+              }
+            ],
+            "memo": "a246f5ea3055f7507c63b9ea50dbf5d401537b3a@10.32.4.46:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "secp256k1": "A0D8FPGA6B3ss3jK6+ebdrnlPfJRaWBfLitwn5v3X6CQ"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000"
+            }
+          },
+          "signatures": [
+            "dqftPen7WypHEJZKYseg+skJgWmJ4QboIaXBH3kCk7tnXaksh2GOyI/z4r1DnkjeR8UulK4hBD11GXryngtlMg=="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "ubif",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800s"
+      },
+      "voting_params": {
+        "voting_period": "172800s"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      }
+    },
+    "guardian": {
+      "profilers": [
+        {
+          "description": "Genesis Profiler 1",
+          "account_type": "GENESIS",
+          "address": "iaa1058s5ys6r99j0n4nw5jlhwjgsgrau8agyztt8t",
+          "added_by": "iaa1058s5ys6r99j0n4nw5jlhwjgsgrau8agyztt8t"
+        },
+        {
+          "description": "Genesis Profiler 2",
+          "account_type": "GENESIS",
+          "address": "iaa1kz2kghcc6ph3h93wvueyfeycdvmwmxm8z4k93y",
+          "added_by": "iaa1kz2kghcc6ph3h93wvueyfeycdvmwmxm8z4k93y"
+        }
+      ],
+      "trustees": [
+        {
+          "description": "Genesis Trustee 1",
+          "account_type": "GENESIS",
+          "address": "iaa1dexz4hlerqhpvgxdg4wdnf5l8sdw26nrf40k59",
+          "added_by": "iaa1dexz4hlerqhpvgxdg4wdnf5l8sdw26nrf40k59"
+        },
+        {
+          "description": "Genesis Trustee 2",
+          "account_type": "GENESIS",
+          "address": "iaa1dn8zkwnxqn028ay6j9veqtlcc0622j670rm8p9",
+          "added_by": "iaa1dn8zkwnxqn028ay6j9veqtlcc0622j670rm8p9"
+        }
+      ]
+    },
+    "htlc": {
+      "pending_htlcs": {}
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "create_localhost": true
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": []
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": []
+      }
+    },
+    "mint": {
+      "minter": {
+        "last_update": "1970-01-01T00:00:00Z",
+        "inflation_base": "2000000000000000"
+      },
+      "Params": {
+        "mint_denom": "ubif",
+        "inflation": "0.040000000000000000"
+      }
+    },
+    "nft": {
+      "collections": []
+    },
+    "oracle": {
+      "entries": []
+    },
+    "params": null,
+    "random": {
+      "pending_random_requests": {}
+    },
+    "record": {
+      "records": []
+    },
+    "service": {
+      "params": {
+        "max_request_timeout": "100",
+        "min_deposit_multiple": "200",
+        "min_deposit": [
+          {
+            "denom": "ubif",
+            "amount": "6000"
+          }
+        ],
+        "service_fee_tax": "0.100000000000000000",
+        "slash_fraction": "0.001000000000000000",
+        "complaint_retrospect": "1296000s",
+        "arbitration_time_limit": "432000s",
+        "tx_size_limit": "4000",
+        "base_denom": "ubif"
+      },
+      "definitions": [],
+      "bindings": [],
+      "withdraw_addresses": {},
+      "request_contexts": {}
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 100,
+        "bond_denom": "ubif"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "token": {
+      "params": {
+        "token_tax_rate": "0.400000000000000000",
+        "issue_token_base_fee": {
+          "denom": "bif",
+          "amount": "60000000000"
+        },
+        "mint_token_fee_ratio": "0.100000000000000000"
+      },
+      "tokens": [
+        {
+          "symbol": "bif",
+          "name": "Irishub staking token",
+          "scale": 6,
+          "min_unit": "ubif",
+          "initial_supply": "2000000000",
+          "max_supply": "10000000000",
+          "mintable": true,
+          "owner": "iaa183rfa8tvtp6ax7jr7dfaf7ywv870sykxxykejp"
+        }
+      ]
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      }
+    },
+    "upgrade": {}
+  }
+}
