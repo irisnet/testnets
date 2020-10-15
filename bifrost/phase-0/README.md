@@ -8,6 +8,7 @@ As the current version is still in rapid development, incentived and rewarded ta
 ## How to Join
 
 It'll be the same as joining [IRIS Hub Mainnet](https://bifrost.irisnet.org/docs/get-started/mainnet.html), except that:
+
 - Go 1.14.1+ is required for building and installing the IRIShub software.
 - [version](https://github.com/irisnet/irishub/releases/tag/v1.0.0-alpha)
 - [genesis file](./genesis.json)
