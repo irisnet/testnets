@@ -1,5 +1,9 @@
 # Bifrost-1
 
+## How to Join
+
+TBD
+
 ## Task list and reward
 
 ### Service task list
