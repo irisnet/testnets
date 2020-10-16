@@ -12,16 +12,6 @@ At the same time, in order to achieve a smooth upgrade of IRIS Hub mainnet, we e
 
 On the other hand, Bifrost will interconnect with Stargate testnet to form a dual-Hub testnet. Teams in the Cosmos interchain ecosystem are welcomed to participate by starting their own testnet as well as service providers interested in providing Relay service in the future. Let’s BUIDL together the New Interchain "Cosmos"!
 
-## Phase-0
-
-As the current version is still rapidly developing, incentivized tasks will not be released in this phase.
-This phase is intended for:
-
-- Testing wallets, exchanges and block explorers against the legacy Amino REST interface
-- Giving node operators and validators an opportunity to test their integrations against a work in progress version
-
-[[Join phase 0](phase-0/README.md)]
-
 ## Phase-1
 
 This phase will mainly test the upgraded modules and new modules and is intended for:
@@ -33,6 +23,16 @@ This phase will mainly test the upgraded modules and new modules and is intended
 - Testing Random function, requesting random numbers with or without Oracle
 
 [[Join phase 1](phase-1/README.md)]
+
+## Phase-0
+
+As the current version is still rapidly developing, incentivized tasks will not be released in this phase.
+This phase is intended for:
+
+- Testing wallets, exchanges and block explorers against the legacy Amino REST interface
+- Giving node operators and validators an opportunity to test their integrations against a work in progress version
+
+[[Join phase 0](phase-0/README.md)]
 
 ## Rewards
 
