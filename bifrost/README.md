@@ -2,7 +2,7 @@
 
 ## Introduction
 
-IRISnet’s DeFi and interchain Testnet Bifrost will run side by side with Stargate’s testnet in order to test the new DeFi features of IRIS Hub, the integration with the new version of Cosmos SDK and also the multi-Hub collaboration through the IBC protocol. [More details](https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg)
+IRISnet’s DeFi and interchain Testnet Bifrost will run side by side with Stargate’s testnet in order to test the new DeFi features of IRIS Hub, the integration with the new version of Cosmos SDK and also the multi-Hub collaboration through the IBC protocol. [More details](https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e)
 
 ## Objectives
 
