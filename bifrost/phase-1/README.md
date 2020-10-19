@@ -2,7 +2,38 @@
 
 ## How to Join
 
-TBD
+It'll be the same as joining [IRIS Hub Mainnet](https://bifrost.irisnet.org/docs/get-started/mainnet.html), except that:
+
+- Go 1.14.1+ is required for building and installing the IRIShub software.
+- [version](https://github.com/irisnet/irishub/releases/tag/v1.0.0-beta)
+- [genesis file](./genesis.json)
+
+Please don't forget fill in this [form](http://nyancat-irisnet.mikecrm.com/JsLCZ4H) to complete your sign-up process, and remember to set your validator moniker to `<your-name>-<pgp-id>`, identity to `<pgp-id>`. You need to complete the tasks use your validator account.
+
+### Peers
+
+Persistent Peers:
+
+```bash
+a246f5ea3055f7507c63b9ea50dbf5d401537b3a@34.80.22.255:26656
+```
+
+### Resources
+
+**Explorer**
+
+https://bifrost.irisplorer.io
+
+**Documentation**
+
+https://bifrost.irisnet.org/docs/
+
+**Faucet**
+
+Unfortunately we do not have a public faucet for bifrost, however you are welcome to ask for the test tokens in our validator communities:
+
+- [Riot English community](https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org?via=matrix.org&via=t2bot.io)
+- [QQ Chinese community](https://jq.qq.com/?_wv=1027&k=5BeP3tJ)
 
 ## Task list and reward
 
@@ -42,7 +73,3 @@ Each participant’s address will be assigned a serial number, which corresponds
 | --------------------------------- | ------------------------------- | ------------------------------ | --------- |
 | Request a random (without oracle) | Request a random without oracle | Successfully get random number | Bronze *1 |
 | Request a random (with oracle)    | Request a random with oracle    | Successfully get random number | Bronze *1 |
-
-### Reference documents
-
-https://bifrost.irisnet.org/docs/
