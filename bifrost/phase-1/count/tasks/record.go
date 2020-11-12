@@ -49,7 +49,7 @@ func CountRecordTask1(client sdk.IRISHUBClient, participants []*biftypes.Partici
 			}
 
 			if resp.Record.Contents[0].Digest == feed.FeedValues[participant.Serial-1].Data {
-				participant.Tasks[7] = true
+				participant.Tasks.RecordTasks.Task1 = true
 			}
 		}
 	}

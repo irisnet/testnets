@@ -39,7 +39,7 @@ func CountServiceTask1(client sdk.IRISHUBClient, participants []*biftypes.Partic
 		}
 
 		if txs.Total > 0 {
-			participant.Tasks[0] = true
+			participant.Tasks.ServiceTasks.Task1 = true
 		}
 	}
 }
@@ -71,9 +71,9 @@ func CountServiceTask2And3(client sdk.IRISHUBClient, participants []*biftypes.Pa
 				}
 
 				if resp.Author.String() == participant.Addr {
-					participant.Tasks[1] = true
+					participant.Tasks.ServiceTasks.Task2 = true
 				} else {
-					participant.Tasks[2] = true
+					participant.Tasks.ServiceTasks.Task3 = true
 				}
 			}
 		}
@@ -102,7 +102,7 @@ func CountServiceTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Pa
 				}
 				repeated := gjson.GetBytes(bz, "repeated").String()
 				if repeated == "true" {
-					participant.Tasks[4] = true
+					participant.Tasks.ServiceTasks.Task5 = true
 				} else {
 					requestContextID, err := tx.Result.Events.GetValue("message", "request_context_id")
 					if err != nil {
@@ -116,7 +116,7 @@ func CountServiceTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Pa
 
 					enblockRequestContextID, err := block.BlockResult.Results.EndBlock.Events.GetValue("new_batch_request", "request_context_id")
 					if err == nil && requestContextID == enblockRequestContextID {
-						participant.Tasks[3] = true
+						participant.Tasks.ServiceTasks.Task4 = true
 					}
 				}
 			}
@@ -138,7 +138,7 @@ func CountServiceTask6(client sdk.IRISHUBClient, participants []*biftypes.Partic
 		}
 
 		if txs.Total > 0 {
-			participant.Tasks[5] = true
+			participant.Tasks.ServiceTasks.Task6 = true
 		}
 	}
 }
@@ -157,7 +157,7 @@ func CountServiceTask7(client sdk.IRISHUBClient, participants []*biftypes.Partic
 		}
 
 		if txs.Total > 0 {
-			participant.Tasks[6] = true
+			participant.Tasks.ServiceTasks.Task7 = true
 		}
 	}
 }

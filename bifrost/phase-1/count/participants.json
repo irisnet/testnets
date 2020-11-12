@@ -4,35 +4,5 @@
         "pgp": "7A38C8CD6C0FA32A",
         "addr": "iaa18p5jgdfw6dh0ftwg72ezxj4qfffn6l4jnzqrnj",
         "serial": 1
-    },
-    {
-        "github": "culmore2015",
-        "pgp": "F7BABF2C95B02A9",
-        "addr": "iaa1httpn7slzvqllw9vn5fz8x5zmkl93d3kmvhhux",
-        "serial": 2
-    },
-    {
-        "github": "blackbear10000",
-        "pgp": "9537E2D2ED05D16D",
-        "addr": "iaa1qyxamky0fln97rp9d3qhteqe50e9gt30wsd6z8",
-        "serial": 4
-    },
-    {
-        "github": "KenianShi",
-        "pgp": "F1F0BF192D84EAC3",
-        "addr": "iaa1tyd79ynwjwxtvmhxjq3yks9jlfejewv0xksqhv",
-        "serial": 5
-    },
-    {
-        "github": "PacoBits",
-        "pgp": "379FFBC2F6F85EE8",
-        "addr": "iaa1hjs2sd5jmfekujaam5n3d8u3wzazlfvzewxdrf",
-        "serial": 8
-    },
-    {
-        "github": "bi23com",
-        "pgp": "EB3470949B3E89E2",
-        "addr": "iaa1u8a7l3eujjqhzrvgttdclu3xj6kmt08x9j3upr",
-        "serial": 9
     }
 ]
