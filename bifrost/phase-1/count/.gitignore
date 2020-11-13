@@ -1,0 +1,7 @@
+vendor
+.DS_Store
+.vscode
+.idea
+
+validators.json
+result.json
