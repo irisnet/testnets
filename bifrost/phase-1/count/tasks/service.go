@@ -33,7 +33,7 @@ func CountServiceTask1(client sdk.IRISHUBClient, participants []*biftypes.Partic
 			types.NewCond("message", "action").EQ(types.EventValue("define_service")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -52,7 +52,7 @@ func CountServiceTask2And3(client sdk.IRISHUBClient, participants []*biftypes.Pa
 			types.NewCond("message", "action").EQ(types.EventValue("bind_service")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -88,7 +88,7 @@ func CountServiceTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Pa
 			types.NewCond("message", "action").EQ(types.EventValue("call_service")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -132,7 +132,7 @@ func CountServiceTask6(client sdk.IRISHUBClient, participants []*biftypes.Partic
 			types.NewCond("message", "action").EQ(types.EventValue("respond_service")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -151,7 +151,7 @@ func CountServiceTask7(client sdk.IRISHUBClient, participants []*biftypes.Partic
 			types.NewCond("message", "action").EQ(types.EventValue("withdraw_earned_fees")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}

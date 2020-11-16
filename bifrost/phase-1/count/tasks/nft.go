@@ -29,7 +29,7 @@ func CountNFTTask1(client sdk.IRISHUBClient, participants []*biftypes.Participan
 			types.NewCond("message", "action").EQ(types.EventValue("issue_denom")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -48,7 +48,7 @@ func CountNFTTask2(client sdk.IRISHUBClient, participants []*biftypes.Participan
 			types.NewCond("message", "action").EQ(types.EventValue("mint_nft")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -67,7 +67,7 @@ func CountNFTTask3(client sdk.IRISHUBClient, participants []*biftypes.Participan
 			types.NewCond("message", "action").EQ(types.EventValue("edit_nft")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -92,7 +92,7 @@ func CountNFTTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Partic
 			types.NewCond("message", "action").EQ(types.EventValue("transfer_nft")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
@@ -108,9 +108,11 @@ func CountNFTTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Partic
 			}
 			builder := types.NewEventQueryBuilder().AddCondition(
 				types.NewCond("message", "action").EQ(types.EventValue("burn_nft")),
+			).AddCondition(
+				types.NewCond("burn_nft", "token-id").EQ(types.EventValue(tokenID)),
 			)
 
-			txs, err := client.QueryTxs(builder, 1, 10000)
+			txs, err := client.QueryTxs(builder, 1, 100)
 			if err != nil {
 				panic(err)
 			}

@@ -25,7 +25,7 @@ func CountRandomTask1And2(client sdk.IRISHUBClient, participants []*biftypes.Par
 			types.NewCond("message", "action").EQ(types.EventValue("request_rand")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
