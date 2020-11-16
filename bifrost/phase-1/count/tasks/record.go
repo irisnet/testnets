@@ -28,7 +28,7 @@ func CountRecordTask1(client sdk.IRISHUBClient, participants []*biftypes.Partici
 			types.NewCond("message", "action").EQ(types.EventValue("create_record")),
 		)
 
-		txs, err := client.QueryTxs(builder, 1, 10000)
+		txs, err := client.QueryTxs(builder, 1, 100)
 		if err != nil {
 			panic(err)
 		}
