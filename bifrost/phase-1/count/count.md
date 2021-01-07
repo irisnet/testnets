@@ -171,9 +171,9 @@
 
 **Summary**
 
-| Verified | Gold | Silver | Bronze |
-| -------- | ---- | ------ | ------ |
-| 96       | 90   | 364    | 877    |
+| Verified | Create Validator | Gold | Silver | Bronze |
+| -------- | ---------------- | ---- | ------ | ------ |
+| 144      | 96               | 90   | 364    | 877    |
 
 | Tasks | Task1  | Task2  | Task3  | Task4  | Task5  | Task6 | Task7  | Task8  | Task9  | Task10 | Task11 | Task12 | Task13 | Task14 | Task15 |
 | ----- | ------ | ------ | ------ | ------ | ------ | ----- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
