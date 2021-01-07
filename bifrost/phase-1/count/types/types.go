@@ -6,6 +6,7 @@ type Participant struct {
 	Addr   string `json:"addr"`
 	Serial uint   `json:"serial"`
 	Tasks  Tasks  `json:"tasks"`
+	Badge  Badge  `json:"badge"`
 }
 
 type Tasks struct {
@@ -13,6 +14,7 @@ type Tasks struct {
 	RecordTasks  RecordTasks  `json:"record_tasks"`
 	NFTTasks     NFTTasks     `json:"nft_tasks"`
 	RandomTasks  RandomTasks  `json:"random_tasks"`
+	Tasks        string       `json:"tasks"`
 }
 
 type ServiceTasks struct {
@@ -49,4 +51,10 @@ type Feed struct {
 type Value struct {
 	Data      string `json:"data"`
 	Timestamp string `json:"timestamp"`
+}
+
+type Badge struct {
+	Gold   int `json:"gold"`
+	Silver int `json:"sliver"`
+	Bronze int `json:"bronze"`
 }

@@ -60,7 +60,13 @@ If you have completed a task, it will be `true`
             "random_tasks": {
                 "task1": true,
                 "task2": true
-            }
+            },
+            "tasks": "111111111111111"
+        },
+        "badge": {
+            "gold": 1,
+            "sliver": 4,
+            "bronze": 10
         }
     },
     ...

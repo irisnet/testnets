@@ -38,8 +38,11 @@ func CountServiceTask1(client sdk.IRISHUBClient, participants []*biftypes.Partic
 			panic(err)
 		}
 
+		bytes := []byte("000000000000000")
 		if txs.Total > 0 {
 			participant.Tasks.ServiceTasks.Task1 = true
+			bytes[0] = '1'
+			participant.Tasks.Tasks = string(bytes)
 		}
 	}
 }
@@ -72,8 +75,14 @@ func CountServiceTask2And3(client sdk.IRISHUBClient, participants []*biftypes.Pa
 
 				if resp.Author.String() == participant.Addr {
 					participant.Tasks.ServiceTasks.Task2 = true
+					bytes := []byte(participant.Tasks.Tasks)
+					bytes[1] = '1'
+					participant.Tasks.Tasks = string(bytes)
 				} else {
 					participant.Tasks.ServiceTasks.Task3 = true
+					bytes := []byte(participant.Tasks.Tasks)
+					bytes[2] = '1'
+					participant.Tasks.Tasks = string(bytes)
 				}
 			}
 		}
@@ -103,6 +112,9 @@ func CountServiceTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Pa
 				repeated := gjson.GetBytes(bz, "repeated").String()
 				if repeated == "true" {
 					participant.Tasks.ServiceTasks.Task5 = true
+					bytes := []byte(participant.Tasks.Tasks)
+					bytes[4] = '1'
+					participant.Tasks.Tasks = string(bytes)
 				} else {
 					requestContextID, err := tx.Result.Events.GetValue("message", "request_context_id")
 					if err != nil {
@@ -117,6 +129,9 @@ func CountServiceTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Pa
 					enblockRequestContextID, err := block.BlockResult.Results.EndBlock.Events.GetValue("new_batch_request", "request_context_id")
 					if err == nil && requestContextID == enblockRequestContextID {
 						participant.Tasks.ServiceTasks.Task4 = true
+						bytes := []byte(participant.Tasks.Tasks)
+						bytes[3] = '1'
+						participant.Tasks.Tasks = string(bytes)
 					}
 				}
 			}
@@ -139,6 +154,9 @@ func CountServiceTask6(client sdk.IRISHUBClient, participants []*biftypes.Partic
 
 		if txs.Total > 0 {
 			participant.Tasks.ServiceTasks.Task6 = true
+			bytes := []byte(participant.Tasks.Tasks)
+			bytes[5] = '1'
+			participant.Tasks.Tasks = string(bytes)
 		}
 	}
 }
@@ -158,6 +176,9 @@ func CountServiceTask7(client sdk.IRISHUBClient, participants []*biftypes.Partic
 
 		if txs.Total > 0 {
 			participant.Tasks.ServiceTasks.Task7 = true
+			bytes := []byte(participant.Tasks.Tasks)
+			bytes[6] = '1'
+			participant.Tasks.Tasks = string(bytes)
 		}
 	}
 }
