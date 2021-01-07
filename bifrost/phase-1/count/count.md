@@ -169,7 +169,7 @@
 | https://github.com/yutian12           | 6981012BD269826A | 54     | x        |                                            |                 |                              |
 | https://github.com/yangliu66666       | E07569D91E1F3FBC | 91     | x        |                                            |                 |                              |
 
-**任务统计**
+**Summary**
 
 | Verified | Gold | Silver | Bronze |
 | -------- | ---- | ------ | ------ |
