@@ -36,6 +36,9 @@ func CountNFTTask1(client sdk.IRISHUBClient, participants []*biftypes.Participan
 
 		if txs.Total > 0 {
 			participant.Tasks.NFTTasks.Task1 = true
+			bytes := []byte(participant.Tasks.Tasks)
+			bytes[8] = '1'
+			participant.Tasks.Tasks = string(bytes)
 		}
 	}
 }
@@ -55,6 +58,9 @@ func CountNFTTask2(client sdk.IRISHUBClient, participants []*biftypes.Participan
 
 		if txs.Total > 1 {
 			participant.Tasks.NFTTasks.Task2 = true
+			bytes := []byte(participant.Tasks.Tasks)
+			bytes[9] = '1'
+			participant.Tasks.Tasks = string(bytes)
 		}
 	}
 }
@@ -79,6 +85,9 @@ func CountNFTTask3(client sdk.IRISHUBClient, participants []*biftypes.Participan
 			}
 			if strings.HasPrefix(uri, "bifrost-") {
 				participant.Tasks.NFTTasks.Task3 = true
+				bytes := []byte(participant.Tasks.Tasks)
+				bytes[10] = '1'
+				participant.Tasks.Tasks = string(bytes)
 			}
 		}
 	}
@@ -99,6 +108,9 @@ func CountNFTTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Partic
 
 		if txs.Total > 0 {
 			participant.Tasks.NFTTasks.Task4 = true
+			bytes := []byte(participant.Tasks.Tasks)
+			bytes[11] = '1'
+			participant.Tasks.Tasks = string(bytes)
 		}
 
 		for _, tx := range txs.Txs {
@@ -124,6 +136,9 @@ func CountNFTTask4And5(client sdk.IRISHUBClient, participants []*biftypes.Partic
 				}
 				if tokenID == respTokenID {
 					participant.Tasks.NFTTasks.Task5 = true
+					bytes := []byte(participant.Tasks.Tasks)
+					bytes[12] = '1'
+					participant.Tasks.Tasks = string(bytes)
 				}
 			}
 		}

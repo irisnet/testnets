@@ -45,6 +45,9 @@ func CountRandomTask1And2(client sdk.IRISHUBClient, participants []*biftypes.Par
 					}
 					if _, err = client.Random.QueryRandom(requestID); err == nil {
 						participant.Tasks.RandomTasks.Task1 = true
+						bytes := []byte(participant.Tasks.Tasks)
+						bytes[13] = '1'
+						participant.Tasks.Tasks = string(bytes)
 					}
 				} else {
 					requestID, err := tx.Result.Events.GetValue("request_random", "request_id")
@@ -53,6 +56,9 @@ func CountRandomTask1And2(client sdk.IRISHUBClient, participants []*biftypes.Par
 					}
 					if _, err = client.Random.QueryRandom(requestID); err == nil {
 						participant.Tasks.RandomTasks.Task2 = true
+						bytes := []byte(participant.Tasks.Tasks)
+						bytes[14] = '1'
+						participant.Tasks.Tasks = string(bytes)
 					}
 				}
 			}
