@@ -7,8 +7,7 @@ It'll be the same as joining [IRIS Hub Mainnet](https://bifrost.irisnet.org/docs
 - [version](https://github.com/irisnet/irishub/releases/tag/v1.0.0-rc0)
 - [genesis file](./genesis.json)
 
-If you havent' pariticipate in Phase-1 ...
-Please don't forget fill in this [form](http://nyancat-irisnet.mikecrm.com/JsLCZ4H) to complete your sign-up process, and remember to set your validator moniker to `<your-name>-<pgp-id>`, identity to `<pgp-id>`. You need to complete the tasks use your validator account.
+If you haven't pariticipate in Phase-1 of Bifrost testnet, please fill in this [form](http://nyancat-irisnet.mikecrm.com/JsLCZ4H) to complete your sign-up process, and remember to set your validator moniker to `<your-name>-<pgp-id>`, identity to `<pgp-id>`. You need to complete the tasks use your validator account.
 
 ### Peers
 
