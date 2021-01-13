@@ -10,11 +10,20 @@ In order to be compatible with IBC, IRISnet team refactored IRIS Hub based on th
 
 At the same time, in order to achieve a smooth upgrade of IRIS Hub mainnet, we encourage validators and community members to actively participate in Bifrost testnet, verify the refactored IRIS Hub modules, test the new functions, and explore the potential commercial value and use cases of IRIS Hub's unique features and innovations.
 
-On the other hand, Bifrost will interconnect with Stargate testnet to form a dual-Hub testnet. Teams in the Cosmos interchain ecosystem are welcomed to participate by starting their own testnet as well as service providers interested in providing Relay service in the future. Let’s BUIDL together the New Interchain "Cosmos"!
+On the other hand, Bifrost will interconnect with Stargate testnet and other testnets in Cosmos ecosystem to form a Multi-Hub testnet. Teams in the Cosmos interchain ecosystem are welcomed to participate by starting their own testnet as well as service providers interested in providing Relay service in the future. Let’s BUIDL together the New Interchain "Cosmos"!
+
+## Phase-2
+This phase is for the final dash for the upgrade of IRIS Hub:
+
+- Testing functions including IRISnet's unique functions and Cosmos Stargate basic functions. This part is mainly for exchanges, wallets, explorers and other applications developers
+- Testing and simulation for the mainnet upgrade. This part is mainly for mainnet validators
+- Testing IBC with other testnets
+
+[[Join phase 2](phase-2/README.md)]
 
 ## Phase-1
 
-This phase will mainly test the upgraded modules and new modules and is intended for:
+This phase mainly testes the upgraded modules and new modules and is intended for:
 
 - Testing Service function, including the service creation, binding, request, response, service fees withdrawal, etc.
 - Testing Oracle function, querying the response value of the running Oracle
