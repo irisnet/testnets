@@ -23,7 +23,7 @@ This phase is for the final dash for the upgrade of IRIS Hub:
 
 ## Phase-1
 
-This phase mainly testes the upgraded modules and new modules and is intended for:
+This phase mainly tests the upgraded modules and new modules and is intended for:
 
 - Testing Service function, including the service creation, binding, request, response, service fees withdrawal, etc.
 - Testing Oracle function, querying the response value of the running Oracle
