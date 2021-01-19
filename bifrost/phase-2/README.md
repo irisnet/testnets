@@ -3,7 +3,7 @@
 ## How to Join
 
 It'll be the same as joining [IRIS Hub Mainnet](https://bifrost.irisnet.org/docs/get-started/mainnet.html), except that:
-- Go 1.14.1+ is required for building and installing the IRIShub software.
+- Go 1.15+ is required for building and installing the IRIShub software.
 - [version](https://github.com/irisnet/irishub/releases/tag/v1.0.0-rc0)
 - [genesis file](./genesis.json)
 
@@ -40,8 +40,9 @@ Unfortunately we do not have a public faucet for bifrost, however you are welcom
 
 | Task                                        | Details                                                              | Completion standard                         | Badge     |
 | ------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------- | --------- |
+| Testnet parameter-change voting   | Vote for bifrost-2 parameter-change proposal (activating IBC bidirection transfer)               | Successfully voted for bifrost-2 parameter-change proposal   | Bronze *1 |
 | Testnet upgrade voting   | Vote for bifrost-2 upgrade proposal (adding SDK modules)               | Successfully voted for bifrost-2 upgrade proposal   | Bronze *1 |
-| Testnet upgrade | Start running a validator node before the proposal passed; Running the validator node using new version of irishub after reaching the upgrade block height | Start the validator node before the upgrade proposal passed; Keep the validator node active for at least 200 blocks after upgrade block height    | Silver *1 |
+| Testnet upgrade | Upgrade the validator node according to the upgrade proposal | The upgraded validator node signs at least 1 block in the first 200 blocks after the testnet upgraded  | Silver *1 |
 
 
 ### IBC task list
@@ -50,7 +51,4 @@ Unfortunately we do not have a public faucet for bifrost, however you are welcom
 | ------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------- | --------- |
 | Send IBC transfer tx to other testnets      | Send IBC transfer tx from bifrost-2 to other testnets                        | Successfully send at least one IBC tx to other testnets  | Gold *1 |
 | Receive IBC transfer tx from other testnets      | Receive IBC transfer tx from other testnets to bifrost-2       | Successfully receive at least one IBC tx to the your registered address  | Gold *1 |
-| Coinswap of IBC assets | Buy or sell some IBC assets by Coinswap txs                            | Buy or sell some IBC assets by Coinswap txs   | Gold *1 |
-| Add Coinswap liquidity of IBC assets  | Add Coinswap liquidity of IBC assets                      | Successfully add Coinswap liquidity of IBC assets   | Gold *1 |
-| Remove Coinswap liquidity of IBC assets  | Remove Coinswap liquidity of IBC assets                           | Successfully remove Coinswap liquidity of IBC assets  | Silver *1 |
 
