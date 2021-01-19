@@ -186,7 +186,20 @@
       }
     },
     "guardian": {
-      "supers": []
+      "supers": [
+        {
+          "description": "genesis",
+          "account_type": "GENESIS",
+          "address": "iaa1058s5ys6r99j0n4nw5jlhwjgsgrau8agyztt8t",
+          "added_by": "iaa1058s5ys6r99j0n4nw5jlhwjgsgrau8agyztt8t"
+        },
+        {
+          "description": "genesis",
+          "account_type": "GENESIS",
+          "address": "iaa1kz2kghcc6ph3h93wvueyfeycdvmwmxm8z4k93y",
+          "added_by": "iaa1kz2kghcc6ph3h93wvueyfeycdvmwmxm8z4k93y"
+        }
+      ]
     },
     "htlc": {
       "pending_htlcs": {}
