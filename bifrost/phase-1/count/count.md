@@ -98,6 +98,7 @@
 | https://github.com/Godmail            | C02EC2A3EDB4960E | 55     | √        | iaa17wh48788cwl59klg0qcwtptn3vmg6kl9vcuzhc | 111111111111111 | Gold\*1 Silver\*4 Bronze\*10 |
 | https://github.com/silaszhr           | FC92DD2B737EDD82 | 70     | √        | iaa1hmt5reavj4dwn89r4tx8uha34gcjy6le8mxxfx | 111111111111111 | Gold\*1 Silver\*4 Bronze\*10 |
 | https://github.com/rich518            | 3A7A52FC729AE13F | 3      | √        | iaa14qhn2rrwlt67xrlpn2dhn30uafg2e2kt8a3yvl | 111111111111111 | Gold\*1 Silver\*4 Bronze\*10 |
+| https://github.com/hashquark-research | 31AFBBE0A52FA1ED | 86     | √        | iaa1ukhvg2lxr95ytsgh75mw2tzu6f95x9g2g8tfv3 | 111111111111111 | Gold\*1 Silver\*4 Bronze\*10 |
 | https://github.com/PengchengYuan      | DB4396CB4DBBE9A7 | 7      | √        |                                            |                 |                              |
 | https://github.com/jim380             | 64AEE4167CA1C855 | 10     | √        |                                            |                 |                              |
 | https://github.com/kwunyeung          | 3B84437810397048 | 31     | √        |                                            |                 |                              |
@@ -157,7 +158,6 @@
 | https://github.com/wuyuqii            | DB17B4E2CD851A14 | 63     | x        |                                            |                 |                              |
 | https://github.com/flankzhang         | 8789BB212765AE55 | 78     | x        |                                            |                 |                              |
 | https://github.com/notnakamoto        | D1BC18C9612A9AA4 | 81     | x        |                                            |                 |                              |
-| https://github.com/hashquark-research | 31AFBBE0A52FA1ED | 86     | x        |                                            |                 |                              |
 | https://github.com/sunface4e          | 18017BF8ABC99DB9 | 98     | x        |                                            |                 |                              |
 | https://github.com/pouluchh           | 57FD2860B4B0CA90 | 1      | x        |                                            |                 |                              |
 | https://github.com/Kaizeler           | B171D0501C0F5540 | 5      | x        |                                            |                 |                              |
@@ -173,9 +173,9 @@
 
 | Verified | Create Validator | Gold | Silver | Bronze |
 | -------- | ---------------- | ---- | ------ | ------ |
-| 144      | 96               | 90   | 364    | 877    |
+| 145      | 97               | 91   | 368    | 887    |
 
 | Tasks | Task1  | Task2  | Task3  | Task4  | Task5  | Task6 | Task7  | Task8  | Task9  | Task10 | Task11 | Task12 | Task13 | Task14 | Task15 |
 | ----- | ------ | ------ | ------ | ------ | ------ | ----- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | Badge | Silver | Bronze | Bronze | Bronze | Bronze | Gold  | Silver | Silver | Silver | Bronze | Bronze | Bronze | Bronze | Bronze | Bronze |
-| Count | 96     | 93     | 88     | 83     | 95     | 90    | 90     | 87     | 91     | 90     | 84     | 89     | 83     | 89     | 83     |
+| Count | 97     | 94     | 89     | 84     | 96     | 91    | 91     | 88     | 92     | 91     | 85     | 90     | 84     | 90     | 84     |

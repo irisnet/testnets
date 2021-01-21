@@ -3550,5 +3550,42 @@
             "sliver": 4,
             "bronze": 10
         }
+    },
+    {
+        "github": "hashquark-research",
+        "pgp": "31AFBBE0A52FA1ED",
+        "addr": "iaa1ukhvg2lxr95ytsgh75mw2tzu6f95x9g2g8tfv3",
+        "serial": 86,
+        "tasks": {
+            "service_tasks": {
+                "task1": true,
+                "task2": true,
+                "task3": true,
+                "task4": true,
+                "task5": true,
+                "task6": true,
+                "task7": true
+            },
+            "record_tasks": {
+                "task1": true
+            },
+            "nft_tasks": {
+                "task1": true,
+                "task2": true,
+                "task3": true,
+                "task4": true,
+                "task5": true
+            },
+            "random_tasks": {
+                "task1": true,
+                "task2": true
+            },
+            "tasks": "111111111111111"
+        },
+        "badge": {
+            "gold": 1,
+            "sliver": 4,
+            "bronze": 10
+        }
     }
 ]
