@@ -574,5 +574,11 @@
         "pgp": "3A7A52FC729AE13F",
         "addr": "iaa14qhn2rrwlt67xrlpn2dhn30uafg2e2kt8a3yvl",
         "serial": 3
+    },
+    {
+        "github": "hashquark-research",
+        "pgp": "31AFBBE0A52FA1ED",
+        "addr": "iaa1ukhvg2lxr95ytsgh75mw2tzu6f95x9g2g8tfv3",
+        "serial": 86
     }
 ]
