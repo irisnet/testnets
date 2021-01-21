@@ -52,3 +52,21 @@ Unfortunately we do not have a public faucet for bifrost, however you are welcom
 | Send IBC transfer tx to other testnets      | Send IBC transfer tx from bifrost-2 to other testnets                        | Successfully send at least one IBC tx to other testnets  | Gold *1 |
 | Receive IBC transfer tx from other testnets      | Receive IBC transfer tx from other testnets to bifrost-2       | Successfully receive at least one IBC tx to the your registered address  | Gold *1 |
 
+**NOTE:**
+
+IBC transfer can be done very easily through the clients, for example, you can send tokens from `Bifrost-2` to other testnets:
+
+```bash
+iris tx ibc-transfer transfer transfer <src-channel> <receiver> <amount> \
+    --absolute-timeouts \
+    --packet-timeout-timestamp 0 \
+    --from <sender> \
+    --chain-id bifrost-2
+```
+
+ For more details, please refer to the client docs:
+
+```bash
+iris tx ibc-transfer transfer --help
+```
+
