@@ -40,7 +40,7 @@ The simulated mainnet upgrade will use mainnet data to highly simulate the mainn
 
 ### Steps
 
-1. [Click here to register](http://nyancat-irisnet.mikecrm.com/I7ZzepJ), only mainnet active validators are accepted
+1. [Click here to register](http://nyancat-irisnet.mikecrm.com/I7ZzepJ), **only mainnet active validators are accepted**
 
 2. [Download the genesis.json](https://raw.githubusercontent.com/irisnet/testnets/master/bifrost/sim-upgrade/genesis.json.zip) of current mainnet, which is exported by the IRISnet team from height `8,800,000` and replaced the validator's public keys for testing
 
