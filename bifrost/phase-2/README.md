@@ -45,12 +45,12 @@ Unfortunately we do not have a public faucet for bifrost, however you are welcom
 | Testnet upgrade | Upgrade the validator node according to the upgrade proposal | The upgraded validator node signs at least 1 block in the first 200 blocks after the testnet upgraded  | Silver *1 |
 
 
-### IBC task list
+### ~~IBC task list~~
 
-| Task                                        | Details                                                              | Completion standard                         | Badge     |
+| ~~Task~~                                        | ~~Details~~                                                              | ~~Completion standard~~                         | ~~Badge~~     |
 | ------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------- | --------- |
-| Send IBC transfer tx to other testnets      | Send IBC transfer tx from bifrost-2 to other testnets                        | Successfully send at least one IBC tx to other testnets  | Gold *1 |
-| Receive IBC transfer tx from other testnets      | Receive IBC transfer tx from other testnets to bifrost-2       | Successfully receive at least one IBC tx to the your registered address  | Gold *1 |
+| ~~Send IBC transfer tx to other testnets~~      | ~~Send IBC transfer tx from bifrost-2 to other testnets~~                        | ~~Successfully send at least one IBC tx to other testnets~~  | ~~Gold *1~~ |
+| ~~Receive IBC transfer tx from other testnets~~      | ~~Receive IBC transfer tx from other testnets to bifrost-2~~       | ~~Successfully receive at least one IBC tx to the your registered address~~  | ~~Gold *1~~ |
 
 **NOTE:**
 
