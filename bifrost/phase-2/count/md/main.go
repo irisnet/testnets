@@ -24,7 +24,21 @@ func main() {
 	}
 	results1 = append(append(append(results1, results2...), results3...),results4...)
 	for _, participant := range results1{
-		result += "| "+participant.GitHub+" | "+participant.PGP+" | "+strconv.FormatBool(participant.Verified)+" |            | "+participant.Addr+" | "+strconv.FormatBool(participant.Tasks.Task1)+" | "+strconv.FormatBool(participant.Tasks.Task2)+" | "+strconv.FormatBool(participant.Tasks.Task3)+" | "+strconv.Itoa(participant.Badge.Silver)+" | "+strconv.Itoa(participant.Badge.Bronze)+" |\n"
+		github := participant.GitHub
+		pgp := participant.PGP
+		verified := strconv.FormatBool(participant.Verified)
+		reason := participant.Reason
+		addr := participant.Addr
+		var task1, task2, task3, sliver, bronze string
+		if participant.Verified {
+			task1 = strconv.FormatBool(participant.Tasks.Task1)
+			task2 = strconv.FormatBool(participant.Tasks.Task2)
+			task3 = strconv.FormatBool(participant.Tasks.Task3)
+			sliver = strconv.Itoa(participant.Badge.Silver)
+			bronze = strconv.Itoa(participant.Badge.Bronze)
+		}
+
+		result += "| "+github+" | "+pgp+" | "+verified+" | "+reason+" | "+addr+" | "+task1+" | "+task2+" | "+task3+" | "+sliver+" | "+bronze+" |\n"
 	}
 	if err := ioutil.WriteFile("result.md", []byte(result), 0777); err != nil {
 		panic(err)

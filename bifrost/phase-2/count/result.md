@@ -469,38 +469,38 @@
 | PengchengYuan      | DB4396CB4DBBE9A7 | true     |                        |                                            | false | false | false | 0            | 0            |
 | blackbear10000     | 9537E2D2ED05D16D | true     |                        |                                            | false | false | false | 0            | 0            |
 | rich518            | 3A7A52FC729AE13F | true     |                        |                                            | false | false | false | 0            | 0            |
-| predator005        | 9598E12F995EAFF1 | false    |                        | iaa1s99zj67k83qng6pc03ctk4nvzyhvzcpdtr44zh | false | false | false | 0            | 0            |
-| MrTokachh          | BAF7EF2077A2E5B0 | false    |                        | iaa1raghstt67rw2y9uujyvzg7n88446twv2gv2h7r | false | false | false | 0            | 0            |
-| shtihmas           | 8226C5DF52F21964 | false    |                        | iaa1m8h6dpvvsdjs6wnj0zw9q6400zqld4wdr8ekzf | false | false | false | 0            | 0            |
-| armcmu             | 9E8A515B8F55F2D1 | false    |                        | iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2 | false | false | false | 0            | 0            |
-| mrdaddyru          | BC066E1DA1BAC6DE | false    |                        | iaa1hku8jev5xgcg3nd0exuxas4j8u4wq6vs4ezdjs | false | false | false | 0            | 0            |
-| matsidor1975       | 69304A0A2C7B4924 | false    |                        | iaa1zhhtvuyqds6v634uapahanc59a09hsm6xajnum | false | false | false | 0            | 0            |
-| iuriizzz           | 7738F98CD1A649C2 | false    |                        | iaa19t7jfywj95u9pna6kp2wvf7hczcvspzrlf0jnt | false | false | false | 0            | 0            |
-| ama31337           | EBBAB54C972A579A | false    |                        | iaa19xg8lksnntrhrmzvh06ukaapchlpa430vv5s49 | false | false | false | 0            | 0            |
-| budweiserr         | E29C281A399E7A18 | false    |                        | iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt | false | false | false | 0            | 0            |
-| romanoffmnogoznaet | 4129076EC9FB1D5B | false    |                        | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 | false | false | false | 0            | 0            |
-| youthonrepeat      | 4C4284FC0F265178 | false    |                        | iaa1zynkrpg7h4pfmsn48z5wat4f4x8jt0pnlhz2da | false | false | false | 0            | 0            |
-| heyu0113           | 43A8C4D62C3D4C5D | false    |                        | iaa13cxv6df7d2p3pny6jqn8mpwxuavuex245mypzx | false | false | false | 0            | 0            |
-| shaonian-w         | 346F926095E19E79 | false    |                        | iaa1yuda50wa6d75648y75ufeg938u8n6zlqqe2e0n | false | false | false | 0            | 0            |
-| Dirlewanger88      | 5059741A8D7D4BF4 | false    |                        |                                            | false | false | false | 0            | 0            |
-| petronille         | 52D6376C6A2E6E8B | false    |                        |                                            | false | false | false | 0            | 0            |
-| tanderug           | E1DA3E7E043366BE | false    |                        |                                            | false | false | false | 0            | 0            |
-| MrTokachh          | 39FBE7CF129654CC | false    |                        |                                            | false | false | false | 0            | 0            |
-| d1200              | 7A1EA11B8D192197 | false    |                        |                                            | false | false | false | 0            | 0            |
-| daddystunner       | E82E07F64E569716 | false    |                        |                                            | false | false | false | 0            | 0            |
-| SerjLug2017        | EAF3C2B606991C86 | false    |                        |                                            | false | false | false | 0            | 0            |
-| Reveleum           | 219EF46BC042D12C | false    |                        |                                            | false | false | false | 0            | 0            |
-| smertsochi         | 7A8F45C1BDEDEF92 | false    |                        |                                            | false | false | false | 0            | 0            |
-| GorovetskiyIgor    | 5B9CC182E6E60024 | false    |                        |                                            | false | false | false | 0            | 0            |
-| Leonidlen          | A7D03B7B43347862 | false    |                        |                                            | false | false | false | 0            | 0            |
-| AdmiralBlock       | 0B781BEBD178FE63 | false    |                        |                                            | false | false | false | 0            | 0            |
-| Dreamstaker        | DEA31DEED38DCD2D | false    |                        |                                            | false | false | false | 0            | 0            |
-| RommanZ            | DB6942FFC32BF99B | false    |                        |                                            | false | false | false | 0            | 0            |
-| Andreas2000        | 7D3A80C3EAA092CB | false    |                        |                                            | false | false | false | 0            | 0            |
-| PaulG077           | 263CD69E1494F4DE | false    |                        |                                            | false | false | false | 0            | 0            |
-| DrDi91             | CA41F679A728259D | false    |                        |                                            | false | false | false | 0            | 0            |
-| adm1n01            | 5DEECC46623F2957 | false    |                        |                                            | false | false | false | 0            | 0            |
-| philjs             | 4AEE18F83AFDEB23 | false    |                        |                                            | false | false | false | 0            | 0            |
-| yangliu66666       | E07569D91E1F3FBC | false    |                        |                                            | false | false | false | 0            | 0            |
-| yutian12           | 6981012BD269826A | false    |                        |                                            | false | false | false | 0            | 0            |
+| predator005        | 9598E12F995EAFF1 | false    | GitHub Not Eligible    | iaa1s99zj67k83qng6pc03ctk4nvzyhvzcpdtr44zh |       |       |       |              |              |
+| MrTokachh          | BAF7EF2077A2E5B0 | false    | Keybase Not Exist      | iaa1raghstt67rw2y9uujyvzg7n88446twv2gv2h7r |       |       |       |              |              |
+| shtihmas           | 8226C5DF52F21964 | false    | Keybase Not Exist      | iaa1m8h6dpvvsdjs6wnj0zw9q6400zqld4wdr8ekzf |       |       |       |              |              |
+| armcmu             | 9E8A515B8F55F2D1 | false    | Keybase Not Exist      | iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2 |       |       |       |              |              |
+| mrdaddyru          | BC066E1DA1BAC6DE | false    | GitHub Not Eligible    | iaa1hku8jev5xgcg3nd0exuxas4j8u4wq6vs4ezdjs |       |       |       |              |              |
+| matsidor1975       | 69304A0A2C7B4924 | false    | GitHub Not Eligible    | iaa1zhhtvuyqds6v634uapahanc59a09hsm6xajnum |       |       |       |              |              |
+| iuriizzz           | 7738F98CD1A649C2 | false    | GitHub Not Eligible    | iaa19t7jfywj95u9pna6kp2wvf7hczcvspzrlf0jnt |       |       |       |              |              |
+| ama31337           | EBBAB54C972A579A | false    | GitHub Not Eligible    | iaa19xg8lksnntrhrmzvh06ukaapchlpa430vv5s49 |       |       |       |              |              |
+| budweiserr         | E29C281A399E7A18 | false    | GitHub Not Exist       | iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt |       |       |       |              |              |
+| romanoffmnogoznaet | 4129076EC9FB1D5B | false    | GitHub Not Exist       | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 |       |       |       |              |              |
+| youthonrepeat      | 4C4284FC0F265178 | false    | GitHub Not Exist       | iaa1zynkrpg7h4pfmsn48z5wat4f4x8jt0pnlhz2da |       |       |       |              |              |
+| heyu0113           | 43A8C4D62C3D4C5D | false    | GitHub Not Exist       | iaa13cxv6df7d2p3pny6jqn8mpwxuavuex245mypzx |       |       |       |              |              |
+| shaonian-w         | 346F926095E19E79 | false    | Keybase Not Exist      | iaa1yuda50wa6d75648y75ufeg938u8n6zlqqe2e0n |       |       |       |              |              |
+| Dirlewanger88      | 5059741A8D7D4BF4 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| petronille         | 52D6376C6A2E6E8B | false    | GitHub Not Exist       |                                            |       |       |       |              |              |
+| tanderug           | E1DA3E7E043366BE | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| MrTokachh          | 39FBE7CF129654CC | false    | Keybase Not Exist      |                                            |       |       |       |              |              |
+| d1200              | 7A1EA11B8D192197 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| daddystunner       | E82E07F64E569716 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| SerjLug2017        | EAF3C2B606991C86 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| Reveleum           | 219EF46BC042D12C | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| smertsochi         | 7A8F45C1BDEDEF92 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| GorovetskiyIgor    | 5B9CC182E6E60024 | false    | GitHub Not Exist       |                                            |       |       |       |              |              |
+| Leonidlen          | A7D03B7B43347862 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| AdmiralBlock       | 0B781BEBD178FE63 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| Dreamstaker        | DEA31DEED38DCD2D | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| RommanZ            | DB6942FFC32BF99B | false    | Keybase Not Exist      |                                            |       |       |       |              |              |
+| Andreas2000        | 7D3A80C3EAA092CB | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| PaulG077           | 263CD69E1494F4DE | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| DrDi91             | CA41F679A728259D | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| adm1n01            | 5DEECC46623F2957 | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| philjs             | 4AEE18F83AFDEB23 | false    | Keybase Not Exist      |                                            |       |       |       |              |              |
+| yangliu66666       | E07569D91E1F3FBC | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
+| yutian12           | 6981012BD269826A | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
 
