@@ -2,44 +2,43 @@
 
 ## What is IRISnet Nyancat Testnet
 
-Most IRISnet validators may know the Fuxi Testnet before mainnet was an early incentivized testnet for validators and developers to get involved in. Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance. However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet's focus. Please don't forget fill in this [form](http://nyancat-irisnet.mikecrm.com/SnqhRqw) to complete your sign-up process, and remember to set your validator moniker to `<your-name>-<pgp-id>`, identity to `<pgp-id>`. Then we will give rewards from time to time to our diligent validators who participate in Nyancat and contribute to the IRIShub improvements.
+Nyancat Testnet is an IRISHub Testnet operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance. 
 
-## How to claim Nyancat Testnet rewards
+## Public Endpoints
 
-~~Please refer to [reward-claims](./reward-claims/README.md)~~
+- GRPC: 34.80.202.172:9090
+- RPC: http://34.80.202.172:26657
+- REST: http://34.80.202.172:1317/swagger/
 
-Starting from v0.16, participants will be asked to claim their testnet rewards through [atomic swaps](./v0.16/README.md#htlc-tasks)
+## Running a Node
 
-## How to join Nyancat Testnet
+If you'd like to setup a test node yourself instead of using the public endpoints, it'll be the same as joining [IRIS Hub Mainnet](https://stage.irisnet.org/docs/get-started/mainnet.html), except that:
 
-It'll be the same as joining [IRIS Hub Mainnet](https://stage.irisnet.org/docs/get-started/mainnet.html), except that:
+### Genesis File
 
-- [version](./v0.16/README.md) may be different
-- remember to [compile for testnet](https://stage.irisnet.org/docs/get-started/testnet.html#install)
-- use the [config file](./config) for nyancat testnet
+[Download](https://github.com/irisnet/testnets/raw/master/nyancat/config/genesis.json)
 
-## Peers
+### Peers
+
+Add the following `seeds` and `persistent_peers` in the `config.toml`:
 
 Seeds:
 
 ```bash
-174e6f483d925c3b5b70e2ced098916a8cf8fe4b@35.234.10.84:26656
+07e58f179b2b7101b72f04248f542f67af8993bd@35.234.10.84:26656
 ```
 
 Persistent Peers:
 
 ```bash
-c87675bcaeb72a1f93dbf7d74f7b425690a994e3@34.80.202.172:26656
+bc77e49df0de4d70ab6f97f1e3a17bfb51a1ea7a@34.80.202.172:26656
 ```
 
 ## Faucet
 
-Unfortunately we do not have a public faucet for nyancat, however you are welcome to ask for the test tokens in our validator communities: [Riot English community](https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org?via=matrix.org&via=t2bot.io) [QQ Chinese community](https://jq.qq.com/?_wv=1027&k=5BeP3tJ)
+Welcome to ask for the test tokens in our [testnet channels](https://discord.gg/9cSt7MX2fn)
 
 ## Explorer
 
 <https://nyancat.irisplorer.io>
 
-<https://nyancat.bigdipper.live/>
-
-<https://hubble.figment.network/iris/chains/nyancat3>

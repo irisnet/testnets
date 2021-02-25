@@ -46,8 +46,6 @@ func main() {
 	}
 
 	println("\nTotal Participants: ", len(participants))
-	println("\nTotal Verified Participants: ", 0) // TODO
-	println("\nTotal Validators: ", 0)            // TODO
 	println("\nTotal Silver: ", Silver)
 	println("\nTotal Bronze: ", Bronze)
 	println()
