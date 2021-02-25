@@ -52,9 +52,10 @@ func main() {
 			println("x", "[", participant.GitHub, "]", KeybaseNotExist, participant.PGP)
 			continue
 		}
-
 		githubUrl := fmt.Sprintf("https://api.github.com/users/%s", participant.GitHub)
-		respGitHub, err := http.Get(githubUrl)
+		req, _ := http.NewRequest("GET", githubUrl, nil)
+		req.Header.Set("Authorization", "token "+"4d9bfcd2917fc123f999dbc3ba5a2f05705d1585")
+		respGitHub, err := (&http.Client{}).Do(req)
 		if err != nil {
 			panic(err)
 		}
