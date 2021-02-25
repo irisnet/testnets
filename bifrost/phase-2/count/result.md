@@ -1,5 +1,7 @@
+# Bifrost Phase 2 Results
+
 | Github             | PGP              | Verified | Ineligible Description | Addr                                       | Task1 | Task2 | Task3 | Sliver Badge | Bronze Badge |
-|:-------------------|:-----------------|:---------|:-----------------------|:-------------------------------------------|:------|:------|:------|:-------------|:-------------|
+| :----------------- | :--------------- | :------- | :--------------------- | :----------------------------------------- | :---- | :---- | :---- | :----------- | :----------- |
 | Bobnoxious         | DFA86D15321FBB79 | true     |                        | iaa1hyhkxygkwqwq5yu5v6rxxe8wkq2jyxnrwf8w27 | false | true  | false | 0            | 1            |
 | kwaskoff           | 6DEA6A105DC4AD58 | true     |                        | iaa1tc70n7sdnf5u7shcukfcq0lggkguf99g43dnh8 | false | true  | true  | 1            | 1            |
 | MrTokachh          | 153E4CBA9233E845 | true     |                        | iaa1cqqtw650e0wskkusjhecr0s9fkhs39mcwygjrd | false | true  | false | 0            | 1            |
@@ -503,4 +505,3 @@
 | philjs             | 4AEE18F83AFDEB23 | false    | Keybase Not Exist      |                                            |       |       |       |              |              |
 | yangliu66666       | E07569D91E1F3FBC | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
 | yutian12           | 6981012BD269826A | false    | GitHub Not Eligible    |                                            |       |       |       |              |              |
-
