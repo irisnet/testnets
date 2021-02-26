@@ -153,23 +153,6 @@
         }
     },
     {
-        "github": "Bladyxyz",
-        "pgp": "AE693DC2C9255D90",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "Dirlewanger88",
         "pgp": "5059741A8D7D4BF4",
         "verified": false,
@@ -434,10 +417,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -536,10 +519,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -570,10 +553,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -587,10 +570,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -638,10 +621,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -655,10 +638,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -689,10 +672,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -723,10 +706,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -740,10 +723,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -910,10 +893,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -1114,10 +1097,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -1148,10 +1131,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -1216,10 +1199,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -1292,23 +1275,6 @@
         }
     },
     {
-        "github": "jackmo123",
-        "pgp": "FAE6B87F90906033",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "rewaqh",
         "pgp": "AC274A97AFBB3233",
         "verified": true,
@@ -1318,10 +1284,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -1411,23 +1377,6 @@
         }
     },
     {
-        "github": "Qpaxx",
-        "pgp": "51C51FB083079F72",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "vdmitrii",
         "pgp": "320E4B0D10D63313",
         "verified": true,
@@ -1471,10 +1420,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -1539,10 +1488,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -1556,10 +1505,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -1624,10 +1573,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -1777,10 +1726,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 0
         }
     },
@@ -1896,10 +1845,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -1981,10 +1930,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -2168,10 +2117,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -2185,10 +2134,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -2202,10 +2151,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -2236,10 +2185,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -2678,10 +2627,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -2899,10 +2848,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -2916,10 +2865,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -3188,10 +3137,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -3256,10 +3205,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -3613,10 +3562,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -3681,10 +3630,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -3766,10 +3715,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 1
         }
     },
@@ -3783,10 +3732,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -3800,10 +3749,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -3970,10 +3919,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 0
         }
     },
@@ -4072,10 +4021,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -4123,10 +4072,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -4225,10 +4174,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": true
+            "task3": false
         },
         "badge": {
-            "sliver": 1,
+            "sliver": 0,
             "bronze": 0
         }
     },
@@ -4247,23 +4196,6 @@
         "badge": {
             "sliver": 0,
             "bronze": 0
-        }
-    },
-    {
-        "github": "rudolfhe55",
-        "pgp": "91BEBD734CD8BB6F",
-        "verified": true,
-        "reason": "",
-        "addr": "iaa1s52vleywyv64rnnqeg2lnpspu4ew88e6gq4urj",
-        "val_addr": "A9D3BD539461DEB7EEB59A55E12FB972BDC438BD",
-        "tasks": {
-            "task1": false,
-            "task2": true,
-            "task3": true
-        },
-        "badge": {
-            "sliver": 1,
-            "bronze": 1
         }
     },
     {
@@ -4718,10 +4650,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -4837,10 +4769,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -5083,42 +5015,8 @@
         }
     },
     {
-        "github": "binlinhdh",
-        "pgp": "24bc8f249bc7eae2",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "smithdodo",
         "pgp": "97F92EF0FCA52444",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
-        "github": "LandeOba",
-        "pgp": "A2315312AAFB4262",
         "verified": true,
         "reason": "",
         "addr": "",
@@ -5840,10 +5738,10 @@
         "tasks": {
             "task1": false,
             "task2": false,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 0
         }
     },
@@ -6231,10 +6129,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -6248,10 +6146,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -6452,10 +6350,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -7897,10 +7795,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -7965,10 +7863,10 @@
         "tasks": {
             "task1": false,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 1
         }
     },
@@ -8067,10 +7965,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -8186,10 +8084,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -8220,10 +8118,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -8356,10 +8254,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },
@@ -8458,10 +8356,10 @@
         "tasks": {
             "task1": true,
             "task2": true,
-            "task3": false
+            "task3": true
         },
         "badge": {
-            "sliver": 0,
+            "sliver": 1,
             "bronze": 2
         }
     },

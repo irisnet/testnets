@@ -153,23 +153,6 @@
         }
     },
     {
-        "github": "Bladyxyz",
-        "pgp": "AE693DC2C9255D90",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "Dirlewanger88",
         "pgp": "5059741A8D7D4BF4",
         "verified": false,
@@ -1292,23 +1275,6 @@
         }
     },
     {
-        "github": "jackmo123",
-        "pgp": "FAE6B87F90906033",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "rewaqh",
         "pgp": "AC274A97AFBB3233",
         "verified": true,
@@ -1383,23 +1349,6 @@
         "reason": "",
         "addr": "iaa1w5l2cd7d442l6jlamhq056ppc072lpmzy7dnk3",
         "val_addr": "4DFE0D8134D5CCDE0A9252C34E2A14402317D5AF",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
-        "github": "Qpaxx",
-        "pgp": "51C51FB083079F72",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
         "tasks": {
             "task1": false,
             "task2": false,
@@ -4267,23 +4216,6 @@
         }
     },
     {
-        "github": "rudolfhe55",
-        "pgp": "91BEBD734CD8BB6F",
-        "verified": true,
-        "reason": "",
-        "addr": "iaa1s52vleywyv64rnnqeg2lnpspu4ew88e6gq4urj",
-        "val_addr": "A9D3BD539461DEB7EEB59A55E12FB972BDC438BD",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "kinrokinro",
         "pgp": "4BCD24508EBC1BFB",
         "verified": true,
@@ -5083,42 +5015,8 @@
         }
     },
     {
-        "github": "binlinhdh",
-        "pgp": "24bc8f249bc7eae2",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
         "github": "smithdodo",
         "pgp": "97F92EF0FCA52444",
-        "verified": true,
-        "reason": "",
-        "addr": "",
-        "val_addr": "",
-        "tasks": {
-            "task1": false,
-            "task2": false,
-            "task3": false
-        },
-        "badge": {
-            "sliver": 0,
-            "bronze": 0
-        }
-    },
-    {
-        "github": "LandeOba",
-        "pgp": "A2315312AAFB4262",
         "verified": true,
         "reason": "",
         "addr": "",
