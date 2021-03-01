@@ -82,6 +82,7 @@
 | ruslann91          | 3D374BA8C9A71366 | true     |                        | iaa1jfvxh8n4tt676ttqd5xarvzvmzdj4g7rug30wv | false | false | false | 0            | 0            |
 | A7373              | D49D8D92645AF95F | true     |                        | iaa19n9fly36h3rfn9vdgx5w4e3slu8excz6srdenj | false | false | false | 0            | 0            |
 | vas2110            | 745B72FB4AC46CA6 | true     |                        | iaa1x6430ek3l7n4ravje0cne7ld2h5jxlhvrx28ns | false | true  | true  | 1            | 1            |
+| armcmu             | 9E8A515B8F55F2D1 | true     |                        | iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2 | false | false | false | 0            | 0            |
 | ruscoin            | 1E6C23BBC6C58D5A | true     |                        | iaa155md0knv9ne5ems2wws027rp8mj3lmjtzwrl65 | false | false | true  | 1            | 0            |
 | guest223344        | AF5E7962D036DCFD | true     |                        | iaa1slctc66dgkrmf4twfru0wfm0nhaskxjqa38kd7 | false | true  | false | 0            | 1            |
 | darkanemic         | 15625F93BEA15642 | true     |                        | iaa1urrvrqptnrga4jjadl6mn0h8j7szdmcpgre4am | false | true  | false | 0            | 1            |
@@ -470,7 +471,6 @@
 | predator005        | 9598E12F995EAFF1 | false    | GitHub Not Eligible    | iaa1s99zj67k83qng6pc03ctk4nvzyhvzcpdtr44zh |       |       |       |              |              |
 | MrTokachh          | BAF7EF2077A2E5B0 | false    | Keybase Not Exist      | iaa1raghstt67rw2y9uujyvzg7n88446twv2gv2h7r |       |       |       |              |              |
 | shtihmas           | 8226C5DF52F21964 | false    | Keybase Not Exist      | iaa1m8h6dpvvsdjs6wnj0zw9q6400zqld4wdr8ekzf |       |       |       |              |              |
-| armcmu             | 9E8A515B8F55F2D1 | false    | Keybase Not Exist      | iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2 |       |       |       |              |              |
 | mrdaddyru          | BC066E1DA1BAC6DE | false    | GitHub Not Eligible    | iaa1hku8jev5xgcg3nd0exuxas4j8u4wq6vs4ezdjs |       |       |       |              |              |
 | matsidor1975       | 69304A0A2C7B4924 | false    | GitHub Not Eligible    | iaa1zhhtvuyqds6v634uapahanc59a09hsm6xajnum |       |       |       |              |              |
 | iuriizzz           | 7738F98CD1A649C2 | false    | GitHub Not Eligible    | iaa19t7jfywj95u9pna6kp2wvf7hczcvspzrlf0jnt |       |       |       |              |              |
