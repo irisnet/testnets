@@ -3504,8 +3504,8 @@
     {
         "github": "budweiserr",
         "pgp": "E29C281A399E7A18",
-        "verified": false,
-        "reason": "GitHub Not Exist",
+        "verified": true,
+        "reason": "",
         "addr": "iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt",
         "val_addr": "3D4D1688B4DC25D4EAA761192B9310FB21EA5ECB",
         "tasks": {

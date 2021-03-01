@@ -135,6 +135,7 @@
 | I0pka              | 0078186CCC9CD9DA | true     |                        | iaa15wyw5vyax7aadtxsy0vp4tzd8605v45sufc5ec | false | true  | true  | 1            | 1            |
 | huaigu             | F6E8184C6C337D87 | true     |                        | iaa1zaxs0psmnrqazfq0h4xjs5434nuvp4j5vqgw66 | false | false | false | 0            | 0            |
 | paulscathedral     | AB8E19A730AD3E26 | true     |                        | iaa1yp7vhejhh3lhhf04cl6aekhvj4mtl8a3z9e5n4 | false | true  | true  | 1            | 1            |
+| budweiserr         | E29C281A399E7A18 | true     |                        | iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt | false | true  | true  | 1            | 1            |
 | iamnaive           | 34032741736036BD | true     |                        | iaa19cz0h5d8kddp45d9qnx2u0s28c66tpfpk6qj6f | false | false | false | 0            | 0            |
 | rost1989           | 0ECF98FE3CBB9904 | true     |                        | iaa1fc2pjm06z24r9ac93u6caxzh0sfjjfzyuxy05m | false | true  | true  | 1            | 1            |
 | tellmeblink        | 6B1DA70D780B21EA | true     |                        | iaa1j29y49yv37qj38ps08c8kvgle78ms4yhjvagwv | false | true  | true  | 1            | 1            |
@@ -473,7 +474,6 @@
 | matsidor1975       | 69304A0A2C7B4924 | false    | GitHub Not Eligible    | iaa1zhhtvuyqds6v634uapahanc59a09hsm6xajnum |       |       |       |              |              |
 | iuriizzz           | 7738F98CD1A649C2 | false    | GitHub Not Eligible    | iaa19t7jfywj95u9pna6kp2wvf7hczcvspzrlf0jnt |       |       |       |              |              |
 | ama31337           | EBBAB54C972A579A | false    | GitHub Not Eligible    | iaa19xg8lksnntrhrmzvh06ukaapchlpa430vv5s49 |       |       |       |              |              |
-| budweiserr         | E29C281A399E7A18 | false    | GitHub Not Exist       | iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt |       |       |       |              |              |
 | romanoffmnogoznaet | 4129076EC9FB1D5B | false    | GitHub Not Exist       | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 |       |       |       |              |              |
 | youthonrepeat      | 4C4284FC0F265178 | false    | GitHub Not Exist       | iaa1zynkrpg7h4pfmsn48z5wat4f4x8jt0pnlhz2da |       |       |       |              |              |
 | heyu0113           | 43A8C4D62C3D4C5D | false    | GitHub Not Exist       | iaa13cxv6df7d2p3pny6jqn8mpwxuavuex245mypzx |       |       |       |              |              |
