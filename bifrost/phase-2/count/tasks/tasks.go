@@ -70,7 +70,7 @@ func CountTask2(client sdk.IRISHUBClient, participants []*biftypes.Participant) 
 }
 
 func CountTask3(client sdk.IRISHUBClient, participants []*biftypes.Participant) {
-	for i := int64(292989); i <= int64(293190); i += 1 {
+	for i := int64(288910); i <= int64(289111); i += 1 {
 		println("Height: ", i)
 		resultBlock, _ := client.BaseClient.Block(context.Background(), &i)
 		for _, signature := range resultBlock.Block.LastCommit.Signatures {
