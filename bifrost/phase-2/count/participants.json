@@ -2313,9 +2313,9 @@
     },
     {
         "github": "armcmu",
-        "pgp": "9E8A515B8F55F2D1",
-        "verified": false,
-        "reason": "Keybase Not Exist",
+        "pgp": "CF3FF8488AE12D8A",
+        "verified": true,
+        "reason": "",
         "addr": "iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2",
         "val_addr": "54A33A3D2E08F61FC08642E2B6B66BDDE9695151",
         "tasks": {
@@ -3504,8 +3504,8 @@
     {
         "github": "budweiserr",
         "pgp": "E29C281A399E7A18",
-        "verified": false,
-        "reason": "GitHub Not Exist",
+        "verified": true,
+        "reason": "",
         "addr": "iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt",
         "val_addr": "3D4D1688B4DC25D4EAA761192B9310FB21EA5ECB",
         "tasks": {
@@ -3570,10 +3570,10 @@
         }
     },
     {
-        "github": "romanoffmnogoznaet",
+        "github": "cyberomanov",
         "pgp": "4129076EC9FB1D5B",
-        "verified": false,
-        "reason": "GitHub Not Exist",
+        "verified": true,
+        "reason": "",
         "addr": "iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2",
         "val_addr": "BD3D2272655D859719D25AAF1CB2F55BF6959002",
         "tasks": {

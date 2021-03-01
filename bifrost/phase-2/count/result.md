@@ -82,6 +82,7 @@
 | ruslann91          | 3D374BA8C9A71366 | true     |                        | iaa1jfvxh8n4tt676ttqd5xarvzvmzdj4g7rug30wv | false | false | false | 0            | 0            |
 | A7373              | D49D8D92645AF95F | true     |                        | iaa19n9fly36h3rfn9vdgx5w4e3slu8excz6srdenj | false | false | false | 0            | 0            |
 | vas2110            | 745B72FB4AC46CA6 | true     |                        | iaa1x6430ek3l7n4ravje0cne7ld2h5jxlhvrx28ns | false | true  | true  | 1            | 1            |
+| armcmu             | 9E8A515B8F55F2D1 | true     |                        | iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2 | false | false | false | 0            | 0            |
 | ruscoin            | 1E6C23BBC6C58D5A | true     |                        | iaa155md0knv9ne5ems2wws027rp8mj3lmjtzwrl65 | false | false | true  | 1            | 0            |
 | guest223344        | AF5E7962D036DCFD | true     |                        | iaa1slctc66dgkrmf4twfru0wfm0nhaskxjqa38kd7 | false | true  | false | 0            | 1            |
 | darkanemic         | 15625F93BEA15642 | true     |                        | iaa1urrvrqptnrga4jjadl6mn0h8j7szdmcpgre4am | false | true  | false | 0            | 1            |
@@ -135,9 +136,11 @@
 | I0pka              | 0078186CCC9CD9DA | true     |                        | iaa15wyw5vyax7aadtxsy0vp4tzd8605v45sufc5ec | false | true  | true  | 1            | 1            |
 | huaigu             | F6E8184C6C337D87 | true     |                        | iaa1zaxs0psmnrqazfq0h4xjs5434nuvp4j5vqgw66 | false | false | false | 0            | 0            |
 | paulscathedral     | AB8E19A730AD3E26 | true     |                        | iaa1yp7vhejhh3lhhf04cl6aekhvj4mtl8a3z9e5n4 | false | true  | true  | 1            | 1            |
+| budweiserr         | E29C281A399E7A18 | true     |                        | iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt | false | true  | true  | 1            | 1            |
 | iamnaive           | 34032741736036BD | true     |                        | iaa19cz0h5d8kddp45d9qnx2u0s28c66tpfpk6qj6f | false | false | false | 0            | 0            |
 | rost1989           | 0ECF98FE3CBB9904 | true     |                        | iaa1fc2pjm06z24r9ac93u6caxzh0sfjjfzyuxy05m | false | true  | true  | 1            | 1            |
 | tellmeblink        | 6B1DA70D780B21EA | true     |                        | iaa1j29y49yv37qj38ps08c8kvgle78ms4yhjvagwv | false | true  | true  | 1            | 1            |
+| cyberomanov        | 4129076EC9FB1D5B | true     |                        | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 | false | true  | false | 0            | 1            |
 | xni                | 30C1E6C81110465D | true     |                        | iaa1h26gp5fkd383uh37muhxalz2ja2krmn0lk4dtf | false | false | false | 0            | 0            |
 | razumv             | 0DD21F2C7157838C | true     |                        | iaa1m6h5yxk7kcjta6jjuks6n8dur7x8mgj5z2klat | false | true  | true  | 1            | 1            |
 | ankulatix          | D35FF32D0873AC1A | true     |                        | iaa1lx940jq83ajmas40z2h3kqcdm2vt9ew0d66ja3 | false | true  | true  | 1            | 1            |
@@ -468,13 +471,10 @@
 | predator005        | 9598E12F995EAFF1 | false    | GitHub Not Eligible    | iaa1s99zj67k83qng6pc03ctk4nvzyhvzcpdtr44zh |       |       |       |              |              |
 | MrTokachh          | BAF7EF2077A2E5B0 | false    | Keybase Not Exist      | iaa1raghstt67rw2y9uujyvzg7n88446twv2gv2h7r |       |       |       |              |              |
 | shtihmas           | 8226C5DF52F21964 | false    | Keybase Not Exist      | iaa1m8h6dpvvsdjs6wnj0zw9q6400zqld4wdr8ekzf |       |       |       |              |              |
-| armcmu             | 9E8A515B8F55F2D1 | false    | Keybase Not Exist      | iaa1exkq6ydkjkldhksl8d8vtqq3agfvpue7dnvkf2 |       |       |       |              |              |
 | mrdaddyru          | BC066E1DA1BAC6DE | false    | GitHub Not Eligible    | iaa1hku8jev5xgcg3nd0exuxas4j8u4wq6vs4ezdjs |       |       |       |              |              |
 | matsidor1975       | 69304A0A2C7B4924 | false    | GitHub Not Eligible    | iaa1zhhtvuyqds6v634uapahanc59a09hsm6xajnum |       |       |       |              |              |
 | iuriizzz           | 7738F98CD1A649C2 | false    | GitHub Not Eligible    | iaa19t7jfywj95u9pna6kp2wvf7hczcvspzrlf0jnt |       |       |       |              |              |
 | ama31337           | EBBAB54C972A579A | false    | GitHub Not Eligible    | iaa19xg8lksnntrhrmzvh06ukaapchlpa430vv5s49 |       |       |       |              |              |
-| budweiserr         | E29C281A399E7A18 | false    | GitHub Not Exist       | iaa15at0k6v0km4h50ptw0cdv9wjkwlva8m22ctnxt |       |       |       |              |              |
-| romanoffmnogoznaet | 4129076EC9FB1D5B | false    | GitHub Not Exist       | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 |       |       |       |              |              |
 | youthonrepeat      | 4C4284FC0F265178 | false    | GitHub Not Exist       | iaa1zynkrpg7h4pfmsn48z5wat4f4x8jt0pnlhz2da |       |       |       |              |              |
 | heyu0113           | 43A8C4D62C3D4C5D | false    | GitHub Not Exist       | iaa13cxv6df7d2p3pny6jqn8mpwxuavuex245mypzx |       |       |       |              |              |
 | shaonian-w         | 346F926095E19E79 | false    | Keybase Not Exist      | iaa1yuda50wa6d75648y75ufeg938u8n6zlqqe2e0n |       |       |       |              |              |

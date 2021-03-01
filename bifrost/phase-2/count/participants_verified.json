@@ -2313,9 +2313,9 @@
     },
     {
         "github": "armcmu",
-        "pgp": "9E8A515B8F55F2D1",
-        "verified": false,
-        "reason": "Keybase Not Exist",
+        "pgp": "CF3FF8488AE12D8A",
+        "verified": true,
+        "reason": "",
         "addr": "",
         "val_addr": "",
         "tasks": {
@@ -3504,8 +3504,8 @@
     {
         "github": "budweiserr",
         "pgp": "E29C281A399E7A18",
-        "verified": false,
-        "reason": "GitHub Not Exist",
+        "verified": true,
+        "reason": "",
         "addr": "",
         "val_addr": "",
         "tasks": {
@@ -3570,10 +3570,10 @@
         }
     },
     {
-        "github": "romanoffmnogoznaet",
+        "github": "cyberomanov",
         "pgp": "4129076EC9FB1D5B",
-        "verified": false,
-        "reason": "GitHub Not Exist",
+        "verified": true,
+        "reason": "",
         "addr": "",
         "val_addr": "",
         "tasks": {
