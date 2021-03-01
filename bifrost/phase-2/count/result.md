@@ -139,6 +139,7 @@
 | iamnaive           | 34032741736036BD | true     |                        | iaa19cz0h5d8kddp45d9qnx2u0s28c66tpfpk6qj6f | false | false | false | 0            | 0            |
 | rost1989           | 0ECF98FE3CBB9904 | true     |                        | iaa1fc2pjm06z24r9ac93u6caxzh0sfjjfzyuxy05m | false | true  | true  | 1            | 1            |
 | tellmeblink        | 6B1DA70D780B21EA | true     |                        | iaa1j29y49yv37qj38ps08c8kvgle78ms4yhjvagwv | false | true  | true  | 1            | 1            |
+| cyberomanov        | 4129076EC9FB1D5B | true     |                        | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 | false | true  | false | 0            | 1            |
 | xni                | 30C1E6C81110465D | true     |                        | iaa1h26gp5fkd383uh37muhxalz2ja2krmn0lk4dtf | false | false | false | 0            | 0            |
 | razumv             | 0DD21F2C7157838C | true     |                        | iaa1m6h5yxk7kcjta6jjuks6n8dur7x8mgj5z2klat | false | true  | true  | 1            | 1            |
 | ankulatix          | D35FF32D0873AC1A | true     |                        | iaa1lx940jq83ajmas40z2h3kqcdm2vt9ew0d66ja3 | false | true  | true  | 1            | 1            |
@@ -474,7 +475,6 @@
 | matsidor1975       | 69304A0A2C7B4924 | false    | GitHub Not Eligible    | iaa1zhhtvuyqds6v634uapahanc59a09hsm6xajnum |       |       |       |              |              |
 | iuriizzz           | 7738F98CD1A649C2 | false    | GitHub Not Eligible    | iaa19t7jfywj95u9pna6kp2wvf7hczcvspzrlf0jnt |       |       |       |              |              |
 | ama31337           | EBBAB54C972A579A | false    | GitHub Not Eligible    | iaa19xg8lksnntrhrmzvh06ukaapchlpa430vv5s49 |       |       |       |              |              |
-| romanoffmnogoznaet | 4129076EC9FB1D5B | false    | GitHub Not Exist       | iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2 |       |       |       |              |              |
 | youthonrepeat      | 4C4284FC0F265178 | false    | GitHub Not Exist       | iaa1zynkrpg7h4pfmsn48z5wat4f4x8jt0pnlhz2da |       |       |       |              |              |
 | heyu0113           | 43A8C4D62C3D4C5D | false    | GitHub Not Exist       | iaa13cxv6df7d2p3pny6jqn8mpwxuavuex245mypzx |       |       |       |              |              |
 | shaonian-w         | 346F926095E19E79 | false    | Keybase Not Exist      | iaa1yuda50wa6d75648y75ufeg938u8n6zlqqe2e0n |       |       |       |              |              |

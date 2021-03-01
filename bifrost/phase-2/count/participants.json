@@ -3570,10 +3570,10 @@
         }
     },
     {
-        "github": "romanoffmnogoznaet",
+        "github": "cyberomanov",
         "pgp": "4129076EC9FB1D5B",
-        "verified": false,
-        "reason": "GitHub Not Exist",
+        "verified": true,
+        "reason": "",
         "addr": "iaa1naa6nxytu4a4zxruu9a9pa45nmnmx4hf2c7gt2",
         "val_addr": "BD3D2272655D859719D25AAF1CB2F55BF6959002",
         "tasks": {
