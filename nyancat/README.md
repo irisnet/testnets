@@ -6,7 +6,7 @@ Nyancat Testnet is an IRISHub Testnet operate as a stable application testnet wh
 
 ## Public Endpoints
 
-- GRPC: 35.234.10.84:1317:9090
+- GRPC: 35.234.10.84:9090
 - RPC: http://35.234.10.84:26657/
 - REST: http://35.234.10.84:1317/swagger/
 
