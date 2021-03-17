@@ -42,7 +42,7 @@ Usage: in [nyancat-faucet channel](https://discord.gg/Z6PXeTb5Mt), type "$faucet
 
 ## Explorer
 
-<https://nyancat.irisplorer.io>
+<https://nyancat.iobscan.io/>
 
 ## Community
 
