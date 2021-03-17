@@ -6,9 +6,9 @@ Nyancat Testnet is an IRISHub Testnet operate as a stable application testnet wh
 
 ## Public Endpoints
 
-- GRPC: 34.80.202.172:9090
-- RPC: http://34.80.202.172:26657
-- REST: http://34.80.202.172:1317/swagger/
+- GRPC: 35.234.10.84:9090
+- RPC: http://35.234.10.84:26657/
+- REST: http://35.234.10.84:1317/swagger/
 
 ## Running a Node
 
@@ -36,9 +36,14 @@ bc77e49df0de4d70ab6f97f1e3a17bfb51a1ea7a@34.80.202.172:26656
 
 ## Faucet
 
-Welcome to ask for the test tokens in our [testnet channels](https://discord.gg/9cSt7MX2fn)
+Welcome to get test tokens in our [testnet faucet channel](https://discord.gg/Z6PXeTb5Mt) 
+
+Usage: in [nyancat-faucet channel](https://discord.gg/Z6PXeTb5Mt), type "$faucet " + your address on Nyancat testnet, to get test tokens (NYAN) every 24 hours.
 
 ## Explorer
 
-<https://nyancat.irisplorer.io>
+<https://nyancat.iobscan.io/>
 
+## Community
+
+Welcome to discuss in our [nyancat testnet channel](https://discord.gg/9cSt7MX2fn) 
