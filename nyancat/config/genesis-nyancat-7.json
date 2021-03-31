@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2021-03-29T03:56:19.018169484Z",
-  "chain_id": "nyancat-8",
+  "genesis_time": "2021-02-20T12:51:37.302710477Z",
+  "chain_id": "nyancat-7",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -51,7 +51,7 @@
           "coins": [
             {
               "denom": "unyan",
-              "amount": "1000000000000000000"
+              "amount": "1500000000000000"
             }
           ]
         }
@@ -121,15 +121,15 @@
                 "validator_address": "iva1svannhv2zaxefq83m7treg078udfk37lpjufkw",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "0JCzQJkj22PEWVZ2a0KvrW7cGpQtxJt/eTQN0LlE/yk="
+                  "key": "EHRb9zU1snss/KQyZp2oCSg8RvKO7dmBkKNDTX65i28="
                 },
                 "value": {
                   "denom": "unyan",
-                  "amount": "100000000"
+                  "amount": "10000000000000"
                 }
               }
             ],
-            "memo": "f22681e3d16438dddc7e4cf36bb1bd5fbbd22e9c@10.32.13.124:26656",
+            "memo": "bc77e49df0de4d70ab6f97f1e3a17bfb51a1ea7a@10.32.13.81:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -157,7 +157,7 @@
             }
           },
           "signatures": [
-            "Srxfpjh1mNL7USvnbBCULcSZwBPDGrPHiYJG7uxpDsoX5sohrUN7oYri3Oz3YrKauDNHk5uWc0IH9+0TpgHQzA=="
+            "D/xDkt/UWtkjIshe+iCGfnXVLYdx5MBZpubf5nMhfGdBm+aMQjBvh+bi4HrJKYwYanhBqle7KDFLPIjvMzk+XA=="
           ]
         }
       ]
@@ -186,20 +186,17 @@
       }
     },
     "guardian": {
-      "supers": [{
+      "supers": [
+	{
           "description": "Genesis Profiler 1",
           "account_type": "GENESIS",
           "address": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf",
           "added_by": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf"
-        }]
+        }
+      ]
     },
     "htlc": {
-      "params": {
-        "asset_params": []
-      },
-      "htlcs": [],
-      "supplies": [],
-      "previous_block_time": "1970-01-01T00:00:01Z"
+      "pending_htlcs": {}
     },
     "ibc": {
       "client_genesis": {
@@ -269,8 +266,7 @@
         "complaint_retrospect": "1296000s",
         "arbitration_time_limit": "432000s",
         "tx_size_limit": "4000",
-        "base_denom": "unyan",
-        "restricted_service_fee_denom": false
+        "base_denom": "unyan"
       },
       "definitions": [],
       "bindings": [],
@@ -316,7 +312,7 @@
       "tokens": [
         {
           "symbol": "nyan",
-          "name": "Irishub staking token",
+          "name": "Nyancat staking token",
           "scale": 6,
           "min_unit": "unyan",
           "initial_supply": "2000000000",
