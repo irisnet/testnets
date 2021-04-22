@@ -180,6 +180,8 @@
 | orientlau          | 5AEFD5BC9BF5AD4F | 1    | 4      | 10     | iaa17lf7hy4v5qup6l7qqasyaswygg5pvglhc4s6jc |
 | yAntPower          | CB94CB525CA5B86F | 1    | 4      | 10     | iaa1rh7wp0ucnawdj0p2sl5x3vuadyneqqkv74dg0m |
 | Godmail            | C02EC2A3EDB4960E | 1    | 4      | 10     | iaa10cvc4e9qmcx470hpm02t47nkce2jc6wrp5e3la |
+| LiangLiang918      | DBF3F5B2CA263BF2 | 1    | 3      | 11     | iaa16yl8d9lt7lk8rxx9mwyt6z6nft2cun2ygpfec4 |
+| zhu-jie-tester     | A5A0087D80A1136E | 1    | 3      | 9      | iaa1ll2llkrjq5adqmapsj52z3xe60umuw00a4864v |
 | kwaskoff           | 6DEA6A105DC4AD58 | 0    | 1      | 1      |                                            |
 | MrTokachh          | 153E4CBA9233E845 | 0    | 0      | 1      |                                            |
 | vabelik1           | 19AFEFAF8833010C | 0    | 1      | 0      |                                            |
@@ -202,7 +204,6 @@
 | HeyRoseWu          | A87437DF419A1E96 | 0    | 0      | 1      |                                            |
 | luckybean          | 8E15046A255C20CC | 1    | 4      | 11     |                                            |
 | mr-k-validator     | 74D3AF53635231D9 | 1    | 5      | 12     |                                            |
-| LiangLiang918      | DBF3F5B2CA263BF2 | 1    | 3      | 11     |                                            |
 | node-a-team        | 0CB9A4E7643FF992 | 1    | 5      | 12     |                                            |
 | lcrefactory        | B85FCDDDD340566E | 1    | 4      | 10     |                                            |
 | oncloudit          | 1E70794B56DFB583 | 0    | 1      | 2      |                                            |
@@ -213,7 +214,6 @@
 | bi23com            | EB3470949B3E89E2 | 1    | 3      | 8      |                                            |
 | z3ustb             | 4DF28CA60DE9BEA8 | 1    | 4      | 10     |                                            |
 | fiser321           | 94B80B7414B7104B | 1    | 3      | 4      |                                            |
-| zhu-jie-tester     | A5A0087D80A1136E | 1    | 3      | 9      |                                            |
 | ololoepepe         | 2293FD68D69DDBFB | 0    | 1      | 1      |                                            |
 | narutowuc1         | A9E80E95BAA90646 | 1    | 4      | 10     |                                            |
 | ilhamm24           | B981D145A0523F50 | 0    | 2      | 3      |                                            |
