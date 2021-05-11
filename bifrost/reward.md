@@ -236,3 +236,4 @@
 | Participants Received Rewards | Gold | Silver | Bronze |
 | ----------------------------- | ---- | ------ | ------ |
 | 228                           | 91   | 485    | 1140   |
+
