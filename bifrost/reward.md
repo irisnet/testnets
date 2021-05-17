@@ -182,6 +182,16 @@
 | Godmail            | C02EC2A3EDB4960E | 1    | 4      | 10     | iaa10cvc4e9qmcx470hpm02t47nkce2jc6wrp5e3la |
 | LiangLiang918      | DBF3F5B2CA263BF2 | 1    | 3      | 11     | iaa16yl8d9lt7lk8rxx9mwyt6z6nft2cun2ygpfec4 |
 | zhu-jie-tester     | A5A0087D80A1136E | 1    | 3      | 9      | iaa1ll2llkrjq5adqmapsj52z3xe60umuw00a4864v |
+| nindzik12          | CF0A153EE94DB824 | 0    | 0      | 1      | iaa1c9n8k8s9fa8qcg4za6jmn83xtg0y4gv576pyjd |
+| EdouardLvdl        | 83D300CB42D06962 | 0    | 1      | 2      | iaa1aj6frfd5g0a5d88j6mjpvy0ql5afd5cr759nap |
+| luckybean          | 8E15046A255C20CC | 1    | 4      | 11     | iaa1wvupzte5g9j66kq736jl0jmnj7jmufkdfmdf7q |
+| mr-k-validator     | 74D3AF53635231D9 | 1    | 5      | 12     | iaa132vsd9ugaduhf58ukfp0ztqg4w95k3pvepalx3 |
+| node-a-team        | 0CB9A4E7643FF992 | 1    | 5      | 12     | iaa1w2dakpuvh9mglcs54wayta5dyv8vj8533tcdc7 |
+| wetezos            | 26FA2B24F46A98EF | 1    | 5      | 12     | iaa1dcqv69vqsdcc5lnmup6vkpv370fmqxgd56y0pe |
+| culmore2015        | F7BABF2C95B02A9F | 1    | 5      | 12     | iaa122n4gkawquc446c36p3g83ulgy5lj0d3msty8q |
+| blackbear10000     | 9537E2D2ED05D16D | 1    | 4      | 10     | iaa1ql9jea9qa4vsqtmln7w2we8zg2j4sa09k3t22u |
+| bi23com            | EB3470949B3E89E2 | 1    | 3      | 8      | iaa1z8wrnv35mmezpseym0jy7lngvsan2alwx9g2l5 |
+| rich518            | 3A7A52FC729AE13F | 1    | 4      | 10     | iaa1yn58xphn6m3793a5xp37snkeurcnd3v2t4uj3c |
 | kwaskoff           | 6DEA6A105DC4AD58 | 0    | 1      | 1      |                                            |
 | MrTokachh          | 153E4CBA9233E845 | 0    | 0      | 1      |                                            |
 | vabelik1           | 19AFEFAF8833010C | 0    | 1      | 0      |                                            |
@@ -193,25 +203,16 @@
 | everuner           | 088079ECEFA31418 | 0    | 1      | 0      |                                            |
 | ne1s1337           | 1DB460874130490E | 0    | 1      | 1      |                                            |
 | ReaLys158          | 63EA08FAE74ED995 | 0    | 1      | 0      |                                            |
-| nindzik12          | CF0A153EE94DB824 | 0    | 0      | 1      |                                            |
 | miskhor            | 719719801F03F228 | 0    | 1      | 0      |                                            |
 | ElderOrb           | 0442B0918D388C11 | 0    | 1      | 0      |                                            |
 | delgyd             | 3AEF587065137B9B | 0    | 0      | 1      |                                            |
-| EdouardLvdl        | 83D300CB42D06962 | 0    | 1      | 2      |                                            |
 | NightLostK         | 6466F4C101D07B01 | 0    | 1      | 0      |                                            |
 | vectoryoungo       | 0ED3C570FA12928D | 0    | 0      | 2      |                                            |
 | yanziwu999         | 7AF8272A7A94DED3 | 0    | 1      | 2      |                                            |
 | HeyRoseWu          | A87437DF419A1E96 | 0    | 0      | 1      |                                            |
-| luckybean          | 8E15046A255C20CC | 1    | 4      | 11     |                                            |
-| mr-k-validator     | 74D3AF53635231D9 | 1    | 5      | 12     |                                            |
-| node-a-team        | 0CB9A4E7643FF992 | 1    | 5      | 12     |                                            |
 | lcrefactory        | B85FCDDDD340566E | 1    | 4      | 10     |                                            |
 | oncloudit          | 1E70794B56DFB583 | 0    | 1      | 2      |                                            |
-| wetezos            | 26FA2B24F46A98EF | 1    | 5      | 12     |                                            |
-| culmore2015        | F7BABF2C95B02A9F | 1    | 5      | 12     |                                            |
-| blackbear10000     | 9537E2D2ED05D16D | 1    | 4      | 10     |                                            |
 | PacoBits           | 379FFBC2F6F85EE8 | 0    | 1      | 0      |                                            |
-| bi23com            | EB3470949B3E89E2 | 1    | 3      | 8      |                                            |
 | z3ustb             | 4DF28CA60DE9BEA8 | 1    | 4      | 10     |                                            |
 | fiser321           | 94B80B7414B7104B | 1    | 3      | 4      |                                            |
 | ololoepepe         | 2293FD68D69DDBFB | 0    | 1      | 1      |                                            |
@@ -229,7 +230,6 @@
 | samscau            | 70FA19B71FE14D20 | 1    | 4      | 10     |                                            |
 | JingKunYan         | CF2207572C66BA05 | 1    | 4      | 5      |                                            |
 | xudoubles          | 1D480589EEAFB0EA | 0    | 1      | 2      |                                            |
-| rich518            | 3A7A52FC729AE13F | 1    | 4      | 10     |                                            |
 
 **Summary**
 
