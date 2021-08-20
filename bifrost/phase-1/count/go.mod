@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/irisnet/irishub-sdk-go v0.0.0-20201106071848-e481ea02c310
-	github.com/tidwall/gjson v1.6.3
+	github.com/tidwall/gjson v1.6.5
 )
 
 replace (
