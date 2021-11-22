@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2021-11-22T11:28:32.471398588Z",
-  "chain_id": "nyancat-9",
+  "genesis_time": "2021-03-29T03:56:19.018169484Z",
+  "chain_id": "nyancat-8",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -22,7 +22,6 @@
   },
   "app_hash": "",
   "app_state": {
-    "NFT": null,
     "auth": {
       "params": {
         "max_memo_characters": "256",
@@ -68,9 +67,7 @@
       "params": {
         "fee": "0.003000000000000000"
       },
-      "standard_denom": "unyan",
-      "pool": [],
-      "sequence": "1"
+      "standard_denom": "unyan"
     },
     "crisis": {
       "constant_fee": {
@@ -100,20 +97,6 @@
     "evidence": {
       "evidence": []
     },
-    "farm": {
-      "params": {
-        "create_pool_fee": {
-          "denom": "unyan",
-          "amount": "50000000"
-        },
-        "max_reward_categories": 2
-      },
-      "pools": [],
-      "farm_infos": []
-    },
-    "feegrant": {
-      "allowances": []
-    },
     "genutil": {
       "gen_txs": [
         {
@@ -122,7 +105,7 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "nyancat",
+                  "moniker": "IRISnet-Bianjie",
                   "identity": "",
                   "website": "",
                   "security_contact": "",
@@ -142,11 +125,11 @@
                 },
                 "value": {
                   "denom": "unyan",
-                  "amount": "10000000000"
+                  "amount": "100000000"
                 }
               }
             ],
-            "memo": "bc77e49df0de4d70ab6f97f1e3a17bfb51a1ea7a@10.32.11.39:26656",
+            "memo": "f22681e3d16438dddc7e4cf36bb1bd5fbbd22e9c@10.32.13.124:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -174,7 +157,7 @@
             }
           },
           "signatures": [
-            "THqY7psayKrnDqXfbs47NAEWMhEe8SYEuRFcNFmy/RcGmsDk1sXcj76RuTfJATmtCmjhSP5sHIfHouDzr7lMUg=="
+            "Srxfpjh1mNL7USvnbBCULcSZwBPDGrPHiYJG7uxpDsoX5sohrUN7oYri3Oz3YrKauDNHk5uWc0IH9+0TpgHQzA=="
           ]
         }
       ]
@@ -194,7 +177,7 @@
         "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "800s"
+        "voting_period": "600s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
@@ -208,7 +191,7 @@
           "account_type": "GENESIS",
           "address": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf",
           "added_by": "iaa1svannhv2zaxefq83m7treg078udfk37l5rkxtf"
-      }]
+        }]
     },
     "htlc": {
       "params": {
@@ -235,10 +218,7 @@
       "connection_genesis": {
         "connections": [],
         "client_connection_paths": [],
-        "next_connection_sequence": "0",
-        "params": {
-          "max_expected_time_per_block": "30000000000"
-        }
+        "next_connection_sequence": "0"
       },
       "channel_genesis": {
         "channels": [],
@@ -323,26 +303,6 @@
       "unbonding_delegations": [],
       "redelegations": [],
       "exported": false
-    },
-    "tibc": {
-      "client_genesis": {
-        "clients": [],
-        "clients_consensus": [],
-        "clients_metadata": [],
-        "native_chain_name": "irishub-testnet",
-        "relayers": []
-      },
-      "packet_genesis": {
-        "acknowledgements": [],
-        "commitments": [],
-        "receipts": [],
-        "send_sequences": [],
-        "recv_sequences": [],
-        "ack_sequences": []
-      },
-      "routing_genesis": {
-        "rules": []
-      }
     },
     "token": {
       "params": {
