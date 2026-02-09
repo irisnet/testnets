@@ -6,9 +6,13 @@ Nyancat Testnet is an IRISHub Testnet operate as a stable application testnet wh
 
 ## Public Endpoints
 
-- GRPC: 35.234.10.84:9090
-- RPC: http://35.234.10.84:26657/
-- REST: http://35.234.10.84:1317/swagger/
+- GRPC: 8.222.143.55:9090
+- RPC:
+    - https://rpc.nyancat.irisnet.org
+    - http://8.222.143.55:26657
+- REST:
+    - https://api.nyancat.irisnet.org/swagger/
+    - http://8.222.143.55:1317/swagger/
 
 ## Running a Node
 
@@ -22,16 +26,10 @@ If you'd like to setup a test node yourself instead of using the public endpoint
 
 Add the following `seeds` and `persistent_peers` in the `config.toml`:
 
-Seeds:
-
-```bash
-07e58f179b2b7101b72f04248f542f67af8993bd@35.234.10.84:26656
-```
-
 Persistent Peers:
 
 ```bash
-bc77e49df0de4d70ab6f97f1e3a17bfb51a1ea7a@34.80.202.172:26656
+bdf77fa7a9860fb4ebe972bfe85bda8544a562c8@8.222.143.55:26656
 ```
 
 ## Faucet
